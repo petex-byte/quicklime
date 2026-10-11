@@ -240,5 +240,140 @@
     "checkedOn": "2026-10-11",
     "width": 1000,
     "height": 657
+  },
+  "pieter-bruegel": {
+    "src": "/art/pieter-bruegel.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/435809",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 3811,
+    "width": 2400,
+    "height": 1769
+  },
+  "el-greco": {
+    "src": "/art/el-greco.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/436575",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 4000,
+    "width": 2123,
+    "height": 2400
+  },
+  "titian": {
+    "src": "/art/titian.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/437827",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 3807,
+    "width": 2400,
+    "height": 1899
+  },
+  "diego-velazquez": {
+    "src": "/art/diego-velazquez.jpg",
+    "status": "pending",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/437869",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 1024,
+    "width": 880,
+    "height": 1024,
+    "pendingReason": "long edge 1024px < 2000px"
+  },
+  "francisco-goya": {
+    "src": "/art/francisco-goya.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/436545",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 3873,
+    "width": 1769,
+    "height": 2400
+  },
+  "jacques-louis-david": {
+    "src": "/art/jacques-louis-david.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/436105",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 3811,
+    "width": 2400,
+    "height": 1592
+  },
+  "rosa-bonheur": {
+    "src": "/art/rosa-bonheur.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/435702",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 3811,
+    "width": 2400,
+    "height": 1236
+  },
+  "gustave-courbet": {
+    "src": "/art/gustave-courbet.jpg",
+    "status": "pending",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/436002",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 1905,
+    "width": 1905,
+    "height": 1264,
+    "pendingReason": "long edge 1905px < 2000px"
+  },
+  "edouard-manet": {
+    "src": "/art/edouard-manet.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/436947",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 3811,
+    "width": 2400,
+    "height": 1812
+  },
+  "henri-rousseau": {
+    "src": "/art/henri-rousseau.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/438822",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 3811,
+    "width": 2400,
+    "height": 1690
+  },
+  "amedeo-modigliani": {
+    "src": "/art/amedeo-modigliani.jpg",
+    "status": "pending",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/486847",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 1912,
+    "width": 1912,
+    "height": 1280,
+    "pendingReason": "long edge 1912px < 2000px"
+  },
+  "winslow-homer": {
+    "src": "/art/winslow-homer.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/11122",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 3881,
+    "width": 2400,
+    "height": 1467
   }
 }

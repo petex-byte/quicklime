@@ -1,27 +1,283 @@
 {
   "_note": "One entry per story. `met` (when present) pulls the Met Open Access image from its public Google Cloud bucket and is used first. `title` is the Wikimedia Commons file name. `autoClear: false` means the file is fetched but stays pending until Pete signs off (Italian cultural-heritage law and Vatican reproduction rules; see docs/RIGHTS.md). `search` is used only when `title` doesn't resolve.",
   "works": [
-    { "slug": "jan-van-eyck", "title": "Van Eyck - Arnolfini Portrait.jpg", "holder": "National Gallery, London (UK)", "autoClear": true, "search": "Arnolfini Portrait van Eyck National Gallery" },
-    { "slug": "hieronymus-bosch", "title": "The Garden of earthly delights.jpg", "holder": "Museo del Prado, Madrid (Spain)", "autoClear": true, "search": "Garden of Earthly Delights Bosch Prado" },
-    { "slug": "sandro-botticelli", "title": "Sandro Botticelli - La nascita di Venere - Google Art Project - edited.jpg", "holder": "Uffizi Gallery, Florence (Italy)", "autoClear": false, "search": "Botticelli Birth of Venus Uffizi" },
-    { "slug": "leonardo-da-vinci", "title": "Mona Lisa, by Leonardo da Vinci, from C2RMF retouched.jpg", "holder": "Musée du Louvre, Paris (France)", "autoClear": true, "search": "Mona Lisa Leonardo C2RMF" },
-    { "slug": "albrecht-durer", "title": "Albrecht Dürer - 1500 self-portrait (High resolution and detail).jpg", "holder": "Alte Pinakothek, Munich (Germany)", "autoClear": true, "search": "Albrecht Dürer self-portrait 1500 Alte Pinakothek" },
-    { "slug": "michelangelo", "title": "Sistine Chapel ceiling photo 2.jpg", "holder": "Sistine Chapel, Vatican City", "autoClear": false, "search": "Sistine Chapel ceiling Michelangelo" },
-    { "slug": "caravaggio", "title": "Nativity with St. Francis and St. Lawrence-Caravaggio (1609).jpg", "holder": "Stolen 1969 from the Oratory of San Lorenzo, Palermo (Italy)", "autoClear": false, "search": "Caravaggio Nativity Saint Francis Saint Lawrence" },
-    { "slug": "artemisia-gentileschi", "title": "Artemisia Gentileschi - Judith Beheading Holofernes - WGA8563.jpg", "holder": "Uffizi Gallery, Florence (Italy)", "autoClear": false, "search": "Artemisia Gentileschi Judith Slaying Holofernes Uffizi" },
-    { "slug": "rembrandt", "title": "Rembrandt Christ in the Storm on the Lake of Galilee.jpg", "holder": "Isabella Stewart Gardner Museum, Boston (US); stolen 1990", "autoClear": true, "search": "Rembrandt Storm on the Sea of Galilee" },
-    { "slug": "johannes-vermeer", "title": "1665 Girl with a Pearl Earring.jpg", "holder": "Mauritshuis, The Hague (Netherlands)", "autoClear": true, "search": "Girl with a Pearl Earring Vermeer Mauritshuis" },
-    { "slug": "katsushika-hokusai", "met": { "objectId": 45434, "accession": "JP1847" }, "title": "Tsunami by hokusai 19th century.jpg", "holder": "Metropolitan Museum of Art, New York (US)", "autoClear": true, "search": "Great Wave off Kanagawa Hokusai Metropolitan Museum" },
-    { "slug": "jmw-turner", "title": "The Fighting Temeraire, JMW Turner, National Gallery.jpg", "holder": "National Gallery, London (UK)", "autoClear": true, "search": "Fighting Temeraire Turner National Gallery" },
-    { "slug": "claude-monet", "title": "Claude Monet - Water Lilies - Green Reflections - Musée de l'Orangerie.jpg", "holder": "Musée de l'Orangerie, Paris (France)", "autoClear": true, "search": "Monet Nymphéas Reflets verts Orangerie" },
-    { "slug": "mary-cassatt", "title": "Mary Cassatt - The Child's Bath - Google Art Project.jpg", "holder": "Art Institute of Chicago (US)", "autoClear": true, "search": "Mary Cassatt The Child's Bath Art Institute of Chicago" },
-    { "slug": "pierre-auguste-renoir", "title": "Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg", "holder": "The Phillips Collection, Washington DC (US)", "autoClear": true, "search": "Renoir Luncheon of the Boating Party Phillips" },
-    { "slug": "paul-cezanne", "title": "Les Joueurs de cartes, par Paul Cézanne.jpg", "holder": "Musée d'Orsay, Paris (France)", "autoClear": true, "search": "Cézanne Card Players Orsay" },
-    { "slug": "georges-seurat", "title": "A Sunday on La Grande Jatte, Georges Seurat, 1884.jpg", "holder": "Art Institute of Chicago (US)", "autoClear": true, "search": "Seurat Sunday Afternoon Island of La Grande Jatte" },
-    { "slug": "vincent-van-gogh", "title": "Van Gogh - Starry Night - Google Art Project.jpg", "holder": "Museum of Modern Art, New York (US)", "autoClear": true, "search": "Van Gogh Starry Night MoMA" },
-    { "slug": "paul-gauguin", "title": "Paul Gauguin - D'ou venons-nous.jpg", "holder": "Museum of Fine Arts, Boston (US)", "autoClear": true, "search": "Gauguin Where Do We Come From What Are We Where Are We Going" },
-    { "slug": "edvard-munch", "title": "Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x 73 cm, National Gallery of Norway.jpg", "holder": "National Museum, Oslo (Norway)", "autoClear": true, "search": "Munch The Scream 1893 National Gallery Norway" },
-    { "slug": "gustav-klimt", "title": "The Kiss - Gustav Klimt - Google Cultural Institute.jpg", "holder": "Belvedere, Vienna (Austria)", "autoClear": true, "search": "Klimt The Kiss Belvedere" },
-    { "slug": "wassily-kandinsky", "title": "Vassily Kandinsky, 1923 - Composition 8, huile sur toile, 140 cm x 201 cm, Musée Guggenheim, New York.jpg", "holder": "Solomon R. Guggenheim Museum, New York (US)", "autoClear": true, "search": "Kandinsky Composition VIII 1923 Guggenheim" }
+    {
+      "slug": "jan-van-eyck",
+      "title": "Van Eyck - Arnolfini Portrait.jpg",
+      "holder": "National Gallery, London (UK)",
+      "autoClear": true,
+      "search": "Arnolfini Portrait van Eyck National Gallery"
+    },
+    {
+      "slug": "hieronymus-bosch",
+      "title": "The Garden of earthly delights.jpg",
+      "holder": "Museo del Prado, Madrid (Spain)",
+      "autoClear": true,
+      "search": "Garden of Earthly Delights Bosch Prado"
+    },
+    {
+      "slug": "sandro-botticelli",
+      "title": "Sandro Botticelli - La nascita di Venere - Google Art Project - edited.jpg",
+      "holder": "Uffizi Gallery, Florence (Italy)",
+      "autoClear": false,
+      "search": "Botticelli Birth of Venus Uffizi"
+    },
+    {
+      "slug": "leonardo-da-vinci",
+      "title": "Mona Lisa, by Leonardo da Vinci, from C2RMF retouched.jpg",
+      "holder": "Musée du Louvre, Paris (France)",
+      "autoClear": true,
+      "search": "Mona Lisa Leonardo C2RMF"
+    },
+    {
+      "slug": "albrecht-durer",
+      "title": "Albrecht Dürer - 1500 self-portrait (High resolution and detail).jpg",
+      "holder": "Alte Pinakothek, Munich (Germany)",
+      "autoClear": true,
+      "search": "Albrecht Dürer self-portrait 1500 Alte Pinakothek"
+    },
+    {
+      "slug": "michelangelo",
+      "title": "Sistine Chapel ceiling photo 2.jpg",
+      "holder": "Sistine Chapel, Vatican City",
+      "autoClear": false,
+      "search": "Sistine Chapel ceiling Michelangelo"
+    },
+    {
+      "slug": "caravaggio",
+      "title": "Nativity with St. Francis and St. Lawrence-Caravaggio (1609).jpg",
+      "holder": "Stolen 1969 from the Oratory of San Lorenzo, Palermo (Italy)",
+      "autoClear": false,
+      "search": "Caravaggio Nativity Saint Francis Saint Lawrence"
+    },
+    {
+      "slug": "artemisia-gentileschi",
+      "title": "Artemisia Gentileschi - Judith Beheading Holofernes - WGA8563.jpg",
+      "holder": "Uffizi Gallery, Florence (Italy)",
+      "autoClear": false,
+      "search": "Artemisia Gentileschi Judith Slaying Holofernes Uffizi"
+    },
+    {
+      "slug": "rembrandt",
+      "title": "Rembrandt Christ in the Storm on the Lake of Galilee.jpg",
+      "holder": "Isabella Stewart Gardner Museum, Boston (US); stolen 1990",
+      "autoClear": true,
+      "search": "Rembrandt Storm on the Sea of Galilee"
+    },
+    {
+      "slug": "johannes-vermeer",
+      "title": "1665 Girl with a Pearl Earring.jpg",
+      "holder": "Mauritshuis, The Hague (Netherlands)",
+      "autoClear": true,
+      "search": "Girl with a Pearl Earring Vermeer Mauritshuis"
+    },
+    {
+      "slug": "katsushika-hokusai",
+      "met": {
+        "objectId": 45434,
+        "accession": "JP1847"
+      },
+      "title": "Tsunami by hokusai 19th century.jpg",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": "Great Wave off Kanagawa Hokusai Metropolitan Museum"
+    },
+    {
+      "slug": "jmw-turner",
+      "title": "The Fighting Temeraire, JMW Turner, National Gallery.jpg",
+      "holder": "National Gallery, London (UK)",
+      "autoClear": true,
+      "search": "Fighting Temeraire Turner National Gallery"
+    },
+    {
+      "slug": "claude-monet",
+      "title": "Claude Monet - Water Lilies - Green Reflections - Musée de l'Orangerie.jpg",
+      "holder": "Musée de l'Orangerie, Paris (France)",
+      "autoClear": true,
+      "search": "Monet Nymphéas Reflets verts Orangerie"
+    },
+    {
+      "slug": "mary-cassatt",
+      "title": "Mary Cassatt - The Child's Bath - Google Art Project.jpg",
+      "holder": "Art Institute of Chicago (US)",
+      "autoClear": true,
+      "search": "Mary Cassatt The Child's Bath Art Institute of Chicago"
+    },
+    {
+      "slug": "pierre-auguste-renoir",
+      "title": "Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg",
+      "holder": "The Phillips Collection, Washington DC (US)",
+      "autoClear": true,
+      "search": "Renoir Luncheon of the Boating Party Phillips"
+    },
+    {
+      "slug": "paul-cezanne",
+      "title": "Les Joueurs de cartes, par Paul Cézanne.jpg",
+      "holder": "Musée d'Orsay, Paris (France)",
+      "autoClear": true,
+      "search": "Cézanne Card Players Orsay"
+    },
+    {
+      "slug": "georges-seurat",
+      "title": "A Sunday on La Grande Jatte, Georges Seurat, 1884.jpg",
+      "holder": "Art Institute of Chicago (US)",
+      "autoClear": true,
+      "search": "Seurat Sunday Afternoon Island of La Grande Jatte"
+    },
+    {
+      "slug": "vincent-van-gogh",
+      "title": "Van Gogh - Starry Night - Google Art Project.jpg",
+      "holder": "Museum of Modern Art, New York (US)",
+      "autoClear": true,
+      "search": "Van Gogh Starry Night MoMA"
+    },
+    {
+      "slug": "paul-gauguin",
+      "title": "Paul Gauguin - D'ou venons-nous.jpg",
+      "holder": "Museum of Fine Arts, Boston (US)",
+      "autoClear": true,
+      "search": "Gauguin Where Do We Come From What Are We Where Are We Going"
+    },
+    {
+      "slug": "edvard-munch",
+      "title": "Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x 73 cm, National Gallery of Norway.jpg",
+      "holder": "National Museum, Oslo (Norway)",
+      "autoClear": true,
+      "search": "Munch The Scream 1893 National Gallery Norway"
+    },
+    {
+      "slug": "gustav-klimt",
+      "title": "The Kiss - Gustav Klimt - Google Cultural Institute.jpg",
+      "holder": "Belvedere, Vienna (Austria)",
+      "autoClear": true,
+      "search": "Klimt The Kiss Belvedere"
+    },
+    {
+      "slug": "wassily-kandinsky",
+      "title": "Vassily Kandinsky, 1923 - Composition 8, huile sur toile, 140 cm x 201 cm, Musée Guggenheim, New York.jpg",
+      "holder": "Solomon R. Guggenheim Museum, New York (US)",
+      "autoClear": true,
+      "search": "Kandinsky Composition VIII 1923 Guggenheim"
+    },
+    {
+      "slug": "pieter-bruegel",
+      "met": {
+        "objectId": 435809
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "el-greco",
+      "met": {
+        "objectId": 436575
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "titian",
+      "met": {
+        "objectId": 437827
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "diego-velazquez",
+      "met": {
+        "objectId": 437869
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "francisco-goya",
+      "met": {
+        "objectId": 436545
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "jacques-louis-david",
+      "met": {
+        "objectId": 436105
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "rosa-bonheur",
+      "met": {
+        "objectId": 435702
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "gustave-courbet",
+      "met": {
+        "objectId": 436002
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "edouard-manet",
+      "met": {
+        "objectId": 436947
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "henri-rousseau",
+      "met": {
+        "objectId": 438822
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "winslow-homer",
+      "met": {
+        "objectId": 11122
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    },
+    {
+      "slug": "amedeo-modigliani",
+      "met": {
+        "objectId": 486847
+      },
+      "title": "",
+      "holder": "Metropolitan Museum of Art, New York (US)",
+      "autoClear": true,
+      "search": ""
+    }
   ]
 }

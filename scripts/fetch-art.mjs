@@ -110,7 +110,7 @@ for (const w of manifest.works) {
       if (!m.oasc) reasons.push("Met does not flag this image Open Access");
       if (!w.autoClear) reasons.push("held for sign-off (see manifest)");
       const status = reasons.length ? "pending" : "cleared";
-      report.push(`${status === "cleared" ? "✓" : "•"} ${w.slug}: Met ${w.met.accession}, ${m.oasc ? "Open Access (CC0)" : "not Open Access"} → ${status}`);
+      report.push(`${status === "cleared" ? "✓" : "•"} ${w.slug}: Met ${w.met.accession ?? w.met.objectId}, ${m.oasc ? "Open Access (CC0)" : "not Open Access"} → ${status}`);
       if (apply) {
         const res = await fetch(m.url, { headers: { "User-Agent": UA } });
         const buf = Buffer.from(await res.arrayBuffer());
@@ -130,7 +130,8 @@ for (const w of manifest.works) {
       }
       continue;
     }
-    report.push(`  ${w.slug}: Met object ${w.met.objectId} not found in bucket, trying Commons`);
+    report.push(`  ${w.slug}: Met object ${w.met.objectId} not found in bucket${w.title ? ", trying Commons" : ""}`);
+    if (!w.title) continue;
   }
 
   let found = await fileInfo(w.title);
