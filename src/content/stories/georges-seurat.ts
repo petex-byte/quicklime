@@ -52,7 +52,7 @@ export const georgesSeurat: Story = {
       kind: "beat",
       focus: { x: 40, y: 86, scale: 2.8 },
       lines: [
-        "His brightest strokes use zinc yellow.",
+        "Some of his strokes are zinc yellow.",
         "New. Vivid. Unstable.",
         "Within a few years, they start to brown.",
       ],
