@@ -1,0 +1,234 @@
+import type { Artist } from "./types";
+
+/**
+ * The public-domain artists from the rebuild spec, all dead 70+ years. The
+ * spec calls this list "nineteen" but its table has twenty rows; confirm with
+ * Pete before trimming. Lifespans and movements are directory metadata; story
+ * facts live in src/content/stories and go through the research pipeline
+ * before shipping.
+ */
+export const artists: Artist[] = [
+  {
+    slug: "albrecht-durer",
+    name: "Albrecht Dürer",
+    nationality: "German",
+    region: "Europe",
+    movement: "Northern Renaissance",
+    born: 1471,
+    died: 1528,
+    featuredWork: "Self-Portrait at 28",
+  },
+  {
+    slug: "rembrandt",
+    name: "Rembrandt van Rijn",
+    nationality: "Dutch",
+    region: "Europe",
+    movement: "Baroque",
+    born: 1606,
+    died: 1669,
+    featuredWork: "Christ in the Storm on the Sea of Galilee",
+    image: { src: "/art/rembrandt-storm.jpg", status: "pending" },
+    cardFocus: "70% 60%",
+  },
+  {
+    slug: "leonardo-da-vinci",
+    name: "Leonardo da Vinci",
+    nationality: "Italian",
+    region: "Europe",
+    movement: "High Renaissance",
+    born: 1452,
+    died: 1519,
+    featuredWork: "Mona Lisa",
+  },
+  {
+    slug: "michelangelo",
+    name: "Michelangelo",
+    nationality: "Italian",
+    region: "Europe",
+    movement: "High Renaissance",
+    born: 1475,
+    died: 1564,
+    featuredWork: "Sistine Chapel ceiling",
+  },
+  {
+    slug: "johannes-vermeer",
+    name: "Johannes Vermeer",
+    nationality: "Dutch",
+    region: "Europe",
+    movement: "Baroque",
+    born: 1632,
+    died: 1675,
+    featuredWork: "Girl with a Pearl Earring",
+  },
+  {
+    slug: "caravaggio",
+    name: "Caravaggio",
+    nationality: "Italian",
+    region: "Europe",
+    movement: "Baroque",
+    born: 1571,
+    died: 1610,
+    featuredWork: "Nativity with St. Francis and St. Lawrence",
+  },
+  {
+    slug: "artemisia-gentileschi",
+    name: "Artemisia Gentileschi",
+    nationality: "Italian",
+    region: "Europe",
+    movement: "Baroque",
+    born: 1593,
+    died: 1656,
+    diedApprox: true,
+    featuredWork: "Judith Slaying Holofernes",
+  },
+  {
+    slug: "sandro-botticelli",
+    name: "Sandro Botticelli",
+    nationality: "Italian",
+    region: "Europe",
+    movement: "Early Renaissance",
+    born: 1445,
+    bornApprox: true,
+    died: 1510,
+    featuredWork: "The Birth of Venus",
+  },
+  {
+    slug: "claude-monet",
+    name: "Claude Monet",
+    nationality: "French",
+    region: "Europe",
+    movement: "Impressionism",
+    born: 1840,
+    died: 1926,
+    featuredWork: "Water Lilies",
+  },
+  {
+    slug: "vincent-van-gogh",
+    name: "Vincent van Gogh",
+    nationality: "Dutch",
+    region: "Europe",
+    movement: "Post-Impressionism",
+    born: 1853,
+    died: 1890,
+    featuredWork: "The Starry Night",
+  },
+  {
+    slug: "paul-cezanne",
+    name: "Paul Cézanne",
+    nationality: "French",
+    region: "Europe",
+    movement: "Post-Impressionism",
+    born: 1839,
+    died: 1906,
+    featuredWork: "The Card Players",
+  },
+  {
+    slug: "edgar-degas",
+    name: "Edgar Degas",
+    nationality: "French",
+    region: "Europe",
+    movement: "Impressionism",
+    born: 1834,
+    died: 1917,
+    featuredWork: "The Dance Class",
+  },
+  {
+    slug: "mary-cassatt",
+    name: "Mary Cassatt",
+    nationality: "American",
+    region: "North America",
+    movement: "Impressionism",
+    born: 1844,
+    died: 1926,
+    featuredWork: "The Child's Bath",
+  },
+  {
+    slug: "pierre-auguste-renoir",
+    name: "Pierre-Auguste Renoir",
+    nationality: "French",
+    region: "Europe",
+    movement: "Impressionism",
+    born: 1841,
+    died: 1919,
+    featuredWork: "Luncheon of the Boating Party",
+  },
+  {
+    slug: "paul-gauguin",
+    name: "Paul Gauguin",
+    nationality: "French",
+    region: "Europe",
+    movement: "Post-Impressionism",
+    born: 1848,
+    died: 1903,
+    featuredWork: "Where Do We Come From? What Are We? Where Are We Going?",
+  },
+  {
+    slug: "georges-seurat",
+    name: "Georges Seurat",
+    nationality: "French",
+    region: "Europe",
+    movement: "Pointillism",
+    born: 1859,
+    died: 1891,
+    featuredWork: "A Sunday on La Grande Jatte",
+  },
+  {
+    slug: "wassily-kandinsky",
+    name: "Wassily Kandinsky",
+    nationality: "Russian",
+    region: "Europe",
+    movement: "Abstract",
+    born: 1866,
+    died: 1944,
+    featuredWork: "Composition VIII",
+  },
+  {
+    slug: "edvard-munch",
+    name: "Edvard Munch",
+    nationality: "Norwegian",
+    region: "Europe",
+    movement: "Expressionism",
+    born: 1863,
+    died: 1944,
+    featuredWork: "The Scream",
+  },
+  {
+    slug: "gustav-klimt",
+    name: "Gustav Klimt",
+    nationality: "Austrian",
+    region: "Europe",
+    movement: "Symbolism",
+    born: 1862,
+    died: 1918,
+    featuredWork: "The Kiss",
+  },
+  {
+    slug: "thomas-baines",
+    name: "Thomas Baines",
+    nationality: "British",
+    region: "Africa",
+    movement: "Colonial South African",
+    born: 1820,
+    died: 1875,
+    featuredWork: "Victoria Falls expedition paintings",
+  },
+];
+
+export function getArtist(slug: string) {
+  return artists.find((a) => a.slug === slug);
+}
+
+export function lifespan(a: Artist) {
+  const b = `${a.bornApprox ? "c. " : ""}${a.born}`;
+  const d = `${a.diedApprox ? "c. " : ""}${a.died}`;
+  return `${b}–${d}`;
+}
+
+/**
+ * Century bucket used by the era filter, e.g. "17th century", taken from the
+ * middle of the artist's life (nudged forward, since work trails birth).
+ */
+export function era(a: Artist) {
+  const c = Math.floor(((a.born + a.died) / 2 + 5) / 100) + 1;
+  return `${c}th century`;
+}

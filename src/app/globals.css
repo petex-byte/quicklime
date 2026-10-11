@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0b0b0a;
+  --paper: #f3efe6;
+  --lime: #c6f24e;
+  --muted: #8a867d;
+  --band: 5rem;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-lime: var(--lime);
+  --color-muted: var(--muted);
+  --font-display: "Fraunces", "Iowan Old Style", "Georgia", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+/* Shown in place of any artwork whose rights check isn't cleared. */
+.canvas-placeholder {
+  background:
+    radial-gradient(120% 80% at 30% 20%, #3a3426 0%, transparent 60%),
+    radial-gradient(90% 70% at 75% 80%, #1f2a2c 0%, transparent 65%),
+    linear-gradient(160deg, #1a1712, #0d0c0a);
+}
+
+/* ---------- Story template ---------- */
+
+.story-scroller {
+  height: 100svh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior: contain;
+}
+
+.story-section {
+  position: relative;
+  height: 100svh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  /* The bottom band is reserved for captions and the scroll cue. */
+  padding-bottom: var(--band);
+}
+
+.story-band {
+  height: var(--band);
+}
+
+.spotlight {
+  background: radial-gradient(
+    circle at 50% 50%,
+    transparent 0,
+    transparent 16vmax,
+    rgba(11, 11, 10, 0.55) 30vmax,
+    rgba(11, 11, 10, 0.88) 60vmax
+  );
+}
+
+.glass {
+  position: relative;
+  border-radius: 1.25rem;
+  background: rgba(20, 18, 14, 0.38);
+  border: 1px solid rgba(243, 239, 230, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+@supports (backdrop-filter: url(#glass)) {
+  .glass {
+    backdrop-filter: url(#glass) saturate(140%);
+  }
+}
+
+.scroll-cue {
+  display: block;
+  width: 1px;
+  height: 2.5rem;
+  background: linear-gradient(var(--paper), transparent);
+  animation: cue 1.8s ease-in-out infinite;
+  transform-origin: top;
+}
+
+@keyframes cue {
+  0% { transform: scaleY(0); opacity: 1; }
+  60% { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(1); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue { animation: none; }
+  .story-scroller { scroll-behavior: auto; }
+}
+
+/* ---------- Home ---------- */
+
+.grain {
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
