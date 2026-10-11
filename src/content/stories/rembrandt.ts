@@ -24,8 +24,8 @@ export const rembrandt: Story = {
         "Amsterdam. 1633.",
         "Rembrandt has just left Leiden.",
         "He paints the sea once.",
+        "This is the once.",
       ],
-      twist: "This is the once.",
     },
     {
       kind: "beat",

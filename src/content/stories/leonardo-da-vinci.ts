@@ -55,7 +55,7 @@ export const leonardoDaVinci: Story = {
       caption: "Hands",
     },
   ],
-  reveal: { lines: ["Seventy-seven centimetres of poplar.", "Uncropped."] },
+  reveal: { lines: ["The whole panel.", "Uncropped."] },
   quote: {
     text: "That is the way Leonardo da Vinci does it in all his paintings, like the face of Lisa del Giocondo",
     attribution:

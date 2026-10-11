@@ -19,7 +19,7 @@ export const paulGauguin: Story = {
     width: 1600,
     height: 594,
   },
-  cover: { kicker: "D'où Venons Nous / Que Sommes Nous / Où Allons Nous" },
+  cover: { kicker: "D'ou Venons Nous / Que Sommes Nous / Où Allons Nous" },
   beats: [
     {
       kind: "beat",
@@ -35,7 +35,7 @@ export const paulGauguin: Story = {
       focus: { x: 10, y: 12, scale: 3 },
       lines: [
         "Top left, he paints the title.",
-        "D'où Venons Nous.",
+        "D'ou Venons Nous.",
         "Que Sommes Nous.",
         "Où Allons Nous.",
       ],

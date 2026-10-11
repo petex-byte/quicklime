@@ -28,7 +28,7 @@ export default function Home() {
               <p className="mt-3 text-paper/60">
                 {artist.name} · {featured.year}
               </p>
-              <p className="mt-8 max-w-sm text-paper/80">{featured.beats[0].lines.join(" ")} {featured.beats[0].twist}</p>
+              <p className="mt-8 max-w-sm text-paper/80">{featured.beats[0].lines.join(" ")}</p>
             </div>
           </Link>
         </section>

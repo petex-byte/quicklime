@@ -1,9 +1,9 @@
 import type { Artist } from "./types";
 
 /**
- * The public-domain artists from the rebuild spec, all dead 70+ years. The
- * spec calls this list "nineteen" but its table has twenty rows; confirm with
- * Pete before trimming. Lifespans and movements are directory metadata; story
+ * Public-domain artists, all dead 70+ years: the twenty from the rebuild spec
+ * plus five added in research (van Eyck, Bosch, Turner, Hokusai, Bell).
+ * Lifespans and movements are directory metadata; story
  * facts live in src/content/stories and go through the research pipeline
  * before shipping.
  */
@@ -100,7 +100,7 @@ export const artists: Artist[] = [
     movement: "Impressionism",
     born: 1840,
     died: 1926,
-    featuredWork: "Water Lilies",
+    featuredWork: "Water Lilies: Green Reflections",
   },
   {
     slug: "vincent-van-gogh",
@@ -120,7 +120,7 @@ export const artists: Artist[] = [
     movement: "Post-Impressionism",
     born: 1839,
     died: 1906,
-    featuredWork: "The Card Players",
+    featuredWork: "The Card Players (Musée d'Orsay)",
   },
   {
     slug: "edgar-degas",
@@ -211,6 +211,58 @@ export const artists: Artist[] = [
     born: 1820,
     died: 1875,
     featuredWork: "Victoria Falls expedition paintings",
+  },
+  {
+    slug: "jan-van-eyck",
+    name: "Jan van Eyck",
+    nationality: "Flemish",
+    region: "Europe",
+    movement: "Early Netherlandish",
+    born: 1390,
+    bornApprox: true,
+    died: 1441,
+    featuredWork: "The Arnolfini Portrait",
+  },
+  {
+    slug: "hieronymus-bosch",
+    name: "Hieronymus Bosch",
+    nationality: "Netherlandish",
+    region: "Europe",
+    movement: "Early Netherlandish",
+    born: 1450,
+    bornApprox: true,
+    died: 1516,
+    featuredWork: "The Garden of Earthly Delights",
+  },
+  {
+    slug: "jmw-turner",
+    name: "J. M. W. Turner",
+    nationality: "British",
+    region: "Europe",
+    movement: "Romanticism",
+    born: 1775,
+    died: 1851,
+    featuredWork: "The Fighting Temeraire",
+  },
+  {
+    slug: "katsushika-hokusai",
+    name: "Katsushika Hokusai",
+    nationality: "Japanese",
+    region: "Asia",
+    movement: "Ukiyo-e",
+    born: 1760,
+    died: 1849,
+    featuredWork: "Under the Wave off Kanagawa (The Great Wave)",
+  },
+  {
+    slug: "charles-davidson-bell",
+    name: "Charles Davidson Bell",
+    nationality: "Scottish",
+    region: "Africa",
+    movement: "Colonial South African",
+    born: 1813,
+    died: 1882,
+    featuredWork: "The Landing of Van Riebeeck at the Cape of Good Hope in 1652",
   },
 ];
 

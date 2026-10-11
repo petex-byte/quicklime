@@ -33,6 +33,15 @@ npm run lint
 
 Lives at pipeline.quicklime.co.za and is untouched by this rebuild. It is deliberately unlinked: nothing on quicklime.co.za points to it, so only people who have the URL can find it.
 
+## Story status
+
+22 stories are live. Every fact was checked against web-search results only, because this build's sandbox couldn't open source pages. Rows marked `re-check` in each `docs/sources/*.md` still need the source page itself opened before launch.
+
+Held back, with drafts in the repo but not registered in `stories/index.ts`:
+- **Degas:** quote unverified, hook single-sourced
+- **Charles Davidson Bell:** the quote is a medal name, not anyone's words
+- **Thomas Baines:** no specific work pinned to a holder yet (see `docs/sources/thomas-baines.md`)
+
 ## Deploy and DNS
 
 See `docs/DEPLOY.md`.

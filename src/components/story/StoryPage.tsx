@@ -49,7 +49,8 @@ export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) {
-          if (e.isIntersecting) setActive(Number((e.target as HTMLElement).dataset.index));
+          if (e.isIntersecting)
+            setActive(Number((e.target as HTMLElement).dataset.index));
         }
       },
       { root, threshold: 0.55 },
@@ -59,8 +60,11 @@ export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
   }, []);
 
   const current = sections[active];
-  const focus = current.type === "beat" ? story.beats[current.index].focus : WHOLE;
-  const caption = current.type === "beat" ? story.beats[current.index].caption : undefined;
+  const focus =
+    current.type === "beat" ? story.beats[current.index].focus : WHOLE;
+  const caption =
+    current.type === "beat" ? story.beats[current.index].caption : undefined;
+  const aspect = aspectOf(story);
 
   // Pan the focus point to the centre of the viewport, then zoom on it.
   const canvasTarget = {
@@ -83,9 +87,25 @@ export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
         animate={{ opacity: current.type === "reveal" ? 0 : 1 }}
         transition={{ duration: reduce ? 0 : 0.6 }}
       >
-        <motion.div className="h-full w-full" initial={false} animate={canvasTarget} transition={punch}>
-          <Painting image={story.image} alt="" priority />
-        </motion.div>
+        {/* Sized to the artwork's own aspect ratio and grown until it covers the
+            viewport, so focus x/y percentages land on the same spot of the
+            painting at any screen shape. */}
+        <div
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          style={{
+            width: `max(100vw, calc(100svh * ${aspect}))`,
+            aspectRatio: `${aspect}`,
+          }}
+        >
+          <motion.div
+            className="h-full w-full"
+            initial={false}
+            animate={canvasTarget}
+            transition={punch}
+          >
+            <Painting image={story.image} alt="" priority />
+          </motion.div>
+        </div>
         <motion.div
           className="spotlight absolute inset-0"
           animate={{ opacity: SHADE[current.type] }}
@@ -96,7 +116,9 @@ export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
       {sections.map((s, i) => (
         <section key={i} data-index={i} className="story-section">
           {s.type === "cover" && <Cover story={story} artist={artist} />}
-          {s.type === "beat" && <Beat beat={story.beats[s.index]} n={s.index + 1} />}
+          {s.type === "beat" && (
+            <Beat beat={story.beats[s.index]} n={s.index + 1} />
+          )}
           {s.type === "reveal" && <Reveal story={story} artist={artist} />}
           {s.type === "quote" && <Quote story={story} />}
           {s.type === "close" && <Close story={story} />}
@@ -115,7 +137,10 @@ export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
           {caption}
         </motion.p>
         <motion.div
-          animate={{ opacity: current.type === "footer" ? 0 : 0.8, y: current.type === "footer" ? 12 : 0 }}
+          animate={{
+            opacity: current.type === "footer" ? 0 : 0.8,
+            y: current.type === "footer" ? 12 : 0,
+          }}
           className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-paper"
         >
           <span>Scroll</span>
@@ -126,7 +151,18 @@ export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
   );
 }
 
-function Card({ children, className }: { children: React.ReactNode; className?: string }) {
+function aspectOf(story: Story) {
+  const { width, height } = story.image;
+  return width && height ? width / height : 4 / 5;
+}
+
+function Card({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -175,23 +211,42 @@ function Beat({ beat, n }: { beat: Story["beats"][number]; n: number }) {
   return (
     <div className="flex h-full items-center px-6 md:px-16">
       <Card>
-        <p className="mb-5 text-xs tracking-[0.25em] text-paper/60">{String(n).padStart(2, "0")}</p>
+        <p className="mb-5 text-xs tracking-[0.25em] text-paper/60">
+          {String(n).padStart(2, "0")}
+        </p>
         {beat.lines.map((l) => (
-          <p key={l} className="font-display text-2xl leading-snug text-paper md:text-3xl">
+          <p
+            key={l}
+            className="font-display text-2xl leading-snug text-paper md:text-3xl"
+          >
             {l}
           </p>
         ))}
-        {beat.twist && <p className="mt-6 text-lg font-semibold text-lime">{beat.twist}</p>}
+        {beat.twist && (
+          <p className="mt-6 text-lg font-semibold text-lime">{beat.twist}</p>
+        )}
       </Card>
     </div>
   );
 }
 
 function Reveal({ story, artist }: { story: Story; artist: Artist }) {
+  const aspect = aspectOf(story);
   return (
     <div className="flex h-full flex-col items-center justify-center gap-6 px-6">
-      <div className="h-[72%] w-full max-w-5xl">
-        <Painting image={story.image} alt={`${story.cover.kicker}, ${artist.name}, ${story.year}`} fit="contain" />
+      <div className="flex h-[72%] w-full max-w-5xl items-center justify-center">
+        <div
+          style={{
+            aspectRatio: `${aspect}`,
+            width: `min(100%, calc((100svh - var(--band)) * 0.72 * ${aspect}))`,
+          }}
+        >
+          <Painting
+            image={story.image}
+            alt={`${story.cover.kicker}, ${artist.name}, ${story.year}`}
+            fit="contain"
+          />
+        </div>
       </div>
       <div className="text-center text-paper/80">
         {story.reveal.lines.map((l) => (
@@ -216,7 +271,9 @@ function Quote({ story }: { story: Story }) {
       >
         “{story.quote.text}”
       </motion.blockquote>
-      <p className="mt-8 text-xs uppercase tracking-[0.25em] text-paper/60">{story.quote.attribution}</p>
+      <p className="mt-8 text-xs uppercase tracking-[0.25em] text-paper/60">
+        {story.quote.attribution}
+      </p>
     </div>
   );
 }
@@ -225,9 +282,14 @@ function Close({ story }: { story: Story }) {
   return (
     <div className="flex h-full items-center px-6 md:px-16">
       <Card className="max-w-lg">
-        <p className="mb-5 font-display text-4xl text-lime md:text-5xl">{story.close.heading}</p>
+        <p className="mb-5 font-display text-4xl text-lime md:text-5xl">
+          {story.close.heading}
+        </p>
         {story.close.lines.map((l) => (
-          <p key={l} className="mb-2 text-lg leading-snug text-paper md:text-xl">
+          <p
+            key={l}
+            className="mb-2 text-lg leading-snug text-paper md:text-xl"
+          >
             {l}
           </p>
         ))}
@@ -240,23 +302,38 @@ function Footer({ story, artist }: { story: Story; artist: Artist }) {
   return (
     <div className="flex h-full flex-col justify-center gap-10 px-6 md:px-16">
       <div>
-        <p className="font-display text-4xl text-paper md:text-6xl">{artist.name}</p>
+        <p className="font-display text-4xl text-paper md:text-6xl">
+          {artist.name}
+        </p>
         <p className="mt-2 text-paper/60">
           {artist.nationality} · {artist.movement} · {lifespan(artist)}
         </p>
       </div>
       {story.showSources !== false && (
-        <ul className="space-y-1 text-sm text-paper/60">
-          {story.sources.map((s) => (
-            <li key={s.url}>
-              <a href={s.url} className="underline-offset-4 hover:underline" target="_blank" rel="noreferrer">
-                {s.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div>
+          <p className="mb-3 text-xs uppercase tracking-[0.25em] text-paper/40">
+            Sources
+          </p>
+          <ul className="space-y-1 text-sm text-paper/60">
+            {story.sources.map((s) => (
+              <li key={s.url}>
+                <a
+                  href={s.url}
+                  className="underline-offset-4 hover:underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
-      <Link href="/artists" className="w-fit border-b border-lime pb-1 text-lime">
+      <Link
+        href="/artists"
+        className="w-fit border-b border-lime pb-1 text-lime"
+      >
         Back to the directory
       </Link>
     </div>
