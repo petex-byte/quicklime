@@ -4,7 +4,6 @@ import { Hero } from "@/components/home/Hero";
 import { getStory } from "@/content/stories";
 import { getArtist, lifespan } from "@/content/artists";
 import { Painting } from "@/components/Painting";
-import { PIPELINE_URL } from "@/content/site";
 
 export default function Home() {
   const featured = getStory("rembrandt")!;
@@ -35,13 +34,8 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="flex flex-col gap-4 border-t border-paper/10 px-6 py-10 text-sm text-paper/50 md:flex-row md:justify-between md:px-16">
-        <span>
-          quicklime.co.za · Featured: {artist.name}, {lifespan(artist)}
-        </span>
-        <a href={PIPELINE_URL} className="hover:text-paper">
-          Pipeline-V3 →
-        </a>
+      <footer className="border-t border-paper/10 px-6 py-10 text-sm text-paper/50 md:px-16">
+        quicklime.co.za · Featured: {artist.name}, {lifespan(artist)}
       </footer>
     </>
   );

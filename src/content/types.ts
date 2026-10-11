@@ -1,4 +1,4 @@
-export type Region = "Europe" | "North America" | "Africa";
+export type Region = "Europe" | "North America" | "Africa" | "Asia";
 
 /**
  * Rights gate for a single image. An image only renders when `status` is
@@ -63,7 +63,7 @@ export type Story = {
   reveal: { lines: string[] };
   quote: { text: string; attribution: string };
   close: { heading: string; lines: string[] };
-  /** Internal sources list; also rendered on the page if `showSources`. */
+  /** Sources list, rendered in the page footer unless `showSources` is false. */
   sources: { label: string; url: string }[];
   showSources?: boolean;
 };

@@ -31,7 +31,7 @@ npm run lint
 
 ## Pipeline-V3
 
-Lives at pipeline.quicklime.co.za, which this rebuild doesn't touch. It's linked from the homepage footer. To put it in the main nav, set `PIPELINE_IN_NAV` in `src/content/site.ts`.
+Lives at pipeline.quicklime.co.za and is untouched by this rebuild. It is deliberately unlinked: nothing on quicklime.co.za points to it, so only people who have the URL can find it.
 
 ## Deploy and DNS
 

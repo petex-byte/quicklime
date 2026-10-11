@@ -245,7 +245,7 @@ function Footer({ story, artist }: { story: Story; artist: Artist }) {
           {artist.nationality} · {artist.movement} · {lifespan(artist)}
         </p>
       </div>
-      {story.showSources && (
+      {story.showSources !== false && (
         <ul className="space-y-1 text-sm text-paper/60">
           {story.sources.map((s) => (
             <li key={s.url}>
