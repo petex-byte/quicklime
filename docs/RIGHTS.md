@@ -13,6 +13,12 @@ npm run fetch-art -- --apply    # download, resize to 2400px, record rights
 
 The script reads the licence from the Commons file page's own metadata and records `sourcePage`, `licence`, `longEdge`, `holder` and `checkedOn` in `src/content/images.generated.json`. It marks an image `cleared` only if the tag is public domain or CC0, the original is at least 2000px on the long edge, and the manifest says `autoClear: true`. Botticelli, Gentileschi (Uffizi), Caravaggio (Palermo) and Michelangelo (Vatican) are set to `autoClear: false`: Italy's cultural-heritage code and the Vatican's reproduction rules restrict commercial use of images of their works, so those need Pete's sign-off. If a manifest file name doesn't resolve, the dry run lists search candidates to pick from.
 
+## Preview stand-ins (replace before launch)
+
+To review the design with real paint on screen, 21 stories currently show a stand-in, another work by the same artist, from open collections this build environment could reach. 20 are museum-flagged CC0: 19 from the Met and Cassatt's *The Caress* from the Smithsonian. The 21st, Kandinsky's *Composition VII*, is a low-res example file with no rights tag. Each stand-in is labelled on its story page ("Preview image: …"). The list is `scripts/standins.json`, fetched with `npm run fetch-standins`.
+
+Before launch, run `npm run fetch-standins -- --clear`, then add the featured works with `npm run fetch-art -- --apply` (or by hand, below). Stand-in focus points don't match: each story's zoom targets are set for its featured work.
+
 ## To clear an image by hand
 
 1. Open the **source page**, not the file URL: the Wikimedia Commons file page, or the museum's open-access record.

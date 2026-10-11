@@ -156,6 +156,15 @@ function aspectOf(story: Story) {
   return width && height ? width / height : 4 / 5;
 }
 
+/** PREVIEW ONLY: says which painting is on screen when it isn't the featured work. */
+function StandInNote({ title, className }: { title: string; className?: string }) {
+  return (
+    <p className={clsx("w-fit rounded-full border border-lime/40 px-3 py-1 text-xs text-lime", className)}>
+      Preview image: {title}
+    </p>
+  );
+}
+
 function Card({
   children,
   className,
@@ -205,6 +214,7 @@ function Cover({ story, artist }: { story: Story; artist: Artist }) {
       >
         {artist.name} · {story.year}
       </motion.p>
+      {story.image.standIn && <StandInNote title={story.image.standIn} className="relative mt-4" />}
     </div>
   );
 }
@@ -250,12 +260,13 @@ function Reveal({ story, artist }: { story: Story; artist: Artist }) {
           />
         </div>
       </div>
-      <div className="text-center text-paper/80">
+      <div className="flex flex-col items-center text-center text-paper/80">
         {story.reveal.lines.map((l) => (
           <p key={l} className="text-sm uppercase tracking-[0.25em]">
             {l}
           </p>
         ))}
+        {story.image.standIn && <StandInNote title={story.image.standIn} className="mt-3" />}
       </div>
     </div>
   );

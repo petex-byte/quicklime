@@ -22,6 +22,9 @@ export type ArtImage = {
   height?: number;
   /** Why a fetched image is still pending, e.g. "held for sign-off". */
   pendingReason?: string;
+  /** PREVIEW ONLY: set when this is another work by the artist standing in
+   *  for the featured one. Its title is shown on the page. */
+  standIn?: string;
 };
 
 export type Artist = {

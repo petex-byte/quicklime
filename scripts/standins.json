@@ -1,0 +1,26 @@
+{
+  "_note": "PREVIEW ONLY. Stand-in images by the same artist from open collections this build environment can reach, so the design can be reviewed with real paint on screen. Every one is replaced by the featured work (scripts/art-manifest.json) before launch. Met and Smithsonian images are flagged CC0 by the museum; the Kandinsky comes from a TensorFlow example file and has no rights tag of its own.",
+  "works": [
+    { "slug": "rembrandt", "met": 437394, "title": "Aristotle with a Bust of Homer, 1653 (Met)" },
+    { "slug": "albrecht-durer", "met": 436244, "title": "Virgin and Child with Saint Anne, 1519 (Met)" },
+    { "slug": "leonardo-da-vinci", "met": 337496, "title": "The Head of the Virgin in Three-Quarter View Facing Right, 1510–13 (Met)" },
+    { "slug": "michelangelo", "met": 337497, "title": "Studies for the Libyan Sibyl, Sistine ceiling, c. 1510–11 (Met)" },
+    { "slug": "sandro-botticelli", "met": 459016, "title": "The Annunciation, c. 1485–92 (Met)" },
+    { "slug": "johannes-vermeer", "met": 437879, "title": "Study of a Young Woman, c. 1665–67 (Met)" },
+    { "slug": "caravaggio", "met": 435844, "title": "The Musicians, 1597 (Met)" },
+    { "slug": "artemisia-gentileschi", "met": 436453, "title": "Esther before Ahasuerus, 1620s (Met)" },
+    { "slug": "jan-van-eyck", "met": 436282, "title": "The Crucifixion; The Last Judgment, c. 1440–41 (Met)" },
+    { "slug": "hieronymus-bosch", "met": 435724, "title": "The Adoration of the Magi, c. 1475 (Met)" },
+    { "slug": "jmw-turner", "met": 437854, "title": "Whalers, c. 1845 (Met)" },
+    { "slug": "claude-monet", "met": 437137, "title": "Water Lilies, 1916–19 (Met)" },
+    { "slug": "mary-cassatt", "s3": "media/saam/SAAM-1911.2.1_3.jpg", "title": "The Caress, 1902 (Smithsonian American Art Museum)" },
+    { "slug": "pierre-auguste-renoir", "met": 437430, "title": "By the Seashore, 1883 (Met)" },
+    { "slug": "paul-cezanne", "met": 435868, "title": "The Card Players, 1890–92 (Met version)" },
+    { "slug": "georges-seurat", "met": 437658, "title": "Study for \"A Sunday on La Grande Jatte\", 1884 (Met)" },
+    { "slug": "vincent-van-gogh", "met": 436535, "title": "Wheat Field with Cypresses, June 1889 (Met)" },
+    { "slug": "paul-gauguin", "met": 438821, "title": "Ia Orana Maria (Hail Mary), 1891 (Met)" },
+    { "slug": "edvard-munch", "met": 340029, "title": "The Scream, lithograph, 1895 (Met)" },
+    { "slug": "gustav-klimt", "met": 436819, "title": "Mäda Primavesi, 1912–13 (Met)" },
+    { "slug": "wassily-kandinsky", "url": "https://storage.googleapis.com/download.tensorflow.org/example_images/Vassily_Kandinsky%2C_1913_-_Composition_7.jpg", "title": "Composition VII, 1913 (low-res example file)" }
+  ]
+}
