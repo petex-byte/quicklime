@@ -1,5 +1,5 @@
 {
-  "_note": "One entry per story. `title` is the Wikimedia Commons file name. `autoClear: false` means the file is fetched but stays pending until Pete signs off (Italian cultural-heritage law and Vatican reproduction rules; see docs/RIGHTS.md). `search` is used only when `title` doesn't resolve.",
+  "_note": "One entry per story. `met` (when present) pulls the Met Open Access image from its public Google Cloud bucket and is used first. `title` is the Wikimedia Commons file name. `autoClear: false` means the file is fetched but stays pending until Pete signs off (Italian cultural-heritage law and Vatican reproduction rules; see docs/RIGHTS.md). `search` is used only when `title` doesn't resolve.",
   "works": [
     { "slug": "jan-van-eyck", "title": "Van Eyck - Arnolfini Portrait.jpg", "holder": "National Gallery, London (UK)", "autoClear": true, "search": "Arnolfini Portrait van Eyck National Gallery" },
     { "slug": "hieronymus-bosch", "title": "The Garden of earthly delights.jpg", "holder": "Museo del Prado, Madrid (Spain)", "autoClear": true, "search": "Garden of Earthly Delights Bosch Prado" },
@@ -11,7 +11,7 @@
     { "slug": "artemisia-gentileschi", "title": "Artemisia Gentileschi - Judith Beheading Holofernes - WGA8563.jpg", "holder": "Uffizi Gallery, Florence (Italy)", "autoClear": false, "search": "Artemisia Gentileschi Judith Slaying Holofernes Uffizi" },
     { "slug": "rembrandt", "title": "Rembrandt Christ in the Storm on the Lake of Galilee.jpg", "holder": "Isabella Stewart Gardner Museum, Boston (US); stolen 1990", "autoClear": true, "search": "Rembrandt Storm on the Sea of Galilee" },
     { "slug": "johannes-vermeer", "title": "1665 Girl with a Pearl Earring.jpg", "holder": "Mauritshuis, The Hague (Netherlands)", "autoClear": true, "search": "Girl with a Pearl Earring Vermeer Mauritshuis" },
-    { "slug": "katsushika-hokusai", "title": "Tsunami by hokusai 19th century.jpg", "holder": "Metropolitan Museum of Art, New York (US)", "autoClear": true, "search": "Great Wave off Kanagawa Hokusai Metropolitan Museum" },
+    { "slug": "katsushika-hokusai", "met": { "objectId": 45434, "accession": "JP1847" }, "title": "Tsunami by hokusai 19th century.jpg", "holder": "Metropolitan Museum of Art, New York (US)", "autoClear": true, "search": "Great Wave off Kanagawa Hokusai Metropolitan Museum" },
     { "slug": "jmw-turner", "title": "The Fighting Temeraire, JMW Turner, National Gallery.jpg", "holder": "National Gallery, London (UK)", "autoClear": true, "search": "Fighting Temeraire Turner National Gallery" },
     { "slug": "claude-monet", "title": "Claude Monet - Water Lilies - Green Reflections - Musée de l'Orangerie.jpg", "holder": "Musée de l'Orangerie, Paris (France)", "autoClear": true, "search": "Monet Nymphéas Reflets verts Orangerie" },
     { "slug": "mary-cassatt", "title": "Mary Cassatt - The Child's Bath - Google Art Project.jpg", "holder": "Art Institute of Chicago (US)", "autoClear": true, "search": "Mary Cassatt The Child's Bath Art Institute of Chicago" },

@@ -6,7 +6,11 @@
  *   npm run fetch-art -- --apply          # download, resize, write src/content/images.generated.json
  *   npm run fetch-art -- --apply rembrandt johannes-vermeer   # only these slugs
  *
- * Needs network access to commons.wikimedia.org and upload.wikimedia.org.
+ * Sources, in order:
+ *   - `met`: the Met's Open Access image from its public Google Cloud bucket
+ *     (gcs-public-data--met). The Met flags each image `isOasc` (CC0).
+ *   - `title`: a Wikimedia Commons file. Needs commons.wikimedia.org and
+ *     upload.wikimedia.org to be reachable.
  *
  * An image is marked "cleared" only when ALL of these hold:
  *   - the Commons file page's own licence tag reads public domain or CC0
@@ -73,8 +77,62 @@ const today = new Date().toISOString().slice(0, 10);
 const results = { ...existing };
 const report = [];
 
+const MET_BUCKET = "https://storage.googleapis.com/gcs-public-data--met";
+
+async function metInfo({ objectId }) {
+  const res = await fetch(`${MET_BUCKET}/${objectId}/object.json`, { headers: { "User-Agent": UA } });
+  if (!res.ok) return null;
+  const [first] = await res.json();
+  if (!first) return null;
+  return { oasc: first.isOasc === true, url: `${MET_BUCKET}/${first.gcsUrl}` };
+}
+
+async function writeImage(w, buf, record) {
+  const rel = `/art/${w.slug}.jpg`;
+  const meta = await sharp(buf).metadata();
+  const longEdge = Math.max(meta.width, meta.height);
+  const scale = Math.min(1, OUTPUT_LONG_EDGE / longEdge);
+  const { width, height } = await sharp(buf)
+    .rotate()
+    .resize({ width: Math.round(meta.width * scale), withoutEnlargement: true })
+    .jpeg({ quality: 82, progressive: true, mozjpeg: true })
+    .toFile(path.join(ROOT, "public", rel));
+  return { src: rel, ...record, longEdge, width, height };
+}
+
 for (const w of manifest.works) {
   if (only.length && !only.includes(w.slug)) continue;
+
+  if (w.met) {
+    const m = await metInfo(w.met);
+    if (m) {
+      const reasons = [];
+      if (!m.oasc) reasons.push("Met does not flag this image Open Access");
+      if (!w.autoClear) reasons.push("held for sign-off (see manifest)");
+      const status = reasons.length ? "pending" : "cleared";
+      report.push(`${status === "cleared" ? "✓" : "•"} ${w.slug}: Met ${w.met.accession}, ${m.oasc ? "Open Access (CC0)" : "not Open Access"} → ${status}`);
+      if (apply) {
+        const res = await fetch(m.url, { headers: { "User-Agent": UA } });
+        const buf = Buffer.from(await res.arrayBuffer());
+        const rec = await writeImage(w, buf, {
+          status,
+          sourcePage: `https://www.metmuseum.org/art/collection/search/${w.met.objectId}`,
+          licence: m.oasc ? "CC0 (Met Open Access)" : undefined,
+          holder: w.holder,
+          checkedOn: today,
+          ...(reasons.length ? { pendingReason: reasons.join("; ") } : {}),
+        });
+        if (rec.longEdge < LONG_EDGE_FLOOR) {
+          rec.status = "pending";
+          rec.pendingReason = `long edge ${rec.longEdge}px < ${LONG_EDGE_FLOOR}px`;
+        }
+        results[w.slug] = rec;
+      }
+      continue;
+    }
+    report.push(`  ${w.slug}: Met object ${w.met.objectId} not found in bucket, trying Commons`);
+  }
+
   let found = await fileInfo(w.title);
   if (!found) {
     const hits = await search(w.search);

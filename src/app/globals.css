@@ -44,6 +44,10 @@ body {
 /* ---------- Story template ---------- */
 
 .story-scroller {
+  /* Own stacking context, so the pinned canvas (z -10) sits above the page
+     background instead of behind it. */
+  position: relative;
+  isolation: isolate;
   height: 100svh;
   overflow-y: auto;
   scroll-snap-type: y mandatory;

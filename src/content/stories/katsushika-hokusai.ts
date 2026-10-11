@@ -5,8 +5,7 @@ import type { Story } from "../types";
  * Woodblock print, many impressions. Holder used here: The Metropolitan Museum
  * of Art, New York, JP1847 (H. O. Havemeyer Collection), 25.7 x 37.9 cm.
  * Every line here maps to an entry in docs/sources/katsushika-hokusai.md.
- * Focus points are estimates from the known composition; tune them against
- * the cleared image.
+ * Focus points checked against the Met image (DP130155).
  */
 export const katsushikaHokusai: Story = {
   slug: "katsushika-hokusai",
@@ -33,7 +32,7 @@ export const katsushikaHokusai: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 30, y: 24, scale: 2.2 },
+      focus: { x: 46, y: 26, scale: 2.2 },
       lines: [
         "The wave stands over everything.",
         "Its crest breaks into claws.",
@@ -42,7 +41,7 @@ export const katsushikaHokusai: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 24, y: 70, scale: 2.4 },
+      focus: { x: 32, y: 74, scale: 1.8 },
       lines: [
         "Three boats under it.",
         "The rowers keep their heads down.",

@@ -179,11 +179,13 @@ function Card({
 function Cover({ story, artist }: { story: Story; artist: Artist }) {
   return (
     <div className="flex h-full flex-col justify-end px-6 md:px-16">
+      {/* Scrim so the title reads over pale paintings; fills the section, band included. */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.8 }}
         transition={{ delay: 0.2 }}
-        className="mb-4 text-xs uppercase tracking-[0.25em] text-paper"
+        className="relative mb-4 text-xs uppercase tracking-[0.25em] text-paper"
       >
         {story.cover.kicker}
       </motion.p>
@@ -191,7 +193,7 @@ function Cover({ story, artist }: { story: Story; artist: Artist }) {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: [0.2, 0.7, 0.2, 1] }}
-        className="font-display text-[clamp(4rem,14vw,12rem)] leading-[0.85] text-paper"
+        className="relative font-display text-[clamp(4rem,14vw,12rem)] leading-[0.85] text-paper"
       >
         {story.title}
       </motion.h1>
@@ -199,7 +201,7 @@ function Cover({ story, artist }: { story: Story; artist: Artist }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="mt-6 text-lg text-paper/80"
+        className="relative mt-6 text-lg text-paper/80"
       >
         {artist.name} · {story.year}
       </motion.p>

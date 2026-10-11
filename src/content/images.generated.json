@@ -1,1 +1,13 @@
-{}
+{
+  "katsushika-hokusai": {
+    "src": "/art/katsushika-hokusai.jpg",
+    "status": "cleared",
+    "sourcePage": "https://www.metmuseum.org/art/collection/search/45434",
+    "licence": "CC0 (Met Open Access)",
+    "holder": "Metropolitan Museum of Art, New York (US)",
+    "checkedOn": "2026-10-11",
+    "longEdge": 3859,
+    "width": 2400,
+    "height": 1613
+  }
+}
