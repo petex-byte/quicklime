@@ -36,7 +36,7 @@ export const leonardoDaVinci: Story = {
         "For centuries, the proof was Vasari.",
         "He named her in 1550.",
       ],
-      twist: "In 2005, a note from October 1503 turned up. It names her too.",
+      twist: "In 2005, a note turned up. Dated October 1503. It names her.",
       caption: "Lisa del Giocondo",
     },
     {
