@@ -10,7 +10,7 @@ export const rembrandt: Story = {
   title: "The Storm",
   year: "1633",
   image: {
-    src: "/art/rembrandt-storm.jpg",
+    src: "/art/rembrandt.jpg",
     status: "pending",
     width: 1280,
     height: 1600,

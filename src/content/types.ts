@@ -20,6 +20,8 @@ export type ArtImage = {
   checkedOn?: string;
   width?: number;
   height?: number;
+  /** Why a fetched image is still pending, e.g. "held for sign-off". */
+  pendingReason?: string;
 };
 
 export type Artist = {

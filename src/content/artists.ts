@@ -1,4 +1,5 @@
 import type { Artist } from "./types";
+import { imageFor } from "./images";
 
 /**
  * Public-domain artists, all dead 70+ years: the twenty from the rebuild spec
@@ -7,7 +8,7 @@ import type { Artist } from "./types";
  * facts live in src/content/stories and go through the research pipeline
  * before shipping.
  */
-export const artists: Artist[] = [
+const list: Artist[] = [
   {
     slug: "albrecht-durer",
     name: "Albrecht Dürer",
@@ -27,7 +28,6 @@ export const artists: Artist[] = [
     born: 1606,
     died: 1669,
     featuredWork: "Christ in the Storm on the Sea of Galilee",
-    image: { src: "/art/rembrandt-storm.jpg", status: "pending" },
     cardFocus: "70% 60%",
   },
   {
@@ -265,6 +265,9 @@ export const artists: Artist[] = [
     featuredWork: "The Landing of Van Riebeeck at the Cape of Good Hope in 1652",
   },
 ];
+
+/** Card images come from the same fetched, rights-checked records as the stories. */
+export const artists: Artist[] = list.map((a) => ({ ...a, image: imageFor(a.slug) ?? a.image }));
 
 export function getArtist(slug: string) {
   return artists.find((a) => a.slug === slug);

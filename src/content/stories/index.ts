@@ -1,4 +1,5 @@
 import type { Story } from "../types";
+import { imageFor } from "../images";
 import { albrechtDurer } from "./albrecht-durer";
 import { artemisiaGentileschi } from "./artemisia-gentileschi";
 import { caravaggio } from "./caravaggio";
@@ -55,7 +56,9 @@ const all: Story[] = [
   wassilyKandinsky,
 ];
 
-export const stories: Record<string, Story> = Object.fromEntries(all.map((s) => [s.slug, s]));
+export const stories: Record<string, Story> = Object.fromEntries(
+  all.map((s) => [s.slug, { ...s, image: imageFor(s.slug) ?? s.image }]),
+);
 
 export function getStory(slug: string): Story | undefined {
   return stories[slug];
