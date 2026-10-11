@@ -37,4 +37,4 @@ Internal sources list for `src/content/stories/wassily-kandinsky.ts`. Each line 
 
 ## Image
 
-Not sourced yet. Kandinsky died in 1944, so the work is public domain in the EU/UK (life + 70) from 2015, but **US status needs checking**: a 1923 work first published in 1923 is PD in the US only if published before 1931 and either published without notice or not renewed; confirm before treating it as Tier A. Candidate: the Wikimedia Commons file, checked on its file page. The holder is a US museum, so the Bridgeman photograph question doesn't apply in the usual way, but the Guggenheim's own image terms still need checking.
+Not sourced yet. Kandinsky died in 1944, so the work is public domain in the EU/UK (life + 70) from 2015. In the US, a work published in 1923 entered the public domain in 2019 (95-year term); confirm the first-publication date before treating it as Tier A. Candidate: the Wikimedia Commons file, checked on its file page. The holder is a US museum, so the Bridgeman photograph question doesn't apply in the usual way, but the Guggenheim's own image terms still need checking.
