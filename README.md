@@ -1,5 +1,7 @@
 # Quicklime
 
+> **New developer or agent? Start with [HANDOVER.md](HANDOVER.md)**: the full workflow for adding an artist (research, writing, image, zoom grid, code, homepage, QA, preview) and everything still outstanding.
+
 quicklime.co.za: walk through the best art. Next.js (App Router), Tailwind 4, Motion. Deploys to Vercel.
 
 ```bash
@@ -27,7 +29,9 @@ npm run lint
 1. Research: 3–5 facts from museum or encyclopedic sources. Cross-check anything surprising against a second source. Log every claim in `docs/sources/<slug>.md`.
 2. Draft in the house voice: short sentences, hard stops, one twist line, a mandatory quote taken from the piece's own facts.
 3. Copy `src/content/stories/rembrandt.ts`, fill it in, and register it in `stories/index.ts`.
-4. Clear the image per `docs/RIGHTS.md`, then tune each beat's `focus` (x/y in % of the canvas, plus zoom) against it.
+4. Clear the image per `docs/RIGHTS.md`, then tune each beat's `focus` (x/y in % of the canvas, plus zoom) with `npm run focus:grid` and `npm run focus:check`.
+
+Full step-by-step version, with the tools: [HANDOVER.md §5–6](HANDOVER.md#5-adding-a-new-artist-and-painting-step-by-step).
 
 ## Pipeline-V3
 

@@ -10,7 +10,13 @@
     "fetch-art": "NODE_USE_ENV_PROXY=1 NODE_NO_WARNINGS=1 node scripts/fetch-art.mjs",
     "fetch-standins": "NODE_USE_ENV_PROXY=1 NODE_NO_WARNINGS=1 node scripts/fetch-standins.mjs",
     "prebuild": "node scripts/make-sizes.mjs",
-    "predev": "node scripts/make-sizes.mjs"
+    "predev": "node scripts/make-sizes.mjs",
+    "focus:grid": "node scripts/tools/focus-grid.mjs",
+    "focus:check": "node scripts/tools/focus-check.mjs",
+    "contact-sheet": "node scripts/tools/contact-sheet.mjs",
+    "import-art": "node scripts/import-art.mjs",
+    "qa": "node scripts/tools/qa-stories.mjs",
+    "preview": "bash scripts/preview/build-preview.sh"
   },
   "dependencies": {
     "clsx": "^2.1.1",

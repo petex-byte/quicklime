@@ -42,3 +42,7 @@ next-env.d.ts
 
 # generated painting sizes (scripts/make-sizes.mjs)
 /public/art/w*/
+
+# authoring tool output (scripts/tools) and the static preview build
+/.focus/
+/.preview/

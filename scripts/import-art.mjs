@@ -5,6 +5,11 @@
  *
  *   node scripts/import-art.mjs <file-or-folder> [...]
  *   node scripts/import-art.mjs vincent-van-gogh=starry.jpg ...   # explicit match
+ *   node scripts/import-art.mjs new-artist=file.jpg --source https://commons.wikimedia.org/wiki/File:...
+ *
+ * Any slug with a story file in src/content/stories/ works with the explicit
+ * slug=file form. --source records the page the file came from (it overrides
+ * the default page listed below, and is required for slugs not listed).
  *
  * Each file is matched to a story by name ("vermeer.jpg", "Van_Gogh_-_Starry_Night.jpg"
  * both work), converted to a 2400px JPEG at public/art/<slug>.jpg, and its
@@ -13,6 +18,7 @@
  * it and confirm the licence tag before launch (docs/RIGHTS.md).
  */
 import fs from "node:fs/promises";
+import fsSync from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
@@ -56,11 +62,16 @@ function match(file) {
   return null;
 }
 
+const argv = process.argv.slice(2);
+const si = argv.indexOf("--source");
+const sourceArg = si >= 0 ? argv.splice(si, 2)[1] : undefined;
+const hasStory = (slug) => WORKS[slug] || fsSync.existsSync(path.join(ROOT, "src/content/stories", `${slug}.ts`));
+
 const inputs = [];
 const forced = new Map();
-for (let arg of process.argv.slice(2)) {
+for (let arg of argv) {
   const eq = arg.match(/^([a-z-]+)=(.+)$/);
-  if (eq && WORKS[eq[1]]) {
+  if (eq && hasStory(eq[1])) {
     forced.set(eq[2], eq[1]);
     arg = eq[2];
   }
@@ -86,6 +97,11 @@ for (const f of imgs) {
     continue;
   }
   if (done.has(slug)) console.log(`! ${path.basename(f)}: a second file for ${slug}; this one wins`);
+  const sourcePage = sourceArg ?? WORKS[slug]?.[1];
+  if (!sourcePage) {
+    console.log(`✗ ${slug}: pass --source <page the file came from>; every image needs its source page`);
+    continue;
+  }
   const meta = await sharp(f).metadata();
   const longEdge = Math.max(meta.width, meta.height);
   const scale = Math.min(1, LONG_EDGE / longEdge);
@@ -98,7 +114,7 @@ for (const f of imgs) {
   records[slug] = {
     src,
     status: "cleared",
-    sourcePage: WORKS[slug][1],
+    sourcePage,
     licence: "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
     longEdge,
     checkedOn: today,
