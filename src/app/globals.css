@@ -121,3 +121,66 @@ body {
   opacity: 0.06;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+
+/* ---------- Home: lens hero ---------- */
+
+.lens-hero {
+  --mx: 50%;
+  --my: 45%;
+  --r: 160px;
+}
+
+.lens-base {
+  filter: brightness(0.32) saturate(0.45) contrast(1.05);
+}
+
+/* Full-colour copy, magnified around the lantern and masked to it. */
+.lens-glass {
+  -webkit-mask-image: radial-gradient(circle var(--r) at var(--mx) var(--my), #000 58%, transparent 100%);
+  mask-image: radial-gradient(circle var(--r) at var(--mx) var(--my), #000 58%, transparent 100%);
+}
+.lens-glass > * {
+  transform: scale(1.14);
+  transform-origin: var(--mx) var(--my);
+}
+
+.lens-ring {
+  left: var(--mx);
+  top: var(--my);
+  width: calc(var(--r) * 1.7);
+  height: calc(var(--r) * 1.7);
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--lime) 35%, transparent);
+  box-shadow: 0 0 80px color-mix(in srgb, var(--lime) 8%, transparent) inset;
+}
+
+.lens-hint {
+  left: var(--mx);
+  top: calc(var(--my) + var(--r) * 0.95);
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+@keyframes lens-progress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* ---------- Home: wall ---------- */
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+.wall-btn {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--paper) 25%, transparent);
+  color: var(--paper);
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.wall-btn:hover { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+.wall-btn:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }

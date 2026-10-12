@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "fetch-art": "NODE_USE_ENV_PROXY=1 NODE_NO_WARNINGS=1 node scripts/fetch-art.mjs",
-    "fetch-standins": "NODE_USE_ENV_PROXY=1 NODE_NO_WARNINGS=1 node scripts/fetch-standins.mjs"
+    "fetch-standins": "NODE_USE_ENV_PROXY=1 NODE_NO_WARNINGS=1 node scripts/fetch-standins.mjs",
+    "prebuild": "node scripts/make-sizes.mjs",
+    "predev": "node scripts/make-sizes.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

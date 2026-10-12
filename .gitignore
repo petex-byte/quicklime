@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated painting sizes (scripts/make-sizes.mjs)
+/public/art/w*/

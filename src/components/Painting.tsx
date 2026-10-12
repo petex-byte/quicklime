@@ -1,6 +1,13 @@
 import clsx from "clsx";
 import type { ArtImage } from "@/content/types";
 
+/** /art/x.jpg → the w800/w1400 copies written by scripts/make-sizes.mjs, plus the 2400px original. */
+export function srcSet(src: string) {
+  const m = src.match(/^\/art\/([^/]+\.jpg)$/);
+  if (!m) return undefined;
+  return `/art/w800/${m[1]} 800w, /art/w1400/${m[1]} 1400w, ${src} 2400w`;
+}
+
 /**
  * Renders an artwork only when its rights check is cleared. Anything else
  * gets a neutral canvas-toned placeholder, so an unchecked file can never
@@ -13,6 +20,7 @@ export function Painting({
   objectPosition,
   fit = "cover",
   priority,
+  sizes = "100vw",
 }: {
   image?: ArtImage;
   alt: string;
@@ -20,6 +28,8 @@ export function Painting({
   objectPosition?: string;
   fit?: "cover" | "contain";
   priority?: boolean;
+  /** Rendered width hint for the browser's srcset choice. */
+  sizes?: string;
 }) {
   if (image?.status === "cleared") {
     return (
@@ -27,6 +37,8 @@ export function Painting({
       // eslint-disable-next-line @next/next/no-img-element
       <img
         src={image.src}
+        srcSet={srcSet(image.src)}
+        sizes={sizes}
         alt={alt}
         width={image.width}
         height={image.height}
