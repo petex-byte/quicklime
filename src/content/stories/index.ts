@@ -22,6 +22,18 @@ import { rembrandt } from "./rembrandt";
 import { sandroBotticelli } from "./sandro-botticelli";
 import { vincentVanGogh } from "./vincent-van-gogh";
 import { wassilyKandinsky } from "./wassily-kandinsky";
+import { pieterBruegel } from "./pieter-bruegel";
+import { elGreco } from "./el-greco";
+import { titian } from "./titian";
+import { diegoVelazquez } from "./diego-velazquez";
+import { franciscoGoya } from "./francisco-goya";
+import { jacquesLouisDavid } from "./jacques-louis-david";
+import { rosaBonheur } from "./rosa-bonheur";
+import { gustaveCourbet } from "./gustave-courbet";
+import { edouardManet } from "./edouard-manet";
+import { henriRousseau } from "./henri-rousseau";
+import { winslowHomer } from "./winslow-homer";
+import { amedeoModigliani } from "./amedeo-modigliani";
 
 /**
  * Stories that have passed research + voice review. Add one per artist.
@@ -33,27 +45,39 @@ import { wassilyKandinsky } from "./wassily-kandinsky";
  */
 const all: Story[] = [
   janVanEyck,
-  hieronymusBosch,
   sandroBotticelli,
+  hieronymusBosch,
   leonardoDaVinci,
   albrechtDurer,
   michelangelo,
+  titian,
+  pieterBruegel,
+  elGreco,
   caravaggio,
   artemisiaGentileschi,
+  diegoVelazquez,
   rembrandt,
   johannesVermeer,
+  franciscoGoya,
+  jacquesLouisDavid,
   katsushikaHokusai,
   jmwTurner,
-  claudeMonet,
-  maryCassatt,
-  pierreAugusteRenoir,
+  gustaveCourbet,
+  rosaBonheur,
+  edouardManet,
+  winslowHomer,
   paulCezanne,
-  georgesSeurat,
-  vincentVanGogh,
+  claudeMonet,
+  pierreAugusteRenoir,
+  henriRousseau,
+  maryCassatt,
   paulGauguin,
-  edvardMunch,
+  vincentVanGogh,
+  georgesSeurat,
   gustavKlimt,
+  edvardMunch,
   wassilyKandinsky,
+  amedeoModigliani,
 ];
 
 export const stories: Record<string, Story> = Object.fromEntries(
