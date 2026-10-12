@@ -54,7 +54,9 @@ quicklime.co.za: walk through the best art. Each artist gets **one painting told
 | amedeo-modigliani | Met Open Access (CC0) | 1912 | under the 2000px floor; accept it or find a larger file |
 | diego-velazquez | Met Open Access (CC0) | 1024 | the Met only publishes 1024px for this one; decide |
 | claude-monet | **stand-in** (Met *Water Lilies* 1916–19) | 3811 | supply the featured work (*Water Lilies: Green Reflections*, Orangerie); the file supplied was *Red Boats at Argenteuil* |
-| albrecht-durer, artemisia-gentileschi, caravaggio, edvard-munch, georges-seurat, gustav-klimt, hieronymus-bosch, jan-van-eyck, jmw-turner, johannes-vermeer, leonardo-da-vinci, mary-cassatt, michelangelo, paul-cezanne, paul-gauguin, pierre-auguste-renoir, rembrandt, sandro-botticelli, vincent-van-gogh, wassily-kandinsky | uploaded by hand from Wikipedia (preview size) | 1280–1953 | swap each for the full-size Commons original (2000px+) and confirm its licence tag (§7). Botticelli, Gentileschi, Caravaggio and Michelangelo also need Pete's sign-off (Italian/Vatican rules) |
+| johannes-vermeer, albrecht-durer, caravaggio, edvard-munch | Commons original via chat upload (capped) | 2000 | re-import from the full-size file (§12) |
+| georges-seurat | Commons original via chat upload (capped) | 1500 | re-import from the full-size file (§12) |
+| artemisia-gentileschi, gustav-klimt, hieronymus-bosch, jan-van-eyck, jmw-turner, leonardo-da-vinci, mary-cassatt, michelangelo, paul-cezanne, paul-gauguin, pierre-auguste-renoir, rembrandt, sandro-botticelli, vincent-van-gogh, wassily-kandinsky | uploaded by hand from Wikipedia (preview size) | 1280–1953 | swap each for the full-size Commons original (2000px+) and confirm its licence tag (§7). Botticelli, Gentileschi, Caravaggio and Michelangelo also need Pete's sign-off (Italian/Vatican rules) |
 
 The live list is always `src/content/images.generated.json`. Each record carries `sourcePage`, `licence`, `longEdge`, `holder`, `checkedOn` and, when it applies, `note` or `standIn`.
 
@@ -590,11 +592,19 @@ These apply when the next developer is a Claude agent in a claude.ai cloud sessi
 
 ## 12. Outstanding before launch
 
-1. **Images:**
-   - Replace the 20 hand-uploaded previews with full-size Commons originals (§2 table), then re-run `focus:check -- --all`.
-   - Supply Monet's *Water Lilies: Green Reflections*.
+1. **Images** (status as of 12 Oct 2026):
+   - **Done:** Vermeer, Dürer, Caravaggio and Munch were swapped for Commons originals at 2000px, and their `sourcePage` now points at the Commons file page. Seurat was swapped too but only reached 1500px. These came through chat upload, which caps files at 2000px, so re-import all five from the full-size files.
+   - **Source:** Pete is exporting full-size originals to a folder, named by slug (e.g. `rembrandt.jpg`). Reach it through the Google Drive connector, or run Claude Code locally in that folder. Don't send images through chat. Anything above about 4000px gains nothing because the master is stored at 2400px, so take the `Special:FilePath/<file>?width=4000` copy for Starry Night, Seurat, Botticelli, Bosch, Mona Lisa and Vermeer. Then run `contact-sheet`, `import-art <slug>=<file> --source <Commons file page>` and `focus:check -- --all`.
+   - **Manifest titles that fail:** these `art-manifest.json` titles fail the floor or are gone from Commons. Update the manifest when importing.
+     - Caravaggio: the old file was deleted. Use `Caravaggio-Nativity(1600).jpg` (2940px, PD), which shows the Palermo *Nativity*.
+     - Kandinsky: the old file is 1090px. Use `Kandinsky - Composition 8, July 1923.jpg` (3911px, CC0). It is a gallery photo, so crop the frame before importing.
+     - Gentileschi: the old file is 1500px. The 2500px `Judit decapitando a Holofernes, por Artemisia Gentileschi.jpg` carries a "Copyright MiBACT 2017" watermark. Don't use it. Keep the preview until Pete decides.
+     - Michelangelo: the old file is 634px. No whole-ceiling photo on Commons is both 2000px or larger and PD/CC0; the large ones are CC BY or CC BY-SA. **Pete decides:** accept CC BY with a photographer credit, crop the story to one bay, or drop it.
+   - **Verified on Commons (PD, 2000px or larger):** the manifest titles for Rembrandt, Dürer, Leonardo, Vermeer, van Eyck, Bosch, Turner, Cassatt, Renoir, Cézanne, Seurat, Van Gogh, Gauguin, Munch, Klimt and Botticelli.
+   - **Monet:** *Water Lilies: Green Reflections* is not on Commons under the manifest title, and searches found nothing. It is still on the stand-in.
    - Decide on Velázquez (the Met's file is 1024px), Courbet (1905px) and Modigliani (1912px).
    - Pete to sign off, or swap, the Italian and Vatican works: Botticelli, Gentileschi, Caravaggio, Michelangelo.
+   - **Zoom points:** Dürer's inscription and monogram, Vermeer's pearl, Munch's two walkers and Seurat's monkey were re-aimed. Munch beat 3 ("Pencil inscription, top left") can't be checked: the inscription is invisible at 2000px. Re-check it on the full-size file, or cut the beat.
 2. **Fact-check pass:** open every source page behind each `re-check` row in `docs/sources/*.md`. Known weak spots:
    - **Rembrandt**, "Twelve disciples. Christ. Count again. Fourteen.": only one hedged source. Find a museum or catalogue source, or rewrite the twist.
    - **Renoir:** confirm the quote's wording and source.
