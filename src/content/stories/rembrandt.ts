@@ -3,7 +3,7 @@ import type { Story } from "../types";
 /**
  * Rembrandt, Christ in the Storm on the Sea of Galilee (1633).
  * Every line here maps to an entry in docs/sources/rembrandt.md.
- * Focus points are first-pass estimates; tune them against the cleared image.
+ * Focus points set against the Wikimedia image of the painting.
  */
 export const rembrandt: Story = {
   slug: "rembrandt",
@@ -29,7 +29,7 @@ export const rembrandt: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 32, y: 28, scale: 2.2 },
+      focus: { x: 36, y: 42, scale: 2.2 },
       lines: [
         "The bow climbs the wave.",
         "The sail tears loose.",
@@ -39,13 +39,13 @@ export const rembrandt: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 74, y: 62, scale: 2.6 },
+      focus: { x: 52, y: 80, scale: 2.6 },
       lines: ["One man hangs over the rail.", "Seasick.", "Rembrandt kept him in."],
       caption: "Starboard rail",
     },
     {
       kind: "beat",
-      focus: { x: 80, y: 78, scale: 2.4 },
+      focus: { x: 64, y: 74, scale: 2.4 },
       lines: [
         "At the stern, they wake him.",
         "Every face in the boat is fear.",
@@ -55,7 +55,7 @@ export const rembrandt: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 62, y: 58, scale: 3 },
+      focus: { x: 48, y: 72, scale: 3 },
       lines: [
         "One man isn't watching the storm.",
         "He's watching you.",

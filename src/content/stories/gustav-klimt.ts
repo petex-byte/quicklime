@@ -52,7 +52,7 @@ export const gustavKlimt: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 52, y: 26, scale: 2.8 },
+      focus: { x: 56, y: 15, scale: 2.8 },
       lines: [
         "Her eyes are closed.",
         "In 1905 Klimt quit a state commission.",

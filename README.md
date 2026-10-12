@@ -35,7 +35,7 @@ Lives at pipeline.quicklime.co.za and is untouched by this rebuild. It is delibe
 
 ## Story status
 
-34 stories are live (13 with their real painting, 21 with a labelled preview stand-in). Every fact was checked against web-search results only, because this build's sandbox couldn't open source pages. Rows marked `re-check` in each `docs/sources/*.md` still need the source page itself opened before launch.
+34 stories are live: 33 show their real painting (20 of them as 1280px Wikipedia previews to be swapped for full-size files), 1 (Monet) still shows a labelled stand-in. Every fact was checked against web-search results only, because this build's sandbox couldn't open source pages. Rows marked `re-check` in each `docs/sources/*.md` still need the source page itself opened before launch.
 
 Held back, with drafts in the repo but not registered in `stories/index.ts`:
 - **Degas:** quote unverified, hook single-sourced

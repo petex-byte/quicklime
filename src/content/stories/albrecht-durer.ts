@@ -46,7 +46,7 @@ export const albrechtDurer: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 80, y: 40, scale: 2.8 },
+      focus: { x: 78, y: 12, scale: 2.8 },
       lines: [
         "Right of his face: four lines of Latin.",
         "His name. His city. His age.",
@@ -55,7 +55,7 @@ export const albrechtDurer: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 18, y: 38, scale: 3 },
+      focus: { x: 11, y: 11, scale: 3 },
       lines: ["Left of his face: a date.", "1500. Under it, A and D."],
       twist: "His initials. Read them again. Anno Domini.",
       caption: "Date and monogram",
