@@ -13,16 +13,17 @@ import { artists, getArtist, lifespan } from "@/content/artists";
  */
 const HERO = [
   "katsushika-hokusai",
+  "vincent-van-gogh",
+  "johannes-vermeer",
+  "gustav-klimt",
+  "rembrandt",
+  "sandro-botticelli",
   "pieter-bruegel",
+  "jmw-turner",
   "winslow-homer",
+  "leonardo-da-vinci",
+  "edvard-munch",
   "el-greco",
-  "diego-velazquez",
-  "henri-rousseau",
-  "jacques-louis-david",
-  "rosa-bonheur",
-  "edouard-manet",
-  "francisco-goya",
-  "titian",
 ];
 
 export default function Home() {
