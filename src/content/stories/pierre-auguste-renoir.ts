@@ -50,7 +50,7 @@ export const pierreAugusteRenoir: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 82, y: 70, scale: 2.4 },
+      focus: { x: 80, y: 56, scale: 2.4 },
       lines: [
         "Lower right: Gustave Caillebotte.",
         "Painter. Collector. Friend.",
@@ -59,7 +59,7 @@ export const pierreAugusteRenoir: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 18, y: 68, scale: 2.8 },
+      focus: { x: 24, y: 56, scale: 2.8 },
       lines: [
         "Lower left, a woman with a little dog.",
         "She wasn't the first to sit there.",

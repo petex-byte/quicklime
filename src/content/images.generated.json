@@ -13,23 +13,22 @@
   "rembrandt": {
     "src": "/art/rembrandt.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/The_Storm_on_the_Sea_of_Galilee",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Rembrandt_Christ_in_the_Storm_on_the_Lake_of_Galilee.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1591,
+    "longEdge": 3731,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 1591,
-    "note": "long edge 1591px is under the 2000px floor"
+    "width": 1931,
+    "height": 2400
   },
   "albrecht-durer": {
     "src": "/art/albrecht-durer.jpg",
     "status": "cleared",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_1500_self-portrait_(High_resolution_and_detail).jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 2000,
+    "longEdge": 5309,
     "checkedOn": "2026-10-12",
-    "width": 1447,
-    "height": 2000
+    "width": 1736,
+    "height": 2400
   },
   "leonardo-da-vinci": {
     "src": "/art/leonardo-da-vinci.jpg",
@@ -56,33 +55,32 @@
   "sandro-botticelli": {
     "src": "/art/sandro-botticelli.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/The_Birth_of_Venus",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1280,
+    "longEdge": 3840,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 804,
-    "note": "long edge 1280px is under the 2000px floor"
+    "width": 2400,
+    "height": 1508
   },
   "johannes-vermeer": {
     "src": "/art/johannes-vermeer.jpg",
     "status": "cleared",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 2000,
+    "longEdge": 4548,
     "checkedOn": "2026-10-12",
-    "width": 1689,
-    "height": 2000
+    "width": 2026,
+    "height": 2400
   },
   "caravaggio": {
     "src": "/art/caravaggio.jpg",
     "status": "cleared",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Caravaggio-Nativity(1600).jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 2000,
+    "longEdge": 2940,
     "checkedOn": "2026-10-12",
-    "width": 1518,
-    "height": 2000
+    "width": 1822,
+    "height": 2400
   },
   "artemisia-gentileschi": {
     "src": "/art/artemisia-gentileschi.jpg",
@@ -98,35 +96,32 @@
   "jan-van-eyck": {
     "src": "/art/jan-van-eyck.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/Arnolfini_Portrait",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Van_Eyck_-_Arnolfini_Portrait.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1751,
+    "longEdge": 5253,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 1751,
-    "note": "long edge 1751px is under the 2000px floor"
+    "width": 1754,
+    "height": 2399
   },
   "hieronymus-bosch": {
     "src": "/art/hieronymus-bosch.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Garden_of_earthly_delights.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1280,
+    "longEdge": 3840,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 729,
-    "note": "long edge 1280px is under the 2000px floor"
+    "width": 2400,
+    "height": 1366
   },
   "jmw-turner": {
     "src": "/art/jmw-turner.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/The_Fighting_Temeraire",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Fighting_Temeraire,_JMW_Turner,_National_Gallery.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1280,
+    "longEdge": 3840,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 951,
-    "note": "long edge 1280px is under the 2000px floor"
+    "width": 2400,
+    "height": 1783
   },
   "claude-monet": {
     "src": "/art/claude-monet.jpg",
@@ -142,68 +137,62 @@
   "mary-cassatt": {
     "src": "/art/mary-cassatt.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/The_Child%27s_Bath",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mary_Cassatt_-_The_Child%27s_Bath_-_Google_Art_Project.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1953,
+    "longEdge": 4912,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 1953,
-    "note": "long edge 1953px is under the 2000px floor"
+    "width": 1573,
+    "height": 2400
   },
   "pierre-auguste-renoir": {
     "src": "/art/pierre-auguste-renoir.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/Luncheon_of_the_Boating_Party",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1280,
+    "longEdge": 3840,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 948,
-    "note": "long edge 1280px is under the 2000px floor"
+    "width": 2400,
+    "height": 1778
   },
   "paul-cezanne": {
     "src": "/art/paul-cezanne.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/The_Card_Players",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Les_Joueurs_de_cartes,_par_Paul_C%C3%A9zanne.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1280,
+    "longEdge": 3840,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 1050,
-    "note": "long edge 1280px is under the 2000px floor"
+    "width": 2400,
+    "height": 1969
   },
   "georges-seurat": {
     "src": "/art/georges-seurat.jpg",
     "status": "cleared",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1500,
+    "longEdge": 3840,
     "checkedOn": "2026-10-12",
-    "width": 1500,
-    "height": 998,
-    "note": "long edge 1500px is under the 2000px floor"
+    "width": 2400,
+    "height": 1598
   },
   "vincent-van-gogh": {
     "src": "/art/vincent-van-gogh.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/The_Starry_Night",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1280,
+    "longEdge": 3840,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 1014,
-    "note": "long edge 1280px is under the 2000px floor"
+    "width": 2400,
+    "height": 1901
   },
   "paul-gauguin": {
     "src": "/art/paul-gauguin.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_D%27ou_venons-nous.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1280,
+    "longEdge": 3090,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 471,
-    "note": "long edge 1280px is under the 2000px floor"
+    "width": 2400,
+    "height": 913
   },
   "edvard-munch": {
     "src": "/art/edvard-munch.jpg",
@@ -229,13 +218,12 @@
   "wassily-kandinsky": {
     "src": "/art/wassily-kandinsky.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/Composition_VIII",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Composition_8,_July_1923.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1280,
+    "longEdge": 3819,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 932,
-    "note": "long edge 1280px is under the 2000px floor"
+    "width": 2400,
+    "height": 1675
   },
   "pieter-bruegel": {
     "src": "/art/pieter-bruegel.jpg",

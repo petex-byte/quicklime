@@ -30,7 +30,7 @@ export const sandroBotticelli: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 20, y: 35, scale: 2.4 },
+      focus: { x: 28, y: 22, scale: 2.4 },
       lines: [
         "Left: Zephyr, the west wind.",
         "A nymph in his arms.",
@@ -46,7 +46,7 @@ export const sandroBotticelli: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 78, y: 45, scale: 2.4 },
+      focus: { x: 79, y: 32, scale: 2.4 },
       lines: [
         "Right: a woman on the shore.",
         "A flowered cloak, held open for her.",

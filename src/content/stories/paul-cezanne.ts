@@ -58,7 +58,7 @@ export const paulCezanne: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 50, y: 72, scale: 2.2 },
+      focus: { x: 52, y: 60, scale: 2.2 },
       lines: [
         "Five versions in all.",
         "This is one of the barest.",

@@ -59,7 +59,7 @@ export const hieronymusBosch: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 83, y: 78, scale: 3.2 },
+      focus: { x: 79, y: 70, scale: 3.2 },
       lines: ["One man lies pinned under the lute.", "Notes are painted on his backside."],
       twist: "In 2014 a student transcribed them. It went viral.",
       caption: "The man under the lute",

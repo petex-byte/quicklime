@@ -54,9 +54,10 @@ quicklime.co.za: walk through the best art. Each artist gets **one painting told
 | amedeo-modigliani | Met Open Access (CC0) | 1912 | under the 2000px floor; accept it or find a larger file |
 | diego-velazquez | Met Open Access (CC0) | 1024 | the Met only publishes 1024px for this one; decide |
 | claude-monet | **stand-in** (Met *Water Lilies* 1916–19) | 3811 | supply the featured work (*Water Lilies: Green Reflections*, Orangerie); the file supplied was *Red Boats at Argenteuil* |
-| johannes-vermeer, albrecht-durer, caravaggio, edvard-munch | Commons original via chat upload (capped) | 2000 | re-import from the full-size file (§12) |
-| georges-seurat | Commons original via chat upload (capped) | 1500 | re-import from the full-size file (§12) |
-| artemisia-gentileschi, gustav-klimt, hieronymus-bosch, jan-van-eyck, jmw-turner, leonardo-da-vinci, mary-cassatt, michelangelo, paul-cezanne, paul-gauguin, pierre-auguste-renoir, rembrandt, sandro-botticelli, vincent-van-gogh, wassily-kandinsky | uploaded by hand from Wikipedia (preview size) | 1280–1953 | swap each for the full-size Commons original (2000px+) and confirm its licence tag (§7). Botticelli, Gentileschi, Caravaggio and Michelangelo also need Pete's sign-off (Italian/Vatican rules) |
+| rembrandt, albrecht-durer, jan-van-eyck, hieronymus-bosch, sandro-botticelli, caravaggio, johannes-vermeer, jmw-turner, mary-cassatt, pierre-auguste-renoir, paul-cezanne, georges-seurat, vincent-van-gogh, paul-gauguin, wassily-kandinsky | Commons original from Pete's Drive folder (12 Oct) | 2232–3840 | none. Botticelli and Caravaggio still need Pete's sign-off (Italian rules). Kandinsky was cropped to remove the gallery frame |
+| edvard-munch | Commons original via chat upload (capped) | 2000 | the 11.4MB original is over the Drive connector's limit; re-export at 4000px or under 6MB |
+| leonardo-da-vinci, gustav-klimt | uploaded by hand from Wikipedia (preview size) | 1280–1936 | originals are in the Drive folder but over the connector's ~6MB limit; re-export at 4000px or under 6MB |
+| artemisia-gentileschi, michelangelo | uploaded by hand from Wikipedia (preview size) | 1280–1556 | Pete decides (§12): the larger Gentileschi file carries a MiBACT watermark; no PD/CC0 Sistine file reaches 2000px |
 
 The live list is always `src/content/images.generated.json`. Each record carries `sourcePage`, `licence`, `longEdge`, `holder`, `checkedOn` and, when it applies, `note` or `standIn`.
 
@@ -593,8 +594,13 @@ These apply when the next developer is a Claude agent in a claude.ai cloud sessi
 ## 12. Outstanding before launch
 
 1. **Images** (status as of 12 Oct 2026):
-   - **Done:** Vermeer, Dürer, Caravaggio and Munch were swapped for Commons originals at 2000px, and their `sourcePage` now points at the Commons file page. Seurat was swapped too but only reached 1500px. These came through chat upload, which caps files at 2000px, so re-import all five from the full-size files.
-   - **Source:** Pete is exporting full-size originals to a folder, named by slug (e.g. `rembrandt.jpg`). Reach it through the Google Drive connector, or run Claude Code locally in that folder. Don't send images through chat. Anything above about 4000px gains nothing because the master is stored at 2400px, so take the `Special:FilePath/<file>?width=4000` copy for Starry Night, Seurat, Botticelli, Bosch, Mona Lisa and Vermeer. Then run `contact-sheet`, `import-art <slug>=<file> --source <Commons file page>` and `focus:check -- --all`.
+   - **Done (12 Oct):** 15 stories now use Commons originals from Pete's Drive folder (folder ID `1uqSmR_fePNyqkLuqV6AKYWbP9K5AupWc`). See the §2 table. Their `sourcePage` points at the Commons file page. The checks on the new files showed 16 zoom points that missed their subject; all 16 were re-aimed and checked:
+     - Cassatt 4; Renoir 3 and 4; Cézanne 4; Botticelli 1 and 3
+     - van Eyck 2 and 3; Turner 1; Bosch 4
+     - Gauguin 1, 3 and 4; Van Gogh 1
+     - Dürer 3 and 4; Vermeer 4
+   - **Still to do:** Munch (11.4MB), Mona Lisa (9.2MB) and Klimt (7.1MB) are in the folder but over the Drive connector's limit. Rembrandt at 6.2MB worked; Klimt at 7.1MB broke the connection. Pete should re-export these three at 4000px (or under 6MB) into the same folder.
+   - **Connector mechanics:** `download_file_content` saves base64 JSON to a tool-results file. Decode it with Python, then import. Drive file names come back in decomposed Unicode, so "é" and "ü" won't match a typed path. Glob for the file instead.
    - **Manifest titles that fail:** these `art-manifest.json` titles fail the floor or are gone from Commons. Update the manifest when importing.
      - Caravaggio: the old file was deleted. Use `Caravaggio-Nativity(1600).jpg` (2940px, PD), which shows the Palermo *Nativity*.
      - Kandinsky: the old file is 1090px. Use `Kandinsky - Composition 8, July 1923.jpg` (3911px, CC0). It is a gallery photo, so crop the frame before importing.

@@ -30,7 +30,7 @@ export const vincentVanGogh: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 30, y: 40, scale: 2.6 },
+      focus: { x: 35, y: 52, scale: 2.6 },
       lines: [
         "One star burns bigger than the rest.",
         "Low. Left of centre.",

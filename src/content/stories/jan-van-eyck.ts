@@ -37,7 +37,7 @@ export const janVanEyck: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 51, y: 44, scale: 3 },
+      focus: { x: 53, y: 28, scale: 3 },
       lines: [
         "On the back wall, a convex mirror.",
         "Ten tiny scenes of the Passion ring the frame.",
@@ -47,7 +47,7 @@ export const janVanEyck: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 51, y: 34, scale: 3.2 },
+      focus: { x: 52, y: 21, scale: 3.2 },
       lines: [
         "Above the mirror, on the wall itself.",
         "Written like graffiti. His name. A date.",

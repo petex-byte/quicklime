@@ -58,7 +58,7 @@ export const maryCassatt: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 50, y: 28, scale: 2.6 },
+      focus: { x: 42, y: 26, scale: 2.6 },
       lines: [
         "Mother and child.",
         "She painted it for decades.",

@@ -32,7 +32,7 @@ export const paulGauguin: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 10, y: 12, scale: 3 },
+      focus: { x: 5, y: 8, scale: 3 },
       lines: [
         "Top left, he paints the title.",
         "D'ou Venons Nous.",
@@ -54,7 +54,7 @@ export const paulGauguin: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 28, y: 40, scale: 2.4 },
+      focus: { x: 28, y: 28, scale: 2.4 },
       lines: [
         "Further left, an idol.",
         "He lists it in his own key to the picture.",
@@ -63,7 +63,7 @@ export const paulGauguin: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 8, y: 72, scale: 2.6 },
+      focus: { x: 7, y: 64, scale: 2.6 },
       lines: [
         "It ends at the far left.",
         "An old woman, crouching.",

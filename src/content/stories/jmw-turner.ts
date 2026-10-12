@@ -34,7 +34,7 @@ export const jmwTurner: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 30, y: 45, scale: 2.2 },
+      focus: { x: 24, y: 60, scale: 2.2 },
       lines: [
         "She is the Temeraire.",
         "Trafalgar, 1805. She fought beside Nelson's Victory.",
