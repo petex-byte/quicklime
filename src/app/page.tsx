@@ -7,23 +7,29 @@ import { ArtistIndex } from "@/components/home/ArtistIndex";
 import { stories, getStory } from "@/content/stories";
 import { artists, getArtist, lifespan } from "@/content/artists";
 
-/** Hero order: strongest pictures first. Anything without a cleared image is skipped. */
+/**
+ * Hero order: strongest pictures first. Only stories whose own painting is
+ * on screen qualify, so no preview stand-in ever fronts the site.
+ */
 const HERO = [
   "katsushika-hokusai",
-  "vincent-van-gogh",
-  "gustav-klimt",
-  "claude-monet",
-  "johannes-vermeer",
-  "rembrandt",
-  "jmw-turner",
-  "edvard-munch",
+  "pieter-bruegel",
+  "winslow-homer",
+  "el-greco",
+  "diego-velazquez",
+  "henri-rousseau",
+  "jacques-louis-david",
+  "rosa-bonheur",
+  "edouard-manet",
+  "francisco-goya",
+  "titian",
 ];
 
 export default function Home() {
   const slides: Slide[] = HERO.flatMap((slug) => {
     const s = getStory(slug);
     const a = getArtist(slug);
-    if (!s || !a || s.image.status !== "cleared") return [];
+    if (!s || !a || s.image.status !== "cleared" || s.image.standIn) return [];
     return [
       {
         slug,
@@ -40,11 +46,24 @@ export default function Home() {
   const wave = getStory("katsushika-hokusai")!;
   const fuji = wave.beats.find((b) => b.twist)!;
 
-  const cards = artists.flatMap((a) => {
-    const s = stories[a.slug];
-    if (!s) return [];
-    return [{ slug: a.slug, title: s.title, artist: a.name, year: s.year, line: s.beats[0].lines.join(" "), image: s.image }];
-  });
+  // Real paintings first; preview stand-ins after, labelled on the card.
+  const cards = artists
+    .flatMap((a) => {
+      const s = stories[a.slug];
+      if (!s) return [];
+      return [
+        {
+          slug: a.slug,
+          title: s.title,
+          artist: a.name,
+          year: s.year,
+          line: s.beats[0].lines.join(" "),
+          image: s.image,
+          standIn: Boolean(s.image.standIn),
+        },
+      ];
+    })
+    .sort((x, y) => Number(x.standIn) - Number(y.standIn));
 
   const rows = [...artists]
     .sort((a, b) => a.born - b.born)

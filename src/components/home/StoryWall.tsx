@@ -12,6 +12,7 @@ export type WallCard = {
   year: string;
   line: string;
   image: ArtImage;
+  standIn?: boolean;
 };
 
 /** A swipeable row of story cards. Native scroll-snap, so it feels like the phone's own gallery. */
@@ -63,6 +64,11 @@ export function StoryWall({ cards }: { cards: WallCard[] }) {
                 <Painting image={c.image} alt={c.title} sizes="(max-width: 768px) 78vw, 360px" />
               </div>
               <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
+              {c.standIn && (
+                <span className="absolute left-4 top-4 rounded-full border border-lime/40 bg-ink/60 px-2.5 py-1 text-[10px] uppercase tracking-[0.2em] text-lime backdrop-blur">
+                  Preview image
+                </span>
+              )}
               <div className="absolute inset-x-0 bottom-0 p-5">
                 <p className="text-[11px] tracking-[0.25em] text-paper/60">
                   {String(n + 1).padStart(2, "0")} · {c.artist}
