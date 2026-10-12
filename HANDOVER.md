@@ -594,11 +594,11 @@ These apply when the next developer is a Claude agent in a claude.ai cloud sessi
 ## 12. Outstanding before launch
 
 1. **Images** (status as of 12 Oct 2026):
-   - **Done (12 Oct):** 15 stories now use Commons originals from Pete's Drive folder (folder ID `1uqSmR_fePNyqkLuqV6AKYWbP9K5AupWc`). See the §2 table. Their `sourcePage` points at the Commons file page. The checks on the new files showed 16 zoom points that missed their subject; all 16 were re-aimed and checked:
+   - **Done (12 Oct):** 15 stories now use Commons originals from Pete's Drive folder (folder ID `1uqSmR_fePNyqkLuqV6AKYWbP9K5AupWc`). See the §2 table. Their `sourcePage` points at the Commons file page. Checking crops on the new files found zoom points that missed their subject. These 19 were re-aimed today and checked with `focus:check`:
      - Cassatt 4; Renoir 3 and 4; Cézanne 4; Botticelli 1 and 3
      - van Eyck 2 and 3; Turner 1; Bosch 4
      - Gauguin 1, 3 and 4; Van Gogh 1
-     - Dürer 3 and 4; Vermeer 4
+     - Dürer 3 and 4; Vermeer 4; Munch 2; Seurat 1
    - **Still to do:** Munch (11.4MB), Mona Lisa (9.2MB) and Klimt (7.1MB) are in the folder but over the Drive connector's limit. Rembrandt at 6.2MB worked; Klimt at 7.1MB broke the connection. Pete should re-export these three at 4000px (or under 6MB) into the same folder.
    - **Connector mechanics:** `download_file_content` saves base64 JSON to a tool-results file. Decode it with Python, then import. Drive file names come back in decomposed Unicode, so "é" and "ü" won't match a typed path. Glob for the file instead.
    - **Manifest titles that fail:** these `art-manifest.json` titles fail the floor or are gone from Commons. Update the manifest when importing.
