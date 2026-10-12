@@ -42,7 +42,7 @@ quicklime.co.za: walk through the best art. Each artist gets **one painting told
   - Charles Davidson Bell: draft in the repo, but the "quote" is a medal name, not anyone's words.
   - Thomas Baines: research log only (`docs/sources/thomas-baines.md`). No specific work is pinned to a holder yet.
 - **Fact-checking:** every story has `docs/sources/<slug>.md`, with one row per line of copy. Most rows say `re-check`. The research sandbox could search the web but couldn't open source pages, so each row was confirmed from search excerpts only. Someone must open each source page before launch.
-- **Preview (design review):** https://claude.ai/artifact/1fmhVkzJE8Yr9ZffCRAhmq (rebuild with `npm run preview`, §9).
+- **Preview (design review):** https://claude.ai/artifact/JAf1u31RSAbf7xJzYJ1Gw8 (rebuild with `npm run preview`, §9).
 
 ### Image status per live story
 
