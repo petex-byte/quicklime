@@ -56,7 +56,7 @@ export const winslowHomer: Story = {
       focus: { x: 89, y: 14, scale: 2.4 },
       lines: [
         "Far right, a waterspout.",
-        "The sea between it and him is open.",
+        "Sharks below. Weather behind.",
       ],
       caption: "Waterspout, upper right",
     },
@@ -65,7 +65,7 @@ export const winslowHomer: Story = {
       focus: { x: 24, y: 20, scale: 3 },
       lines: [
         "Far left, on the horizon. A ship.",
-        "He has his back to it.",
+        "He's looking the other way.",
         "It wasn't in the painting he first showed.",
       ],
       twist: "Homer painted in the rescue. Then made the waterspout bigger.",
@@ -82,6 +82,7 @@ export const winslowHomer: Story = {
     heading: "1906",
     lines: [
       "The Met buys The Gulf Stream.",
+      "By then the ship is on the horizon.",
       "Homer is 70.",
       "He dies four years later, at Prouts Neck, Maine.",
     ],
