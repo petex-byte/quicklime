@@ -24,13 +24,12 @@
   "albrecht-durer": {
     "src": "/art/albrecht-durer.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Munich)",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_1500_self-portrait_(High_resolution_and_detail).jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1805,
+    "longEdge": 2000,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 1805,
-    "note": "long edge 1805px is under the 2000px floor"
+    "width": 1447,
+    "height": 2000
   },
   "leonardo-da-vinci": {
     "src": "/art/leonardo-da-vinci.jpg",
@@ -68,24 +67,22 @@
   "johannes-vermeer": {
     "src": "/art/johannes-vermeer.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1516,
+    "longEdge": 2000,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 1516,
-    "note": "long edge 1516px is under the 2000px floor"
+    "width": 1689,
+    "height": 2000
   },
   "caravaggio": {
     "src": "/art/caravaggio.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/Nativity_with_St._Francis_and_St._Lawrence",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Caravaggio-Nativity(1600).jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1686,
+    "longEdge": 2000,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 1686,
-    "note": "long edge 1686px is under the 2000px floor"
+    "width": 1518,
+    "height": 2000
   },
   "artemisia-gentileschi": {
     "src": "/art/artemisia-gentileschi.jpg",
@@ -178,13 +175,13 @@
   "georges-seurat": {
     "src": "/art/georges-seurat.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1280,
+    "longEdge": 1500,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 852,
-    "note": "long edge 1280px is under the 2000px floor"
+    "width": 1500,
+    "height": 998,
+    "note": "long edge 1500px is under the 2000px floor"
   },
   "vincent-van-gogh": {
     "src": "/art/vincent-van-gogh.jpg",
@@ -211,13 +208,12 @@
   "edvard-munch": {
     "src": "/art/edvard-munch.jpg",
     "status": "cleared",
-    "sourcePage": "https://en.wikipedia.org/wiki/The_Scream",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg",
     "licence": "Supplied by hand from Wikimedia Commons; confirm the tag on the source page before launch",
-    "longEdge": 1589,
+    "longEdge": 2000,
     "checkedOn": "2026-10-12",
-    "width": 1280,
-    "height": 1589,
-    "note": "long edge 1589px is under the 2000px floor"
+    "width": 1612,
+    "height": 2000
   },
   "gustav-klimt": {
     "src": "/art/gustav-klimt.jpg",

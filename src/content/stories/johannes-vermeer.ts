@@ -60,7 +60,7 @@ export const johannesVermeer: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 52, y: 60, scale: 3.2 },
+      focus: { x: 62, y: 54, scale: 3.2 },
       lines: ["And the pearl.", "Strokes of white paint. Nothing more."],
       twist: "No hook. Nothing holds it to her ear.",
       caption: "The pearl",

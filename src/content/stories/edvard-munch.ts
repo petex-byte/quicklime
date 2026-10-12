@@ -43,7 +43,7 @@ export const edvardMunch: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 24, y: 32, scale: 2.4 },
+      focus: { x: 9, y: 41, scale: 2.4 },
       lines: [
         "Behind him, two men on the road.",
         "The diary again: his friends walked on.",

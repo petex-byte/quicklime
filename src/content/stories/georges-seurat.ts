@@ -30,7 +30,7 @@ export const georgesSeurat: Story = {
     },
     {
       kind: "beat",
-      focus: { x: 80, y: 80, scale: 2.4 },
+      focus: { x: 74, y: 85, scale: 2.4 },
       lines: [
         "Bottom right, a woman with a parasol.",
         "At her feet, a pet monkey.",
