@@ -68,7 +68,7 @@ export const winslowHomer: Story = {
         "He's looking the other way.",
         "It wasn't in the painting he first showed.",
       ],
-      twist: "Homer painted in the rescue. Then made the waterspout bigger.",
+      twist: "Homer painted in the rescue. And made the waterspout bigger.",
       caption: "Ship on the horizon, upper left",
     },
   ],
