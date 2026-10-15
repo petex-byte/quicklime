@@ -45,7 +45,7 @@ export function DetailZoom({
     <section ref={ref} className="relative h-[320svh] bg-ink" aria-label="One detail">
       <div className="sticky top-0 flex h-[100svh] items-start justify-center overflow-hidden pt-[24svh] md:items-center md:pt-0">
         <p className="absolute left-5 top-[calc(env(safe-area-inset-top,0px)+5rem)] z-10 text-[11px] uppercase tracking-[0.25em] text-paper/70 md:left-12">
-          How every story works
+          Look closer
         </p>
         <div
           className="relative max-w-full"

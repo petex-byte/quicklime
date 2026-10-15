@@ -19,7 +19,17 @@ export type IndexRow = {
  * Every painter in large type, oldest first. Phones get a thumbnail in each
  * row; on desktop the painting floats beside the cursor instead.
  */
-export function ArtistIndex({ rows, span }: { rows: IndexRow[]; span: string }) {
+export function ArtistIndex({
+  rows,
+  span,
+  oldest,
+  newest,
+}: {
+  rows: IndexRow[];
+  span: string;
+  oldest: string;
+  newest: string;
+}) {
   const [hover, setHover] = useState<IndexRow | null>(null);
   const float = useRef<HTMLDivElement>(null);
 
@@ -34,9 +44,9 @@ export function ArtistIndex({ rows, span }: { rows: IndexRow[]; span: string }) 
 
   return (
     <section className="px-5 py-20 md:px-12 md:py-28" aria-labelledby="index-title">
-      <p className="text-[11px] uppercase tracking-[0.25em] text-paper/50">{span}</p>
+      <p className="text-[11px] uppercase tracking-[0.25em] text-paper/50">{rows.length} painters · {span}</p>
       <h2 id="index-title" className="mt-2 font-display text-[clamp(2.4rem,9vw,5.5rem)] font-light leading-none text-paper">
-        {rows.length} painters
+        From {oldest} to {newest}
       </h2>
 
       <ol className="mt-10 border-t border-paper/10" onPointerLeave={() => setHover(null)}>
@@ -70,7 +80,7 @@ export function ArtistIndex({ rows, span }: { rows: IndexRow[]; span: string }) 
               </span>
               {!r.live && (
                 <span className="shrink-0 rounded-full border border-paper/15 px-2 py-0.5 text-[10px] uppercase tracking-[0.2em] text-paper/40">
-                  Soon
+                  In the studio
                 </span>
               )}
             </Link>

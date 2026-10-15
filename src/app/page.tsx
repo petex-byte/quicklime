@@ -58,7 +58,7 @@ export default function Home() {
           title: s.title,
           artist: a.name,
           year: s.year,
-          line: s.beats[0].lines.join(" "),
+          line: s.beats.find((b) => b.twist)?.twist ?? s.beats[0].lines.join(" "),
           image: s.image,
           standIn: Boolean(s.image.standIn),
         },
@@ -78,7 +78,9 @@ export default function Home() {
     }));
   const first = Math.min(...artists.map((a) => a.born));
   const last = Math.max(...artists.map((a) => a.died));
-  const span = `${Math.round((last - first) / 10) * 10} years of painting, ${first}–${last}`;
+  const span = `${first}–${last}`;
+  const oldest = rows[0].name;
+  const newest = rows[rows.length - 1].name;
 
   return (
     <>
@@ -88,7 +90,7 @@ export default function Home() {
 
         <section className="px-5 py-24 md:px-12 md:py-32">
           <p className="max-w-[22ch] font-display text-[clamp(1.9rem,7vw,4rem)] font-light leading-[1.05] text-paper text-balance">
-            One painting. One story. Told a detail at a time, until the detail turns out to be the story.
+            Most people give a great painting the time it takes to photograph it. Then they walk on. The best part is still there.
           </p>
         </section>
 
@@ -97,21 +99,21 @@ export default function Home() {
           image={wave.image}
           alt={wave.cover.kicker}
           focus={fuji.focus}
-          lines={["Start with one detail.", "Then step back."]}
+          lines={["A tiny mountain.", "Now step back."]}
           twist={fuji.twist!}
           cta={`Read ${wave.title}`}
         />
 
         <StoryWall cards={cards} />
 
-        <ArtistIndex rows={rows} span={span} />
+        <ArtistIndex rows={rows} span={span} oldest={oldest} newest={newest} />
 
         <section className="px-5 pb-24 md:px-12">
           <Link
             href="/artists"
             className="group flex items-center justify-between gap-6 rounded-3xl bg-lime px-6 py-10 text-ink md:px-12 md:py-16"
           >
-            <span className="font-display text-[clamp(2.2rem,8vw,5.5rem)] leading-none">Enter the directory</span>
+            <span className="font-display text-[clamp(2.2rem,8vw,5.5rem)] leading-none">Pick one. Look longer.</span>
             <span aria-hidden className="text-4xl transition-transform group-hover:translate-x-2 md:text-6xl">
               →
             </span>
@@ -121,7 +123,7 @@ export default function Home() {
 
       <footer className="flex flex-col gap-2 border-t border-paper/10 px-5 py-10 text-sm text-paper/50 md:flex-row md:justify-between md:px-12">
         <span>quicklime.co.za</span>
-        <span>Public-domain paintings, told one detail at a time.</span>
+        <span>Every painting is out of copyright. Every story lists its sources.</span>
       </footer>
     </>
   );
