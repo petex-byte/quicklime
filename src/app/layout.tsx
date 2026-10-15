@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://quicklime.co.za"),
   title: { default: "Quicklime", template: "%s · Quicklime" },
-  description: "Great paintings hide their best part in plain sight. Each story shows you where to look, one detail at a time.",
+  description: "At the Met, a painting gets 17 seconds. Quicklime shows you the details most people walk past, one at a time.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

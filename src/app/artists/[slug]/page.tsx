@@ -49,7 +49,7 @@ export default async function ArtistPage({ params }: Props) {
           {artist.nationality} · {artist.movement} · {lifespan(artist)}
         </p>
         <p className="mt-10 max-w-md text-paper/80">
-          {artist.featuredWork}. The story is being researched and fact-checked. It goes up when every line holds.
+          {artist.featuredWork}. We are still checking the story. It goes up when every line holds.
         </p>
         <Link href="/artists" className="mt-10 inline-flex min-h-11 w-fit items-center border-b border-lime text-lime">
           Back to the directory

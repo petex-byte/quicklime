@@ -90,8 +90,19 @@ export default function Home() {
 
         <section className="px-5 py-24 md:px-12 md:py-32">
           <p className="max-w-[22ch] font-display text-[clamp(1.9rem,7vw,4rem)] font-light leading-[1.05] text-paper text-balance">
-            Most people give a great painting the time it takes to photograph it. Then they walk on. The best part is still there.
+            At the Met, the median visitor gives a painting 17 seconds. Label included.
           </p>
+          <p className="mt-6 max-w-[42ch] text-lg leading-relaxed text-paper/80">
+            Call it the walk-past. Quicklime slows it down: one painting, a few details, and the thing nobody stayed long enough to see.
+          </p>
+          <a
+            href="https://journals.sagepub.com/doi/10.2190/5MQM-59JH-X21R-JN5J"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 inline-flex min-h-11 items-center text-xs uppercase tracking-[0.2em] text-paper/70 underline-offset-4 hover:underline"
+          >
+            Source: Smith &amp; Smith, Spending Time on Art, 2001
+          </a>
         </section>
 
         <DetailZoom
@@ -113,7 +124,7 @@ export default function Home() {
             href="/artists"
             className="group flex items-center justify-between gap-6 rounded-3xl bg-lime px-6 py-10 text-ink md:px-12 md:py-16"
           >
-            <span className="font-display text-[clamp(2.2rem,8vw,5.5rem)] leading-none">Pick one. Look longer.</span>
+            <span className="font-display text-[clamp(2.2rem,8vw,5.5rem)] leading-none">Pick one. Beat 17 seconds.</span>
             <span aria-hidden className="text-4xl transition-transform group-hover:translate-x-2 md:text-6xl">
               →
             </span>
@@ -123,7 +134,7 @@ export default function Home() {
 
       <footer className="flex flex-col gap-2 border-t border-paper/10 px-5 py-10 text-sm text-paper/70 md:flex-row md:justify-between md:px-12">
         <span>quicklime.co.za</span>
-        <span>Every painting is out of copyright. Every story lists its sources.</span>
+        <span>Every painting is out of copyright. Every story shows its sources, so you can check our homework.</span>
       </footer>
     </>
   );

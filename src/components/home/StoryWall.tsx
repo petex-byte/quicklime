@@ -39,7 +39,7 @@ export function StoryWall({ cards }: { cards: WallCard[] }) {
         <div>
           <p className="text-[11px] uppercase tracking-[0.25em] text-paper/70">{cards.length} paintings · one twist each</p>
           <h2 id="wall-title" className="mt-2 font-display text-[clamp(2.4rem,9vw,5.5rem)] font-light leading-none text-paper">
-            Everyone walks past these
+            The walk-past wall
           </h2>
         </div>
         <div className="hidden gap-2 md:flex">
