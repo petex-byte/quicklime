@@ -29,7 +29,9 @@ const SHADE: Record<Section["type"], number> = {
   footer: 0.95,
 };
 
-export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
+type Next = { slug: string; title: string };
+
+export function StoryPage({ story, artist, next }: { story: Story; artist: Artist; next: Next }) {
   const sections: Section[] = [
     { type: "cover" },
     ...story.beats.map((_, index) => ({ type: "beat" as const, index })),
@@ -80,6 +82,36 @@ export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
     <div ref={scroller} className="story-scroller">
       <GlassFilter />
 
+      {/* Top bar: progress through the story and a way out at any point. */}
+      <div className="pointer-events-none fixed inset-x-0 top-0 z-20 bg-gradient-to-b from-ink/70 to-transparent px-4 pb-6 pt-[calc(env(safe-area-inset-top,0px)+0.6rem)] md:px-8">
+        <div className="flex gap-1" aria-hidden>
+          {sections.map((_, i) => (
+            <span
+              key={i}
+              className={clsx(
+                "h-[3px] flex-1 rounded-full transition-colors duration-300",
+                i < active ? "bg-paper" : i === active ? "bg-lime" : "bg-paper/25",
+              )}
+            />
+          ))}
+        </div>
+        <div className="mt-1 flex items-center justify-between">
+          <Link
+            href="/artists"
+            aria-label="Close story, back to the directory"
+            className="pointer-events-auto -ml-2 flex h-11 w-11 items-center justify-center text-paper"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </Link>
+          <p className="text-xs uppercase tracking-[0.18em] text-paper/80" aria-live="polite">
+            {story.title} · {active + 1} / {sections.length}
+          </p>
+          <span className="w-9" aria-hidden />
+        </div>
+      </div>
+
       {/* Pinned canvas: one painting for the whole page. */}
       <motion.div
         aria-hidden
@@ -114,7 +146,7 @@ export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
       </motion.div>
 
       {sections.map((s, i) => (
-        <section key={i} data-index={i} className="story-section">
+        <section key={i} data-index={i} className="story-section" style={s.type === "footer" ? { paddingBottom: 0 } : undefined}>
           {s.type === "cover" && <Cover story={story} artist={artist} />}
           {s.type === "beat" && (
             <Beat beat={story.beats[s.index]} n={s.index + 1} />
@@ -122,7 +154,7 @@ export function StoryPage({ story, artist }: { story: Story; artist: Artist }) {
           {s.type === "reveal" && <Reveal story={story} artist={artist} />}
           {s.type === "quote" && <Quote story={story} />}
           {s.type === "close" && <Close story={story} />}
-          {s.type === "footer" && <Footer story={story} artist={artist} />}
+          {s.type === "footer" && <Footer story={story} artist={artist} next={next} />}
         </section>
       ))}
 
@@ -274,19 +306,21 @@ function Reveal({ story, artist }: { story: Story; artist: Artist }) {
 
 function Quote({ story }: { story: Story }) {
   return (
-    <div className="flex h-full flex-col items-center justify-center px-6 text-center">
-      <motion.blockquote
-        initial={{ opacity: 0, scale: 0.96 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+    <div className="flex h-full items-end justify-center px-5 pb-6 md:items-center md:px-16 md:pb-0">
+      <motion.figure
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ amount: 0.6 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-5xl font-display text-[clamp(2.4rem,7vw,6rem)] leading-[1.02] text-paper"
+        transition={{ duration: 0.6, ease: [0.2, 0.7, 0.2, 1] }}
+        className="glass glass-solid w-full max-w-3xl p-6 md:p-10"
       >
-        “{story.quote.text}”
-      </motion.blockquote>
-      <p className="mt-8 text-xs uppercase tracking-[0.25em] text-paper/60">
-        {story.quote.attribution}
-      </p>
+        <blockquote className="font-display text-[clamp(1.6rem,6vw,3.25rem)] leading-[1.15] text-paper">
+          “{story.quote.text}”
+        </blockquote>
+        <figcaption className="mt-5 text-xs uppercase leading-relaxed tracking-[0.16em] text-paper/75">
+          {story.quote.attribution}
+        </figcaption>
+      </motion.figure>
     </div>
   );
 }
@@ -311,44 +345,52 @@ function Close({ story }: { story: Story }) {
   );
 }
 
-function Footer({ story, artist }: { story: Story; artist: Artist }) {
+function Footer({ story, artist, next }: { story: Story; artist: Artist; next: Next }) {
   return (
-    <div className="flex h-full flex-col justify-center gap-10 px-6 md:px-16">
-      <div>
-        <p className="font-display text-4xl text-paper md:text-6xl">
-          {artist.name}
-        </p>
-        <p className="mt-2 text-paper/60">
+    <div className="flex h-full flex-col justify-end">
+      {/* Solid sheet over the painting: sources and the next step stay readable on any image. */}
+      <div className="max-h-[78svh] overflow-y-auto rounded-t-3xl bg-[#121211] px-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-7 shadow-[0_-12px_40px_rgba(11,11,10,0.6)] md:mx-auto md:mb-10 md:w-full md:max-w-2xl md:rounded-3xl md:px-10 md:pb-10">
+        <p className="font-display text-4xl leading-none text-paper md:text-5xl">{artist.name}</p>
+        <p className="mt-2 text-sm text-paper/70">
           {artist.nationality} · {artist.movement} · {lifespan(artist)}
         </p>
-      </div>
-      {story.showSources !== false && (
-        <div>
-          <p className="mb-3 text-xs uppercase tracking-[0.25em] text-paper/40">
-            Sources
-          </p>
-          <ul className="space-y-1 text-sm text-paper/60">
-            {story.sources.map((s) => (
-              <li key={s.url}>
-                <a
-                  href={s.url}
-                  className="underline-offset-4 hover:underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+        {story.showSources !== false && (
+          <div className="mt-6">
+            <p className="mb-1 text-[11px] uppercase tracking-[0.22em] text-paper/70">
+              Sources · {story.sources.length}
+            </p>
+            <ul>
+              {story.sources.map((s) => (
+                <li key={s.url} className="border-b border-paper/10">
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex min-h-11 items-center justify-between gap-3 py-2 text-sm leading-snug text-paper/85 hover:text-paper"
+                  >
+                    <span>{s.label}</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden className="shrink-0 opacity-60">
+                      <path d="M7 17L17 7M9 7h8v8" />
+                    </svg>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <div className="mt-6 flex flex-col gap-1">
+          <Link
+            href={`/artists/${next.slug}`}
+            className="flex h-14 items-center justify-between rounded-full bg-lime px-6 text-base font-medium text-ink"
+          >
+            <span>Next: {next.title}</span>
+            <span aria-hidden>→</span>
+          </Link>
+          <Link href="/artists" className="flex h-11 items-center justify-center text-sm text-paper/80 hover:text-paper">
+            All painters
+          </Link>
         </div>
-      )}
-      <Link
-        href="/artists"
-        className="w-fit border-b border-lime pb-1 text-lime"
-      >
-        Back to the directory
-      </Link>
+      </div>
     </div>
   );
 }

@@ -44,7 +44,7 @@ export function DetailZoom({
   return (
     <section ref={ref} className="relative h-[320svh] bg-ink" aria-label="One detail">
       <div className="sticky top-0 flex h-[100svh] items-start justify-center overflow-hidden pt-[24svh] md:items-center md:pt-0">
-        <p className="absolute left-5 top-[calc(env(safe-area-inset-top,0px)+5rem)] z-10 text-[11px] uppercase tracking-[0.25em] text-paper/70 md:left-12">
+        <p className="absolute left-5 top-[calc(env(safe-area-inset-top,0px)+5rem)] z-10 text-[11px] uppercase tracking-[0.25em] text-paper/75 md:left-12">
           Look closer
         </p>
         <div
@@ -62,7 +62,7 @@ export function DetailZoom({
           <div className="relative min-h-[9.5rem] md:min-h-[8rem]">
             <Beat p={p} range={[0.02, 0.1, 0.24, 0.3]}>{lines[0]}</Beat>
             <Beat p={p} range={[0.3, 0.36, 0.5, 0.56]}>{lines[1]}</Beat>
-            <Beat p={p} range={[0.58, 0.66, 0.99, 1]} accent>
+            <Beat p={p} range={[0.58, 0.66, 0.99, 1]} accent hold>
               {twist}
             </Beat>
           </div>
@@ -79,15 +79,18 @@ function Beat({
   p,
   range,
   accent,
+  hold,
   children,
 }: {
   p: MotionValue<number>;
   range: [number, number, number, number];
   accent?: boolean;
+  /** Stay on screen to the end of the section, beside the call to action. */
+  hold?: boolean;
   children: React.ReactNode;
 }) {
-  const opacity = useTransform(p, range, [0, 1, 1, 0]);
-  const y = useTransform(p, range, [24, 0, 0, -16]);
+  const opacity = useTransform(p, range, hold ? [0, 1, 1, 1] : [0, 1, 1, 0]);
+  const y = useTransform(p, range, hold ? [24, 0, 0, 0] : [24, 0, 0, -16]);
   return (
     <motion.p
       style={{ opacity, y }}
@@ -105,7 +108,10 @@ function Cta({ p, href, children }: { p: MotionValue<number>; href: string; chil
   const opacity = useTransform(p, [0.7, 0.8], [0, 1]);
   return (
     <motion.div style={{ opacity }} className="mt-6">
-      <Link href={href} className="inline-flex items-center gap-3 border-b border-lime pb-1 text-lime">
+      <Link
+        href={href}
+        className="flex h-14 w-full max-w-sm items-center justify-between rounded-full bg-paper px-6 text-base font-medium text-ink"
+      >
         {children} <span aria-hidden>→</span>
       </Link>
     </motion.div>

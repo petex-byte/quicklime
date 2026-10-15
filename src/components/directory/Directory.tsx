@@ -39,24 +39,27 @@ export function Directory({ artists, live }: { artists: Artist[]; live: string[]
   return (
     <div>
       {/* One collapsed bar: search plus three filters. */}
-      <div className="sticky top-16 z-20 mb-10 flex flex-col gap-2 rounded-2xl border border-paper/10 bg-ink/80 p-2 backdrop-blur md:flex-row">
+      <div className="sticky top-16 z-20 mb-8 flex flex-col gap-2 rounded-2xl border border-paper/10 bg-ink/85 p-2 backdrop-blur md:flex-row md:items-center">
         <input
           type="search"
           value={f.q}
           onChange={set("q")}
-          placeholder="Search artists, works, movements"
+          placeholder="Painter, painting or movement"
           aria-label="Search"
-          className="min-w-0 flex-1 rounded-xl bg-transparent px-4 py-3 text-paper placeholder:text-paper/40 focus:outline-none focus-visible:ring-1 focus-visible:ring-lime"
+          className="min-h-12 min-w-0 flex-1 rounded-xl bg-paper/5 px-4 text-base text-paper placeholder:text-paper/60 focus:outline-none focus-visible:ring-1 focus-visible:ring-lime"
         />
-        <div className="grid grid-cols-3 gap-2 md:flex">
-          <Select label="Movement" value={f.movement} onChange={set("movement")} options={movements} />
-          <Select label="Nationality" value={f.nationality} onChange={set("nationality")} options={nationalities} />
-          <Select label="Era" value={f.era} onChange={set("era")} options={eras} />
+        <div className="no-scrollbar -mx-2 flex gap-2 overflow-x-auto px-2 md:mx-0 md:px-0">
+          <Select label="Movement" any="Any movement" value={f.movement} onChange={set("movement")} options={movements} />
+          <Select label="Nationality" any="Any nationality" value={f.nationality} onChange={set("nationality")} options={nationalities} />
+          <Select label="Era" any="Any era" value={f.era} onChange={set("era")} options={eras} />
         </div>
       </div>
 
-      <p className="mb-6 text-sm text-paper/50">
-        {shown.length} of {artists.length}
+      <p className="mb-6 flex items-center gap-2 text-sm text-paper/70">
+        {shown.length === artists.length ? `${artists.length} painters` : `${shown.length} of ${artists.length} painters`}
+        <span aria-hidden>·</span>
+        <span aria-hidden className="h-2 w-2 rounded-full bg-lime" />
+        {shown.filter((a) => live.includes(a.slug)).length} with a story
       </p>
 
       <motion.ul layout className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 lg:grid-cols-4">
@@ -87,7 +90,7 @@ export function Directory({ artists, live }: { artists: Artist[]; live: string[]
                     )}
                   </div>
                   <p className="mt-3 font-display text-lg leading-tight text-paper">{a.name}</p>
-                  <p className="text-sm text-paper/50">{lifespan(a)}</p>
+                  <p className="text-sm text-paper/70">{lifespan(a)}</p>
                 </Link>
               </motion.li>
             );
@@ -95,37 +98,53 @@ export function Directory({ artists, live }: { artists: Artist[]; live: string[]
         </AnimatePresence>
       </motion.ul>
 
-      {shown.length === 0 && <p className="py-20 text-center text-paper/50">Nothing matches. Loosen a filter.</p>}
+      {shown.length === 0 && (
+        <div className="flex flex-col items-center gap-4 py-20 text-center text-paper/70">
+          <p>Nothing matches. Loosen a filter.</p>
+          <button
+            type="button"
+            onClick={() => setF({ q: "", movement: ALL, nationality: ALL, era: ALL })}
+            className="min-h-11 rounded-full border border-paper/25 px-5 text-sm text-paper hover:border-lime"
+          >
+            Clear all filters
+          </button>
+        </div>
+      )}
     </div>
   );
 }
 
 function Select({
   label,
+  any,
   value,
   onChange,
   options,
 }: {
   label: string;
+  any: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
   options: string[];
 }) {
   return (
-    <label className="relative">
+    <label className="relative shrink-0">
       <span className="sr-only">{label}</span>
       <select
         value={value}
         onChange={onChange}
-        className="w-full appearance-none rounded-xl bg-paper/5 px-4 py-3 pr-8 text-sm text-paper focus:outline-none focus-visible:ring-1 focus-visible:ring-lime md:w-auto"
+        className={clsx(
+          "min-h-11 appearance-none rounded-full border px-4 pr-9 text-sm text-paper focus:outline-none focus-visible:ring-1 focus-visible:ring-lime",
+          value === ALL ? "border-paper/20 bg-transparent" : "border-lime bg-lime/10",
+        )}
       >
         {options.map((o) => (
           <option key={o} value={o} className="bg-ink">
-            {o === ALL ? `${label}: all` : o}
+            {o === ALL ? any : o}
           </option>
         ))}
       </select>
-      <span aria-hidden className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-paper/50">
+      <span aria-hidden className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-paper/70">
         ▾
       </span>
     </label>

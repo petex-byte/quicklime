@@ -44,7 +44,7 @@ export function ArtistIndex({
 
   return (
     <section className="px-5 py-20 md:px-12 md:py-28" aria-labelledby="index-title">
-      <p className="text-[11px] uppercase tracking-[0.25em] text-paper/50">{rows.length} painters · {span}</p>
+      <p className="text-[11px] uppercase tracking-[0.25em] text-paper/70">{rows.length} painters · {span}</p>
       <h2 id="index-title" className="mt-2 font-display text-[clamp(2.4rem,9vw,5.5rem)] font-light leading-none text-paper">
         From {oldest} to {newest}
       </h2>
@@ -63,26 +63,23 @@ export function ArtistIndex({
               <span className="min-w-0 flex-1">
                 <span
                   className={
-                    "block truncate font-display text-[clamp(1.5rem,6vw,3.25rem)] leading-tight transition-colors " +
-                    (r.live ? "text-paper group-hover:text-lime" : "text-paper/40")
+                    "block font-display text-[clamp(1.5rem,6vw,3.25rem)] leading-tight transition-colors " +
+                    (r.live ? "text-paper group-hover:text-lime" : "text-paper/65")
                   }
                 >
                   {r.name}
                 </span>
-                <span className="block text-xs text-paper/50 md:hidden">
+                <span className="block text-xs text-paper/70 md:hidden">
+                  {!r.live && <span className="text-lime">In the studio · </span>}
                   {r.dates} · {r.movement}
                 </span>
               </span>
-              <span className="hidden shrink-0 text-right text-sm text-paper/50 tabular-nums md:block">
+              <span className="hidden shrink-0 text-right text-sm text-paper/70 tabular-nums md:block">
+                {!r.live && <span className="block text-lime">In the studio</span>}
                 {r.movement}
                 <br />
                 {r.dates}
               </span>
-              {!r.live && (
-                <span className="shrink-0 rounded-full border border-paper/15 px-2 py-0.5 text-[10px] uppercase tracking-[0.2em] text-paper/40">
-                  In the studio
-                </span>
-              )}
             </Link>
           </li>
         ))}

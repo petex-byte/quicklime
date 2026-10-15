@@ -37,7 +37,7 @@ export function StoryWall({ cards }: { cards: WallCard[] }) {
     <section className="py-20 md:py-28" aria-labelledby="wall-title">
       <div className="mb-8 flex items-end justify-between gap-6 px-5 md:px-12">
         <div>
-          <p className="text-[11px] uppercase tracking-[0.25em] text-paper/50">{cards.length} paintings · one twist each</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-paper/70">{cards.length} paintings · one twist each</p>
           <h2 id="wall-title" className="mt-2 font-display text-[clamp(2.4rem,9vw,5.5rem)] font-light leading-none text-paper">
             Everyone walks past these
           </h2>

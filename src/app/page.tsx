@@ -121,7 +121,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="flex flex-col gap-2 border-t border-paper/10 px-5 py-10 text-sm text-paper/50 md:flex-row md:justify-between md:px-12">
+      <footer className="flex flex-col gap-2 border-t border-paper/10 px-5 py-10 text-sm text-paper/70 md:flex-row md:justify-between md:px-12">
         <span>quicklime.co.za</span>
         <span>Every painting is out of copyright. Every story lists its sources.</span>
       </footer>

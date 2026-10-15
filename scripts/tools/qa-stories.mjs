@@ -46,9 +46,10 @@ for (const [vw, vh] of [
     for (let i = 0; i < n; i++) {
       await page.evaluate((i) => document.querySelector(`[data-index="${i}"]`).scrollIntoView(), i);
       await page.waitForTimeout(150);
-      const r = await page.evaluate((i) => {
+      const r = await page.evaluate(([i, last]) => {
         const sec = document.querySelector(`[data-index="${i}"]`);
-        const band = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--band")) * 16;
+        // The last section (the sources sheet) runs to the screen edge by design: the band is empty there.
+        const band = last ? 0 : parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--band")) * 16;
         const box = sec.getBoundingClientRect();
         let over = 0;
         let wide = 0;
@@ -59,7 +60,7 @@ for (const [vw, vh] of [
           wide = Math.max(wide, e.right - innerWidth);
         });
         return { over: Math.round(over), wide: Math.round(wide) };
-      }, i);
+      }, [i, i === n - 1]);
       if (r.over > 0) problems.push(`${vw}px ${slug} section ${i}: text ${r.over}px into the bottom band`);
       if (r.wide > 0) problems.push(`${vw}px ${slug} section ${i}: text ${r.wide}px off the right edge`);
       if (shots && vw === 390) await page.screenshot({ path: path.join(ROOT, ".focus", `qa-${slug}-${i}.png`) });
