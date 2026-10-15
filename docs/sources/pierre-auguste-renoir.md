@@ -6,23 +6,23 @@ Internal sources list for `src/content/stories/pierre-auguste-renoir.ts`. Each l
 
 | Copy | Claim | Source | Status |
 | --- | --- | --- | --- |
-| "Chatou. Summer 1880." | Begun summer 1880 on a restaurant terrace at Chatou, on an island in the Seine; dated 1880–81 | Morgan Library online exhibition; Phillips Collection (1880–81) | re-check |
-| "A restaurant terrace on the Seine." | Setting: restaurant terrace (Maison Fournaise) at Chatou | Morgan Library; Phillips Collection | re-check. "Maison Fournaise" not confirmed this pass, so it's not named |
-| "Fourteen people. Nearly all his friends." | Fourteen figures, nearly all identifiable as friends and favourite models | Morgan Library ("nearly all of the fourteen figures"); Smithsonian ("14 good friends (and one fluffy dog)"); Phillips ("most of the models, all friends of the artist, have been identified") | re-check |
-| "Look up. The striped awning. It wasn't there at first." | Renoir added the awning across the top edge during the work | Phillips Collection, *Beneath the Surface* (Part 2), 2017 technical study | re-check. Visual: confirm against image |
-| "Underneath it: sky, a bridge, the far bank." | Under the awning, brushstrokes suggest sky and landscape; the bridge and a dwelling on the far left were at first fully visible | Phillips Collection, *Beneath the Surface* | re-check. "The far bank" is a plain gloss on "landscape"; confirm the wording is fair |
-| "On the table, glasses vanish. A wine glass, painted out. Another turns into grapes." | A wine glass in front of the cask was painted out; an aperitif glass was replaced with a bunch of grapes | Phillips Collection, *Beneath the Surface* | re-check. Single source, but it is the museum's own technical study |
-| "Lower right: Gustave Caillebotte." | Caillebotte is seated in the lower right | Wikipedia; Interlude.hk / other descriptions | re-check against the Phillips sitter key |
-| "Painter. Collector. Friend." | Caillebotte was a painter and patron of his Impressionist friends | Search excerpt ("the painter and art patron, Gustave Caillebotte"); widely documented | re-check |
-| "Lower left, a woman with a little dog." | Aline Charigot, holding a small affenpinscher, lower left | Wikipedia; GetDailyArt; Phillips (affenpinscher) | re-check. Visual: confirm against image |
-| "She wasn't the first to sit there. Renoir scratched the first model out." | X-ray and infrared show Renoir scratched out a model and painted another in her place | NPR 2017 (curator Eliza Rathbone; X-ray/infrared); Smithsonian 2017 (woman next to the affenpinscher replaced by Aline Charigot) | re-check. Two independent outlets, both reporting on the 2017 Phillips exhibition |
-| "He painted in Aline Charigot." | The replacement model was Aline Charigot | NPR 2017; Smithsonian 2017 | re-check |
-| Twist: "Ten years later, he married her." | Renoir married Aline Charigot in 1890 | Wikipedia (*Luncheon* and *Aline Charigot*); Bonjour Paris | re-check |
-| Quote | "I'm not getting any younger." From an 1880 letter Renoir wrote to a friend from the riverside town where he was painting oarsmen | NPR 2017 article and transcript | re-check. English translation; NPR doesn't name the recipient in the excerpts seen (often given as Paul Bérard, **not confirmed**, so the attribution says "a friend"). Confirm the letter and wording in a Renoir correspondence edition |
-| "Duncan Phillips first saw it in 1911." | Phillips first saw it in 1911, when it was owned by Durand-Ruel | Artnet News ("three things you might not know"); Phillips Collection | re-check |
-| "It took him twelve years to get it." | 1911 to 1923 | Arithmetic from the row above and below; one account says "some twelve years" | re-check |
-| "July 1923. The deal closes at $125,000." | By 9 July 1923 the Phillips Memorial Gallery reached a deal for $125,000 | Phillips Collection; Artnet; Smithsonian | re-check |
-| "It is still the Phillips Collection's." | Owned by the Phillips Collection | Phillips Collection | re-check. It was on loan to the Musée d'Orsay (*Renoir and Love*, 17 Mar–19 Jul 2026) and due back in August 2026, which is why the line says it's theirs rather than that it's on the wall |
+| "Chatou. Summer 1880." | Begun summer 1880 at Chatou | Morgan Library: "In the summer of 1880, Renoir began work on... Luncheon of the Boating Party, set on the terrace of a restaurant in the Parisian suburb of Chatou, on an island in the Seine" | confirmed (15 Oct 2026) |
+| "A restaurant terrace on the Seine." | Restaurant terrace at Chatou | Morgan Library (as above); Phillips record names "son of the restaurant's owner" Alphonse Fournaise Jr. | confirmed (15 Oct 2026) |
+| "Fourteen people. Nearly all his friends." | 14 figures, nearly all friends and models | Morgan Library: "Nearly all of the fourteen figures are identifiable as friends and favorite models of the artist"; Phillips: "Most of the models... all friends of the artist" | confirmed (15 Oct 2026) |
+| "Look up. The striped awning. It wasn't there at first." | Awning added during the work | Phillips, Beneath the Surface Part 2: "Renoir made a critical modification to the composition by adding an awning across the top edge" | confirmed (15 Oct 2026) |
+| "Underneath it: sky, a bridge, the far bank." | Sky, landscape, bridge and a dwelling under the awning | Phillips Part 2: "the landscape and sky initially dominated the top... the bridge was initially visible in its entirety, along with a dwelling on the far left" | confirmed (15 Oct 2026) ("the far bank" glosses "landscape... dwelling") |
+| "On the table, glasses vanish. A wine glass, painted out. Another turns into grapes." | Wine glass painted out; aperitif glass replaced with grapes | Phillips, Beneath the Surface **Part 3**: "A wine glass in front of the cask was painted out. An aperitif glass was replaced with a small bunch of grapes" | confirmed (15 Oct 2026). The earlier source list cited Part 2; the passage is in Part 3 (link added) |
+| "Lower right: Gustave Caillebotte." | Caillebotte seated lower right | Phillips record: "The painter Gustave Caillebotte sits backward in his chair"; position checked on the image | confirmed (15 Oct 2026) |
+| "Painter. Collector. Friend." | Painter and patron/collector of his Impressionist friends | Wikipedia (Caillebotte): "a French painter who was a member and patron of the Impressionists... support his fellow artists and friends (Claude Monet, Auguste Renoir...) by purchasing their works" | confirmed (15 Oct 2026) |
+| "Lower left, a woman with a little dog." | Aline Charigot with a small dog, left | Phillips record: "Aline Charigot... coos at her terrier"; NPR: "sits a bit apart on the left... nuzzling an adorable little dog" | confirmed (15 Oct 2026) |
+| "She wasn't the first to sit there. Renoir scratched the first model out." | Model scratched out and replaced | NPR transcript (curator Eliza Rathbone): "scratched her out and painted somebody over where she had been. X-rays and infrared reveal the 19th-century scratch outs"; Artnet: "he infamously scratched out another sitter to include her face" | confirmed (15 Oct 2026) |
+| "He painted in Aline Charigot." | The replacement was Aline Charigot | NPR transcript; Smithsonian: "whom he ultimately replaces with a model by the name of Aline Charigot" | confirmed (15 Oct 2026) |
+| Twist: "Ten years later, he married her." | Married 1890 | Wikipedia (Aline Charigot): "they married in Paris on 14 April 1890" | confirmed (15 Oct 2026) |
+| Quote | "I'm not getting any younger." | NPR transcript: "Renoir wrote a friend that he was in a riverside town near Paris painting oarsman. 'I'm not getting any younger,'..." | confirmed (15 Oct 2026): wording matches NPR's English exactly. NPR doesn't name the recipient, so the attribution stays "a friend". Not checked against a printed correspondence edition |
+| "Duncan Phillips first saw it in 1911." | First saw it in 1911 | Artnet: "after first seeing the work while in Europe in 1911" | confirmed (15 Oct 2026) |
+| "It took him twelve years to get it." | 1911 to 1923 | Artnet: "spent some twelve years on a mission to acquire" | confirmed (15 Oct 2026) |
+| "July 1923. The deal closes at $125,000." | 1923, $125,000 | Artnet: "In 1923 he purchased the work... for $125,000"; Smithsonian: "$125,000... in 1923". The month: WSJ review, "In July 1923, Duncan Phillips made his most ambitious acquisition" (search excerpt only; paywalled) | year and price confirmed (15 Oct 2026). **"July": re-check**, excerpt only. Drop "July" if no page confirms it |
+| "It is still the Phillips Collection's." | Owned by the Phillips | Phillips collection record (live page, 15 Oct 2026) | confirmed (15 Oct 2026) |
 
 ## Dropped or kept out
 
@@ -48,6 +48,9 @@ Phillips Collection: 51 1/4 × 69 1/8 in (130.2 × 175.6 cm). The story uses 160
 - Artnet News: https://news.artnet.com/art-world/renoirs-luncheon-of-the-boating-three-things-you-might-not-know-1900119
 - Wikipedia: https://en.wikipedia.org/wiki/Luncheon_of_the_Boating_Party
 - Wikipedia, Aline Charigot: https://en.wikipedia.org/wiki/Aline_Charigot
+- Phillips Collection, *Beneath the Surface* Part 3: https://www.phillipscollection.org/blog/2017-12-07-beneath-surface-luncheon-boating-party-part-3
+- Wikipedia, Gustave Caillebotte: https://en.wikipedia.org/wiki/Gustave_Caillebotte
+- WSJ review (July 1923, excerpt only): https://www.wsj.com/articles/renoir-and-friends-luncheon-of-the-boating-party-review-most-colorful-company-1507667327
 
 ## Image
 
