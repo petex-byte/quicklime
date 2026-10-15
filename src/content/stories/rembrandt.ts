@@ -60,7 +60,7 @@ export const rembrandt: Story = {
         "One man isn't watching the storm.",
         "He's watching you.",
       ],
-      twist: "Twelve disciples. Christ. Count again. Fourteen.",
+      twist: "That face looks like Rembrandt's own.",
       caption: "The figure most often read as Rembrandt himself",
     },
   ],
