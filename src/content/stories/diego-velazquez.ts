@@ -75,7 +75,7 @@ export const diegoVelazquez: Story = {
   quote: {
     text: "Everything else seemed like painting, but this alone like truth.",
     attribution:
-      "The painters at the Pantheon, 1650, as recorded by Antonio Palomino (1724)",
+      "The painters at the Pantheon, 1650, as recorded by Antonio Palomino (1724). Our translation from his Spanish",
   },
   close: {
     heading: "27 November 1970",
