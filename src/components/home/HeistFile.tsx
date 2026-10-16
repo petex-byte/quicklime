@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Painting } from "@/components/Painting";
 import { getStory } from "@/content/stories";
-import { getArtist } from "@/content/artists";
 import { heists } from "@/content/heists";
 
 /** Famous thefts of paintings on the site. Missing works show an empty frame. */
@@ -24,7 +23,6 @@ export function HeistFile() {
       <ol className="mt-12 grid gap-5 md:grid-cols-2">
         {heists.map((h, i) => {
           const story = h.slug ? getStory(h.slug) : undefined;
-          const artist = h.slug ? getArtist(h.slug) : undefined;
           return (
             <li key={h.id} className="flex flex-col overflow-hidden rounded-3xl border border-paper/10 bg-paper/[0.03]">
               <div className="relative aspect-[16/10] overflow-hidden bg-ink">
@@ -60,14 +58,12 @@ export function HeistFile() {
                 <p className="font-display text-xl leading-snug text-lime md:text-2xl">{h.twist}</p>
                 <p className="text-sm text-paper/70">{h.status}</p>
                 <div className="mt-auto flex flex-wrap items-center justify-between gap-x-4 gap-y-1 border-t border-paper/10 pt-4">
-                  {story && artist && (
-                    <Link
-                      href={`/artists/${h.slug}`}
-                      className="inline-flex min-h-11 items-center gap-2 text-sm text-paper hover:text-lime"
-                    >
-                      {h.linkLabel ?? `Read ${story.title}`} <span aria-hidden>→</span>
-                    </Link>
-                  )}
+                  <Link
+                    href={`/heists/${h.id}`}
+                    className="inline-flex min-h-11 items-center gap-2 text-sm text-paper hover:text-lime"
+                  >
+                    Read the full file <span aria-hidden>→</span>
+                  </Link>
                   <span className="flex flex-wrap gap-x-3 text-xs text-paper/60">
                     {h.sources.map((s) => (
                       <a
