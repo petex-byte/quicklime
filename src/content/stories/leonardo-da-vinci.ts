@@ -73,19 +73,19 @@ export const leonardoDaVinci: Story = {
   },
   sources: [
     {
-      label: "Heidelberg University — Mona Lisa's identity established (2008)",
+      label: "Heidelberg University: Mona Lisa's identity established (2008)",
       url: "https://uni-heidelberg.de/press/news/press552e.html",
     },
     {
-      label: "Smithsonian — The theft that made the Mona Lisa a masterpiece",
+      label: "Smithsonian: The theft that made the Mona Lisa a masterpiece",
       url: "https://www.smithsonianmag.com/arts-culture/the-theft-that-made-the-mona-lisa-a-masterpiece-16406234/",
     },
     {
-      label: "Wikipedia — Vincenzo Peruggia",
+      label: "Wikipedia: Vincenzo Peruggia",
       url: "https://en.wikipedia.org/wiki/Vincenzo_Peruggia",
     },
     {
-      label: "Wikipedia — Mona Lisa",
+      label: "Wikipedia: Mona Lisa",
       url: "https://en.wikipedia.org/wiki/Mona_Lisa",
     },
   ],

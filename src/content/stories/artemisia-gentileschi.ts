@@ -76,23 +76,23 @@ export const artemisiaGentileschi: Story = {
   },
   sources: [
     {
-      label: "Uffizi — Judith Beheading Holofernes",
+      label: "Uffizi: Judith Beheading Holofernes",
       url: "https://www.uffizi.it/en/artworks/judith-beheading-holofernes",
     },
     {
-      label: "Wikipedia — Judith Slaying Holofernes (Artemisia Gentileschi, Florence)",
+      label: "Wikipedia: Judith Slaying Holofernes (Artemisia Gentileschi, Florence)",
       url: "https://en.wikipedia.org/wiki/Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Florence)",
     },
     {
-      label: "Artnet — Art Bites: Gentileschi and Galileo",
+      label: "Artnet: Art Bites: Gentileschi and Galileo",
       url: "https://news.artnet.com/art-world/art-bites-gentileschi-galileo-2458092",
     },
     {
-      label: "National Geographic — Artemisia Gentileschi shocked 17th-century Italy",
+      label: "National Geographic: Artemisia Gentileschi shocked 17th-century Italy",
       url: "https://www.nationalgeographic.com/history/history-magazine/article/artist-artemisia-gentileschi-shocked-17th-century-italy",
     },
     {
-      label: "Finestre sull'Arte — Artemisia Gentileschi, life and works",
+      label: "Finestre sull'Arte: Artemisia Gentileschi, life and works",
       url: "https://finestresullarte.info/en/ab-art-base/artemisia-gentileschi-life-and-works-of-the-great-seventeenth-century-artist",
     },
   ],

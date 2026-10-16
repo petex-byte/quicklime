@@ -79,23 +79,23 @@ export const wassilyKandinsky: Story = {
   },
   sources: [
     {
-      label: "Guggenheim Bilbao — Composition 8, teachers' guide",
+      label: "Guggenheim Bilbao: Composition 8, teachers' guide",
       url: "https://guggenheim-bilbao.eus/en/learn/schools/teachers-guides/composition-8",
     },
     {
-      label: "Britannica — Composition VIII",
+      label: "Britannica: Composition VIII",
       url: "https://britannica.com/topic/Composition-VIII",
     },
     {
-      label: "MoMA — Kandinsky: Compositions (1995)",
+      label: "MoMA: Kandinsky: Compositions (1995)",
       url: "https://www.moma.org/calendar/exhibitions/448",
     },
     {
-      label: "The Art Newspaper — Kandinsky's Compositions at MoMA",
+      label: "The Art Newspaper: Kandinsky's Compositions at MoMA",
       url: "https://www.theartnewspaper.com/archive/kandinsky-s-compositions-a-connoisseur-s-show",
     },
     {
-      label: "Peggy Guggenheim Collection — Vasily Kandinsky",
+      label: "Peggy Guggenheim Collection: Vasily Kandinsky",
       url: "https://www.guggenheim-venice.it/en/art/artists/vasily-kandinsky/",
     },
   ],

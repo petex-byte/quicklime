@@ -89,8 +89,8 @@ export function Directory({ artists, live }: { artists: Artist[]; live: string[]
                       <span aria-label="Story live" className="absolute right-3 top-3 h-2 w-2 rounded-full bg-lime" />
                     )}
                   </div>
-                  <p className="mt-3 font-display text-lg leading-tight text-paper">{a.name}</p>
-                  <p className="text-sm text-paper/70">{lifespan(a)}</p>
+                  <p className="mt-3 font-display text-base leading-tight text-paper">{a.name}</p>
+                  <p className="text-xs text-paper/70">{lifespan(a)}</p>
                 </Link>
               </motion.li>
             );

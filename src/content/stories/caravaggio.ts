@@ -75,27 +75,27 @@ export const caravaggio: Story = {
   },
   sources: [
     {
-      label: "UNESCO — Stolen objects record: Nativity with Saints Lorenzo and Francesco",
+      label: "UNESCO: Stolen objects record: Nativity with Saints Lorenzo and Francesco",
       url: "https://museum.unesco.org/stolen-objects/VM-IT-25-001_Nativity_with_Saints_Lorenzo_and_Francesco_dAssisi_painting",
     },
     {
-      label: "Finestre sull'Arte — Caravaggio's Nativity: painted in Rome, sent to Palermo, stolen in 1969",
+      label: "Finestre sull'Arte: Caravaggio's Nativity: painted in Rome, sent to Palermo, stolen in 1969",
       url: "https://www.finestresullarte.info/en/works-and-artists/caravaggio-s-nativity-the-masterpiece-painted-in-rome-sent-to-palermo-and-stolen-in-1969",
     },
     {
-      label: "Artnet — The hunt for Caravaggio's Nativity",
+      label: "Artnet: The hunt for Caravaggio's Nativity",
       url: "https://news.artnet.com/art-world/the-hunt-caravaggio-nativity-2454998",
     },
     {
-      label: "Apollo — The murky mystery of Caravaggio's stolen Palermo Nativity",
+      label: "Apollo: The murky mystery of Caravaggio's stolen Palermo Nativity",
       url: "https://apollo-magazine.com/the-murky-mystery-of-caravaggios-stolen-palermo-nativity",
     },
     {
-      label: "Factum Foundation — Recreating the Nativity",
+      label: "Factum Foundation: Recreating the Nativity",
       url: "https://factumfoundation.org/our-projects/digital-restorations/caravaggios-nativity-with-saint-francis-and-saint-lawrence/",
     },
     {
-      label: "Wikipedia — Nativity with Saint Francis and Saint Lawrence",
+      label: "Wikipedia: Nativity with Saint Francis and Saint Lawrence",
       url: "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence",
     },
   ],

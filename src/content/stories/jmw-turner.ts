@@ -84,23 +84,23 @@ export const jmwTurner: Story = {
   },
   sources: [
     {
-      label: "National Gallery — The Fighting Temeraire",
+      label: "National Gallery: The Fighting Temeraire",
       url: "https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-the-fighting-temeraire",
     },
     {
-      label: "National Gallery — Heroine of Trafalgar",
+      label: "National Gallery: Heroine of Trafalgar",
       url: "https://www.nationalgallery.org.uk/paintings/learn-about-art/paintings-in-depth/heroine-of-trafalgar-the-fighting-temeraire",
     },
     {
-      label: "National Gallery — painting featured on new £20 note (2016)",
+      label: "National Gallery: painting featured on new £20 note (2016)",
       url: "https://www.nationalgallery.org.uk/about-us/press-and-media/press-releases-archive/national-gallery-s-iconic-work-featured-on-new-bank-of-england-20-note",
     },
     {
-      label: "Royal Museums Greenwich — Towing Temeraire drawing rediscovered",
+      label: "Royal Museums Greenwich: Towing Temeraire drawing rediscovered",
       url: "https://rmg.co.uk/stories/blog/curatorial/towing-temeraire-drawing-rediscovered",
     },
     {
-      label: "Wikipedia — The Fighting Temeraire",
+      label: "Wikipedia: The Fighting Temeraire",
       url: "https://en.wikipedia.org/wiki/The_Fighting_Temeraire",
     },
   ],

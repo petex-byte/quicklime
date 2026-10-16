@@ -10,7 +10,7 @@ import type { Story } from "../types";
 export const pierreAugusteRenoir: Story = {
   slug: "pierre-auguste-renoir",
   title: "The Luncheon",
-  year: "1880–81",
+  year: "1880 to 1881",
   image: {
     src: "/art/pierre-auguste-renoir.jpg",
     status: "pending",
@@ -87,23 +87,23 @@ export const pierreAugusteRenoir: Story = {
   },
   sources: [
     {
-      label: "The Phillips Collection — Luncheon of the Boating Party",
+      label: "The Phillips Collection: Luncheon of the Boating Party",
       url: "https://www.phillipscollection.org/collection/luncheon-boating-party",
     },
     {
-      label: "The Phillips Collection — Beneath the Surface (Part 2)",
+      label: "The Phillips Collection: Beneath the Surface (Part 2)",
       url: "https://www.phillipscollection.org/blog/2017-12-06-beneath-surface-luncheon-boating-party-part-2",
     },
     {
-      label: "Smithsonian — Exhibit sheds new light on Renoir's Luncheon (2017)",
+      label: "Smithsonian: Exhibit sheds new light on Renoir's Luncheon (2017)",
       url: "https://www.smithsonianmag.com/smart-news/new-exhibit-looks-behind-and-beneath-famed-renoir-painting-180965178",
     },
     {
-      label: "NPR — Guess who Renoir was in love with (2017)",
+      label: "NPR: Guess who Renoir was in love with (2017)",
       url: "https://www.npr.org/2017/10/26/559515290/guess-who-renoir-was-in-love-with-in-luncheon-of-the-boating-party",
     },
     {
-      label: "Wikipedia — Luncheon of the Boating Party",
+      label: "Wikipedia: Luncheon of the Boating Party",
       url: "https://en.wikipedia.org/wiki/Luncheon_of_the_Boating_Party",
     },
   ],

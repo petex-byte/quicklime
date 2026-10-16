@@ -80,7 +80,7 @@ export default function Home() {
     }));
   const first = Math.min(...artists.map((a) => a.born));
   const last = Math.max(...artists.map((a) => a.died));
-  const span = `${first}–${last}`;
+  const span = `${first} to ${last}`;
   const oldest = rows[0].name;
   const newest = rows[rows.length - 1].name;
 

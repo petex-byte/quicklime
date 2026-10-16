@@ -72,7 +72,7 @@ export const vincentVanGogh: Story = {
   quote: {
     text: "This morning I saw the countryside from my window a long time before sunrise, with nothing but the morning star, which looked very big.",
     attribution:
-      "Vincent van Gogh to Theo van Gogh, Saint-Rémy, c. 31 May–6 June 1889 (letter 777)",
+      "Vincent van Gogh to Theo van Gogh, Saint-Rémy, c. 31 May to 6 June 1889 (letter 777)",
   },
   close: {
     heading: "1941",
@@ -86,27 +86,27 @@ export const vincentVanGogh: Story = {
   },
   sources: [
     {
-      label: "MoMA — The Starry Night, collection record",
+      label: "MoMA: The Starry Night, collection record",
       url: "https://www.moma.org/collection/works/79802",
     },
     {
-      label: "MoMA Inside/Out — Shedding light on The Starry Night",
+      label: "MoMA Inside/Out: Shedding light on The Starry Night",
       url: "https://www.moma.org/explore/inside_out/2013/04/10/shedding-light-on-the-starry-night/",
     },
     {
-      label: "Van Gogh Letters — letter 777, to Theo",
+      label: "Van Gogh Letters: letter 777, to Theo",
       url: "https://vangoghletters.org/vg/letters/let777/letter.html",
     },
     {
-      label: "Google Arts & Culture — Zoom into The Starry Night",
+      label: "Google Arts & Culture: Zoom into The Starry Night",
       url: "https://artsandculture.google.com/story/egVRmbCQ5tyrVA",
     },
     {
-      label: "Freakonomics Radio — The Starry Night (MoMA's 1941 exchange)",
+      label: "Freakonomics Radio: The Starry Night (MoMA's 1941 exchange)",
       url: "https://freakonomics.com/podcast/the-starry-night/",
     },
     {
-      label: "Wikipedia — The Starry Night",
+      label: "Wikipedia: The Starry Night",
       url: "https://en.wikipedia.org/wiki/The_Starry_Night",
     },
   ],

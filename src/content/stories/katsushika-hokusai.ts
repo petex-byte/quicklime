@@ -10,7 +10,7 @@ import type { Story } from "../types";
 export const katsushikaHokusai: Story = {
   slug: "katsushika-hokusai",
   title: "The Great Wave",
-  year: "c. 1830–32",
+  year: "c. 1830 to 1832",
   image: {
     src: "/art/katsushika-hokusai.jpg",
     status: "pending",
@@ -82,23 +82,23 @@ export const katsushikaHokusai: Story = {
   },
   sources: [
     {
-      label: "The Met — Under the Wave off Kanagawa, JP1847",
+      label: "The Met: Under the Wave off Kanagawa, JP1847",
       url: "https://www.metmuseum.org/art/collection/search/45434",
     },
     {
-      label: "The Met — The Great Wave: Anatomy of an Icon",
+      label: "The Met: The Great Wave: Anatomy of an Icon",
       url: "https://www.metmuseum.org/en/essays/hokusai-great-wave",
     },
     {
-      label: "The Met — Hokusai and Debussy's Evocations of the Sea",
+      label: "The Met: Hokusai and Debussy's Evocations of the Sea",
       url: "https://www.metmuseum.org/en/perspectives/debussy-la-mer",
     },
     {
-      label: "Sibley Music Library, Eastman School — Debussy, La Mer",
+      label: "Sibley Music Library, Eastman School: Debussy, La Mer",
       url: "https://www.esm.rochester.edu/sibley/?p=7962",
     },
     {
-      label: "RISD Museum — Hokusai's Mount Fuji",
+      label: "RISD Museum: Hokusai's Mount Fuji",
       url: "https://risdmuseum.org/exhibitions-events/exhibitions/hokusais-mount-fuji",
     },
   ],

@@ -67,7 +67,7 @@ export const rembrandt: Story = {
   reveal: { lines: ["The whole storm.", "Uncropped."] },
   quote: {
     text: "Master, carest thou not that we perish?",
-    attribution: "Mark 4:38 — the line this painting is built on",
+    attribution: "Mark 4:38, the line this painting is built on",
   },
   close: {
     heading: "18 March 1990",
@@ -81,19 +81,19 @@ export const rembrandt: Story = {
   },
   sources: [
     {
-      label: "Isabella Stewart Gardner Museum — collection record",
+      label: "Isabella Stewart Gardner Museum: collection record",
       url: "https://gardnermuseum.emuseum.com/objects/212/christ-in-the-storm-on-the-sea-of-galilee",
     },
     {
-      label: "WBUR, Last Seen — Christ in the Storm on the Sea of Galilee",
+      label: "WBUR, Last Seen: Christ in the Storm on the Sea of Galilee",
       url: "https://www.wbur.org/lastseen/2018/09/15/christ-in-the-storm-on-the-sea-of-galilee",
     },
     {
-      label: "NPR — Gardner Museum doubles reward to $10 million (2017)",
+      label: "NPR: Gardner Museum doubles reward to $10 million (2017)",
       url: "https://www.npr.org/sections/thetwo-way/2017/05/24/529848502/hot-tip-on-old-heist-could-be-worth-10-million-gardner-museum-says",
     },
     {
-      label: "Wikipedia — The Storm on the Sea of Galilee",
+      label: "Wikipedia: The Storm on the Sea of Galilee",
       url: "https://en.wikipedia.org/wiki/The_Storm_on_the_Sea_of_Galilee",
     },
   ],

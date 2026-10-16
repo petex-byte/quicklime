@@ -59,7 +59,7 @@ export const sandroBotticelli: Story = {
   quote: {
     text: "the moist breath of the western wind wafted her over the waves of the loud-moaning sea in soft foam",
     attribution:
-      "Homeric Hymn 6, To Aphrodite (trans. H. G. Evelyn-White, 1914) — the myth the painting follows",
+      "Homeric Hymn 6, To Aphrodite (trans. H. G. Evelyn-White, 1914). The myth the painting follows",
   },
   close: {
     heading: "1870",
@@ -73,15 +73,15 @@ export const sandroBotticelli: Story = {
   },
   sources: [
     {
-      label: "Uffizi Galleries — The Birth of Venus",
+      label: "Uffizi Galleries: The Birth of Venus",
       url: "https://uffizi.it/en/artworks/birth-of-venus",
     },
     {
-      label: "Uffizi, Google Arts & Culture — The Birth of Venus",
+      label: "Uffizi, Google Arts & Culture: The Birth of Venus",
       url: "https://artsandculture.google.com/asset/the-birth-of-venus/MQEeq50LABEBVg",
     },
     {
-      label: "The Met — Copy after Botticelli (on his 19th-century revival)",
+      label: "The Met: Copy after Botticelli (on his 19th-century revival)",
       url: "https://metmuseum.org/art/collection/search/13179",
     },
     {

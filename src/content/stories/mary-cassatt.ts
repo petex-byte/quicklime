@@ -86,23 +86,23 @@ export const maryCassatt: Story = {
   },
   sources: [
     {
-      label: "Art Institute of Chicago — The Child's Bath (collection record)",
+      label: "Art Institute of Chicago: The Child's Bath (collection record)",
       url: "https://www.artic.edu/artworks/111442",
     },
     {
-      label: "Art Institute of Chicago — Cassatt's Modern Vision of the Everyday",
+      label: "Art Institute of Chicago: Cassatt's Modern Vision of the Everyday",
       url: "https://www.artic.edu/articles/818/cassatts-modern-vision-of-the-everyday-2",
     },
     {
-      label: "Cleveland Museum of Art — The Feminine Ideal (1890 letter to Morisot)",
+      label: "Cleveland Museum of Art: The Feminine Ideal (1890 letter to Morisot)",
       url: "https://www.clevelandart.org/articles/feminine-ideal",
     },
     {
-      label: "Britannica — The Child's Bath",
+      label: "Britannica: The Child's Bath",
       url: "https://www.britannica.com/topic/The-Childs-Bath",
     },
     {
-      label: "Wikipedia — The Child's Bath",
+      label: "Wikipedia: The Child's Bath",
       url: "https://en.wikipedia.org/wiki/The_Child%27s_Bath",
     },
   ],

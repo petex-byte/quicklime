@@ -88,27 +88,27 @@ export const diegoVelazquez: Story = {
   },
   sources: [
     {
-      label: "The Met — Juan de Pareja (1971.86)",
+      label: "The Met: Juan de Pareja (1971.86)",
       url: "https://www.metmuseum.org/art/collection/search/437869",
     },
     {
-      label: "The Met — Juan de Pareja: Afro-Hispanic Painter in the Age of Velázquez (2023)",
+      label: "The Met: Juan de Pareja: Afro-Hispanic Painter in the Age of Velázquez (2023)",
       url: "https://www.metmuseum.org/press-releases/juan-de-pareja-2023-exhibitions",
     },
     {
-      label: "Country Life — The first million-pound picture",
+      label: "Country Life: The first million-pound picture",
       url: "https://countrylife.co.uk/?p=144183",
     },
     {
-      label: "The Spectator (Richard Cork) — the first painting to sell for over a million pounds",
+      label: "The Spectator (Richard Cork): the first painting to sell for over a million pounds",
       url: "https://spectator.com/article/the-story-of-the-first-painting-to-sell-for-over-a-million-pounds/",
     },
     {
-      label: "Wikipedia — Portrait of Juan de Pareja",
+      label: "Wikipedia: Portrait of Juan de Pareja",
       url: "https://en.wikipedia.org/wiki/Portrait_of_Juan_de_Pareja",
     },
     {
-      label: "Wikipedia — Juan de Pareja",
+      label: "Wikipedia: Juan de Pareja",
       url: "https://en.wikipedia.org/wiki/Juan_de_Pareja",
     },
   ],

@@ -73,8 +73,8 @@ export function StoryWall({ cards }: { cards: WallCard[] }) {
                 <p className="text-[11px] tracking-[0.25em] text-paper/60">
                   {String(n + 1).padStart(2, "0")} · {c.artist}
                 </p>
-                <p className="mt-1 font-display text-3xl leading-none text-paper">{c.title}</p>
-                <p className="mt-3 line-clamp-2 text-sm text-paper/75">{c.line}</p>
+                <p className="mt-1 font-display text-2xl leading-none text-paper">{c.title}</p>
+                <p className="mt-3 line-clamp-2 text-xs text-paper/75">{c.line}</p>
               </div>
             </Link>
           </li>

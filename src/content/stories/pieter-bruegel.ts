@@ -86,27 +86,27 @@ export const pieterBruegel: Story = {
   },
   sources: [
     {
-      label: "The Met — The Harvesters (19.164)",
+      label: "The Met: The Harvesters (19.164)",
       url: "https://www.metmuseum.org/art/collection/search/435809",
     },
     {
-      label: "The Met Perspectives — Patrick Bringley on The Harvesters",
+      label: "The Met Perspectives: Patrick Bringley on The Harvesters",
       url: "https://www.metmuseum.org/perspectives/patrick-bringley-harvesters",
     },
     {
-      label: "Google Arts & Culture — The Harvesters (Met record and provenance)",
+      label: "Google Arts & Culture: The Harvesters (Met record and provenance)",
       url: "https://artsandculture.google.com/asset/the-harvesters-pieter-bruegel-the-elder/PAH1oMZ5dGBkxg",
     },
     {
-      label: "Bruegel 2018 (KHM) — Six Seasons for a Dining Room",
+      label: "Bruegel 2018 (KHM): Six Seasons for a Dining Room",
       url: "https://www.bruegel2018.at/en/six-seasons-for-a-dining-room/",
     },
     {
-      label: "Wikipedia — Nicolaes Jonghelinck",
+      label: "Wikipedia: Nicolaes Jonghelinck",
       url: "https://en.wikipedia.org/wiki/Nicolaes_Jonghelinck",
     },
     {
-      label: "Wikipedia — The Harvesters (painting)",
+      label: "Wikipedia: The Harvesters (painting)",
       url: "https://en.wikipedia.org/wiki/The_Harvesters_(painting)",
     },
   ],

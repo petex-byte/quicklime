@@ -80,27 +80,27 @@ export const gustavKlimt: Story = {
   },
   sources: [
     {
-      label: "Belvedere — The Kiss (Google Arts & Culture)",
+      label: "Belvedere: The Kiss (Google Arts & Culture)",
       url: "https://artsandculture.google.com/asset/the-kiss-0098/HQGxUutM_F6ZGg",
     },
     {
-      label: "Belvedere — The Kiss, about the original",
+      label: "Belvedere: The Kiss, about the original",
       url: "https://print.belvedere.at/en/?p=14549",
     },
     {
-      label: "Smarthistory — Gustav Klimt, The Kiss",
+      label: "Smarthistory: Gustav Klimt, The Kiss",
       url: "https://smarthistory.org/gustav-klimt-the-kiss",
     },
     {
-      label: "Google Arts & Culture — The Faculty Paintings",
+      label: "Google Arts & Culture: The Faculty Paintings",
       url: "https://artsandculture.google.com/story/XwUhMS_zkPdZzw",
     },
     {
-      label: "Wikipedia — Klimt University of Vienna Ceiling Paintings",
+      label: "Wikipedia: Klimt University of Vienna Ceiling Paintings",
       url: "https://en.wikipedia.org/wiki/Klimt_University_of_Vienna_Ceiling_Paintings",
     },
     {
-      label: "Neue Galerie — Gustav Klimt",
+      label: "Neue Galerie: Gustav Klimt",
       url: "https://www.neuegalerie.org/gustav-klimt",
     },
   ],

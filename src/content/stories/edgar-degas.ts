@@ -15,7 +15,7 @@ import type { Story } from "../types";
 export const edgarDegas: Story = {
   slug: "edgar-degas",
   title: "The Dance Class",
-  year: "1873–76",
+  year: "1873 to 1876",
   image: {
     src: "/art/edgar-degas.jpg",
     status: "pending",
@@ -80,15 +80,15 @@ export const edgarDegas: Story = {
   },
   sources: [
     {
-      label: "Musée d'Orsay — La Classe de danse, collection record",
+      label: "Musée d'Orsay: La Classe de danse, collection record",
       url: "https://www.musee-orsay.fr/it/opere/la-classe-de-danse-1151",
     },
     {
-      label: "The Met — The Dance Class (1874)",
+      label: "The Met: The Dance Class (1874)",
       url: "https://www.metmuseum.org/toah/works-of-art/1987.47.1",
     },
     {
-      label: "Wikipedia — The Ballet Class (Degas, Musée d'Orsay)",
+      label: "Wikipedia: The Ballet Class (Degas, Musée d'Orsay)",
       url: "https://en.wikipedia.org/wiki/The_Ballet_Class_(Degas,_Mus%C3%A9e_d%27Orsay)",
     },
   ],

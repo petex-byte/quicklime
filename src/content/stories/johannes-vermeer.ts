@@ -83,23 +83,23 @@ export const johannesVermeer: Story = {
   },
   sources: [
     {
-      label: "Mauritshuis — Girl with a Pearl Earring (inv. 670)",
+      label: "Mauritshuis: Girl with a Pearl Earring (inv. 670)",
       url: "https://mauritshuis.nl/en/discover/mauritshuis/masterpieces-from-the-mauritshuis/girl-with-a-pearl-earring-670",
     },
     {
-      label: "Mauritshuis — New research into Vermeer's Girl with a Pearl Earring",
+      label: "Mauritshuis: New research into Vermeer's Girl with a Pearl Earring",
       url: "https://www.mauritshuis.nl/en/press-releases/new-research-into-vermeer-s-girl-with-a-pearl-earring",
     },
     {
-      label: "CODART — New discoveries from the examination of Girl with a Pearl Earring",
+      label: "CODART: New discoveries from the examination of Girl with a Pearl Earring",
       url: "https://www.codart.nl/art-works/new-discoveries-and-insights-from-the-examination-of-vermeers-girl-with-a-pearl-earring/",
     },
     {
-      label: "The Frick Collection — Vermeer's life and debts (Quodbach)",
+      label: "The Frick Collection: Vermeer's life and debts (Quodbach)",
       url: "https://www.frick.org/sites/default/files/archivedsite/exhibitions/vermeer/quodbach.htm",
     },
     {
-      label: "Wikipedia — Girl with a Pearl Earring",
+      label: "Wikipedia: Girl with a Pearl Earring",
       url: "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring",
     },
   ],

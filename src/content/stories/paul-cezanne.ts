@@ -84,15 +84,15 @@ export const paulCezanne: Story = {
   },
   sources: [
     {
-      label: "Musée d'Orsay — Les Joueurs de cartes, collection record",
+      label: "Musée d'Orsay: Les Joueurs de cartes, collection record",
       url: "https://www.musee-orsay.fr/fr/oeuvres/1312",
     },
     {
-      label: "The Met — The Card Players (models and Rivière's identification)",
+      label: "The Met: The Card Players (models and Rivière's identification)",
       url: "https://www.metmuseum.org/toah/works-of-art/61.101.1",
     },
     {
-      label: "The Courtauld — Cézanne's Card Players (2010–11)",
+      label: "The Courtauld: Cézanne's Card Players (2010 to 2011)",
       url: "https://courtauld.ac.uk/gallery/exhibitions/cezannes-card-players/",
     },
     {
@@ -100,11 +100,11 @@ export const paulCezanne: Story = {
       url: "https://www.cezannecatalogue.com/catalogue/entry.php?id=692",
     },
     {
-      label: "Hyperallergic — Qatar buys The Card Players (2012)",
+      label: "Hyperallergic: Qatar buys The Card Players (2012)",
       url: "https://hyperallergic.com/qatar-paul-cezanne-card-players",
     },
     {
-      label: "Artforum — Cézanne on solids and spaces",
+      label: "Artforum: Cézanne on solids and spaces",
       url: "https://www.artforum.com/features/cezanne-on-solids-and-spaces-209329/",
     },
   ],

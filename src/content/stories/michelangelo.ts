@@ -13,7 +13,7 @@ import type { Story } from "../types";
 export const michelangelo: Story = {
   slug: "michelangelo",
   title: "The Vault",
-  year: "1508–1512",
+  year: "1508 to 1512",
   image: {
     src: "/art/michelangelo.jpg",
     status: "pending",
@@ -69,7 +69,7 @@ export const michelangelo: Story = {
       "Michelangelo, sonnet to Giovanni da Pistoia on painting the ceiling, c. 1509 (trans. J. A. Symonds, 1878)",
   },
   close: {
-    heading: "1980–1994",
+    heading: "1980 to 1994",
     lines: [
       "Restorers clean the chapel's frescoes.",
       "Centuries of candle smoke come off.",
@@ -80,27 +80,27 @@ export const michelangelo: Story = {
   },
   sources: [
     {
-      label: "Wikipedia — Sistine Chapel ceiling",
+      label: "Wikipedia: Sistine Chapel ceiling",
       url: "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling",
     },
     {
-      label: "Wikipedia — Restoration of the Sistine Chapel frescoes",
+      label: "Wikipedia: Restoration of the Sistine Chapel frescoes",
       url: "https://en.wikipedia.org/wiki/Restoration_of_the_Sistine_Chapel_frescoes",
     },
     {
-      label: "Christian Science Monitor — A shade of doubt dogs the restoration (1986)",
+      label: "Christian Science Monitor: A shade of doubt dogs the restoration (1986)",
       url: "https://www.csmonitor.com/1986/0911/lsist-f.html",
     },
     {
-      label: "Artnet — Michelangelo's Sistine Chapel poem",
+      label: "Artnet: Michelangelo's Sistine Chapel poem",
       url: "https://news.artnet.com/art-world/art-bites-michelangelo-sistine-chapel-poem-2435098",
     },
     {
-      label: "Project Gutenberg — The Sonnets of Michael Angelo, trans. J. A. Symonds",
+      label: "Project Gutenberg: The Sonnets of Michael Angelo, trans. J. A. Symonds",
       url: "https://www.gutenberg.org/ebooks/10314",
     },
     {
-      label: "The Scotsman — A glimpse of heaven",
+      label: "The Scotsman: A glimpse of heaven",
       url: "https://www.scotsman.com/whats-on/arts-and-entertainment/a-glimpse-of-heaven-the-story-of-michaelangelos-masterpiece-the-ceiling-of-the-sistine-chapel-2463459",
     },
   ],

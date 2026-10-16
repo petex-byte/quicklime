@@ -399,7 +399,7 @@ export function getArtist(slug: string) {
 export function lifespan(a: Artist) {
   const b = `${a.bornApprox ? "c. " : ""}${a.born}`;
   const d = `${a.diedApprox ? "c. " : ""}${a.died}`;
-  return `${b}–${d}`;
+  return `${b} to ${d}`;
 }
 
 /**

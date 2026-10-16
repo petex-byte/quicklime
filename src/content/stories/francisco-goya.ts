@@ -13,7 +13,7 @@ import type { Story } from "../types";
 export const franciscoGoya: Story = {
   slug: "francisco-goya",
   title: "The Magpie",
-  year: "1787–88",
+  year: "1787 to 1788",
   image: {
     src: "/art/francisco-goya.jpg",
     status: "pending",
@@ -85,19 +85,19 @@ export const franciscoGoya: Story = {
   },
   sources: [
     {
-      label: "The Met — Manuel Osorio Manrique de Zuñiga (49.7.41)",
+      label: "The Met: Manuel Osorio Manrique de Zuñiga (49.7.41)",
       url: "https://www.metmuseum.org/art/collection/search/436545",
     },
     {
-      label: "The Met, Heilbrunn Timeline — Manuel Osorio Manrique de Zuñiga",
+      label: "The Met, Heilbrunn Timeline: Manuel Osorio Manrique de Zuñiga",
       url: "https://www.metmuseum.org/toah/works-of-art/49.7.41",
     },
     {
-      label: "Fundación Goya en Aragón — Manuel Osorio Manrique de Zúñiga",
+      label: "Fundación Goya en Aragón: Manuel Osorio Manrique de Zúñiga",
       url: "https://fundaciongoyaenaragon.es/eng/obra/manuel-osorio-manrique-de-zuniga/427",
     },
     {
-      label: "Wikipedia — Manuel Osorio Manrique de Zúñiga",
+      label: "Wikipedia: Manuel Osorio Manrique de Zúñiga",
       url: "https://en.wikipedia.org/wiki/Manuel_Osorio_Manrique_de_Z%C3%BA%C3%B1iga",
     },
   ],

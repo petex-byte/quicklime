@@ -12,7 +12,7 @@ import type { Story } from "../types";
 export const rosaBonheur: Story = {
   slug: "rosa-bonheur",
   title: "The Horse Fair",
-  year: "1852–55",
+  year: "1852 to 1855",
   image: {
     src: "/art/rosa-bonheur.jpg",
     status: "pending",
@@ -87,27 +87,27 @@ export const rosaBonheur: Story = {
   },
   sources: [
     {
-      label: "The Met — The Horse Fair (collection record)",
+      label: "The Met: The Horse Fair (collection record)",
       url: "https://www.metmuseum.org/art/collection/search/435702",
     },
     {
-      label: "The Met — Heilbrunn Timeline entry, The Horse Fair",
+      label: "The Met: Heilbrunn Timeline entry, The Horse Fair",
       url: "https://www.metmuseum.org/toah/works-of-art/87.25",
     },
     {
-      label: "Royal Collection Trust — Rosa Bonheur (the 1855 viewing for Queen Victoria)",
+      label: "Royal Collection Trust: Rosa Bonheur (the 1855 viewing for Queen Victoria)",
       url: "https://www.rct.uk/collection/stories/rosa-bonheur",
     },
     {
-      label: "JSTOR Daily — Rosa Bonheur's permission to wear pants",
+      label: "JSTOR Daily: Rosa Bonheur's permission to wear pants",
       url: "https://daily.jstor.org/rosa-bonheurs-permission-to-wear-pants/",
     },
     {
-      label: "Philbrook Museum of Art — Rosa Bonheur",
+      label: "Philbrook Museum of Art: Rosa Bonheur",
       url: "https://philbrook.emuseum.com/people/2471/rosa-bonheur",
     },
     {
-      label: "Wikipedia — The Horse Fair",
+      label: "Wikipedia: The Horse Fair",
       url: "https://en.wikipedia.org/wiki/The_Horse_Fair",
     },
   ],

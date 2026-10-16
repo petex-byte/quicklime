@@ -1,7 +1,7 @@
 import type { Story } from "../types";
 
 /**
- * Georges Seurat, A Sunday on La Grande Jatte — 1884 (1884–86, border
+ * Georges Seurat, A Sunday on La Grande Jatte, 1884 (1884–86, border
  * 1888–89), Art Institute of Chicago.
  * Every line here maps to an entry in docs/sources/georges-seurat.md.
  * Focus points are first-pass estimates from the known composition, not
@@ -10,14 +10,14 @@ import type { Story } from "../types";
 export const georgesSeurat: Story = {
   slug: "georges-seurat",
   title: "La Grande Jatte",
-  year: "1884–86",
+  year: "1884 to 1886",
   image: {
     src: "/art/georges-seurat.jpg",
     status: "pending",
     width: 1600,
     height: 1078,
   },
-  cover: { kicker: "A Sunday on La Grande Jatte — 1884" },
+  cover: { kicker: "A Sunday on La Grande Jatte, 1884" },
   beats: [
     {
       kind: "beat",
@@ -44,7 +44,7 @@ export const georgesSeurat: Story = {
       lines: [
         "Look at the edge.",
         "A border of red, orange and blue dots.",
-        "He painted it on in 1888–89.",
+        "He painted it on in 1888 to 1889.",
       ],
       caption: "The painted border",
     },
@@ -76,23 +76,23 @@ export const georgesSeurat: Story = {
   },
   sources: [
     {
-      label: "Art Institute of Chicago — A Sunday on La Grande Jatte — 1884",
+      label: "Art Institute of Chicago: A Sunday on La Grande Jatte, 1884",
       url: "https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884",
     },
     {
-      label: "Britannica — A Sunday on La Grande Jatte—1884",
+      label: "Britannica: A Sunday on La Grande Jatte, 1884",
       url: "https://www.britannica.com/print/article/573797",
     },
     {
-      label: "ColourLex — Seurat, A Sunday on La Grande Jatte (pigments)",
+      label: "ColourLex: Seurat, A Sunday on La Grande Jatte (pigments)",
       url: "https://colourlex.com/project/seurat-la-grande-jatte/",
     },
     {
-      label: "Wikipedia — A Sunday Afternoon on the Island of La Grande Jatte",
+      label: "Wikipedia: A Sunday Afternoon on the Island of La Grande Jatte",
       url: "https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte",
     },
     {
-      label: "Wikipedia — Helen Birch Bartlett Memorial Collection",
+      label: "Wikipedia: Helen Birch Bartlett Memorial Collection",
       url: "https://en.wikipedia.org/wiki/Helen_Birch_Bartlett_Memorial_Collection",
     },
   ],

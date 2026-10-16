@@ -82,27 +82,27 @@ export const edvardMunch: Story = {
   },
   sources: [
     {
-      label: "Nasjonalmuseet — The Scream, sketch on the reverse (NG.M.00939)",
+      label: "Nasjonalmuseet: The Scream, sketch on the reverse (NG.M.00939)",
       url: "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939VERSO",
     },
     {
-      label: "The Art Newspaper — 'Madman' graffiti on The Scream (2021)",
+      label: "The Art Newspaper: 'Madman' graffiti on The Scream (2021)",
       url: "https://theartnewspaper.com/news/madman-graffiti-scribbled-on-the-scream",
     },
     {
-      label: "Hyperallergic — Munch's hidden 'madman' message (2021)",
+      label: "Hyperallergic: Munch's hidden 'madman' message (2021)",
       url: "https://hyperallergic.com/edvard-munch-the-scream-madman-message",
     },
     {
-      label: "History.com — The Scream recovered (7 May 1994)",
+      label: "History.com: The Scream recovered (7 May 1994)",
       url: "https://www.history.com/this-day-in-history/the-scream-recovered",
     },
     {
-      label: "Moderna Museet — 'I felt the great scream through nature'",
+      label: "Moderna Museet: 'I felt the great scream through nature'",
       url: "https://www.modernamuseet.se/en/stockholm/exhibitions/munch-by-himself/i-felt-the-great-scream-through-nature/",
     },
     {
-      label: "Wikipedia — The Scream",
+      label: "Wikipedia: The Scream",
       url: "https://en.wikipedia.org/wiki/The_Scream",
     },
   ],

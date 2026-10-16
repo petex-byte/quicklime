@@ -11,7 +11,7 @@ import type { Story } from "../types";
 export const claudeMonet: Story = {
   slug: "claude-monet",
   title: "Water Lilies",
-  year: "c. 1915–26",
+  year: "c. 1915 to 1926",
   image: {
     src: "/art/claude-monet.jpg",
     status: "pending",
@@ -86,23 +86,23 @@ export const claudeMonet: Story = {
   },
   sources: [
     {
-      label: "Musée de l'Orangerie — History of the Water Lilies cycle",
+      label: "Musée de l'Orangerie: History of the Water Lilies cycle",
       url: "https://www.musee-orangerie.fr/en/node/33",
     },
     {
-      label: "Musée de l'Orangerie — Archives of the genesis and history of the Water Lilies",
+      label: "Musée de l'Orangerie: Archives of the genesis and history of the Water Lilies",
       url: "https://www.musee-orangerie.fr/en/node/198900",
     },
     {
-      label: "Musée de l'Orangerie — Condition and restoration documentation",
+      label: "Musée de l'Orangerie: Condition and restoration documentation",
       url: "https://www.musee-orangerie.fr/it/node/198901",
     },
     {
-      label: "Smarthistory — Claude Monet, Les Nymphéas",
+      label: "Smarthistory: Claude Monet, Les Nymphéas",
       url: "https://smarthistory.org/?p=2818",
     },
     {
-      label: "Haus der Kunst — Cyprien Gaillard, Wassermusik (Orangerie archive material)",
+      label: "Haus der Kunst: Cyprien Gaillard, Wassermusik (Orangerie archive material)",
       url: "https://www.hausderkunst.de/en/wandtexte-cyprien-gaillard-wassermusik",
     },
   ],

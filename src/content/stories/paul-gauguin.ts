@@ -12,7 +12,7 @@ import type { Story } from "../types";
 export const paulGauguin: Story = {
   slug: "paul-gauguin",
   title: "Three Questions",
-  year: "1897–98",
+  year: "1897 to 1898",
   image: {
     src: "/art/paul-gauguin.jpg",
     status: "pending",
@@ -89,19 +89,19 @@ export const paulGauguin: Story = {
   },
   sources: [
     {
-      label: "Museum of Fine Arts, Boston — collection record",
+      label: "Museum of Fine Arts, Boston: collection record",
       url: "https://collections.mfa.org/objects/32558",
     },
     {
-      label: "Smarthistory — Gauguin, Where do we come from?",
+      label: "Smarthistory: Gauguin, Where do we come from?",
       url: "https://smarthistory.org/?p=1491",
     },
     {
-      label: "Wikipedia — Where Do We Come From? What Are We? Where Are We Going?",
+      label: "Wikipedia: Where Do We Come From? What Are We? Where Are We Going?",
       url: "https://en.wikipedia.org/wiki/Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F",
     },
     {
-      label: "Smartify — the inscription",
+      label: "Smartify: the inscription",
       url: "https://app.smartify.org/ro/objects/where-do-we-come-from-what-are-we-where-are-we-going",
     },
   ],

@@ -93,23 +93,23 @@ export const jacquesLouisDavid: Story = {
   },
   sources: [
     {
-      label: "The Met — The Death of Socrates (31.45)",
+      label: "The Met: The Death of Socrates (31.45)",
       url: "https://www.metmuseum.org/art/collection/search/436105",
     },
     {
-      label: "Founders Online — Thomas Jefferson to John Trumbull, 30 August 1787",
+      label: "Founders Online: Thomas Jefferson to John Trumbull, 30 August 1787",
       url: "https://founders.archives.gov/documents/Jefferson/01-12-02-0076",
     },
     {
-      label: "Plato, Phaedo (trans. Jowett) — Wikisource",
+      label: "Plato, Phaedo (trans. Jowett): Wikisource",
       url: "https://en.wikisource.org/wiki/Phaedo_(Jowett)",
     },
     {
-      label: "EBSCO Research Starters — David paints The Death of Socrates",
+      label: "EBSCO Research Starters: David paints The Death of Socrates",
       url: "https://ebsco.com/research-starters/history/david-paints-death-socrates",
     },
     {
-      label: "Wikipedia — The Death of Socrates",
+      label: "Wikipedia: The Death of Socrates",
       url: "https://en.wikipedia.org/wiki/The_Death_of_Socrates",
     },
   ],

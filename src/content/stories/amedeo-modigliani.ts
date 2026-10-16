@@ -84,27 +84,27 @@ export const amedeoModigliani: Story = {
   },
   sources: [
     {
-      label: "The Met — Reclining Nude (486847)",
+      label: "The Met: Reclining Nude (486847)",
       url: "https://www.metmuseum.org/art/collection/search/486847",
     },
     {
-      label: "Britannica — Nude (1917)",
+      label: "Britannica: Nude (1917)",
       url: "https://www.britannica.com/art/Nude-1917",
     },
     {
-      label: "Tate Papers — Modigliani's painted nudes: a technical study",
+      label: "Tate Papers: Modigliani's painted nudes: a technical study",
       url: "https://www.tate.org.uk/research/tate-papers/35/modiglianis-painted-nudes-technical-study",
     },
     {
-      label: "Brooklyn Rail — Make Way for Berthe Weill (2025)",
+      label: "Brooklyn Rail: Make Way for Berthe Weill (2025)",
       url: "https://brooklynrail.org/2025/02/artseen/make-way-for-berthe-weill",
     },
     {
-      label: "Allen Memorial Art Museum — Nude with Coral Necklace",
+      label: "Allen Memorial Art Museum: Nude with Coral Necklace",
       url: "https://allenartcollection.oberlin.edu/objects/12464",
     },
     {
-      label: "Christie's — lot essay quoting the 1901 letter to Ghiglia",
+      label: "Christie's: lot essay quoting the 1901 letter to Ghiglia",
       url: "https://www.christies.com.cn/lot/lot-5893247",
     },
   ],

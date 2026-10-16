@@ -90,15 +90,15 @@ export const henriRousseau: Story = {
   },
   sources: [
     {
-      label: "The Met — The Repast of the Lion (438822)",
+      label: "The Met: The Repast of the Lion (438822)",
       url: "https://www.metmuseum.org/art/collection/search/438822",
     },
     {
-      label: "MoMA via Google Arts & Culture — The Dream (1910)",
+      label: "MoMA via Google Arts & Culture: The Dream (1910)",
       url: "https://artsandculture.google.com/asset/the-dream-henri-rousseau/LwEt57AOdD6SGA",
     },
     {
-      label: "Art UK — Henri Rousseau (1844–1910)",
+      label: "Art UK: Henri Rousseau (1844 to 1910)",
       url: "https://artuk.org/discover/artists/rousseau-henri-18441910",
     },
     {
@@ -106,11 +106,11 @@ export const henriRousseau: Story = {
       url: "https://www.moma.org/momaorg/shared/pdfs/docs/press_archives/6151/releases/MOMA_1985_0005_5.pdf",
     },
     {
-      label: "Artnet — Untangling the myths behind Henri Rousseau",
+      label: "Artnet: Untangling the myths behind Henri Rousseau",
       url: "https://news.artnet.com/art-world/untangling-the-myths-behind-henri-rousseau-eccentric-masterpiece-2724971",
     },
     {
-      label: "Wikipedia — The Repast of the Lion",
+      label: "Wikipedia: The Repast of the Lion",
       url: "https://en.wikipedia.org/wiki/The_Repast_of_the_Lion",
     },
   ],

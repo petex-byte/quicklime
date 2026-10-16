@@ -96,27 +96,27 @@ export const charlesDavidsonBell: Story = {
   },
   sources: [
     {
-      label: "UCT Libraries — Charles Davidson Bell digital collection",
+      label: "UCT Libraries: Charles Davidson Bell digital collection",
       url: "https://digitalcollections.lib.uct.ac.za/bell",
     },
     {
-      label: "UCT News — Colonial Cape artist exhibits at Irma Stern (2002)",
+      label: "UCT News: Colonial Cape artist exhibits at Irma Stern (2002)",
       url: "https://news.uct.ac.za/edition/-edition/2002-11-04-edition-33/-article/2002-11-04-colonial-cape-artist-exhibits-at-irma-stern",
     },
     {
-      label: "de arte — After the Spectacle: the Jan van Riebeeck Tercentenary (2026)",
+      label: "de arte: After the Spectacle: the Jan van Riebeeck Tercentenary (2026)",
       url: "https://www.tandfonline.com/doi/full/10.1080/00043389.2026.2696083",
     },
     {
-      label: "UCT News — The Khoi encountered Europeans long before Van Riebeeck (2021)",
+      label: "UCT News: The Khoi encountered Europeans long before Van Riebeeck (2021)",
       url: "https://www.news.uct.ac.za/article/-2021-09-22-the-khoi-encountered-europeans-long-before-van-riebeeck",
     },
     {
-      label: "South African History Online — First postage stamp in Africa issued",
+      label: "South African History Online: First postage stamp in Africa issued",
       url: "https://www.sahistory.org.za/dated-event/first-postage-stamp-africa-issued-cape-colony",
     },
     {
-      label: "Wikipedia — Charles Davidson Bell",
+      label: "Wikipedia: Charles Davidson Bell",
       url: "https://en.wikipedia.org/wiki/Charles_Davidson_Bell",
     },
   ],

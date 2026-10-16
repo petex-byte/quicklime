@@ -89,27 +89,27 @@ export const winslowHomer: Story = {
   },
   sources: [
     {
-      label: "The Met — The Gulf Stream (11122)",
+      label: "The Met: The Gulf Stream (11122)",
       url: "https://www.metmuseum.org/art/collection/search/11122",
     },
     {
-      label: "Cooper Hewitt — Study for The Gulf Stream",
+      label: "Cooper Hewitt: Study for The Gulf Stream",
       url: "https://collection.cooperhewitt.org/objects/18175043/",
     },
     {
-      label: "Cooper Hewitt — Blood in the Water (2020)",
+      label: "Cooper Hewitt: Blood in the Water (2020)",
       url: "https://www.cooperhewitt.org/2020/02/24/blood-in-the-water/",
     },
     {
-      label: "New York Times via Portland Museum of Art — Winslow Homer: Radical Impressionist",
+      label: "New York Times via Portland Museum of Art: Winslow Homer: Radical Impressionist",
       url: "https://www.portlandmuseum.org/magazine/nyt-winslow-homer/",
     },
     {
-      label: "Art Students League — Lethal Scenarios and Gorgeous Landscapes",
+      label: "Art Students League: Lethal Scenarios and Gorgeous Landscapes",
       url: "https://www.artstudentsleague.org/stories/lethal-scenarios-and-gorgeous-landscapes",
     },
     {
-      label: "Wikipedia — The Gulf Stream (painting)",
+      label: "Wikipedia: The Gulf Stream (painting)",
       url: "https://en.wikipedia.org/wiki/The_Gulf_Stream_(painting)",
     },
   ],

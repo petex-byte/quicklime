@@ -76,23 +76,23 @@ export const gustaveCourbet: Story = {
   },
   sources: [
     {
-      label: "The Met — Woman with a Parrot (collection record)",
+      label: "The Met: Woman with a Parrot (collection record)",
       url: "https://www.metmuseum.org/art/collection/search/436002",
     },
     {
-      label: "The Met — Heilbrunn Timeline entry, Woman with a Parrot",
+      label: "The Met: Heilbrunn Timeline entry, Woman with a Parrot",
       url: "https://www.metmuseum.org/toah/works-of-art/29.100.57",
     },
     {
-      label: "The Met — Manet, Young Lady in 1866 (collection record)",
+      label: "The Met: Manet, Young Lady in 1866 (collection record)",
       url: "https://www.metmuseum.org/art/collection/search/436964",
     },
     {
-      label: "Brooklyn Museum — Courbet, Isolated Rock (1861 letter quoted)",
+      label: "Brooklyn Museum: Courbet, Isolated Rock (1861 letter quoted)",
       url: "https://www.brooklynmuseum.org/objects/4734",
     },
     {
-      label: "Wikipedia — Woman with a Parrot (Courbet)",
+      label: "Wikipedia: Woman with a Parrot (Courbet)",
       url: "https://en.wikipedia.org/wiki/Woman_with_a_Parrot_(Courbet)",
     },
   ],

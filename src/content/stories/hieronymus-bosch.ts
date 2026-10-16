@@ -13,7 +13,7 @@ import type { Story } from "../types";
 export const hieronymusBosch: Story = {
   slug: "hieronymus-bosch",
   title: "The Garden of Earthly Delights",
-  year: "c. 1490–1500",
+  year: "c. 1490 to 1500",
   image: {
     src: "/art/hieronymus-bosch.jpg",
     status: "pending",
@@ -69,7 +69,7 @@ export const hieronymusBosch: Story = {
   quote: {
     text: "Ipse dixit et facta sunt. Ipse mandavit et creata sunt.",
     attribution:
-      "Psalm 33:9, inscribed across the closed wings — “For he spake, and it was done; he commanded, and it stood fast.”",
+      "Psalm 33:9, inscribed across the closed wings: “For he spake, and it was done; he commanded, and it stood fast.”",
   },
   close: {
     heading: "8 July 1593",
@@ -82,23 +82,23 @@ export const hieronymusBosch: Story = {
   },
   sources: [
     {
-      label: "Museo del Prado — The Garden of Earthly Delights Triptych",
+      label: "Museo del Prado: The Garden of Earthly Delights Triptych",
       url: "https://www.museodelprado.es/en/the-collection/art-work/the-garden-of-earthly-delights-triptych/02388242-6d6a-4e9e-a992-e1311eab3609",
     },
     {
-      label: "Wikipedia — The Garden of Earthly Delights",
+      label: "Wikipedia: The Garden of Earthly Delights",
       url: "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights",
     },
     {
-      label: "Medievalists.net — the 500-year-old song in hell (2014)",
+      label: "Medievalists.net: the 500-year-old song in hell (2014)",
       url: "https://www.medievalists.net/2014/02/500-year-old-song-found-butt-hell-sound-like/",
     },
     {
-      label: "Artnet News — Bosch's butt song from hell",
+      label: "Artnet News: Bosch's butt song from hell",
       url: "https://news.artnet.com/art-world/bosch-butt-song-from-hell-309732",
     },
     {
-      label: "Early Music Muse — Bosch and the music of hell (dissent)",
+      label: "Early Music Muse: Bosch and the music of hell (dissent)",
       url: "https://earlymusicmuse.com/bosch1/",
     },
   ],

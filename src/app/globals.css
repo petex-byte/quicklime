@@ -33,6 +33,10 @@ body {
   color: var(--ink);
 }
 
+/* No single-word last lines (orphans): balance headings, tidy paragraphs. */
+h1, h2, h3 { text-wrap: balance; }
+p, li, blockquote, figcaption { text-wrap: pretty; }
+
 /* Shown in place of any artwork whose rights check isn't cleared. */
 .canvas-placeholder {
   background:

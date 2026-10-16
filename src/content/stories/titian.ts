@@ -12,7 +12,7 @@ import type { Story } from "../types";
 export const titian: Story = {
   slug: "titian",
   title: "Venus, Again",
-  year: "c. 1565–70",
+  year: "c. 1565 to 1570",
   image: {
     src: "/art/titian.jpg",
     status: "pending",
@@ -25,7 +25,7 @@ export const titian: Story = {
       kind: "beat",
       focus: { x: 50, y: 50, scale: 1 },
       lines: [
-        "Venice. Around 1565–70.",
+        "Venice. Around 1565 to 1570.",
         "Venus, with a musician at her feet.",
         "Titian's studio paints it five times.",
         "Two with a lute. This is one.",
@@ -80,23 +80,23 @@ export const titian: Story = {
   },
   sources: [
     {
-      label: "The Met — Venus and the Lute Player (36.29)",
+      label: "The Met: Venus and the Lute Player (36.29)",
       url: "https://www.metmuseum.org/art/collection/search/437827",
     },
     {
-      label: "Museo del Prado — Venus with an Organist and Cupid",
+      label: "Museo del Prado: Venus with an Organist and Cupid",
       url: "https://www.museodelprado.es/en/the-collection/art-work/venus-with-an-organist-and-cupid/b36421df-4d51-43b6-911c-c0517377e48d",
     },
     {
-      label: "Wikipedia — Venus and Musician",
+      label: "Wikipedia: Venus and Musician",
       url: "https://en.wikipedia.org/wiki/Venus_and_Musician",
     },
     {
-      label: "The Frame Blog — Titian's poesie and the 1554 letter",
+      label: "The Frame Blog: Titian's poesie and the 1554 letter",
       url: "https://theframeblog.com/tag/titian/",
     },
     {
-      label: "PubHist — Titian and workshop, Venus and the Lute Player (provenance)",
+      label: "PubHist: Titian and workshop, Venus and the Lute Player (provenance)",
       url: "https://www.pubhist.com/w6932",
     },
   ],

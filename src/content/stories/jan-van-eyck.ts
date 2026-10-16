@@ -66,7 +66,7 @@ export const janVanEyck: Story = {
   reveal: { lines: ["The whole room.", "Uncropped."] },
   quote: {
     text: "Johannes de eyck fuit hic 1434",
-    attribution: "Inscription above the mirror — “Jan van Eyck was here. 1434.”",
+    attribution: "Inscription above the mirror: “Jan van Eyck was here. 1434.”",
   },
   close: {
     heading: "1842",
@@ -78,19 +78,19 @@ export const janVanEyck: Story = {
   },
   sources: [
     {
-      label: "National Gallery — The Arnolfini Portrait",
+      label: "National Gallery: The Arnolfini Portrait",
       url: "https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait",
     },
     {
-      label: "National Gallery — Campbell (1998) catalogue entry",
+      label: "National Gallery: Campbell (1998) catalogue entry",
       url: "https://nationalgallery.org.uk/paintings/catalogues/campbell-1998/the-arnolfini-portrait",
     },
     {
-      label: "National Gallery — Reflections: the Arnolfini acquisition",
+      label: "National Gallery: Reflections: the Arnolfini acquisition",
       url: "https://www.nationalgallery.org.uk/exhibitions/past/reflections-van-eyck-and-the-pre-raphaelites/reflections-behind-the-inspiration?viewPage=6",
     },
     {
-      label: "Wikipedia — Arnolfini Portrait",
+      label: "Wikipedia: Arnolfini Portrait",
       url: "https://en.wikipedia.org/wiki/Arnolfini_Portrait",
     },
   ],

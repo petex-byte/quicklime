@@ -12,7 +12,7 @@ import type { Story } from "../types";
 export const elGreco: Story = {
   slug: "el-greco",
   title: "Toledo",
-  year: "c. 1599–1600",
+  year: "c. 1599 to 1600",
   image: {
     src: "/art/el-greco.jpg",
     status: "pending",
@@ -89,23 +89,23 @@ export const elGreco: Story = {
   },
   sources: [
     {
-      label: "The Met — View of Toledo (29.100.6)",
+      label: "The Met: View of Toledo (29.100.6)",
       url: "https://www.metmuseum.org/art/collection/search/436575",
     },
     {
-      label: "The Met Bulletin — El Greco (Summer 1981)",
+      label: "The Met Bulletin: El Greco (Summer 1981)",
       url: "https://resources.metmuseum.org/resources/metpublications/pdf/El_Greco_The_Metropolitan_Museum_of_Art_Bulletin_v_39_no_1_Summer_1981.pdf",
     },
     {
-      label: "Kunsthistorisches Museum — El Greco exhibition, View of Toledo",
+      label: "Kunsthistorisches Museum: El Greco exhibition, View of Toledo",
       url: "https://khm.at/Archiv/Ausstellungen/elgreco/Ausstellung/blick_aE.html",
     },
     {
-      label: "Wikipedia — View of Toledo",
+      label: "Wikipedia: View of Toledo",
       url: "https://en.wikipedia.org/wiki/View_of_Toledo",
     },
     {
-      label: "Wikipedia — View and Plan of Toledo",
+      label: "Wikipedia: View and Plan of Toledo",
       url: "https://en.wikipedia.org/wiki/View_and_Plan_of_Toledo",
     },
   ],

@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!artist) return {};
   const story = getStory(slug);
   return {
-    title: story ? `${story.title} — ${artist.name}` : artist.name,
+    title: story ? `${story.title}: ${artist.name}` : artist.name,
     description: story ? story.beats[0].lines.join(" ") : `${artist.name}, ${artist.movement}.`,
   };
 }

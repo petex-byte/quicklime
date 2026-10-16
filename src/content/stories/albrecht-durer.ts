@@ -79,23 +79,23 @@ export const albrechtDurer: Story = {
   },
   sources: [
     {
-      label: "Bayerische Staatsgemäldesammlungen — collection record",
+      label: "Bayerische Staatsgemäldesammlungen: collection record",
       url: "https://www.sammlung.pinakothek.de/en/artwork/Qlx2QpQ4Xq",
     },
     {
-      label: "Smarthistory — Albrecht Dürer, Self-Portrait (1500)",
+      label: "Smarthistory: Albrecht Dürer, Self-Portrait (1500)",
       url: "https://smarthistory.org/?p=4450",
     },
     {
-      label: "Nuremberg Municipal Museums, Google Arts & Culture — Made in History",
+      label: "Nuremberg Municipal Museums, Google Arts & Culture: Made in History",
       url: "https://artsandculture.google.com/story/made-in-history-nuremberg-municipal-museums/XQXhX1Kgx7cOIg",
     },
     {
-      label: "University of Oxford, Cabinet — Self-portrait in fur coat (inscription)",
+      label: "University of Oxford, Cabinet: Self-portrait in fur coat (inscription)",
       url: "https://www.cabinet.ox.ac.uk/node/4188",
     },
     {
-      label: "Wikipedia — Self-Portrait (Dürer, Munich)",
+      label: "Wikipedia: Self-Portrait (Dürer, Munich)",
       url: "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Munich)",
     },
   ],

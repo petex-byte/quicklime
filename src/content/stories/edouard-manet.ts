@@ -80,19 +80,19 @@ export const edouardManet: Story = {
   },
   sources: [
     {
-      label: "The Met — Boating (collection record)",
+      label: "The Met: Boating (collection record)",
       url: "https://www.metmuseum.org/art/collection/search/436947",
     },
     {
-      label: "Getty Center — Boating, 1874 (audio stop)",
+      label: "Getty Center: Boating, 1874 (audio stop)",
       url: "https://www.getty.edu/art/mobile/center/manet/stop.php?id=243293",
     },
     {
-      label: "Wikipedia — Boating (Manet)",
+      label: "Wikipedia: Boating (Manet)",
       url: "https://en.wikipedia.org/wiki/Boating_(Manet)",
     },
     {
-      label: "Britannica — Édouard Manet",
+      label: "Britannica: Édouard Manet",
       url: "https://www.britannica.com/EBchecked/topic/361791/Edouard-Manet",
     },
   ],
