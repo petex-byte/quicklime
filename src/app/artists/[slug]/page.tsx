@@ -6,6 +6,7 @@ import { getStory } from "@/content/stories";
 import { nextStory } from "@/content/order";
 import { StoryPage } from "@/components/story/StoryPage";
 import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -55,6 +56,7 @@ export default async function ArtistPage({ params }: Props) {
           Back to the directory
         </Link>
       </main>
+      <SiteFooter />
     </>
   );
 }

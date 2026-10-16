@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 import { Directory } from "@/components/directory/Directory";
 import { artists } from "@/content/artists";
 import { stories } from "@/content/stories";
@@ -19,6 +20,7 @@ export default function ArtistsPage() {
         </h1>
         <Directory artists={artists} live={Object.keys(stories)} />
       </main>
+      <SiteFooter />
     </>
   );
 }

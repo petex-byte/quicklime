@@ -4,6 +4,8 @@ import { LensHero, type Slide } from "@/components/home/LensHero";
 import { DetailZoom } from "@/components/home/DetailZoom";
 import { StoryWall } from "@/components/home/StoryWall";
 import { ArtistIndex } from "@/components/home/ArtistIndex";
+import { HeistFile } from "@/components/home/HeistFile";
+import { SiteFooter } from "@/components/SiteFooter";
 import { stories, getStory } from "@/content/stories";
 import { artists, getArtist, lifespan } from "@/content/artists";
 
@@ -117,6 +119,8 @@ export default function Home() {
 
         <StoryWall cards={cards} />
 
+        <HeistFile />
+
         <ArtistIndex rows={rows} span={span} oldest={oldest} newest={newest} />
 
         <section className="px-5 pb-24 md:px-12">
@@ -132,10 +136,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="flex flex-col gap-2 border-t border-paper/10 px-5 py-10 text-sm text-paper/70 md:flex-row md:justify-between md:px-12">
-        <span>quicklime.co.za</span>
-        <span>Every painting is out of copyright. Every story shows its sources, so you can check our homework.</span>
-      </footer>
+      <SiteFooter />
     </>
   );
 }
