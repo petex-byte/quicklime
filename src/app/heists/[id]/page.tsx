@@ -70,7 +70,7 @@ export default async function HeistPage({ params }: { params: Promise<{ id: stri
               >
                 {h.recovered ? "Recovered" : "Still missing"}
               </span>
-              <span className="ml-3 text-sm text-paper/70">{h.status}</span>
+              {h.status !== "Still missing" && <span className="ml-3 text-sm text-paper/70">{h.status}</span>}
             </p>
           </div>
 

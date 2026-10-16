@@ -13,8 +13,9 @@
   --color-paper: var(--paper);
   --color-lime: var(--lime);
   --color-muted: var(--muted);
-  --font-display: "Fraunces", "Iowan Old Style", "Georgia", serif;
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-geist), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, Menlo, monospace;
 }
 
 html,
@@ -32,6 +33,10 @@ body {
   background: var(--lime);
   color: var(--ink);
 }
+
+/* Display text is Geist Light; every small uppercase label is Geist Mono. */
+.font-display { font-weight: 300; }
+[class*="uppercase"] { font-family: var(--font-mono); letter-spacing: 0.14em; }
 
 /* No single-word last lines (orphans): balance headings, tidy paragraphs. */
 h1, h2, h3 { text-wrap: balance; }
