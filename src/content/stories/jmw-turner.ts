@@ -37,7 +37,7 @@ export const jmwTurner: Story = {
       focus: { x: 24, y: 60, scale: 2.2 },
       lines: [
         "She is the Temeraire.",
-        "Trafalgar, 1805. She fought beside Nelson's Victory.",
+        "Trafalgar, 1805. She defended Nelson's flagship.",
         "By 1838 the Navy has sold her.",
       ],
       caption: "The Temeraire",
@@ -51,7 +51,7 @@ export const jmwTurner: Story = {
     {
       kind: "beat",
       focus: { x: 28, y: 28, scale: 2 },
-      lines: ["Look up. Three tall masts.", "Rigging. Pale as bone."],
+      lines: ["Look up. Three tall masts.", "Sails furled. Still half rigged."],
       twist: "The Navy had stripped her masts. Turner painted them back.",
       caption: "The masts",
     },
