@@ -2,12 +2,32 @@
 
 Read this first. It covers what was built, how it fits together, and the full workflow for adding a new artist and painting: research, writing, image, zoom points, code, homepage, QA, preview and commit. If you only read one section, read **§5 Adding a new artist and painting**.
 
-Last updated: 12 Oct 2026. Branch: `claude/new-session-vbs2jc`.
+Last updated: 16 Oct 2026. Work branch: `claude/pensive-tesla-muc9bo`. Production: `main` → Vercel → https://quicklime.co.za (live).
+
+**Start here if you are a new session:** read §0 first, then §13.
+
+---
+
+## 0. Where things stand (16 Oct 2026)
+
+- **Live:** quicklime.co.za runs on Vercel (project `quicklime`). Vercel deploys every push to `main` to production automatically. So **a push to `main` is a release. Never push to `main` without Pete's explicit "ship"**.
+- **On `main`:** everything up to commit `15162bc`. That includes the UX redesign, the Mark Pollard-style copy, the lime-dot favicon and the fact-checks for Rembrandt, Renoir and Velázquez.
+- **On the work branch, not live yet:** commit `a475c9d`, "Add the heist file section and a site-wide footer". It passes typecheck, lint, build and QA. Pete has not said "ship" yet. To release, merge or fast-forward the branch into `main` once he does.
+- **Open questions for Pete:**
+  1. Ship the heist section and footer to live?
+  2. **Scream note wording.** The card quotes it as "Thanks for the poor security." History.com quotes it as "Thousand thanks for the bad security!" The original note was Norwegian. Decide which wording to use, and mark it as a translation.
+  3. Add two more heists, each fact-checked first: Van Gogh's *Poppy Flowers* (stolen twice from the same Cairo museum) and the 2019 Green Vault raid in Dresden.
+  4. Footer contact email: none is set because none is known.
+  5. **Vercel plan:** the Hobby plan is for non-commercial use. If the site earns money, it needs Pro.
+- **Next big job:** the fact-check pass over the remaining 34 stories (§12.2). Use the free method in §11, not Firecrawl.
+
+---
 
 ---
 
 ## Contents
 
+0. [Where things stand](#0-where-things-stand-16-oct-2026)
 1. [What Quicklime is](#1-what-quicklime-is)
 2. [Current status](#2-current-status)
 3. [Running it](#3-running-it)
@@ -41,7 +61,7 @@ quicklime.co.za: walk through the best art. Each artist gets **one painting told
   - Degas: draft in the repo, but the quote is unverified and the hook has only one source.
   - Charles Davidson Bell: draft in the repo, but the "quote" is a medal name, not anyone's words.
   - Thomas Baines: research log only (`docs/sources/thomas-baines.md`). No specific work is pinned to a holder yet.
-- **Fact-checking:** every story has `docs/sources/<slug>.md`, with one row per line of copy. Most rows say `re-check`. The research sandbox could search the web but couldn't open source pages, so each row was confirmed from search excerpts only. Someone must open each source page before launch.
+- **Fact-checking:** every story has `docs/sources/<slug>.md`, with one row per line of copy. Rembrandt, Renoir and Velázquez were checked against their source pages on 16 Oct. About 440 rows across the other stories still say `re-check`. The research sandbox could search the web but couldn't open source pages, so each row was confirmed from search excerpts only. Someone must open each source page before launch.
 - **Preview (design review):** https://claude.ai/artifact/JAf1u31RSAbf7xJzYJ1Gw8 (rebuild with `npm run preview`, §9).
 
 ### Image status per live story
@@ -492,10 +512,20 @@ Full detail is in `docs/RIGHTS.md`. The rules:
 2. **Intro line**, in display type.
 3. **`DetailZoom`**: a 320svh sticky section that starts at 7× on Hokusai's Fuji detail (the twist beat's focus) and pulls back to 1×, with three text beats and a call to action. Motion keyframe offsets must stay within 0–1 (values outside crashed it once).
 4. **`StoryWall`**: a scroll-snap card row with a progress bar and desktop arrow buttons. Real paintings come first; stand-ins come last, with a badge.
-5. **`ArtistIndex`**: every artist, oldest first, with "N years of painting" computed from the data.
+5. **`HeistFile`** (`src/components/home/HeistFile.tsx`, data in `src/content/heists.ts`, `id="heists"`): "The heist file". It has four cards: the Mona Lisa (1911), The Just Judges (1934), the Gardner robbery (1990) and The Scream (1994).
+   - A recovered painting shows its image, cropped by `focus`. A missing one shows an empty gilt frame.
+   - Each card links to the matching story and lists its sources.
+   - Every line is sourced in `docs/sources/heists.md`. That file also lists the popular details that were left out because no source confirmed them.
+   - *Not live yet* (§0).
+6. **`ArtistIndex`**: every artist, oldest first, with "N years of painting" computed from the data.
    - Phones show thumbnails; desktop shows a floating preview on hover.
    - Artists without a story are tagged "Soon".
-6. A lime **"Enter the directory"** call to action, then the footer. **No Pipeline link** anywhere (§13).
+7. A lime **"Enter the directory"** call to action.
+8. **`SiteFooter`** (`src/components/SiteFooter.tsx`) is also on the directory and studio pages. Story pages keep their own end sheet instead. The footer has the tagline, an Explore menu, three "Start here" stories, a large "quicklime." wordmark and the image-rights line.
+   - No newsletter: it would need Klaviyo, and Klaviyo needs Pete's approval (§13).
+   - **No Pipeline link** anywhere (§13).
+
+**Copy voice:** everything below the hero follows the Mark Pollard style. Make one anchored, sourced claim, give the idea a name, and end with a callback. The hero ("Walk through the best art.") is Pete's favourite part. Don't change it.
 
 Everything is plain React, CSS and Motion. There is no paid service or third-party script.
 
@@ -543,7 +573,16 @@ None of this touches the real site build.
 
 ### Deploy
 
-See `docs/DEPLOY.md`:
+**Done (live).** Production is `main` on Vercel (project `quicklime`, id `prj_7KjSD0DPLxZgrfrASg7DEeW0WykM`, team `team_lLvQ5QiXFvE0eeHBoYmzeytu`).
+
+DNS at Afrihost:
+- the `@` and `www` A records point to `76.76.21.21`
+- the MX record is `mx3236622.spe.ucebox.co.za`; leave it alone
+- the `pipeline` record is untouched
+
+Optional and not done: replace the existing `@` TXT SPF record with `v=spf1 +mx include:spf.aserv.co.za ~all`. Edit the existing record; don't add a second SPF record.
+
+The original runbook was `docs/DEPLOY.md`:
 
 1. Import the repo into Vercel as Next.js. No env vars are needed.
 2. QA on the preview URL.
@@ -588,6 +627,9 @@ These apply when the next developer is a Claude agent in a claude.ai cloud sessi
 **Workarounds:**
 
 - **Node fetch through the proxy** needs `NODE_USE_ENV_PROXY=1`. The `fetch-*` npm scripts set it.
+- **Direct fetches are blocked:** `curl` and WebFetch can't reach `en.wikipedia.org` or `collectionapi.metmuseum.org`. The proxy rejects them (checked 16 Oct). To fix it, Pete opens the environment's settings → Network access and adds the domains under Allowed domains: `en.wikipedia.org`, `collectionapi.metmuseum.org`, `api.artic.edu` and the cited museum sites. See https://code.claude.com/docs/en/cloud-environments#network-access.
+- **Better:** run Claude Code locally (desktop app or VS Code) on Pete's machine. Nothing is blocked there.
+- **Firecrawl:** the connector uses Pete's own Firecrawl account and credits. A query scrape costs 5 credits; a search costs 2. It allows about 11 requests a minute. Use `formats:["query"]` with `queryOptions.mode:"directQuote"`. Only use it when the free routes fail.
 - **Research:** WebSearch works but is capped at roughly 200 searches per session, shared across sub-agents. Budget it: about 5–8 searches per story. Mark anything seen only in a search excerpt as `re-check`.
 - **Images Claude can't download:** ask the user to upload the Commons "Original file". Then run `contact-sheet` to identify the files, and `import-art slug=file --source …` to import them.
 
@@ -611,12 +653,15 @@ These apply when the next developer is a Claude agent in a claude.ai cloud sessi
    - Decide on Velázquez (the Met's file is 1024px), Courbet (1905px) and Modigliani (1912px).
    - Pete to sign off, or swap, the Italian and Vatican works: Botticelli, Gentileschi, Caravaggio, Michelangelo.
    - **Zoom points:** Dürer's inscription and monogram, Vermeer's pearl, Munch's two walkers and Seurat's monkey were re-aimed. Munch beat 3 ("Pencil inscription, top left") can't be checked: the inscription is invisible at 2000px. Re-check it on the full-size file, or cut the beat.
-2. **Fact-check pass:** open every source page behind each `re-check` row in `docs/sources/*.md`. Known weak spots:
-   - **Rembrandt**, "Twelve disciples. Christ. Count again. Fourteen.": only one hedged source. Find a museum or catalogue source, or rewrite the twist.
-   - **Renoir:** confirm the quote's wording and source.
-   - **Velázquez:** confirm the translation of the quote and credit the translator.
+2. **Fact-check pass:** open every source page behind each `re-check` row in `docs/sources/*.md`.
+   - **Done (16 Oct):**
+     - **Rembrandt:** the "Fourteen" twist was cut and replaced with "That face looks like Rembrandt's own."
+     - **Renoir:** 16 of 17 rows confirmed. "July 1923" is still `re-check`.
+     - **Velázquez:** the quote is now credited "…Palomino (1724). Our translation from his Spanish". "Lot 110" and "Looking out" are still `re-check`.
+   - **Method:** for each row, open the source page, quote the matching sentence into the row and mark it `confirmed`. If no source holds the line, rewrite it or cut it; weak claims don't stay in the copy (§13). Wikipedia is acceptable for a first pass. Prefer the museum's own page or a published catalogue for anything surprising.
+   - **Remaining:** the other 31 live stories, and the open rows above. Work out the cheapest route first (§11): local Claude Code, or the cloud session with the domains allowed. Use paid Firecrawl only with Pete's OK.
    - **Degas, Bell, Baines:** held back (§2). Each needs a real quote or hook before registering.
-3. **Deploy:** Vercel setup and DNS cutover per `docs/DEPLOY.md`, with the MX records untouched.
+3. **Deploy:** done (§9).
 4. **Analytics:** Bklit is undecided (hosted or self-hosted). Nothing is installed; add it in `layout.tsx` once decided.
 5. **Tier B (in-copyright artists):** the treatment (low-res commentary crop vs text-only) is an open decision. Don't build it until Pete decides.
 
@@ -630,4 +675,7 @@ These came from the owner (Pete). Don't reopen them without asking.
 - **Cost:** no running costs. Own code only; no paid services or plugins.
 - **Mobile first:** the homepage must be excellent on phones.
 - **Stand-ins and preview-size uploads** are fine for design review. Pete will provide or approve the final launch images.
+- **The hero** ("Walk through the best art.", `LensHero`) stays as it is. Pete loves it.
+- **Copy voice:** Mark Pollard style below the hero (§8).
+- **Releases:** a push to `main` is a live release. Only push after Pete says "ship". Do the work on the session branch, and don't open PRs unless asked.
 - **Klaviyo:** never change, delete or add anything in any Klaviyo account without Pete's explicit approval.
