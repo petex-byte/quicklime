@@ -31,7 +31,7 @@ Every module sits between `▼` and `▲` comments. Delete a whole block to drop
 ## Restyle for a client (about 20 minutes)
 
 1. Find and replace the 8 hex codes in the token list at the top of the file.
-2. Replace `BRAND_NAME`, `https://example.com`, the currency `R` and the `REPLACE_*` values.
+2. Replace `BRAND_NAME`, `https://example.com`, the currency `R`, the `REPLACE_*` values and the three social links in the footer (`REPLACE`).
 3. Swap the `placehold.co` images for the client's images, hosted in Klaviyo (upload to the image library and copy the URL). Hero 1200×900, product cards 500×625, feature image 500×500, logo 280×64 at 2× (one dark-ink version, one light-ink version for dark mode).
 4. Rewrite the copy. Keep alt text on every image.
 

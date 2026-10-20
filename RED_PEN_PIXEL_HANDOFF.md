@@ -66,9 +66,11 @@ Full steps are in each `gig-engines/tests/*/README.md`. In short:
 1. **Site is live** at https://work.quicklime.co.za (Vercel project `red-pen-pixel`, team petex-byte's projects, root `portfolio-site`). Rebuilt with scroll-craft on 20 Oct 2026; brief in `scrollcraft/builds/red-pen-pixel/BRIEF.md`. DNS already resolves (A 76.76.21.21); Vercel suggests moving to its newer IPs or a CNAME, optional. The project is **not git-linked**: redeploy after changes (create_deployment from this branch with `rootDirectory: portfolio-site`), or connect the repo in Vercel.
    - **Register `redpenpixel` on Fiverr.** Every order link points to `fiverr.com/redpenpixel` and 404s until it exists. Swap in gig URLs once gigs are live.
    - No photos yet: the P and C plates are slots for a real photo of Petri and Chané.
+   - Chapters III (email) and IV (screens) show Petri's side. The email is the real master with a labelled sample shop (`klaviyo-templates/build_sample.py`). The checkout is a labelled demo. **A real Figma prototype link from Petri would beat the demo**: embed it in chapter IV.
+   - Auto-deploy: the Vercel project can't be git-linked through the API while the repo is already linked to the `quicklime` project. The user connects it once in the dashboard (Settings > Git). An ignored-build-step (`git diff --quiet HEAD^ HEAD -- .`) is already set so only `portfolio-site/` changes trigger a build.
 2. **Fill placeholders:**
    - `[PORTFOLIO_URL]` and `[TRUST_SITE_URL]` in `fiverr-agency/03_visual/hyperframes_storyboard.md`.
-   - `REPLACE_COUPON_NAME` and the brand tokens in the Klaviyo template.
+   - `REPLACE_COUPON_NAME`, the three footer social links (`REPLACE`) and the brand tokens in the Klaviyo template. (The charset bug in the master was fixed 20 Oct.)
 3. **Test the Klaviyo template** in Klaviyo's preview and in Litmus or real inboxes (Outlook desktop especially). **Ask before touching any Klaviyo account.**
 4. **Chané reviews the Afrikaans** in `gig-engines/tests/legal-catch-net/verskaffingsooreenkoms_AF.txt` and the Legal engine's M2/M3 word hints.
 5. **Check Fiverr's current limits** (gig video length/size, gallery image size, tag rules). The numbers in the storyboard came from memory.

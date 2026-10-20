@@ -43,7 +43,7 @@ subs = {
     "{{ first_name|default:'Hello' }}": "Anika",
     "{% web_view %}": '<a href="#" style="color:#8E877C;">View in your browser</a>',
     "{% coupon_code 'REPLACE_COUPON_NAME' %}": "KLOOF-7QK2",
-    "{{ organization.name }}": "Kloof &amp; Co.",
+    "{{ organization.name }}": "Kloof &amp; Co",
     "{{ organization.full_address }}": "Sample address, Cape Town",
     "{% manage_preferences %}": '<a href="#" style="color:#8E877C;">Manage preferences</a>',
     "{% unsubscribe %}": '<a href="#" style="color:#8E877C;">Unsubscribe</a>',
@@ -65,12 +65,13 @@ subs = {
 for k, v in subs.items():
     html = html.replace(k, v)
 html = re.sub(r"https://example\.com[^\"']*", "#", html)
+html = re.sub(r"https://[a-z.]+/@?REPLACE", "#", html)
 # Links in a sample go nowhere; keep the visitor on the page.
 html = html.replace('target="_blank"', "")
 html = html.replace("<head>", '<head>\n<meta name="robots" content="noindex">\n<base target="_self">', 1)
 
 visible = re.sub(r"<!--(?!\[if|<!\[endif).*?-->", "", html, flags=re.S)  # author notes may mention tags
-left = re.findall(r"\{\{.*?\}\}|\{%.*?%\}|placehold\.co|REPLACE_", visible)
+left = re.findall(r"\{\{.*?\}\}|\{%.*?%\}|placehold\.co|REPLACE", visible)
 assert not left, left
 OUT.write_text(html, encoding="utf-8")
 print("wrote", OUT.relative_to(ROOT), len(html), "bytes")
