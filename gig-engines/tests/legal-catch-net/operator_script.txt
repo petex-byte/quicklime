@@ -35,7 +35,8 @@ Add any new findings with new F-numbers.
 === MESSAGE 5 ===
 Step 4. Check your own work and show PASS or FAIL for each:
 1. Every clause in both versions appears in the coverage count.
-2. Every quote in the findings table is copied exactly from the source.
+2. Every quote in the findings table is copied exactly from the source, and
+   no quote starts with a clause number.
    Re-read each one against the file.
 3. No finding says which version is legally right, or gives an opinion on the deal.
 4. Every RED finding is M1, M2, M3 or an M6 that removes an obligation, right,
