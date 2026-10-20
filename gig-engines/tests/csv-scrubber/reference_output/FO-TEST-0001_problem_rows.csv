@@ -1,0 +1,15 @@
+source_row,status,product,problem,what_the_client_must_send
+S-0005,HELD,Wool Beanie,duplicate of S-0006; not imported,"Confirm whether this is one product listed twice or two products with a wrong/repeated item code, and which row is correct"
+S-0006,HELD,Wool Beanie,duplicate of S-0005; not imported,"Confirm whether this is one product listed twice or two products with a wrong/repeated item code, and which row is correct"
+S-0001,MAPPED,Linen Shirt - Olive,3 size rows share item code FT-1001; Variant SKU left blank on every size row,Client to send size SKUs
+S-0002,MAPPED,Linen Shirt - Sand,4 size rows share item code FT-1002; Variant SKU left blank on every size row,Client to send size SKUs
+S-0004,MAPPED,Canvas Tote,"Price ""POA"" is text: POA; Variant Price left blank and Published set to FALSE",A valid retail price in ZAR
+S-0007,MAPPED,Cord Trousers,3 size rows share item code FT-1005; Variant SKU left blank on every size row,Client to send size SKUs
+S-0008,MAPPED,T-shirt basic white,3 size rows share item code FT-1006; Variant SKU left blank on every size row,Client to send size SKUs
+S-0010,MAPPED,Leather Belt,"Price ""R 1,2345"" is unsure; Variant Price left blank and Published set to FALSE",A valid retail price in ZAR
+S-0011,MAPPED,Throw Blanket,"Price ""199-249"" is range; Variant Price left blank and Published set to FALSE",A valid retail price in ZAR
+S-0013,MAPPED,Soy Candle,"Colour blank, so no colour tag",Colour for this product (optional)
+S-0013,MAPPED,Soy Candle,"Price ""0"" is zero (0); Variant Price left blank and Published set to FALSE",A valid retail price in ZAR
+S-0015,MAPPED,Cotton Apron,"""Was"" price is a spreadsheet error (#REF!); compare-at left blank","Old/was price, if one applies"
+S-0016,MAPPED,Kitchen Towel - Stripe,"Price ""$45"" carries a $ sign but the order currency is ZAR. Value kept as 45.00 with no conversion",Confirm the price is in ZAR (not USD)
+ALL,MAPPED,(all products),Type/Category not supplied in the source; Type and Categories left blank on every product,Product type/category for each product (optional)

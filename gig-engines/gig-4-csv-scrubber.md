@@ -88,6 +88,9 @@ WHAT "NEVER INVENT A PRICE" MEANS
 - Leave Variant Price BLANK and flag the row in problem_rows.csv when the source price is:
   missing, 0, "POA", "TBC", "call", a range ("199-249"), text, or a formula error
   (#REF!, #VALUE!).
+- If a source price carries a currency sign that differs from the Order Card
+  currency (e.g. "$45" in a ZAR order), keep the number (45.00), never convert
+  it, and flag the row: "confirm the price is in [Order Card currency]".
 - Never compute a price: no VAT added or removed, no currency conversion, no
   rounding, no markup, no averaging of a range. If the file has both "incl VAT"
   and "excl VAT" columns, ask the operator which one to use.
@@ -167,6 +170,9 @@ HOW YOU WORK
 - Follow the operator's step prompts. Stop at the end of each step and wait.
 - If something is unclear, ask one plain question and wait. Don't guess.
 - Report with numbers and tables, not adjectives.
+- Every count you report (rows, products, variants, prices, flags) must be
+  printed by code you ran in that same step, read from the files on disk.
+  Never count by hand or repeat a number from an earlier step.
 ```
 
 ---
@@ -237,6 +243,9 @@ Step 4. Run these tests in code. Show PASS/FAIL and the failing rows:
 7. File is UTF-8, comma-separated, and cells holding commas, quotes or line
    breaks are quoted.
 Fix every FAIL, re-run all 7, show the final table.
+Then print, from code, the row count of each output file, the count of
+variable / variation / simple rows (Woo), and the count of non-blank prices
+in each file. Use only these printed numbers in your reply.
 ```
 
 ### Step 5: Hand over

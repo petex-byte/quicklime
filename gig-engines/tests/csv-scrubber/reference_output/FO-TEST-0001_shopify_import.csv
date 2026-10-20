@@ -1,0 +1,21 @@
+Handle,Title,Body (HTML),Vendor,Type,Tags,Published,Option1 Name,Option1 Value,Variant Price,Variant SKU
+linen-shirt-olive,Linen Shirt - Olive,<p>Relaxed fit. 100% linen</p>,Fynbos Textiles,,olive,TRUE,Size,S,1299.00,
+linen-shirt-olive,,,,,,,,M,1299.00,
+linen-shirt-olive,,,,,,,,L,1299.00,
+linen-shirt-sand,Linen Shirt - Sand,<p>Relaxed fit. 100% linen</p>,Fynbos Textiles,,sand,TRUE,Size,S,1299.00,
+linen-shirt-sand,,,,,,,,M,1299.00,
+linen-shirt-sand,,,,,,,,L,1299.00,
+linen-shirt-sand,,,,,,,,XL,1299.00,
+canvas-tote,Canvas Tote,"<p>Holds a 15"" laptop</p>",Fynbos Textiles,,natural,FALSE,Title,Default Title,,FT-1003
+cord-trousers,Cord Trousers,<p>Wide leg. Organic cotton cord</p>,Fynbos Textiles,,rust,TRUE,Size,28,1099.00,
+cord-trousers,,,,,,,,30,1099.00,
+cord-trousers,,,,,,,,32,1099.00,
+t-shirt-basic-white,T-shirt basic white,<p>Heavy cotton tee</p>,Fynbos Textiles,,white,TRUE,Size,S,249.50,
+t-shirt-basic-white,,,,,,,,M,249.50,
+t-shirt-basic-white,,,,,,,,L,249.50,
+leather-belt,Leather Belt,<p>Hand-stitched. Brass buckle</p>,Fynbos Textiles,,tan,FALSE,Title,Default Title,,FT-1007
+throw-blanket,Throw Blanket,<p>Wool and cotton</p>,Fynbos Textiles,,grey,FALSE,Title,Default Title,,FT-1008
+soy-candle,Soy Candle,<p>Fig and cedar. 40 hour burn</p>,Fynbos Textiles,,,FALSE,Title,Default Title,,FT-1009
+linen-napkins-set-of-4,Linen Napkins (set of 4),<p>Pre-washed linen napkins</p>,Fynbos Textiles,,oat,TRUE,Title,Default Title,189.90,FT-1010
+cotton-apron,Cotton Apron,<p>Adjustable neck strap</p>,Fynbos Textiles,,black,TRUE,Title,Default Title,349.00,FT-1011
+kitchen-towel-stripe,Kitchen Towel - Stripe,<p>Waffle weave</p>,Fynbos Textiles,,blue stripe,TRUE,Title,Default Title,45.00,FT-1012
