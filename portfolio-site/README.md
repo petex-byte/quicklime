@@ -1,31 +1,35 @@
 # portfolio-site/
 
-Front-end for **work.quicklime.co.za**: the Red Pen & Pixel proof page from `fiverr-agency/03_visual/portfolio_subdomain_wireframe.md`.
-
-Plain HTML, CSS and one small script. No build step. Open `index.html` in a browser, or serve the folder:
+**work.quicklime.co.za**: the Red Pen & Pixel page. Built with the scroll-craft method
+(brief and fingerprint in `/scrollcraft/`). Plain HTML, CSS and JS, no build step.
 
 ```bash
-npx serve portfolio-site    # or: python3 -m http.server -d portfolio-site
+python3 -m http.server -d portfolio-site 4500
 ```
 
-## Sections
+## Chapters
 
-1. **Hero:** "We catch what slips." with a red-ink underline that draws in, two buttons, skill chips, and a duo photo slot (two initial circles plus a sticky note until the real photo lands).
-2. **Proof:** three "garden plots" with device frames. Each one plays its Hyperframes MP4 from `media/` once the file exists, and shows an animated skeleton site until then. Hover a card to circle its title in red and light up the "what we checked" list. Below that, a before/after drag slider on a dummy contract with a count-up.
-3. **Order:** five gig rows linking to Fiverr, with dotted price leaders. Pointing at one row dims the others.
+1. **Title page:** paper sheets, a sticky flag and a red pen on four depth planes that drift apart on scroll; the underline under "slips" draws itself.
+2. **I. The gap:** dark ground, four mistakes that cost shop owners money.
+3. **Your turn:** a deliberate pause.
+4. **II. Catch it yourself:** six clause pairs from the dummy test contract. Every word is a button. Real mistakes get a red circle on both versions and a margin note; "Show me all four" reveals the rest. Then the real test result: 14 of 14.
+5. **III. Two pairs of eyes:** Petri and Chané, and rows from a real caught-it sheet (Legal Catch-Net test run).
+6. **IV. The jobs:** five gigs with Basic prices from `fiverr-agency/02_gigs/gig_pricing_matrix.csv`.
+7. **Colophon:** the ask, as one sentence.
+
+## Files
+
+- `index.html`, `styles.css`, `script.js`: the page, its styles, the folio and the exercise.
+- `scrollcraft.js`, `scrollcraft.css`: the scroll-craft engine, unedited (MIT, `scrollcraft.LICENSE.txt`).
 
 ## Details
 
-- Light and dark themes follow the system. Press `t` to switch; the page remembers the choice.
-- `1` / `2` jump to Work / Order.
-- Videos load only when near the screen and pause when off it.
-- `prefers-reduced-motion` turns off every animation.
-- Works without JavaScript: content shows, only the extras drop.
-- Growth-stage labels (Seedling / Budding / Evergreen) nod to Maggie Appleton's garden.
+- Keyboard: Tab into the contract, arrow keys move word to word, Enter marks one.
+- Reduced motion keeps every state, drops the movement.
+- Without JavaScript the contract shows with all four notes open.
+- No photos yet. The P and C plates are slots for a real photo of Petri and Chané.
 
-## Before it goes live
+## Before launch
 
-- [ ] Replace `REPLACE_USERNAME` and the gig slugs in `index.html` with the live Fiverr URLs.
-- [ ] Add the media files listed in `media/README.md`.
-- [ ] Swap the two `.face` circles for the real photo.
-- [ ] Point the `work` subdomain at the folder (Vercel, Netlify or Cloudflare Pages: set the root directory to `portfolio-site`).
+- [ ] Register **redpenpixel** on Fiverr. Every order link points to `https://www.fiverr.com/redpenpixel`. Swap in gig URLs once the gigs are live.
+- [ ] Add a CNAME for `work` at your DNS host (see the deploy notes in the handoff).
