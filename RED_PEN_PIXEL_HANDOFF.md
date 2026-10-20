@@ -23,7 +23,7 @@
 | Folder | What | State |
 | --- | --- | --- |
 | `fiverr-agency/` | Brand strategy (Target/Problem/Insight/Strategy), 3 names (pick: **Red Pen & Pixel**), 560-char bio, 5 gigs with 5-Benefits drill-downs, titles, tags, 3-tier prices + extras, Hyperframes storyboards, thumbnail text, subdomain wireframe, first SOP (`05_handoff/standard_claude_handoff.md`) | Done |
-| `portfolio-site/` | Static site for `work.quicklime.co.za`: hero, video slots with skeleton fallbacks, before/after contract slider, Fiverr order list, light/dark, keyboard keys | Done. Live preview artifact (private): https://claude.ai/artifact/CGstyoHKvB4U5pVi7URro8 |
+| `portfolio-site/` | Scroll-craft chaptered editorial page: layered paper/pen title page, 'catch it yourself' bilingual contract exercise, caught-it sheet, five-job index | **Live** at https://work.quicklime.co.za |
 | `klaviyo-templates/` | `premium-master.html`: 12-module Klaviyo HTML email (VIP conditional, first name, unique coupon, cart loop, Outlook VML buttons, dark mode) + 3 snippets | Done, but **only checked in a browser**, never in Klaviyo preview or real inboxes |
 | `gig-engines/` | System prompts + step prompts + human checklists for **Gig 3 Legal Catch-Net**, **Gig 4 CSV Scrubber**, **Gig 5 Brand Voice Extractor** | Done and **tested twice** (see §3) |
 | `gig-engines/tests/` | One test kit per engine: planted-trap inputs, answer key, grader, operator script, first-run and re-run outputs | Done |
@@ -63,9 +63,10 @@ Full steps are in each `gig-engines/tests/*/README.md`. In short:
 
 ## 4. Open items (in rough priority)
 
-1. **Domain confirmed:** `quicklime.co.za`; site goes live on a subdomain (`work.quicklime.co.za`). Needs: Fiverr username, DNS host, OK to deploy.
+1. **Site is live** at https://work.quicklime.co.za (Vercel project `red-pen-pixel`, team petex-byte's projects, root `portfolio-site`). Rebuilt with scroll-craft on 20 Oct 2026; brief in `scrollcraft/builds/red-pen-pixel/BRIEF.md`. DNS already resolves (A 76.76.21.21); Vercel suggests moving to its newer IPs or a CNAME, optional. The project is **not git-linked**: redeploy after changes (create_deployment from this branch with `rootDirectory: portfolio-site`), or connect the repo in Vercel.
+   - **Register `redpenpixel` on Fiverr.** Every order link points to `fiverr.com/redpenpixel` and 404s until it exists. Swap in gig URLs once gigs are live.
+   - No photos yet: the P and C plates are slots for a real photo of Petri and Chané.
 2. **Fill placeholders:**
-   - `REPLACE_USERNAME` and the gig slugs in `portfolio-site/index.html`.
    - `[PORTFOLIO_URL]` and `[TRUST_SITE_URL]` in `fiverr-agency/03_visual/hyperframes_storyboard.md`.
    - `REPLACE_COUPON_NAME` and the brand tokens in the Klaviyo template.
 3. **Test the Klaviyo template** in Klaviyo's preview and in Litmus or real inboxes (Outlook desktop especially). **Ask before touching any Klaviyo account.**
