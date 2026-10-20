@@ -1,0 +1,17 @@
+Chunk 2 covers clauses 7 to 12 and Annexure A (EN 17 units, AF 16 units, all checked).
+
+| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for Chané to confirm) |
+|---|---|---|---|---|---|---|---|---|
+| F-008 | RED | M3 | 7.1 | 7.1 | The Supplier shall replace defective Goods within 10 Business Days of written notice. | Die Leweransier mag gebrekkige Goedere binne 10 Werksdae na skriftelike kennisgewing vervang. | English "shall" (obligation) became Afrikaans "mag" (option). | Change "mag" to "moet" |
+| F-009 | AMBER | M4 | 7.1 | 7.1 | The Supplier shall replace defective Goods within 10 Business Days of written notice. | Die Leweransier mag gebrekkige Goedere binne 10 Werksdae na skriftelike kennisgewing vervang. | Afrikaans uses "Leweransier". Defined term is "die Verskaffer" everywhere else in the Afrikaans. "Leweransier" is never defined. | Change "Leweransier" to "Verskaffer" |
+| F-010 | RED | M6 | 8.3 | none | The insurance cover shall not be less than R1 000 000 per claim. | (no matching clause; Afrikaans clause 8 ends at 8.2) | Sub-clause in English only. Removes an amount and an obligation from the Afrikaans. | Ask client which is intended |
+| F-011 | GREY | M7 | 9.1 (second) | 9.2 | 9.1 A party may end this Agreement immediately if the other party breaches clause 4 and does not fix the breach within 7 days of written notice. | 9.2 'n Party kan hierdie Ooreenkoms onmiddellik beëindig indien die ander party klousule 4 verbreek en nie die verbreking binne 7 dae na skriftelike kennisgewing regstel nie. | English numbers two clauses "9.1". The second should follow 9.1 as 9.2. Afrikaans numbers it 9.2. Content matches. | Renumber the second English "9.1" as "9.2" |
+| F-012 | RED | M3 | 10.1 | 10.1 | The Buyer may not assign this Agreement without the Supplier's written consent. | Die Koper mag hierdie Ooreenkoms sonder die Verskaffer se skriftelike toestemming oordra. | Negation in English only. English: Buyer may NOT assign without consent. Afrikaans: Koper MAY assign without consent. | Change Afrikaans to "Die Koper mag hierdie Ooreenkoms nie sonder die Verskaffer se skriftelike toestemming oordra nie." |
+| F-013 | AMBER | M5 | 11.2 | 11.2 | Subject to clause 11.3, any dispute not settled within 30 days goes to arbitration in Cape Town. | Behoudens klousule 11.3 word enige geskil wat nie binne 30 dae geskik is nie, na arbitrasie in Kaapstad verwys. | Both versions refer to clause 11.3. Neither version has a clause 11.3. Clause 11 ends at 11.2 in both. | Ask client which is intended |
+| F-014 | GREY | M7 | 12 | 12 | Signed at __________ on [●] 2026. | Geteken te __________ op [●] 2026. | Blank fields in both: place (____) and day/month ([●]). Also blank in both: "Name: __________" for each party (Supplier and Buyer). | Fill all blank fields before signing (client to supply) |
+| F-015 | GREY | M7 | 12 | 12 | For the Supplier: __________ Name: __________ / For the Buyer: __________ Name: __________ | Namens die Verskaffer: __________ Naam: __________ / Namens die Koper: __________ Naam: __________ | Signature blocks in both versions have no date line and no witness line. Same in both. | Ask client whether date and witness lines are wanted |
+
+Annexure A / Aanhangsel A: heading and the three items match (shirts/hemde, napkins/servette, throws/gooikomberse). No finding.
+Clauses 7.2, 8.1, 8.2, 9.1 (first), 11.1: checked, no finding.
+
+Chunk 7-Annexure A done. Findings: 8.
