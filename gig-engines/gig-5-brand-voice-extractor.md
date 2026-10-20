@@ -216,6 +216,7 @@ Then run this check and show PASS / FAIL:
 6. Quick Rules has exactly 10 rules.
 7. Word count of the whole guideline is under 1,800 (count it with code).
    If over, cut the Words to Use table first, then repeated quotes.
+   NEVER cut a [CONFIRM] item or anything in section 6 to save words.
 8. Every "Before" needs at least 3 changes. Name them.
 Fix every FAIL, then show the final document.
 ```
