@@ -154,3 +154,29 @@
     say(you === TOTAL ? 'All four.' : 'You caught ' + you + ' of ' + TOTAL + '. The dotted circles are the ones you missed.');
   });
 })();
+
+/* Petri's chapters: email width toggle and the checkout before/after. */
+(function () {
+  'use strict';
+  function group(sel, attr, apply) {
+    var g = document.querySelector(sel);
+    if (!g) return;
+    g.addEventListener('click', function (e) {
+      var b = e.target.closest('button[' + attr + ']');
+      if (!b) return;
+      g.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      apply(b.getAttribute(attr));
+    });
+  }
+  var frame = document.querySelector('[data-frame]');
+  group('#email .made__toggle', 'data-width', function (w) { frame.setAttribute('style', '--w:' + w + 'px'); frame.closest('.made__grid').classList.toggle('is-wide', w === '600'); });
+
+  var co = document.querySelector('.co');
+  var cap = document.querySelector('[data-se-cap]');
+  group('#screens .made__toggle', 'data-ver', function (v) {
+    co.setAttribute('data-ver-state', v);
+    cap.textContent = v === 'after'
+      ? 'Same screen, fixed: a shorter photo and a Pay bar that stays on screen while you scroll.'
+      : 'Demo screen at iPhone SE size, 320 by 568. The Pay button is below the edge.';
+  });
+})();

@@ -39,8 +39,10 @@ Fiverr username, user's pick: **redpenpixel** (not yet registered).
 | I. The gap | Unease | Dark ground, hard cut. Four plain sentences about mistakes that cost money |
 | Intertitle | Stillness | Two words on a near-empty page |
 | II. Catch it | Delight, then respect | You tap a word, the pen circles it, the margin explains. Then the reveal: the check caught all 14 |
-| III. Two pairs of eyes | Trust | Two big initials wipe in, each with what that person catches; a real caught-it sheet wipes up |
-| IV. The jobs | Appetite | Five jobs set as a price index |
+| III. The email | Confidence | The real Klaviyo master running live in a phone frame, with what we checked in the margin |
+| IV. The screens | Recognition | A checkout at iPhone SE size; flip it from 'as designed' to 'as we'd fix it' |
+| V. Two pairs of eyes | Trust | Two big initials wipe in, each with what that person catches; a real caught-it sheet wipes up |
+| VI. The jobs | Appetite | Five jobs set as a price index |
 | Colophon | Resolve | Smallest type on the site. One running sentence with the link |
 
 **Peak:** "I found two of the mistakes myself, and then it showed me their check found all 14." Lives in chapter II, which gets the largest span and the silence before it.
@@ -81,3 +83,7 @@ gets a small pencil tick. A tally tracks you against the check. "Show me" reveal
 
 Families: parallax, in, signature, count, reveal (5). No family twice in a row.
 Real numbers only: 14 planted mistakes and 5 traps from the Legal Catch-Net test; prices from the gig matrix.
+
+## Added 20 Oct 2026 (user: "not much about email marketing and Figma design")
+
+Two chapters for Petri's half, after the peak. III shows the real Klaviyo master (rendered with a labelled sample shop by `klaviyo-templates/build_sample.py`). IV is a labelled demo checkout at 320x568 with a before/after switch. Both are quieter than the peak on purpose. A real Figma prototype embed would beat the demo: waiting on a link from Petri.

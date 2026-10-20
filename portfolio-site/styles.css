@@ -289,3 +289,95 @@ main, .colophon { padding-left: var(--folio-w); }
 /* Without the script the exercise is a plain contract with its notes showing. */
 .contract:not(.is-live) .note { opacity: 1; translate: none; max-height: none; }
 .contract:not(.is-live) .tally { display: none; }
+
+/* --------------------------------------------- III. the email (Petri) -- */
+.made__grid { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: var(--sc-8); align-items: start; }
+.made__h, .screens__h { font-family: var(--sc-font-display); font-weight: 400; font-size: var(--sc-t-2xl); line-height: 1.04; letter-spacing: -0.02em; text-wrap: balance; }
+.made__p, .screens__copy > p { margin-top: var(--sc-4); color: var(--sc-ink-soft); max-width: 40ch; text-wrap: pretty; }
+.made__toggle { margin-top: var(--sc-6); display: inline-flex; border: 1px solid var(--sc-hairline-strong); border-radius: var(--sc-r-sm); padding: 3px; gap: 3px; }
+.made__toggle button {
+  border: 0; background: transparent; color: var(--sc-ink-soft); font-weight: 500; font-size: var(--sc-t-sm);
+  padding: 0.55rem 0.9rem; min-height: 40px; border-radius: 4px; cursor: pointer;
+  transition: background-color var(--sc-d-fast) var(--sc-ease-out), color var(--sc-d-fast) var(--sc-ease-out);
+}
+.made__toggle button[aria-pressed="true"] { background: var(--sc-ink); color: var(--sc-canvas); }
+.ground-ink .made__toggle button[aria-pressed="true"] { color: #16191D; }
+.made__toggle button:active { transform: scale(0.97); }
+
+.inbox { margin: 0; }
+.inbox__frame {
+  width: var(--w); max-width: calc(100vw - 2 * var(--sc-gutter));
+  height: min(44rem, 78svh);
+  border-radius: 28px; border: 10px solid #16191D; background: #16191D;
+  box-shadow: var(--sc-e3); overflow: hidden;
+  transition: width var(--sc-d-slow) var(--sc-ease-out);
+}
+.inbox__frame[style*="600px"] { border-radius: 10px; border-width: 8px; }
+.inbox__frame iframe { width: 100%; height: 100%; border: 0; display: block; background: #F4F1EC; border-radius: 18px; }
+.inbox__frame[style*="600px"] iframe { border-radius: 4px; }
+.inbox figcaption { margin-top: var(--sc-4); font-size: var(--sc-t-sm); color: var(--sc-ink-soft); max-width: 40ch; }
+.inbox figcaption a { color: var(--sc-ink); text-decoration-color: var(--sc-accent); }
+
+.checks { counter-reset: c; border-top: 1px solid var(--sc-hairline-strong); }
+.checks li { padding-block: var(--sc-4); border-bottom: 1px solid var(--sc-hairline); font-size: var(--sc-t-sm); color: var(--sc-ink-soft); line-height: 1.5; padding-left: 1.75rem; position: relative; }
+.checks li::before { content: "\2713"; position: absolute; left: 0; top: 1rem; color: var(--sc-accent); font-weight: 600; }
+.checks b { color: var(--sc-ink); font-weight: 500; }
+.checks__own { font-family: var(--sc-font-display); font-style: italic; font-size: 1.02rem !important; color: var(--sc-accent) !important; }
+.checks__own b { color: var(--sc-accent); font-family: var(--sc-font-text); font-style: normal; font-size: var(--sc-t-sm); }
+.checks__own::before { content: "\2715" !important; }
+
+@media (max-width: 1180px) {
+  .made__grid { grid-template-columns: minmax(0, 1fr) auto; }
+  .checks { grid-column: 1 / -1; columns: 2; column-gap: var(--sc-7); }
+  .checks li { break-inside: avoid; }
+}
+@media (max-width: 760px) {
+  .made__grid { grid-template-columns: 1fr; gap: var(--sc-7); }
+  #email .made__toggle { display: none; }
+  .inbox__frame { --w: 100% !important; width: 100%; height: 34rem; }
+  .checks { columns: 1; }
+}
+
+/* -------------------------------------------- IV. the screens (Petri) -- */
+.screens__grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--sc-9); align-items: center; max-width: 68rem; }
+.screens__get { margin-top: var(--sc-6); border-top: 1px solid var(--sc-hairline-strong); }
+.screens__get li { padding: var(--sc-3) 0 var(--sc-3) 1.75rem; border-bottom: 1px solid var(--sc-hairline); font-size: var(--sc-t-sm); color: var(--sc-ink-soft); position: relative; }
+.screens__get li::before { content: "\2192"; position: absolute; left: 0; color: var(--sc-accent); }
+
+.se { margin: 0; }
+.se__phone {
+  position: relative; width: 320px; height: 568px; overflow: hidden;
+  border: 12px solid #2A2F35; border-radius: 34px; background: #FBFBFA; color: #16191D;
+  box-shadow: 0 30px 60px -20px rgb(0 0 0 / .6); box-sizing: content-box;
+  font-family: var(--sc-font-text);
+}
+.co { height: 100%; overflow: hidden; }
+.co__bar { height: 44px; display: grid; place-items: center; font-weight: 600; font-size: 15px; border-bottom: 1px solid #E6E8E7; }
+.co__hero { height: 236px; margin: 14px 16px 0; border-radius: 12px;
+  background: url("samples/img/hero.svg") center / cover; transition: height var(--sc-d-slow) var(--sc-ease-out); }
+.co__h { margin: 18px 16px 6px; font-weight: 600; font-size: 17px; }
+.co__items li { display: flex; justify-content: space-between; padding: 11px 16px; font-size: 14px; border-bottom: 1px solid #EEF0EF; }
+.co__items li span:last-child, .co__total span:last-child { font-variant-numeric: tabular-nums; }
+.co__promo { margin: 12px 16px 0; font-size: 13px; color: #4A535A; text-decoration: underline; }
+.co__total { display: flex; justify-content: space-between; margin: 12px 16px 0; font-weight: 600; font-size: 16px; }
+.co__pay {
+  display: block; width: calc(100% - 32px); margin: 18px 16px; height: 50px; border: 0; border-radius: 12px;
+  background: #16191D; color: #fff; font: 600 16px var(--sc-font-text);
+}
+.co[data-ver-state="after"] .co__hero { height: 96px; }
+.co[data-ver-state="after"] .co__pay {
+  position: absolute; left: 0; right: 0; bottom: 0; margin: 0; width: 100%; height: 72px; border-radius: 0;
+  background: #BF1E2E; box-shadow: 0 -8px 20px -10px rgb(0 0 0 / .35); padding-bottom: 10px;
+}
+.se figcaption { margin-top: var(--sc-4); font-size: var(--sc-t-sm); color: var(--sc-ink-soft); max-width: 344px; min-height: 3em; }
+@media (max-width: 860px) {
+  .screens__grid { grid-template-columns: 1fr; gap: var(--sc-7); }
+  .se { justify-self: center; }
+}
+@media (prefers-reduced-motion: reduce) { .inbox__frame, .co__hero { transition: none; } }
+/* Desktop-width email needs the room: the checklist moves under it. */
+@media (min-width: 761px) {
+  .made__grid.is-wide { grid-template-columns: minmax(0, 1fr) auto; }
+  .made__grid.is-wide .checks { grid-column: 1 / -1; columns: 2; column-gap: var(--sc-7); }
+  .made__grid.is-wide .checks li { break-inside: avoid; }
+}

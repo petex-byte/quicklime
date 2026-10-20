@@ -13,9 +13,11 @@ python3 -m http.server -d portfolio-site 4500
 2. **I. The gap:** dark ground, four mistakes that cost shop owners money.
 3. **Your turn:** a deliberate pause.
 4. **II. Catch it yourself:** six clause pairs from the dummy test contract. Every word is a button. Real mistakes get a red circle on both versions and a margin note; "Show me all four" reveals the rest. Then the real test result: 14 of 14.
-5. **III. Two pairs of eyes:** Petri and Chané, and rows from a real caught-it sheet (Legal Catch-Net test run).
-6. **IV. The jobs:** five gigs with Basic prices from `fiverr-agency/02_gigs/gig_pricing_matrix.csv`.
-7. **Colophon:** the ask, as one sentence.
+5. **III. The email:** the real Klaviyo master (`samples/email.html`, built by `klaviyo-templates/build_sample.py` with a sample shop) in a phone frame with a Phone/Desktop switch, plus what we check.
+6. **IV. The screens:** a demo checkout at iPhone SE size with an 'as designed / as we'd fix it' switch, and what the Figma gig delivers.
+7. **V. Two pairs of eyes:** Petri and Chané, and rows from a real caught-it sheet (Legal Catch-Net test run).
+8. **VI. The jobs:** five gigs with Basic prices from `fiverr-agency/02_gigs/gig_pricing_matrix.csv`.
+9. **Colophon:** the ask, as one sentence.
 
 ## Files
 

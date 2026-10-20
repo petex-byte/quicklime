@@ -143,19 +143,89 @@
     </div>
   </section>
 
+  <!-- III. PETRI'S HALF: the email, then the screens. Real markup, labelled samples. -->
+  <section id="email" class="made ground-carbon sc-section" data-sc-act="flow" data-folio="III. The email" aria-labelledby="mail-h">
+    <div class="sc-wrap made__grid">
+      <div class="made__intro" data-sc-in data-sc-stagger="60">
+        <h2 id="mail-h" class="made__h">A sale email that works in every inbox.</h2>
+        <p class="made__p">This is our Klaviyo master template, live, not a picture. Scroll inside it. Petri designs it in Figma, then codes it by hand, module by module.</p>
+        <div class="made__toggle" role="group" aria-label="Email width">
+          <button type="button" aria-pressed="true" data-width="375">Phone</button>
+          <button type="button" aria-pressed="false" data-width="600">Desktop</button>
+        </div>
+      </div>
+
+      <figure class="inbox">
+        <div class="inbox__frame" data-frame style="--w:375px">
+          <iframe src="samples/email.html" title="Sample sale email from our Klaviyo master template" loading="lazy"></iframe>
+        </div>
+        <figcaption>Kloof &amp; Co. is a sample shop, not a client. <a href="samples/email.html">Open the email full size</a>.</figcaption>
+      </figure>
+
+      <ol class="checks" data-sc-in data-sc-stagger="70" aria-label="What we checked in this email">
+        <li><b>Outlook on Windows.</b> Every button is drawn twice, once in HTML and once in Outlook's own shapes, so it never turns into a bare link.</li>
+        <li><b>Dark mode.</b> The logo swaps to a light version and the coupon stays readable.</li>
+        <li><b>Phones.</b> Two columns become one under 600 pixels. Every button is at least 44 pixels tall, big enough for a thumb.</li>
+        <li><b>Names.</b> "Anika, it's here." When Klaviyo has no first name, it says "Hello" instead of a blank.</li>
+        <li><b>Coupons.</b> Each person gets their own code, so one leaked code can't empty the sale.</li>
+        <li><b>Empty carts.</b> The "Still in your bag" block hides itself when there's no cart.</li>
+        <li class="checks__own"><b>Our own catch.</b> Building this page, we found the template's character setting sat too low in the file, so "·" broke in the browser view. Fixed in the master.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="screens" class="screens ground-ink sc-section" data-sc-act="flow" data-folio="IV. The screens" aria-labelledby="scr-h">
+    <div class="sc-wrap screens__grid">
+      <div class="screens__copy" data-sc-in data-sc-stagger="60">
+        <h2 id="scr-h" class="screens__h">The Pay button that falls off an iPhone SE.</h2>
+        <p>A checkout designed on a big laptop screen looks fine. On a 320-pixel phone, the summary pushes Pay below the edge, and some buyers never scroll to find it.</p>
+        <p>Petri designs every screen in Figma at three widths, phone, small laptop and desktop, before anyone writes code. Flip the switch to see the fix.</p>
+        <div class="made__toggle" role="group" aria-label="Checkout version">
+          <button type="button" aria-pressed="true" data-ver="before">As designed</button>
+          <button type="button" aria-pressed="false" data-ver="after">As we'd fix it</button>
+        </div>
+        <ul class="screens__get" aria-label="What you get">
+          <li>A Figma file with real components and auto layout, so your developer can reuse them</li>
+          <li>A click-through prototype link you can test on your own phone</li>
+          <li>Every screen at 320, 390 and 1440 pixels wide</li>
+          <li>Notes for your developer: spacing, colours, fonts, every state of every button</li>
+        </ul>
+      </div>
+
+      <figure class="se" data-sc-reveal="up" data-sc-reveal-at="0.1 0.4">
+        <div class="se__phone">
+          <div class="co" data-ver-state="before">
+            <p class="co__bar">Checkout</p>
+            <div class="co__hero" aria-hidden="true"></div>
+            <p class="co__h">Your order</p>
+            <ul class="co__items">
+              <li><span>Wool overshirt</span><span>R1,299</span></li>
+              <li><span>Knit beanie</span><span>R299</span></li>
+              <li><span>Delivery</span><span>R0</span></li>
+            </ul>
+            <p class="co__promo">Have a promo code?</p>
+            <p class="co__total"><span>Total</span><span>R1,598</span></p>
+            <button class="co__pay" type="button" tabindex="-1">Pay R1,598</button>
+          </div>
+        </div>
+        <figcaption data-se-cap>Demo screen at iPhone SE size, 320 by 568. The Pay button is below the edge.</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <!-- III. TWO PAIRS OF EYES -->
-  <section class="eyes ground-carbon sc-section" data-sc-act="flow" data-folio="III. Two pairs of eyes" aria-labelledby="eyes-h">
+  <section class="eyes ground-paper sc-section" data-sc-act="flow" data-folio="V. Two pairs of eyes" aria-labelledby="eyes-h">
     <div class="sc-wrap">
       <h2 id="eyes-h" class="eyes__h">One makes it. The other reads it.</h2>
       <div class="eyes__duo">
         <article class="person">
-          <div class="person__plate" data-sc-reveal="right" data-sc-reveal-at="0.12 0.42" aria-hidden="true"><span>P</span></div>
+          <div class="person__plate" data-sc-parallax="-0.6" aria-hidden="true"><span>P</span></div>
           <h3 class="person__name">Petri</h3>
           <p class="person__does">Designs app screens, sites and sale emails in Figma, then codes the emails by hand so they open right in Gmail and Outlook.</p>
           <p class="person__catches">Catches the dead button.</p>
         </article>
         <article class="person person--c">
-          <div class="person__plate" data-sc-reveal="left" data-sc-reveal-at="0.18 0.48" aria-hidden="true"><span>C</span></div>
+          <div class="person__plate" data-sc-parallax="0.4" aria-hidden="true"><span>C</span></div>
           <h3 class="person__name">Chané</h3>
           <p class="person__does">Ten years in law. Reads contracts line by line in English and Afrikaans.</p>
           <p class="person__catches">Catches the wrong date.</p>
@@ -182,7 +252,7 @@
   </section>
 
   <!-- IV. THE JOBS -->
-  <section id="order" class="jobs ground-paper sc-section" data-sc-act="flow" data-folio="IV. The jobs" aria-labelledby="jobs-h">
+  <section id="order" class="jobs ground-carbon sc-section" data-sc-act="flow" data-folio="VI. The jobs" aria-labelledby="jobs-h">
     <div class="sc-wrap">
       <h2 id="jobs-h" class="jobs__h">Five jobs. Every one read twice.</h2>
       <ol class="index" data-sc-in data-sc-stagger="60">
