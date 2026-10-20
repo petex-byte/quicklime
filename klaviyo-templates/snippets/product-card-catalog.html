@@ -1,0 +1,20 @@
+<!-- ▼ SNIPPET: PRODUCT CARD · KLAVIYO CATALOG LOOKUP ====================
+     Swap one static card <div class="col"> in module 06 for this.
+     REPLACE_CATALOG_ITEM_ID = the item's ID in Klaviyo > Content > Catalog
+     (Shopify IDs carry a prefix; copy the ID exactly as Klaviyo shows it).
+     unpublished="cancel" stops the send to that person if the item is
+     unpublished, so nobody gets a dead link. Remove it to send anyway. -->
+<div class="col" style="display:inline-block; width:100%; max-width:270px; vertical-align:top;">
+  {% catalog 'REPLACE_CATALOG_ITEM_ID' unpublished="cancel" %}
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr><td style="padding:10px;">
+      <a href="{{ catalog_item.url }}" target="_blank" class="card-link" style="display:block;">
+        <img src="{{ catalog_item.featured_image.full.src }}" width="250" alt="{{ catalog_item.title }}" style="width:100%; max-width:250px; border-radius:12px; display:block;">
+        <p class="card-title t-ink" style="margin:12px 0 2px; font-family:Inter, Arial, sans-serif; font-size:15px; line-height:21px; font-weight:600; color:#1A1A1A;">{{ catalog_item.title }}</p>
+        <p class="t-ink2" style="margin:0; font-family:Inter, Arial, sans-serif; font-size:14px; line-height:20px; color:#5A554D;">R{{ catalog_item.metadata.price|floatformat:2 }}</p>
+      </a>
+    </td></tr>
+  </table>
+  {% endcatalog %}
+</div>
+<!-- ▲ SNIPPET ========================================================= -->

@@ -1,0 +1,19 @@
+<!-- ▼ SNIPPET: BROWSE ABANDON · DYNAMIC ==================================
+     For a flow triggered by "Viewed Product" (Klaviyo onsite tracking).
+     Paste as a <tr> inside the main 600px table, e.g. in place of module 05.
+     Hides itself when the event has no product name. Check the property
+     names in the flow's preview data; custom tracking can differ. -->
+{% if event.ProductName %}
+<tr>
+  <td class="bg-card px" style="background-color:#FFFFFF; padding:40px 48px 8px; text-align:center;">
+    <p class="t-ink3" style="margin:0 0 12px; font-family:Inter, Arial, sans-serif; font-size:12px; line-height:16px; letter-spacing:2px; text-transform:uppercase; color:#8E877C;">Still thinking about it?</p>
+    <a href="{{ event.URL }}" target="_blank" style="display:block;">
+      <img src="{{ event.ImageURL }}" width="320" alt="{{ event.ProductName }}" style="width:100%; max-width:320px; margin:0 auto; border-radius:12px; display:block;">
+    </a>
+    <h2 class="h2 serif t-ink" style="margin:20px 0 6px; font-family:Fraunces, Georgia, serif; font-size:26px; line-height:32px; font-weight:400; color:#1A1A1A;">{{ event.ProductName }}</h2>
+    {% if event.Price %}<p class="t-ink2" style="margin:0 0 20px; font-family:Inter, Arial, sans-serif; font-size:16px; line-height:22px; color:#5A554D;">R{{ event.Price|floatformat:2 }}</p>{% endif %}
+    <a href="{{ event.URL }}" target="_blank" class="btn-solid" style="display:inline-block; background-color:#1A1A1A; color:#FFFFFF; font-family:Inter, Arial, sans-serif; font-size:15px; font-weight:600; line-height:52px; padding:0 36px; border-radius:999px;">Take another look&nbsp;&rarr;</a>
+  </td>
+</tr>
+{% endif %}
+<!-- ▲ SNIPPET ========================================================= -->

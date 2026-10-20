@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Red Pen & Pixel</title>
+  <meta name="description" content="Apps, sale emails and contracts. Read twice before they reach you. Petri and Chané, a two-person studio in South Africa.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F6F1E9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16140F" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://work.quicklime.co.za/">
+
+  <meta property="og:title" content="Red Pen & Pixel: We catch what slips.">
+  <meta property="og:description" content="Figma screens, HTML sale emails, English and Afrikaans contract proofreading.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://work.quicklime.co.za/">
+  <meta property="og:image" content="https://work.quicklime.co.za/media/og.png">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F6F1E9'/%3E%3Cpath d='M7 22 L22 7 L25 10 L10 25 L6 26 Z' fill='%23D7263D'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>try{var t=localStorage.getItem("rpp-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the work</a>
+
+  <!-- ========== TOP BAR ========== -->
+  <header class="bar">
+    <a class="logo" href="#top" aria-label="Red Pen & Pixel, back to top">
+      <svg class="logo__pen" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 22 L22 7 L25 10 L10 25 L6 26 Z"/></svg>
+      <span>Red Pen <em>&amp;</em> Pixel</span>
+    </a>
+    <nav class="bar__nav" aria-label="Sections">
+      <a href="#work"><kbd>1</kbd> Work</a>
+      <a href="#order"><kbd>2</kbd> Order</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ========== SECTION 1: HERO ========== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <p class="eyebrow reveal" style="--i:0"><span class="dot" aria-hidden="true"></span> Two people · One studio · South Africa</p>
+
+        <h1 id="hero-title" class="hero__title reveal" style="--i:1">
+          We catch
+          <span class="ink">what slips.
+            <svg class="ink__line" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M4 16 C 60 8, 120 20, 180 11 S 270 6, 296 13"/>
+            </svg>
+          </span>
+        </h1>
+
+        <p class="hero__lede reveal" style="--i:2">
+          Apps, sale emails and contracts.<br>
+          Read twice before they reach you.
+        </p>
+
+        <div class="hero__actions reveal" style="--i:3">
+          <a class="btn btn--solid" href="#work">
+            See our work
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="https://www.fiverr.com/REPLACE_USERNAME" target="_blank" rel="noopener">
+            Order on Fiverr
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg>
+          </a>
+        </div>
+
+        <ul class="skills reveal" style="--i:4" aria-label="What we do">
+          <li>Figma</li>
+          <li>HTML email</li>
+          <li>English + Afrikaans</li>
+          <li>Claude</li>
+        </ul>
+      </div>
+
+      <!-- Photo slot: swap the two .face divs for one <img src="media/petri-chane.jpg"> when the photo is ready -->
+      <figure class="duo reveal" style="--i:2" aria-label="Petri and Chané">
+        <div class="face face--p">
+          <span class="face__initial">P</span>
+          <span class="face__tag">Petri · Design</span>
+        </div>
+        <div class="face face--c">
+          <span class="face__initial">C</span>
+          <span class="face__tag">Chané · Words &amp; Law</span>
+        </div>
+        <figcaption class="note">
+          <span class="note__pin" aria-hidden="true"></span>
+          One makes it. The other reads it. Every file, every time.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ========== SECTION 2: PROOF ========== -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <header class="section-head">
+        <p class="eyebrow"><span class="num">01</span> The work</p>
+        <h2 id="work-title">Proof, not promises.</h2>
+        <p class="muted">Live sites, filmed as they scroll. Hover a card to see what we checked.</p>
+      </header>
+
+      <div class="garden">
+        <!--
+          Each card holds a Hyperframes MP4. Drop the file at the path in data-src.
+          Until it exists, the CSS skeleton plays in its place.
+        -->
+        <article class="plot" style="--i:0">
+          <div class="device device--laptop">
+            <div class="device__bar" aria-hidden="true"><i></i><i></i><i></i><span class="device__url"></span></div>
+            <div class="device__screen">
+              <div class="skeleton" aria-hidden="true">
+                <div class="skeleton__page">
+                  <span class="sk sk--hero"></span><span class="sk sk--h"></span><span class="sk sk--p"></span>
+                  <span class="sk-grid"><span></span><span></span><span></span><span></span></span>
+                  <span class="sk sk--p"></span><span class="sk sk--p short"></span>
+                  <span class="sk-grid"><span></span><span></span><span></span><span></span></span>
+                </div>
+              </div>
+              <video class="clip" data-src="media/site-a-portfolio.mp4" muted loop playsinline preload="none"
+                     poster="media/site-a-portfolio.jpg" aria-label="Scrolling video of Petri's portfolio site"></video>
+            </div>
+          </div>
+          <div class="plot__meta">
+            <span class="stage stage--evergreen">Evergreen</span>
+            <h3><span class="ring-target">Portfolio site</span></h3>
+            <p>Figma file → live page. Desktop and phone.</p>
+            <ul class="checked" aria-label="What we checked">
+              <li>Tap targets 44 px+</li><li>Loads under 2 s</li><li>Menu works on a phone</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="plot" style="--i:1">
+          <div class="device device--laptop">
+            <div class="device__bar" aria-hidden="true"><i></i><i></i><i></i><span class="device__url"></span></div>
+            <div class="device__screen">
+              <div class="skeleton skeleton--calm" aria-hidden="true">
+                <div class="skeleton__page">
+                  <span class="sk sk--hero"></span><span class="sk sk--h"></span><span class="sk sk--p"></span><span class="sk sk--p short"></span>
+                  <span class="sk sk--block"></span>
+                  <span class="sk sk--p"></span><span class="sk sk--p"></span><span class="sk sk--p short"></span>
+                  <span class="sk sk--block"></span>
+                </div>
+              </div>
+              <video class="clip" data-src="media/site-b-trust.mp4" muted loop playsinline preload="none"
+                     poster="media/site-b-trust.jpg" aria-label="Scrolling video of a family trust website"></video>
+            </div>
+          </div>
+          <div class="plot__meta">
+            <span class="stage stage--budding">Budding</span>
+            <h3><span class="ring-target">Family trust site</span></h3>
+            <p>Plain and calm. Private details blurred.</p>
+            <ul class="checked" aria-label="What we checked">
+              <li>Plain-English pages</li><li>No personal data on show</li><li>Readable at 200% zoom</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="plot" style="--i:2">
+          <div class="device device--phone">
+            <div class="device__notch" aria-hidden="true"></div>
+            <div class="device__screen">
+              <div class="skeleton skeleton--email" aria-hidden="true">
+                <div class="skeleton__page">
+                  <span class="sk sk--logo"></span><span class="sk sk--hero tall"></span><span class="sk sk--h"></span>
+                  <span class="sk sk--btn"></span>
+                  <span class="sk-grid sk-grid--2"><span></span><span></span><span></span><span></span></span>
+                  <span class="sk sk--btn"></span><span class="sk sk--p"></span>
+                </div>
+              </div>
+              <video class="clip" data-src="media/gig-2-email.mp4" muted loop playsinline preload="none"
+                     poster="media/gig-2-email.jpg" aria-label="Scrolling video of a sale email on a phone"></video>
+            </div>
+          </div>
+          <div class="plot__meta">
+            <span class="stage stage--seedling">Seedling</span>
+            <h3><span class="ring-target">Sale email flow</span></h3>
+            <p>Designed in Figma. Coded in HTML.</p>
+            <ul class="checked" aria-label="What we checked">
+              <li>Gmail</li><li>Outlook</li><li>Apple Mail</li><li>Dark mode</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- Before / after: the dummy contract (never a client's) -->
+      <figure class="compare" aria-labelledby="compare-cap">
+        <div class="compare__stage" style="--pos:50%">
+          <div class="doc doc--after" aria-hidden="true">
+            <p class="doc__clause"><b>4.2</b> Betaling is verskuldig <mark class="fix">binne 30 dae</mark> na faktuurdatum.</p>
+            <p class="doc__clause muted"><b>4.2</b> Payment is due <mark class="fix">within 30 days</mark> of the invoice date.</p>
+            <span class="doc__stamp">After</span>
+          </div>
+          <div class="doc doc--before">
+            <p class="doc__clause"><b>4.2</b> Betaling is verskuldig <span class="caught">binne 60 dae
+              <svg viewBox="0 0 140 44" preserveAspectRatio="none" aria-hidden="true"><path d="M8 24 C 6 8, 70 2, 120 8 S 138 34, 90 40 S 4 40, 14 16"/></svg></span> na faktuurdatum.</p>
+            <p class="doc__clause muted"><b>4.2</b> Payment is due <span class="caught">within 30 days
+              <svg viewBox="0 0 140 44" preserveAspectRatio="none" aria-hidden="true"><path d="M8 24 C 6 8, 70 2, 120 8 S 138 34, 90 40 S 4 40, 14 16"/></svg></span> of the invoice date.</p>
+            <span class="doc__stamp">Before</span>
+          </div>
+          <div class="compare__handle" aria-hidden="true"><span></span></div>
+          <input class="compare__range" type="range" min="0" max="100" value="50"
+                 aria-label="Drag to compare the contract before and after proofreading">
+        </div>
+        <figcaption id="compare-cap" class="compare__cap">
+          <span class="count" data-count="14">0</span> mistakes found in one supplier contract.
+          <span class="muted">Dummy contract. We never show a client's papers.</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ========== SECTION 3: ORDER ========== -->
+    <section class="order" id="order" aria-labelledby="order-title">
+      <header class="section-head">
+        <p class="eyebrow"><span class="num">02</span> Order</p>
+        <h2 id="order-title">Pick a job.</h2>
+        <p class="muted">Every order opens on Fiverr. Prices show the smallest package.</p>
+      </header>
+
+      <!-- Swap each REPLACE_USERNAME / gig slug for the live Fiverr gig URL. Prices = Basic tier in 02_gigs/gig_pricing_matrix.csv -->
+      <ol class="menu">
+        <li>
+          <a href="https://www.fiverr.com/REPLACE_USERNAME/design-your-web-or-mobile-app-ui-ux-in-figma" target="_blank" rel="noopener">
+            <span class="menu__no">01</span>
+            <span class="menu__name">App &amp; web screens <small>Click it before you build it.</small></span>
+            <span class="menu__dots" aria-hidden="true"></span>
+            <span class="menu__price"><small>from</small> $150</span>
+            <span class="menu__go" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.fiverr.com/REPLACE_USERNAME/design-ecommerce-emails-in-figma-and-code-them-in-html-for-klaviyo" target="_blank" rel="noopener">
+            <span class="menu__no">02</span>
+            <span class="menu__name">Sale emails + HTML <small>Every button works. Every inbox.</small></span>
+            <span class="menu__dots" aria-hidden="true"></span>
+            <span class="menu__price"><small>from</small> $90</span>
+            <span class="menu__go" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.fiverr.com/REPLACE_USERNAME/proofread-your-legal-contract-in-english-or-afrikaans" target="_blank" rel="noopener">
+            <span class="menu__no">03</span>
+            <span class="menu__name">Contract proofreading <small>Every clause read twice.</small></span>
+            <span class="menu__dots" aria-hidden="true"></span>
+            <span class="menu__price"><small>from</small> $40</span>
+            <span class="menu__go" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.fiverr.com/REPLACE_USERNAME/clean-your-product-data-into-a-shopify-ready-csv-or-json-file" target="_blank" rel="noopener">
+            <span class="menu__no">04</span>
+            <span class="menu__name">Product data cleanup <small>Messy sheet in. Live store out.</small></span>
+            <span class="menu__dots" aria-hidden="true"></span>
+            <span class="menu__price"><small>from</small> $60</span>
+            <span class="menu__go" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.fiverr.com/REPLACE_USERNAME/write-a-custom-claude-prompt-library-in-your-brand-voice" target="_blank" rel="noopener">
+            <span class="menu__no">05</span>
+            <span class="menu__name">Brand prompt library <small>Your voice, on tap.</small></span>
+            <span class="menu__dots" aria-hidden="true"></span>
+            <span class="menu__price"><small>from</small> $50</span>
+            <span class="menu__go" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ol>
+
+      <p class="promise">
+        Built with Claude where it says so.<br>
+        <span class="ink ink--small">Checked by a human. Every time.
+          <svg class="ink__line" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 14 C 80 6, 160 20, 296 10"/></svg>
+        </span>
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Red Pen &amp; Pixel</span>
+    <span>South Africa</span>
+    <span>© <span id="year">2026</span></span>
+    <span class="foot__keys" aria-hidden="true"><kbd>1</kbd><kbd>2</kbd> to jump · <kbd>t</kbd> theme</span>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

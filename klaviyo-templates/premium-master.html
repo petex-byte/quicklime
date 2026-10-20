@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  =====================================================================
+  RED PEN & PIXEL · PREMIUM EMAIL MASTER (Gig 2 Premium)
+  Klaviyo HTML template · 600px · hybrid columns · Outlook VML buttons
+  =====================================================================
+
+  BRAND TOKENS: find & replace these hex codes and names per client.
+    #F4F1EC  paper (page background)
+    #FFFFFF  card (email body)
+    #1A1A1A  ink (headlines, solid buttons)
+    #5A554D  ink-2 (body text)
+    #8E877C  ink-3 (small print)
+    #E4DED3  rule (lines, borders)
+    #B4532A  accent (links, coupon, sale tags)
+    #EFE6DA  accent-tint (coupon and VIP panels)
+    BRAND_NAME        shop name in copy and alt text
+    https://example.com   shop URL (replace everywhere)
+    R                 currency symbol in the cart loop
+
+  MODULES (each sits between ▼ and ▲ comments; delete the whole block to drop it)
+    00 Preheader + web view
+    01 Header (logo + nav)
+    02 Announcement bar ............ DYNAMIC: VIP vs everyone else
+    03 Hero ........................ DYNAMIC: first name with fallback
+    04 Coupon ...................... DYNAMIC: unique Klaviyo coupon code
+    05 Cart recovery ............... DYNAMIC: loops event line items; hides when empty
+    06 Product grid 2×2
+    07 Feature split (image + text)
+    08 Review quote
+    09 Promise row (3 columns)
+    10 Final call to action
+    11 Footer ...................... REQUIRED: unsubscribe + address tags
+
+  More drop-in blocks live in /snippets.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<title>BRAND_NAME</title>
+
+<!--[if mso]>
+<noscript><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+<style>
+  table, td, div, h1, h2, h3, p, a { font-family: Arial, Helvetica, sans-serif !important; }
+  .serif { font-family: Georgia, 'Times New Roman', serif !important; }
+</style>
+<![endif]-->
+
+<!--[if !mso]><!-->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<!--<![endif]-->
+
+<style>
+  /* Resets */
+  html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
+  * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+  table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; }
+  img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; height: auto; }
+  a { text-decoration: none; }
+  a[x-apple-data-detectors], .unstyle-auto-detected-links a { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+  u + #body a { color: inherit; text-decoration: none; font-size: inherit; font-family: inherit; font-weight: inherit; line-height: inherit; }
+  #MessageViewBody a { color: inherit; text-decoration: none; }
+
+  /* Hover (Apple Mail, some webmail) */
+  .btn-solid:hover { background-color: #000000 !important; }
+  .btn-ghost:hover { background-color: #1A1A1A !important; color: #FFFFFF !important; }
+  .card-link:hover .card-title { text-decoration: underline !important; }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .wrap { width: 100% !important; }
+    .px { padding-left: 20px !important; padding-right: 20px !important; }
+    .h1 { font-size: 34px !important; line-height: 40px !important; }
+    .h2 { font-size: 26px !important; line-height: 32px !important; }
+    .col, .col-3 { max-width: 100% !important; width: 100% !important; }
+    .hide-sm { display: none !important; max-height: 0 !important; overflow: hidden !important; mso-hide: all !important; }
+    .center-sm { text-align: center !important; }
+    table.btn-full { width: 100% !important; }
+    .btn-full a { display: block !important; min-width: 0 !important; }
+    .nav a { padding: 0 6px !important; }
+  }
+
+  /* Dark mode: Apple Mail, iOS Mail, Outlook.com (data-ogsc) */
+  @media (prefers-color-scheme: dark) {
+    .bg-paper { background-color: #121110 !important; }
+    .bg-card  { background-color: #1C1B19 !important; }
+    .bg-tint  { background-color: #2A241D !important; }
+    .t-ink    { color: #F2EEE7 !important; }
+    .t-ink2   { color: #C9C2B6 !important; }
+    .t-ink3   { color: #9B9488 !important; }
+    .b-rule   { border-color: #34312C !important; }
+    .btn-solid { background-color: #F2EEE7 !important; color: #121110 !important; }
+    .btn-ghost { border-color: #F2EEE7 !important; color: #F2EEE7 !important; }
+    .logo-light { display: none !important; }
+    .logo-dark  { display: block !important; max-height: none !important; }
+  }
+  [data-ogsc] .bg-paper { background-color: #121110 !important; }
+  [data-ogsc] .bg-card  { background-color: #1C1B19 !important; }
+  [data-ogsc] .t-ink    { color: #F2EEE7 !important; }
+  [data-ogsc] .t-ink2   { color: #C9C2B6 !important; }
+  [data-ogsc] .t-ink3   { color: #9B9488 !important; }
+</style>
+</head>
+
+<body id="body" class="bg-paper" style="margin:0; padding:0; background-color:#F4F1EC; word-spacing:normal;">
+<div role="article" aria-roledescription="email" aria-label="BRAND_NAME" lang="en" class="bg-paper" style="background-color:#F4F1EC;">
+
+<!-- ▼ 00 PREHEADER + WEB VIEW ======================================== -->
+<div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
+  New drop is live. Your code is inside, {{ first_name|default:'friend' }}.
+  &#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;
+</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-paper" style="background-color:#F4F1EC;">
+<tr><td align="center" style="padding:16px 12px 0;">
+
+  <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td><![endif]-->
+  <table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px; margin:0 auto;">
+
+    <tr>
+      <td class="t-ink3" style="padding:0 0 12px; font-family:Inter, Arial, sans-serif; font-size:12px; line-height:18px; color:#8E877C; text-align:center;">
+        {% web_view %}
+      </td>
+    </tr>
+<!-- ▲ 00 ============================================================== -->
+
+<!-- ▼ 01 HEADER ======================================================= -->
+    <tr>
+      <td class="bg-card px" style="background-color:#FFFFFF; padding:28px 40px 20px; border-radius:16px 16px 0 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td align="left" valign="middle" style="width:50%;">
+              <a href="https://example.com" target="_blank">
+                <img class="logo-light" src="https://placehold.co/280x64/FFFFFF/1A1A1A/png?text=BRAND_NAME" width="140" alt="BRAND_NAME" style="width:140px; max-width:140px;">
+                <!--[if !mso]><!-->
+                <img class="logo-dark" src="https://placehold.co/280x64/1C1B19/F2EEE7/png?text=BRAND_NAME" width="140" alt="BRAND_NAME" style="width:140px; max-width:140px; display:none; max-height:0; overflow:hidden;">
+                <!--<![endif]-->
+              </a>
+            </td>
+            <td align="right" valign="middle" class="nav hide-sm" style="font-family:Inter, Arial, sans-serif; font-size:13px; line-height:18px;">
+              <a href="https://example.com/collections/new" target="_blank" class="t-ink" style="color:#1A1A1A; padding:0 0 0 18px;">New</a>
+              <a href="https://example.com/collections/best-sellers" target="_blank" class="t-ink" style="color:#1A1A1A; padding:0 0 0 18px;">Best sellers</a>
+              <a href="https://example.com/collections/sale" target="_blank" style="color:#B4532A; padding:0 0 0 18px;">Sale</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+<!-- ▲ 01 ============================================================== -->
+
+<!-- ▼ 02 ANNOUNCEMENT BAR · DYNAMIC ===================================
+     Shows VIP copy to profiles whose "Loyalty Tier" property is VIP.
+     Everyone else sees the default line. Rename the property to match
+     the client's account (Audience > Profiles > a profile > Properties). -->
+    <tr>
+      <td class="bg-card px" style="background-color:#FFFFFF; padding:0 40px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="bg-tint t-ink" style="background-color:#EFE6DA; border-radius:999px; padding:10px 16px; font-family:Inter, Arial, sans-serif; font-size:13px; line-height:18px; color:#1A1A1A; text-align:center;">
+              {% if person|lookup:'Loyalty Tier' == 'VIP' %}
+                <strong>VIP:</strong> you shop 24 hours early. Doors open to everyone tomorrow.
+              {% else %}
+                Free delivery over R750 &nbsp;·&nbsp; 30-day returns
+              {% endif %}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+<!-- ▲ 02 ============================================================== -->
+
+<!-- ▼ 03 HERO · DYNAMIC (first name) ================================== -->
+    <tr>
+      <td class="bg-card" style="background-color:#FFFFFF; padding:24px 0 0;">
+        <a href="https://example.com/collections/new" target="_blank">
+          <img src="https://placehold.co/1200x900/EFE6DA/1A1A1A/png?text=Hero+1200x900" width="600" alt="The new range laid out on linen" style="width:100%; max-width:600px;">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td class="bg-card px" style="background-color:#FFFFFF; padding:36px 48px 8px; text-align:center;">
+        <p class="t-ink3" style="margin:0 0 14px; font-family:Inter, Arial, sans-serif; font-size:12px; line-height:16px; letter-spacing:2px; text-transform:uppercase; color:#8E877C;">
+          The autumn drop
+        </p>
+        <h1 class="h1 serif t-ink" style="margin:0 0 16px; font-family:Fraunces, Georgia, 'Times New Roman', serif; font-size:44px; line-height:50px; font-weight:400; color:#1A1A1A; mso-line-height-rule:exactly;">
+          {{ first_name|default:'Hello' }}, it&rsquo;s here.
+        </h1>
+        <p class="t-ink2" style="margin:0 0 28px; font-family:Inter, Arial, sans-serif; font-size:16px; line-height:26px; color:#5A554D;">
+          Twelve new pieces. Made in small runs. When a size sells out, it&rsquo;s gone for the season.
+        </p>
+
+        <!-- Bulletproof button (VML for Outlook desktop) -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" class="btn-full">
+          <tr>
+            <td align="center" style="border-radius:999px;">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com/collections/new" style="height:52px; v-text-anchor:middle; width:240px;" arcsize="50%" stroke="f" fillcolor="#1A1A1A">
+                <w:anchorlock/>
+                <center style="color:#FFFFFF; font-family:Arial, sans-serif; font-size:15px; font-weight:bold;">Shop the drop</center>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <a href="https://example.com/collections/new" target="_blank" class="btn-solid" style="display:inline-block; background-color:#1A1A1A; color:#FFFFFF; font-family:Inter, Arial, sans-serif; font-size:15px; font-weight:600; line-height:52px; padding:0 36px; border-radius:999px; min-width:168px; text-align:center;">Shop the drop&nbsp;&rarr;</a>
+              <!--<![endif]-->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+<!-- ▲ 03 ============================================================== -->
+
+<!-- ▼ 04 COUPON · DYNAMIC =============================================
+     Prints a unique code per person. Create the coupon first in
+     Klaviyo (Content > Coupons) and put its exact name in the tag.
+     A test preview shows a sample code. Delete this block if no offer. -->
+    <tr>
+      <td class="bg-card px" style="background-color:#FFFFFF; padding:36px 48px 8px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="bg-tint" style="background-color:#EFE6DA; border:1px dashed #B4532A; border-radius:14px; padding:24px; text-align:center;">
+              <p class="t-ink2" style="margin:0 0 8px; font-family:Inter, Arial, sans-serif; font-size:14px; line-height:20px; color:#5A554D;">
+                15% off your first order. Code works until Sunday, 23:59.
+              </p>
+              <p style="margin:0; font-family:'Courier New', Courier, monospace; font-size:26px; line-height:34px; font-weight:bold; letter-spacing:3px; color:#B4532A;">
+                {% coupon_code 'REPLACE_COUPON_NAME' %}
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+<!-- ▲ 04 ============================================================== -->
+
+<!-- ▼ 05 CART RECOVERY · DYNAMIC ======================================
+     For flows triggered by Shopify "Started Checkout". Shows up to 3
+     items. In a campaign (no event) the whole block hides itself.
+     Check field names against the flow's preview data before launch. -->
+    {% if event.extra.line_items %}
+    <tr>
+      <td class="bg-card px" style="background-color:#FFFFFF; padding:40px 48px 0;">
+        <h2 class="h2 serif t-ink" style="margin:0 0 6px; font-family:Fraunces, Georgia, serif; font-size:28px; line-height:34px; font-weight:400; color:#1A1A1A;">Still in your bag</h2>
+        <p class="t-ink3" style="margin:0 0 16px; font-family:Inter, Arial, sans-serif; font-size:14px; line-height:20px; color:#8E877C;">We&rsquo;re holding these for 24 hours.</p>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          {% for item in event.extra.line_items|slice:':3' %}
+          <tr>
+            <td class="b-rule" width="96" valign="middle" style="padding:14px 0; border-top:1px solid #E4DED3; width:96px;">
+              <img src="{{ item.product.images.0.src|default:'https://placehold.co/192x192/EFE6DA/1A1A1A/png?text=Item' }}" width="80" alt="{{ item.product.title }}" style="width:80px; border-radius:10px;">
+            </td>
+            <td class="b-rule" valign="middle" style="padding:14px 12px; border-top:1px solid #E4DED3; font-family:Inter, Arial, sans-serif;">
+              <p class="t-ink" style="margin:0; font-size:15px; line-height:21px; font-weight:600; color:#1A1A1A;">{{ item.product.title }}</p>
+              <p class="t-ink3" style="margin:2px 0 0; font-size:13px; line-height:18px; color:#8E877C;">{% if item.variant_title %}{{ item.variant_title }} · {% endif %}Qty {{ item.quantity }}</p>
+            </td>
+            <td class="b-rule t-ink" align="right" valign="middle" style="padding:14px 0; border-top:1px solid #E4DED3; font-family:Inter, Arial, sans-serif; font-size:15px; line-height:21px; color:#1A1A1A; white-space:nowrap;">
+              R{{ item.line_price|floatformat:2 }}
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin-top:20px;" class="btn-full">
+          <tr>
+            <td align="center">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ event.extra.checkout_url }}" style="height:52px; v-text-anchor:middle; width:260px;" arcsize="50%" stroke="f" fillcolor="#B4532A">
+                <w:anchorlock/>
+                <center style="color:#FFFFFF; font-family:Arial, sans-serif; font-size:15px; font-weight:bold;">Back to checkout</center>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <a href="{{ event.extra.checkout_url }}" target="_blank" style="display:inline-block; background-color:#B4532A; color:#FFFFFF; font-family:Inter, Arial, sans-serif; font-size:15px; font-weight:600; line-height:52px; padding:0 36px; border-radius:999px; text-align:center;">Back to checkout&nbsp;&rarr;</a>
+              <!--<![endif]-->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    {% endif %}
+<!-- ▲ 05 ============================================================== -->
+
+<!-- ▼ 06 PRODUCT GRID 2×2 =============================================
+     Static cards. To pull live data from the Klaviyo catalog instead,
+     swap each card for snippets/product-card-catalog.html.          -->
+    <tr>
+      <td class="bg-card px" style="background-color:#FFFFFF; padding:48px 40px 8px;">
+        <h2 class="h2 serif t-ink" style="margin:0 0 20px; font-family:Fraunces, Georgia, serif; font-size:28px; line-height:34px; font-weight:400; color:#1A1A1A; text-align:center;">Picked for the cold</h2>
+      </td>
+    </tr>
+
+    <!-- Grid row 1 -->
+    <tr>
+      <td class="bg-card" align="center" style="background-color:#FFFFFF; padding:0 30px; font-size:0;">
+        <!--[if mso]><table role="presentation" width="540" cellpadding="0" cellspacing="0" border="0"><tr><td width="270" valign="top"><![endif]-->
+        <div class="col" style="display:inline-block; width:100%; max-width:270px; vertical-align:top;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:10px;">
+              <a href="https://example.com/products/item-1" target="_blank" class="card-link" style="display:block;">
+                <img src="https://placehold.co/500x625/EFE6DA/1A1A1A/png?text=Product+1" width="250" alt="Product 1 name" style="width:100%; max-width:250px; border-radius:12px;">
+                <p class="card-title t-ink" style="margin:12px 0 2px; font-family:Inter, Arial, sans-serif; font-size:15px; line-height:21px; font-weight:600; color:#1A1A1A;">Wool overshirt</p>
+                <p class="t-ink2" style="margin:0; font-family:Inter, Arial, sans-serif; font-size:14px; line-height:20px; color:#5A554D;">R1,299</p>
+              </a>
+            </td></tr>
+          </table>
+        </div>
+        <!--[if mso]></td><td width="270" valign="top"><![endif]-->
+        <div class="col" style="display:inline-block; width:100%; max-width:270px; vertical-align:top;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:10px;">
+              <a href="https://example.com/products/item-2" target="_blank" class="card-link" style="display:block;">
+                <img src="https://placehold.co/500x625/E4DED3/1A1A1A/png?text=Product+2" width="250" alt="Product 2 name" style="width:100%; max-width:250px; border-radius:12px;">
+                <p class="card-title t-ink" style="margin:12px 0 2px; font-family:Inter, Arial, sans-serif; font-size:15px; line-height:21px; font-weight:600; color:#1A1A1A;">Knit beanie</p>
+                <p class="t-ink2" style="margin:0; font-family:Inter, Arial, sans-serif; font-size:14px; line-height:20px; color:#5A554D;"><span style="color:#B4532A;">R299</span> &nbsp;<s style="color:#8E877C;">R399</s></p>
+              </a>
+            </td></tr>
+          </table>
+        </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+
+    <!-- Grid row 2 -->
+    <tr>
+      <td class="bg-card" align="center" style="background-color:#FFFFFF; padding:0 30px; font-size:0;">
+        <!--[if mso]><table role="presentation" width="540" cellpadding="0" cellspacing="0" border="0"><tr><td width="270" valign="top"><![endif]-->
+        <div class="col" style="display:inline-block; width:100%; max-width:270px; vertical-align:top;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:10px;">
+              <a href="https://example.com/products/item-3" target="_blank" class="card-link" style="display:block;">
+                <img src="https://placehold.co/500x625/E4DED3/1A1A1A/png?text=Product+3" width="250" alt="Product 3 name" style="width:100%; max-width:250px; border-radius:12px;">
+                <p class="card-title t-ink" style="margin:12px 0 2px; font-family:Inter, Arial, sans-serif; font-size:15px; line-height:21px; font-weight:600; color:#1A1A1A;">Leather tote</p>
+                <p class="t-ink2" style="margin:0; font-family:Inter, Arial, sans-serif; font-size:14px; line-height:20px; color:#5A554D;">R2,450</p>
+              </a>
+            </td></tr>
+          </table>
+        </div>
+        <!--[if mso]></td><td width="270" valign="top"><![endif]-->
+        <div class="col" style="display:inline-block; width:100%; max-width:270px; vertical-align:top;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:10px;">
+              <a href="https://example.com/products/item-4" target="_blank" class="card-link" style="display:block;">
+                <img src="https://placehold.co/500x625/EFE6DA/1A1A1A/png?text=Product+4" width="250" alt="Product 4 name" style="width:100%; max-width:250px; border-radius:12px;">
+                <p class="card-title t-ink" style="margin:12px 0 2px; font-family:Inter, Arial, sans-serif; font-size:15px; line-height:21px; font-weight:600; color:#1A1A1A;">Cord trousers</p>
+                <p class="t-ink2" style="margin:0; font-family:Inter, Arial, sans-serif; font-size:14px; line-height:20px; color:#5A554D;">R1,099</p>
+              </a>
+            </td></tr>
+          </table>
+        </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+
+    <tr>
+      <td class="bg-card" align="center" style="background-color:#FFFFFF; padding:16px 40px 8px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" class="btn-full">
+          <tr>
+            <td align="center">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com/collections/new" style="height:46px; v-text-anchor:middle; width:200px;" arcsize="50%" strokecolor="#1A1A1A" strokeweight="1px" fill="f">
+                <w:anchorlock/>
+                <center style="color:#1A1A1A; font-family:Arial, sans-serif; font-size:14px; font-weight:bold;">See all 12 pieces</center>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <a href="https://example.com/collections/new" target="_blank" class="btn-ghost t-ink" style="display:inline-block; border:1px solid #1A1A1A; color:#1A1A1A; font-family:Inter, Arial, sans-serif; font-size:14px; font-weight:600; line-height:44px; padding:0 28px; border-radius:999px;">See all 12 pieces</a>
+              <!--<![endif]-->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+<!-- ▲ 06 ============================================================== -->
+
+<!-- ▼ 07 FEATURE SPLIT (image left, text right; stacks on phones) ===== -->
+    <tr>
+      <td class="bg-card" align="center" style="background-color:#FFFFFF; padding:48px 30px 8px; font-size:0;">
+        <!--[if mso]><table role="presentation" width="540" cellpadding="0" cellspacing="0" border="0"><tr><td width="270" valign="middle"><![endif]-->
+        <div class="col" style="display:inline-block; width:100%; max-width:270px; vertical-align:middle;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td style="padding:10px;">
+              <img src="https://placehold.co/500x500/E4DED3/1A1A1A/png?text=Workshop" width="250" alt="Hands stitching a leather strap" style="width:100%; max-width:250px; border-radius:12px;">
+            </td></tr>
+          </table>
+        </div>
+        <!--[if mso]></td><td width="270" valign="middle"><![endif]-->
+        <div class="col" style="display:inline-block; width:100%; max-width:270px; vertical-align:middle;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr><td class="center-sm" style="padding:10px 10px 10px 18px; text-align:left;">
+              <p class="t-ink3" style="margin:0 0 10px; font-family:Inter, Arial, sans-serif; font-size:12px; line-height:16px; letter-spacing:2px; text-transform:uppercase; color:#8E877C;">How it&rsquo;s made</p>
+              <h2 class="h2 serif t-ink" style="margin:0 0 10px; font-family:Fraunces, Georgia, serif; font-size:26px; line-height:32px; font-weight:400; color:#1A1A1A;">Six hands. One bag.</h2>
+              <p class="t-ink2" style="margin:0 0 14px; font-family:Inter, Arial, sans-serif; font-size:15px; line-height:24px; color:#5A554D;">Cut in Cape Town, stitched by hand, checked twice before it ships.</p>
+              <a href="https://example.com/pages/our-story" target="_blank" style="font-family:Inter, Arial, sans-serif; font-size:15px; line-height:22px; font-weight:600; color:#B4532A; border-bottom:1px solid #B4532A;">Read the story &rarr;</a>
+            </td></tr>
+          </table>
+        </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+<!-- ▲ 07 ============================================================== -->
+
+<!-- ▼ 08 REVIEW QUOTE ================================================== -->
+    <tr>
+      <td class="bg-card px" style="background-color:#FFFFFF; padding:48px 56px 8px; text-align:center;">
+        <p style="margin:0 0 10px; font-family:Georgia, serif; font-size:18px; line-height:18px; color:#B4532A; letter-spacing:4px;">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="serif t-ink" style="margin:0 0 12px; font-family:Fraunces, Georgia, serif; font-size:22px; line-height:32px; font-style:italic; color:#1A1A1A;">
+          &ldquo;I wore it every day for a month. Then I bought the second colour.&rdquo;
+        </p>
+        <p class="t-ink3" style="margin:0; font-family:Inter, Arial, sans-serif; font-size:13px; line-height:18px; color:#8E877C;">Real customer name &middot; Verified buyer</p>
+      </td>
+    </tr>
+<!-- ▲ 08 ============================================================== -->
+
+<!-- ▼ 09 PROMISE ROW (3 columns; stacks on phones) ===================== -->
+    <tr>
+      <td class="bg-card" align="center" style="background-color:#FFFFFF; padding:40px 30px 8px; font-size:0;">
+        <!--[if mso]><table role="presentation" width="540" cellpadding="0" cellspacing="0" border="0"><tr><td width="180" valign="top"><![endif]-->
+        <div class="col-3" style="display:inline-block; width:100%; max-width:180px; vertical-align:top;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+            <td class="t-ink2" style="padding:10px; font-family:Inter, Arial, sans-serif; font-size:13px; line-height:19px; color:#5A554D; text-align:center;">
+              <strong class="t-ink" style="display:block; font-size:14px; color:#1A1A1A;">Free delivery</strong>On orders over R750
+            </td>
+          </tr></table>
+        </div>
+        <!--[if mso]></td><td width="180" valign="top"><![endif]-->
+        <div class="col-3" style="display:inline-block; width:100%; max-width:180px; vertical-align:top;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+            <td class="t-ink2" style="padding:10px; font-family:Inter, Arial, sans-serif; font-size:13px; line-height:19px; color:#5A554D; text-align:center;">
+              <strong class="t-ink" style="display:block; font-size:14px; color:#1A1A1A;">30-day returns</strong>Free, no questions
+            </td>
+          </tr></table>
+        </div>
+        <!--[if mso]></td><td width="180" valign="top"><![endif]-->
+        <div class="col-3" style="display:inline-block; width:100%; max-width:180px; vertical-align:top;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+            <td class="t-ink2" style="padding:10px; font-family:Inter, Arial, sans-serif; font-size:13px; line-height:19px; color:#5A554D; text-align:center;">
+              <strong class="t-ink" style="display:block; font-size:14px; color:#1A1A1A;">Made here</strong>Small runs, local hands
+            </td>
+          </tr></table>
+        </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+<!-- ▲ 09 ============================================================== -->
+
+<!-- ▼ 10 FINAL CALL TO ACTION ========================================== -->
+    <tr>
+      <td class="bg-card px" style="background-color:#FFFFFF; padding:40px 48px 48px; text-align:center; border-radius:0 0 16px 16px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr><td class="b-rule" style="border-top:1px solid #E4DED3; font-size:0; line-height:0;">&nbsp;</td></tr>
+        </table>
+        <h2 class="h2 serif t-ink" style="margin:36px 0 18px; font-family:Fraunces, Georgia, serif; font-size:28px; line-height:34px; font-weight:400; color:#1A1A1A;">Small runs sell out.</h2>
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" class="btn-full">
+          <tr>
+            <td align="center">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com/collections/new" style="height:52px; v-text-anchor:middle; width:240px;" arcsize="50%" stroke="f" fillcolor="#1A1A1A">
+                <w:anchorlock/>
+                <center style="color:#FFFFFF; font-family:Arial, sans-serif; font-size:15px; font-weight:bold;">Shop the drop</center>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <a href="https://example.com/collections/new" target="_blank" class="btn-solid" style="display:inline-block; background-color:#1A1A1A; color:#FFFFFF; font-family:Inter, Arial, sans-serif; font-size:15px; font-weight:600; line-height:52px; padding:0 36px; border-radius:999px; min-width:168px; text-align:center;">Shop the drop&nbsp;&rarr;</a>
+              <!--<![endif]-->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+<!-- ▲ 10 ============================================================== -->
+
+<!-- ▼ 11 FOOTER · REQUIRED =============================================
+     Klaviyo needs an unsubscribe tag in every marketing email.
+     {{ organization.* }} pulls from Settings > Account > Organization. -->
+    <tr>
+      <td class="px" style="padding:32px 40px 40px; text-align:center; font-family:Inter, Arial, sans-serif;">
+        <p style="margin:0 0 16px; font-size:13px; line-height:18px;">
+          <a href="https://instagram.com/REPLACE" target="_blank" class="t-ink" style="color:#1A1A1A; padding:0 8px;">Instagram</a>
+          <a href="https://tiktok.com/@REPLACE" target="_blank" class="t-ink" style="color:#1A1A1A; padding:0 8px;">TikTok</a>
+          <a href="https://pinterest.com/REPLACE" target="_blank" class="t-ink" style="color:#1A1A1A; padding:0 8px;">Pinterest</a>
+        </p>
+        <p class="t-ink3" style="margin:0 0 10px; font-size:12px; line-height:18px; color:#8E877C;">
+          You&rsquo;re getting this because you signed up at {{ organization.name }}.<br>
+          {{ organization.name }} &middot; {{ organization.full_address }}
+        </p>
+        <p class="t-ink3" style="margin:0; font-size:12px; line-height:18px; color:#8E877C;">
+          {% manage_preferences %} &nbsp;&middot;&nbsp; {% unsubscribe %}
+        </p>
+      </td>
+    </tr>
+<!-- ▲ 11 ============================================================== -->
+
+  </table>
+  <!--[if mso]></td></tr></table><![endif]-->
+
+</td></tr>
+</table>
+</div>
+</body>
+</html>
