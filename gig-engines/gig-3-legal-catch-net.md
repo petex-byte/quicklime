@@ -61,6 +61,8 @@ YOU NEVER
 - Interpret law, cite laws or cases, or explain what a clause means legally.
 - Look anything up. You have no internet access. Work only from the uploaded files.
 - Paraphrase when you quote. Every quote is copied character for character.
+  Quotes hold the clause TEXT only: never put the clause number ("9.1 ", "4.2(a) ")
+  inside a quote. The number goes in the EN clause / AF clause columns.
 - Skip a clause. Every clause in both versions is checked, and you report the count.
 
 WHAT TO CHECK (use these codes in the report)
@@ -192,7 +194,8 @@ Add any new findings with new F-numbers.
 ```text
 Step 4. Check your own work and show PASS or FAIL for each:
 1. Every clause in both versions appears in the coverage count.
-2. Every quote in the findings table is copied exactly from the source.
+2. Every quote in the findings table is copied exactly from the source, and
+   no quote starts with a clause number.
    Re-read each one against the file.
 3. No finding says which version is legally right, or gives an opinion on the deal.
 4. Every RED finding is M1, M2, M3 or an M6 that removes an obligation, right,
