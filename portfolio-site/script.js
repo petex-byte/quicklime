@@ -32,13 +32,10 @@
   addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  /* ---- Stagger indexes for the order list ---- */
-  document.querySelectorAll(".menu li").forEach((li, i) => li.style.setProperty("--i", i));
-
   /* ---- Count-up ---- */
   const countUp = (el) => {
     const end = +el.dataset.count;
-    if (reduce) { el.textContent = end; return; }
+    if (reduce) return; // the final number is already in the HTML
     const t0 = performance.now(), dur = 1100;
     const tick = (t) => {
       const k = Math.min(1, (t - t0) / dur);
@@ -57,7 +54,7 @@
       io.unobserve(target);
     }
   }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
-  document.querySelectorAll(".reveal, .plot, .menu li, .compare, .promise .ink").forEach((el) => io.observe(el));
+  document.querySelectorAll(".hero, .compare, .promise .ink").forEach((el) => io.observe(el));
 
   /* ---- Videos: load when near, play only while on screen ---- */
   const vio = new IntersectionObserver((entries) => {

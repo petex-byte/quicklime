@@ -13,6 +13,8 @@
 
 **Hard rule for the human:** nothing goes to the buyer until a human has opened every file and ticked the QA list. Claude drafts. A person delivers.
 
+> **Newer engines:** `gig-engines/gig-4-csv-scrubber.md` replaces System Prompt A, and `gig-engines/gig-5-brand-voice-extractor.md` replaces Step 5.2. Gig 3 (proofreading) runs on `gig-engines/gig-3-legal-catch-net.md`.
+
 ---
 
 ## 0. Before any order: set up two Claude Projects

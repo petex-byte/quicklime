@@ -17,6 +17,8 @@
   --green: #3F7A4F;
   --amber: #B7791F;
   --shadow: 0 1px 0 rgba(27,27,27,.04), 0 12px 32px -16px rgba(27,27,27,.18);
+  --note: #FFF6C9;
+  --note-ink: #4A4128;
 
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
   --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -42,6 +44,9 @@
     --green: #7FBF8F;
     --amber: #E3B25B;
     --shadow: 0 1px 0 rgba(0,0,0,.3), 0 16px 40px -18px rgba(0,0,0,.7);
+    --note: #3A3420;
+    --note-ink: #EDE3BF;
+    color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
@@ -57,6 +62,9 @@
   --green: #7FBF8F;
   --amber: #E3B25B;
   --shadow: 0 1px 0 rgba(0,0,0,.3), 0 16px 40px -18px rgba(0,0,0,.7);
+  --note: #3A3420;
+  --note-ink: #EDE3BF;
+  color-scheme: dark;
 }
 
 /* ---------- Base ---------- */
@@ -107,8 +115,9 @@ kbd {
 .skip:focus { top: 12px; }
 
 /* ---------- Top bar ---------- */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 11; background: var(--paper); }
 .bar {
-  position: sticky; top: 0; z-index: 10;
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
   display: flex; align-items: center; justify-content: space-between;
   max-width: var(--wrap); margin: 0 auto;
   padding: 14px var(--gutter);
@@ -159,16 +168,9 @@ main > section {
 .section-head { max-width: 560px; margin-bottom: clamp(32px, 6vw, 56px); }
 .section-head h2 { font-size: clamp(32px, 5vw, 48px); line-height: 1.05; margin: 14px 0 10px; }
 
-/* Staggered entrance */
-.reveal, .plot, .menu li {
-  opacity: 0;
-  transform: translateY(10px);
-  filter: blur(4px);
-  transition: opacity .7s var(--ease), transform .7s var(--ease), filter .7s var(--ease);
-  transition-delay: calc(var(--i, 0) * 80ms);
-}
-.reveal.is-in, .plot.is-in, .menu li.is-in, .is-in .reveal { opacity: 1; transform: none; filter: none; }
-.no-js .reveal, .no-js .plot, .no-js .menu li { opacity: 1; transform: none; filter: none; }
+/* Staggered entrance on load (content is never hidden at rest) */
+.reveal { animation: rise .8s var(--ease) both; animation-delay: calc(var(--i, 0) * 80ms); }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); filter: blur(4px); } }
 
 /* Hand-drawn red ink underline */
 .ink { position: relative; white-space: nowrap; display: inline-block; }
@@ -260,7 +262,7 @@ main > section {
   position: absolute; left: 6%; bottom: -2%;
   max-width: 220px; padding: 14px 14px 12px;
   font: italic 400 16px/1.35 var(--serif); color: var(--ink-2);
-  background: #FFF6C9; color: #4A4128;
+  background: var(--note); color: var(--note-ink);
   border-radius: 3px;
   box-shadow: 0 10px 24px -14px rgba(0,0,0,.4);
   transform: rotate(-3deg);
@@ -271,8 +273,6 @@ main > section {
   position: absolute; top: -6px; left: 50%; width: 12px; height: 12px; margin-left: -6px;
   border-radius: 50%; background: var(--red); box-shadow: 0 2px 4px rgba(0,0,0,.25);
 }
-:root[data-theme="dark"] .note { background: #3A3420; color: #EDE3BF; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .note { background: #3A3420; color: #EDE3BF; } }
 
 /* ---------- Section 2: Proof / garden ---------- */
 .garden {
@@ -288,11 +288,9 @@ main > section {
   background: var(--card);
   border: 1px solid var(--rule);
   box-shadow: 0 0 0 0 transparent;
-  transition: opacity .7s var(--ease), filter .7s var(--ease),
-              transform .45s var(--spring), box-shadow .35s var(--ease), border-color .3s var(--ease);
-  transition-delay: calc(var(--i, 0) * 90ms), calc(var(--i, 0) * 90ms), 0s, 0s, 0s;
+  transition: transform .45s var(--spring), box-shadow .35s var(--ease), border-color .3s var(--ease);
 }
-.plot.is-in:hover { transform: translateY(-4px) rotate(-.4deg); box-shadow: var(--shadow); border-color: var(--ink-3); }
+.plot:hover { transform: translateY(-4px) rotate(-.4deg); box-shadow: var(--shadow); border-color: var(--ink-3); }
 
 /* Device frames */
 .device { position: relative; overflow: hidden; background: var(--paper-2); border: 1px solid var(--rule); }
@@ -453,7 +451,7 @@ mark.fix { background: linear-gradient(transparent 55%, color-mix(in srgb, var(-
 
 /* ---------- Section 3: Order menu ---------- */
 .menu { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
-.menu li { border-bottom: 1px solid var(--rule); transition-delay: calc(var(--i, 0) * 70ms); }
+.menu li { border-bottom: 1px solid var(--rule); }
 .menu a {
   display: grid;
   grid-template-columns: 36px auto 1fr auto 24px;
@@ -513,7 +511,6 @@ mark.fix { background: linear-gradient(transparent 55%, color-mix(in srgb, var(-
 /* ---------- Motion off ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; transition-delay: 0s !important; scroll-behavior: auto !important; }
-  .reveal, .plot, .menu li { opacity: 1; transform: none; filter: none; }
   .ink__line path, .caught path { stroke-dashoffset: 0; }
   .ring-target::after { clip-path: none; opacity: 0; }
   .plot:hover .ring-target::after { opacity: 1; }
