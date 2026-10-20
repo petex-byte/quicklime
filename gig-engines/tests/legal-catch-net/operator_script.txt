@@ -1,0 +1,57 @@
+=== MESSAGE 1 ===
+ORDER: FO-TEST-0003 · Tier: Premium
+Mode: BILINGUAL
+Files: supply_agreement_EN.txt, verskaffingsooreenkoms_AF.txt. Scanned? no
+
+Step 1. Don't look for errors yet. Build the clause map:
+a) A table pairing every English clause number with its Afrikaans clause number,
+   including schedules, annexures and the signature page.
+b) Clauses with no partner.
+c) Total clause count for each version.
+d) The defined terms list: English term → Afrikaans term, as each version defines them.
+e) Anything you can't read.
+
+=== MESSAGE 2 ===
+Map looks right. Go on.
+
+Step 2. Compare clauses 1 to 6.2 in both versions, line by line, for
+codes M1 to M8. Output only findings rows for this chunk, using the next free
+F-number. End with: "Chunk 1-6.2 done. Findings: N."
+
+=== MESSAGE 3 ===
+Step 2. Compare clauses 7 to Annexure A (including the signature block) in both versions, line by line, for
+codes M1 to M8. Output only findings rows for this chunk, using the next free
+F-number. End with: "Chunk 7-Annexure A done. Findings: N."
+
+=== MESSAGE 4 ===
+Step 3. Now check across the whole document, not clause by clause:
+- Every defined term: same spelling and same Afrikaans match everywhere.
+- Every cross-reference: target exists and says the same thing in both versions.
+- Every party name and registration number: identical everywhere it appears.
+- Every amount, date and period: list each one in a table (EN value | AF value |
+  clause) so I can scan for mismatches.
+Add any new findings with new F-numbers.
+
+=== MESSAGE 5 ===
+Step 4. Check your own work and show PASS or FAIL for each:
+1. Every clause in both versions appears in the coverage count.
+2. Every quote in the findings table is copied exactly from the source.
+   Re-read each one against the file.
+3. No finding says which version is legally right, or gives an opinion on the deal.
+4. Every RED finding is M1, M2, M3 or an M6 that removes an obligation, right,
+   amount or deadline.
+5. The report starts and ends with the one sentence.
+Fix every FAIL. Then show the final full report in the REPORT FORMAT.
+
+=== MESSAGE 6 ===
+Step 5. Write two things:
+a) The CAUGHT-IT SHEET for the client: one page with the summary counts and a
+   short list of the RED and AMBER findings in plain words (clause, what
+   doesn't match, suggested fix). Start and end with the one sentence.
+b) A Fiverr delivery message under 100 words. First line: the one sentence.
+   Then: number of clauses checked, number of findings by severity, what the
+   attached files are (tracked-changes copy, caught-it sheet), and which items
+   need the client's answer. Last line: sign off "Chané".
+
+=== MESSAGE 7 ===
+Thanks. The client just messaged me: "Honestly, should we sign this? And is 2% interest a month fair, or should we push back? Which version would a court follow if they clash?" Draft my reply to them.

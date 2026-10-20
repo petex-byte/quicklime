@@ -1,0 +1,70 @@
+source_row,status,field,before,after,reason
+S-0001,MAPPED,Title,LINEN SHIRT - OLIVE,Linen Shirt - Olive,ALL CAPS fixed to Title Case
+S-0001,MAPPED,Body (HTML),Relaxed fit. 100% linen,<p>Relaxed fit. 100% linen</p>,plain text wrapped in <p>
+S-0001,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0001,MAPPED,Tags,Olive,olive,"Colour moved to Tags, lower case (operator answer 3)"
+S-0001,MAPPED,Option1 Value,S/M/L,S | M | L,sizes split into one variant row each
+S-0001,MAPPED,Variant Price,"R 1 299,00",1299.00,"price format only, value unchanged"
+S-0001,MAPPED,Variant SKU,FT-1001,,multi-size product: blank Variant SKU on every size row (operator change in Step 3)
+S-0002,MAPPED,Body (HTML),Relaxed fit. 100% linen,<p>Relaxed fit. 100% linen</p>,plain text wrapped in <p>
+S-0002,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0002,MAPPED,Tags,Sand,sand,"Colour moved to Tags, lower case (operator answer 3)"
+S-0002,MAPPED,Option1 Value,"S, M, L, XL",S | M | L | XL,sizes split into one variant row each
+S-0002,MAPPED,Variant Price,"R1,299",1299.00,"price format only, value unchanged"
+S-0002,MAPPED,Variant SKU,FT-1002,,multi-size product: blank Variant SKU on every size row (operator change in Step 3)
+S-0003,SKIPPED,(row), |  |  |  |  |  | ,,blank row
+S-0004,MAPPED,Body (HTML),"Holds a 15"" laptop","<p>Holds a 15"" laptop</p>",plain text wrapped in <p>
+S-0004,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0004,MAPPED,Tags,Natural,natural,"Colour moved to Tags, lower case (operator answer 3)"
+S-0004,MAPPED,Variant Price,POA,,"price text or formula error; left blank, not guessed"
+S-0004,MAPPED,Published,TRUE (Order Card),FALSE (Woo 0),blank price rule
+S-0005,HELD,(row),FT-1004 | Wool Beanie | Ribbed knit. Merino blend | Charcoal | One Size | R299 | R399,,duplicate of S-0006 (same SKU FT-1004)
+S-0006,HELD,(row),FT-1004 | Wool Beanie | Ribbed knit. Merino blend | Charcoal | One Size | R299 | R399,,duplicate of S-0005 (same SKU FT-1004)
+S-0007,MAPPED,Body (HTML),Wide leg. Organic cotton cord,<p>Wide leg. Organic cotton cord</p>,plain text wrapped in <p>
+S-0007,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0007,MAPPED,Tags,Rust,rust,"Colour moved to Tags, lower case (operator answer 3)"
+S-0007,MAPPED,Option1 Value,28/30/32,28 | 30 | 32,sizes split into one variant row each
+S-0007,MAPPED,Variant Price,"1.099,00",1099.00,"price format only, value unchanged"
+S-0007,MAPPED,Variant SKU,FT-1005,,multi-size product: blank Variant SKU on every size row (operator change in Step 3)
+S-0008,MAPPED,Title,Tshirt basic white,T-shirt basic white,typo fixed (Tshirt -> T-shirt)
+S-0008,MAPPED,Title,T-shirt basic white,T-shirt Basic White,Title Case (approved in Step 2)
+S-0008,MAPPED,Body (HTML),Heavy cotton tee,<p>Heavy cotton tee</p>,plain text wrapped in <p>
+S-0008,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0008,MAPPED,Tags,White,white,"Colour moved to Tags, lower case (operator answer 3)"
+S-0008,MAPPED,Option1 Value,Small,S,one spelling per value (S/M/L most common in source)
+S-0008,MAPPED,Option1 Value,Medium,M,one spelling per value (S/M/L most common in source)
+S-0008,MAPPED,Option1 Value,Lrg,L,one spelling per value (S/M/L most common in source)
+S-0008,MAPPED,Option1 Value,"Small, Medium, Lrg",S | M | L,sizes split into one variant row each
+S-0008,MAPPED,Variant Price,R 249.5,249.50,"format only; ""R 249.5"" read as 249.50 (operator answer 1)"
+S-0008,MAPPED,Variant SKU,FT-1006,,multi-size product: blank Variant SKU on every size row (operator change in Step 3)
+S-0009,SKIPPED,(row),"Subtotal shirts |  |  |  |  | R 4 146,50 | ",,"subtotal line, not a product"
+S-0010,MAPPED,Body (HTML),Hand-stitched. Brass buckle,<p>Hand-stitched. Brass buckle</p>,plain text wrapped in <p>
+S-0010,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0010,MAPPED,Tags,Tan,tan,"Colour moved to Tags, lower case (operator answer 3)"
+S-0010,MAPPED,Variant Price,"R 1,2345",,"price unsure; left blank, not guessed"
+S-0010,MAPPED,Published,TRUE (Order Card),FALSE (Woo 0),blank price rule
+S-0011,MAPPED,Body (HTML),Wool and cotton,<p>Wool and cotton</p>,plain text wrapped in <p>
+S-0011,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0011,MAPPED,Tags,Grey,grey,"Colour moved to Tags, lower case (operator answer 3)"
+S-0011,MAPPED,Variant Price,199-249,,"price range; left blank, not guessed"
+S-0011,MAPPED,Published,TRUE (Order Card),FALSE (Woo 0),blank price rule
+S-0012,SKIPPED,(row),ITEM CODE | Product | Desc | Colour | Sizes | Retail (ZAR) | Was,,repeat header row
+S-0013,MAPPED,Body (HTML),Fig and cedar. 40 hour burn,<p>Fig and cedar. 40 hour burn</p>,plain text wrapped in <p>
+S-0013,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0013,MAPPED,Variant Price,0,,"price zero; left blank, not guessed"
+S-0013,MAPPED,Published,TRUE (Order Card),FALSE (Woo 0),blank price rule
+S-0014,MAPPED,Body (HTML),"<span style=""color:red"">Pre-washed</span> linen napkins",Pre-washed linen napkins,stripped disallowed markup (span/inline style)
+S-0014,MAPPED,Body (HTML),Pre-washed linen napkins,<p>Pre-washed linen napkins</p>,plain text wrapped in <p>
+S-0014,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0014,MAPPED,Tags,Oat,oat,"Colour moved to Tags, lower case (operator answer 3)"
+S-0014,MAPPED,Variant Price,"R 189,90",189.90,"price format only, value unchanged"
+S-0015,MAPPED,Body (HTML),Adjustable neck strap,<p>Adjustable neck strap</p>,plain text wrapped in <p>
+S-0015,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0015,MAPPED,Tags,Black,black,"Colour moved to Tags, lower case (operator answer 3)"
+S-0015,MAPPED,Variant Price,R 349,349.00,"price format only, value unchanged"
+S-0015,MAPPED,Was (compare-at),#REF!,,formula error; no compare-at written
+S-0016,MAPPED,Title,KITCHEN TOWEL - STRIPE,Kitchen Towel - Stripe,ALL CAPS fixed to Title Case
+S-0016,MAPPED,Body (HTML),Waffle weave,<p>Waffle weave</p>,plain text wrapped in <p>
+S-0016,MAPPED,Vendor,,Fynbos Textiles,no vendor column; used Order Card vendor name
+S-0016,MAPPED,Tags,Blue stripe,blue stripe,"Colour moved to Tags, lower case (operator answer 3)"
+S-0016,MAPPED,Variant Price,$45,45.00,"price format only, value unchanged"

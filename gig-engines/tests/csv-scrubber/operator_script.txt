@@ -1,0 +1,63 @@
+=== MESSAGE 1 ===
+NEVER DROP A ROW, NEVER INVENT A PRICE.
+ORDER: FO-TEST-0001 · Tier: Standard 500 products
+Platform: both · Woo vendor column: Meta: vendor
+Vendor name if missing: Fynbos Textiles · Currency: ZAR · Publish: yes
+Files: supplier_list.csv
+
+Step 1. Don't change anything. Use the code tool and report:
+1. File type, encoding, delimiter, which row holds the headers, total source rows.
+2. Every source column: name, 3 sample values, % blank.
+3. Price columns found, and 5 raw price samples from each.
+4. Junk you can see: merged cells, repeat headers, subtotal rows, notes, blank rows.
+5. How variants appear: one row per variant, sizes in one cell ("S/M/L"), or
+   one column per size.
+6. Up to 3 questions for me.
+
+=== MESSAGE 2 ===
+NEVER DROP A ROW, NEVER INVENT A PRICE.
+Step 2. Answers: 1) Yes, R 249.5 -> 249.50, log it. 2) Option1 Name "Size" for 28/30/32; any duplicate stays HELD. 3) Put Colour into Tags (lower case), not as an option. If you need anything else, ask..
+Propose the column map. Don't build the file yet. One table:
+  Target header | Source column(s) | Rule applied | Confidence (High/Med/Low)
+Cover all 10 core headers. List extra headers you can fill. List source columns
+you will not use, and why.
+For Low confidence rows, show 3 example source values → output values.
+
+=== MESSAGE 3 ===
+Map approved as proposed, plus the answers above.
+NEVER DROP A ROW, NEVER INVENT A PRICE.
+Step 3. Map approved with these changes: multi-size products get a BLANK Variant SKU on every size row (flag once per product: "client to send size SKUs"); single-variant products keep ITEM CODE as Variant SKU. Omit Variant Compare At Price if nothing mapped needs it..
+Build with the code tool:
+- FO-TEST-0001_shopify_import.csv  and/or  FO-TEST-0001_woocommerce_import.csv
+- FO-TEST-0001_change_log.csv   columns: source_row, status (MAPPED/HELD/SKIPPED), field, before, after, reason
+- FO-TEST-0001_problem_rows.csv columns: source_row, status (MAPPED/HELD), product, problem, what_the_client_must_send
+Then show the reconciliation:
+  source rows | MAPPED | HELD | SKIPPED | adds up? (yes/no) | rows flagged in problem_rows
+
+=== MESSAGE 4 ===
+NEVER DROP A ROW, NEVER INVENT A PRICE.
+Step 4. Run these tests in code. Show PASS/FAIL and the failing rows:
+1. Reconciliation adds up, and every source row ID has exactly one status.
+   Every HELD row is in problem_rows. No HELD or SKIPPED row is in the output.
+2. Price trace: for every non-blank output price, the source row's raw price
+   reformats to exactly that number. List any that don't.
+3. No price is 0, negative, or has more than 2 decimals. Every product with a
+   blank price is Published FALSE / 0.
+4. Header row matches the target list exactly, in order.
+5. Shopify: handles valid and unique per product; every variant row's handle has
+   a first row; no two rows in one handle share the same option values.
+6. Woo: every variation's Parent matches a variable row's SKU.
+7. File is UTF-8, comma-separated, and cells holding commas, quotes or line
+   breaks are quoted.
+Fix every FAIL, re-run all 7, show the final table.
+Then print, from code, the row count of each output file, the count of
+variable / variation / simple rows (Woo), and the count of non-blank prices
+in each file. Use only these printed numbers in your reply.
+
+=== MESSAGE 5 ===
+Step 5. (Delivery.) Draft the Fiverr delivery message. Rules: under 120 words, plain words,
+no hype. Include: how many products and variants are in the file, how many fixes
+we made (count from the change log), how many problem rows need the buyer's input,
+a 3-step "how to import" (Shopify: Products > Import > upload CSV > tick
+"Overwrite products with matching handles" only if updating existing products)
+and one line offering a launch email (our email design gig). Sign off "Petri & Chané".

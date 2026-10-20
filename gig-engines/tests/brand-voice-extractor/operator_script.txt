@@ -1,0 +1,71 @@
+=== MESSAGE 1 ===
+ORDER: FO-TEST-0005 · Brand: Karoo Home · Tier: Premium
+Language(s): English (some Afrikaans) · Spelling: en-ZA
+Files: home.txt, about.txt, product-linen-shirt.txt, product-tea-towel.txt, instagram.txt, notes.txt, hated-competitor.txt. Client's own words about how they want to sound:
+"Warm, a bit cheeky, never posh. Like a friend on a farm who has opinions."
+
+Stage 1. Read everything. Don't analyse the voice yet. Report:
+1. A table: file | type (website / email / social / notes / hated copy) |
+   word count after clean-up.
+2. What you removed as noise (menus, cookie banners, footers, legal text,
+   repeated product specs). Never remove the client's own sentences.
+3. Total usable words. If under 300, say "THIN" and list what to ask for.
+4. The client's stated wishes, as a bullet list of their own words (SAY).
+
+=== MESSAGE 2 ===
+The client can't send more material this week, so work with what we have and note the gaps in section 6. Drop the "Sign up for 10% off" line, it's a pop-up.
+
+Stage 2. Build the evidence bank from the cleaned material (DO):
+1. 25-40 short quotes that carry the most voice, each tagged [file].
+2. For each quote: the habit it shows (sentence length, humour, address,
+   rhythm, word choice, punctuation, emoji, local words).
+3. The 20 most-used content words (skip "the, and, our" etc.) with counts.
+4. Habits table: average sentence length, % questions, % exclamation marks,
+   emoji per 100 words, "you" vs "we" count, any Afrikaans or local words.
+
+=== MESSAGE 3 ===
+Stage 3. Compare SAY (Stage 1) with DO (Stage 2).
+1. Where they match: list them with quotes.
+2. Where they clash: list them with quotes.
+3. Propose 3 voice traits as "We are X, not Y." Each needs 2+ quotes as proof.
+   If a trait the client wants has no proof yet, mark it "ASPIRATION" and show
+   one line from their material that comes closest.
+4. Propose the one-line voice statement.
+Stop. I will approve or change the traits before you go on.
+
+=== MESSAGE 4 ===
+Traits approved. Use your first voice statement.
+
+=== MESSAGE 5 ===
+Stage 4. Traits approved with changes: keep your traits; if "funny" lacks proof, fold it into the cheeky trait and list it as ASPIRATION in section 6; any unproven image (e.g. farm) goes to section 6 as a question.
+Draft section 2 (Vocabulary) and section 3 (Tone Scale) using the SECTION RULES.
+Every Words to Use row needs a source quote. Every Words to Ban row needs a
+"Use instead".
+
+=== MESSAGE 6 ===
+Approved. Emoji: ban them everywhere for now, and keep the CONFIRM question for section 6.
+
+Stage 5. Draft section 4 (Before and After): exactly 3 examples, 3 different
+channels, following the "Before" source order in the SECTION RULES.
+Then read each "After" against the Words to Ban list and the Tone Scale, and
+fix anything that breaks them.
+
+=== MESSAGE 7 ===
+Stage 6. Assemble the full Brand Voice Guideline with the exact headings from
+your instructions. Save it as FO-TEST-0005_brand_voice_guideline.md.
+Then run this check and show PASS / FAIL:
+1. All 9 headings present, in order (title, sections 1-6, and the two Vocabulary sub-headings).
+2. Every trait has 2+ quotes, or exactly 1 quote and is marked ASPIRATION.
+   Every quote appears word for word in the source files (search for each one).
+3. No invented facts: list every number, place, date and material named in the
+   guideline with its source, or [CONFIRM].
+4. No word from your own banned list or from the Words to Ban table appears
+   anywhere in the guideline, except inside the Words to Ban table itself and
+   the "Before" texts (search for each).
+5. Exactly 3 before-and-after examples across 3 channels.
+6. Quick Rules has exactly 10 rules.
+7. Word count of the whole guideline is under 1,800 (count it with code).
+   If over, cut the Words to Use table first, then repeated quotes.
+   NEVER cut a [CONFIRM] item or anything in section 6 to save words.
+8. Every "Before" needs at least 3 changes. Name them.
+Fix every FAIL, then show the final document.

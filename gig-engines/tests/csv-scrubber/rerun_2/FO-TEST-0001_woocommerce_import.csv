@@ -1,0 +1,25 @@
+Type,SKU,Name,Published,Description,Categories,Tags,Meta: vendor,Regular price,Parent,Attribute 1 name,Attribute 1 value(s),Attribute 1 visible,Attribute 1 global
+variable,FT-1001,Linen Shirt - Olive,1,<p>Relaxed fit. 100% linen</p>,,olive,Fynbos Textiles,,,Size,"S, M, L",1,1
+variation,,Linen Shirt - Olive,1,,,,,1299.00,FT-1001,Size,S,1,1
+variation,,Linen Shirt - Olive,1,,,,,1299.00,FT-1001,Size,M,1,1
+variation,,Linen Shirt - Olive,1,,,,,1299.00,FT-1001,Size,L,1,1
+variable,FT-1002,Linen Shirt - Sand,1,<p>Relaxed fit. 100% linen</p>,,sand,Fynbos Textiles,,,Size,"S, M, L, XL",1,1
+variation,,Linen Shirt - Sand,1,,,,,1299.00,FT-1002,Size,S,1,1
+variation,,Linen Shirt - Sand,1,,,,,1299.00,FT-1002,Size,M,1,1
+variation,,Linen Shirt - Sand,1,,,,,1299.00,FT-1002,Size,L,1,1
+variation,,Linen Shirt - Sand,1,,,,,1299.00,FT-1002,Size,XL,1,1
+simple,FT-1003,Canvas Tote,0,"<p>Holds a 15"" laptop</p>",,natural,Fynbos Textiles,,,,,,
+variable,FT-1005,Cord Trousers,1,<p>Wide leg. Organic cotton cord</p>,,rust,Fynbos Textiles,,,Size,"28, 30, 32",1,1
+variation,,Cord Trousers,1,,,,,1099.00,FT-1005,Size,28,1,1
+variation,,Cord Trousers,1,,,,,1099.00,FT-1005,Size,30,1,1
+variation,,Cord Trousers,1,,,,,1099.00,FT-1005,Size,32,1,1
+variable,FT-1006,T-shirt Basic White,1,<p>Heavy cotton tee</p>,,white,Fynbos Textiles,,,Size,"S, M, L",1,1
+variation,,T-shirt Basic White,1,,,,,249.50,FT-1006,Size,S,1,1
+variation,,T-shirt Basic White,1,,,,,249.50,FT-1006,Size,M,1,1
+variation,,T-shirt Basic White,1,,,,,249.50,FT-1006,Size,L,1,1
+simple,FT-1007,Leather Belt,0,<p>Hand-stitched. Brass buckle</p>,,tan,Fynbos Textiles,,,,,,
+simple,FT-1008,Throw Blanket,0,<p>Wool and cotton</p>,,grey,Fynbos Textiles,,,,,,
+simple,FT-1009,Soy Candle,0,<p>Fig and cedar. 40 hour burn</p>,,,Fynbos Textiles,,,,,,
+simple,FT-1010,Linen Napkins (set of 4),1,<p>Pre-washed linen napkins</p>,,oat,Fynbos Textiles,189.90,,,,,
+simple,FT-1011,Cotton Apron,1,<p>Adjustable neck strap</p>,,black,Fynbos Textiles,349.00,,,,,
+simple,FT-1012,Kitchen Towel - Stripe,1,<p>Waffle weave</p>,,blue stripe,Fynbos Textiles,45.00,,,,,

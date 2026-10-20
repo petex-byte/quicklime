@@ -1,0 +1,25 @@
+source_row,status,product,problem,what_the_client_must_send
+S-0001,MAPPED,Linen Shirt - Olive,Multi-size product (3 sizes): Variant SKU left blank on every size row; item code FT-1001 is one code for all sizes,client to send size SKUs
+S-0001,MAPPED,Linen Shirt - Olive,Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0002,MAPPED,Linen Shirt - Sand,Multi-size product (4 sizes): Variant SKU left blank on every size row; item code FT-1002 is one code for all sizes,client to send size SKUs
+S-0002,MAPPED,Linen Shirt - Sand,Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0004,MAPPED,Canvas Tote,"Price is ""POA""; Variant Price left blank; product set to Published FALSE (Woo 0) so it does not go live for free",Send one retail price in ZAR for FT-1003
+S-0004,MAPPED,Canvas Tote,Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0005,HELD,Wool Beanie,duplicate of S-0006 (same SKU and identical row),"Tell us which row to keep, or send one corrected row for FT-1004"
+S-0006,HELD,Wool Beanie,duplicate of S-0005 (same SKU and identical row),"Tell us which row to keep, or send one corrected row for FT-1004"
+S-0007,MAPPED,Cord Trousers,Multi-size product (3 sizes): Variant SKU left blank on every size row; item code FT-1005 is one code for all sizes,client to send size SKUs
+S-0007,MAPPED,Cord Trousers,Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0008,MAPPED,T-shirt Basic White,Multi-size product (3 sizes): Variant SKU left blank on every size row; item code FT-1006 is one code for all sizes,client to send size SKUs
+S-0008,MAPPED,T-shirt Basic White,Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0010,MAPPED,Leather Belt,"Price ""R 1,2345"" cannot be read safely (UNSURE); Variant Price left blank; product set to Published FALSE (Woo 0) so it does not go live for free",Send one retail price in ZAR for FT-1007
+S-0010,MAPPED,Leather Belt,Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0011,MAPPED,Throw Blanket,"Price ""199-249"" is a range; Variant Price left blank; product set to Published FALSE (Woo 0) so it does not go live for free",Send one retail price in ZAR for FT-1008
+S-0011,MAPPED,Throw Blanket,Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0013,MAPPED,Soy Candle,Colour is blank in the source; no tag written,Send the colour if you want it tagged
+S-0013,MAPPED,Soy Candle,Price is 0; Variant Price left blank; product set to Published FALSE (Woo 0) so it does not go live for free,Send one retail price in ZAR for FT-1009
+S-0013,MAPPED,Soy Candle,Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0014,MAPPED,Linen Napkins (set of 4),Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0015,MAPPED,Cotton Apron,"""Was"" price is a formula error (#REF!); no compare-at price written",Send the old/RRP price if you want a compare-at price
+S-0015,MAPPED,Cotton Apron,Type/Category blank: no product type in the source,Send a product type/category for each product
+S-0016,MAPPED,Kitchen Towel - Stripe,"Source price ""$45"" has a $ sign in a ZAR order; number kept (45.00), not converted. Confirm the price is in ZAR","Confirm the price is in ZAR, or send the ZAR price"
+S-0016,MAPPED,Kitchen Towel - Stripe,Type/Category blank: no product type in the source,Send a product type/category for each product
