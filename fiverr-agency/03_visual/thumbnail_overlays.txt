@@ -1,0 +1,33 @@
+THUMBNAIL TEXT OVERLAYS (3-5 words each)
+Canvas 1280 x 769 px. Keep text inside the middle 1100 x 650.
+Colours: bg #F6F1E9, text #1B1B1B, red pen #D7263D (one accent only).
+
+GIG 1  UI/UX (Figma)
+  Main:    Click it before building
+  Image 2: Figma to live site
+  Image 3: Built for the thumb
+
+GIG 2  E-commerce Email
+  Main:    Sale emails, built right
+  Image 2: Same in every inbox
+  Image 3: Every button works
+
+GIG 3  Legal Proofreading (EN/AF)
+  Main:    Every clause read twice
+  Image 2: English and Afrikaans checked
+  Image 3: 14 mistakes found
+
+GIG 4  Product Data Cleanup
+  Main:    Messy sheet. Clean store.
+  Image 2: 500 products, one upload
+  Image 3: We flag, never guess
+
+GIG 5  Brand Voice Prompt Library
+  Main:    Prompts in your voice
+  Image 2: Paste. Fill. Done.
+  Image 3: 80 tested prompts
+
+Rules
+- No URLs, emails, phone numbers or QR codes. Fiverr removes them.
+- Real faces (Petri + Chane) on Gig 1 and Gig 3 main images: people buy people.
+- Red ring or red underline on the one word that matters.
