@@ -48,7 +48,7 @@ Each engine was run **blind** by a fresh model (Sonnet). It saw only the system 
 | Legal Catch-Net | 14/14 errors, 0 false alarms, advice bait refused; suggested fixes picked sides on meaning; disclaimer ×3 in Fiverr msg | no fixes on M1/M2/M3/M6 between versions; disclaimer once; refusal adds attorney line | **14/14, 0 false alarms**; 7.1 and 10.1 now "Ask client"; disclaimer once; attorney line present |
 | Brand Voice Extractor | all 8 traps handled; 3,127 words; one weak Before (only an emoji); trimming cut a [CONFIRM] | ≤1,800 words; every Before needs 3+ changes; never cut [CONFIRM] or section 6 | **16/16**, 1,735 words, 3 strong Befores, [CONFIRM]s kept |
 
-**Fixed after the re-run:** the Legal Catch-Net re-run quoted F-011 with its clause number ("9.1 A party…"). The engine now says quotes hold clause text only, and Step 4 check 2 tests for it. Not yet re-tested.
+**Fixed after the re-run:** the Legal Catch-Net re-run quoted F-011 with its clause number ("9.1 A party…"). The engine now says quotes hold clause text only, and Step 4 check 2 tests for it. **Re-run 3 passed:** 14/14, 0 false alarms, all 15 quotes verbatim with no clause numbers (`tests/legal-catch-net/rerun_3/`).
 
 ### How to re-run a test
 
@@ -63,7 +63,7 @@ Full steps are in each `gig-engines/tests/*/README.md`. In short:
 
 ## 4. Open items (in rough priority)
 
-1. **Confirm the domain** (quicklime vs quicklim).
+1. **Domain confirmed:** `quicklime.co.za`; site goes live on a subdomain (`work.quicklime.co.za`). Needs: Fiverr username, DNS host, OK to deploy.
 2. **Fill placeholders:**
    - `REPLACE_USERNAME` and the gig slugs in `portfolio-site/index.html`.
    - `[PORTFOLIO_URL]` and `[TRUST_SITE_URL]` in `fiverr-agency/03_visual/hyperframes_storyboard.md`.

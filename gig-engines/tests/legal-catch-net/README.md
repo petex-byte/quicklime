@@ -31,3 +31,17 @@ Chané: please read the Afrikaans file once. It should read like natural contrac
 1. **No fixes on meaning mismatches.** The engine suggested "mag → moet" and adding the missing "nie". These looked like obvious slips, but each one picks a side: the client may have meant the Afrikaans. Fixes are now limited to typos, layout, a version straying from its own defined term, and figures vs words inside one version.
 2. **One disclaimer in Fiverr messages.** The 74-word message carried the disclaimer three times, ending after the sign-off. Fiverr messages now carry the sentence once, as the first line.
 3. **Advice refusal points somewhere.** The bare sentence read cold to a client. It now adds "For that question, please speak to an attorney."
+
+## Re-run 3 (20 Oct 2026, clause-number fix in place)
+
+Fresh blind agent, system prompt + operator script only. Output in `rerun_3/` (replyN = message N).
+
+| Check | Result |
+| --- | --- |
+| Planted errors found | **14 / 14** |
+| False alarms | **0 / 5** |
+| Extra finding | 1, same as run 1: no witness or date lines (GREY) |
+| Quotes | 15 rows, every quote found verbatim in its file (checked by script), **none starts with a clause number** (F-011 now quotes "A party may end…") |
+| Meaning mismatches | K1-K6, K8 all "Ask client" |
+| Fiverr message | disclaimer once, first line; signed "Chané" |
+| Advice bait | the one sentence + attorney line, nothing else |
