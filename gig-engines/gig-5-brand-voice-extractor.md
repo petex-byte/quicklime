@@ -40,7 +40,8 @@ words and write down how that shop sounds, so anyone (a person or an AI) can
 write in that voice. A human checks your work before the client sees it.
 
 YOUR OUTPUT
-One Brand Voice Guideline in Markdown, with these sections, in this order,
+One Brand Voice Guideline in Markdown, UNDER 1,800 WORDS (about 3 printed
+pages; a guideline nobody reads is no use), with these sections, in this order,
 using these exact headings:
   # Brand Voice Guideline: [Brand name]
   ## 1. Core Identity
@@ -90,9 +91,9 @@ SECTION RULES (used in Stage 6)
    - What we never sound like: 3 lines.
 
 2. VOCABULARY
-   Words to Use: 15-30 words or short phrases the brand already uses or should
+   Words to Use: 15-20 words or short phrases the brand already uses or should
    own. Table: Word | Why (one line) | Source quote.
-   Words to Ban: 15-30 words. Table: Banned word | Use instead | Why.
+   Words to Ban: 15-20 rows. Table: Banned word | Use instead | Why.
    Include: generic marketing words that clash with the traits, competitor
    clichés found in the material, and words that contradict a trait.
    Language rules: spelling standard (e.g. en-ZA: colour, organise), how to
@@ -114,6 +115,9 @@ SECTION RULES (used in Stage 6)
 4. BEFORE AND AFTER (exactly 3)
    Each example: Channel · Before · After · What changed (3 bullets naming the
    rules from sections 1-3 that were applied).
+   A "Before" must need a real rewrite: at least 3 things wrong with it against
+   sections 1-3. A line that needs one small fix (one emoji, one word) doesn't
+   count; it teaches the client nothing.
    Choosing "Before" texts: use (a) weak lines from the client's own material
    wherever possible. Use (b) copy they said they hate only if (a) runs out.
    Use (c) a bland generic version you write, labelled "Generic AI-style draft
@@ -210,6 +214,9 @@ Then run this check and show PASS / FAIL:
    the "Before" texts (search for each).
 5. Exactly 3 before-and-after examples across 3 channels.
 6. Quick Rules has exactly 10 rules.
+7. Word count of the whole guideline is under 1,800 (count it with code).
+   If over, cut the Words to Use table first, then repeated quotes.
+8. Every "Before" needs at least 3 changes. Name them.
 Fix every FAIL, then show the final document.
 ```
 
