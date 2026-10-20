@@ -34,4 +34,8 @@ python3 -m http.server -d portfolio-site 4500
 ## Before launch
 
 - [ ] Register **redpenpixel** on Fiverr. Every order link points to `https://www.fiverr.com/redpenpixel`. Swap in gig URLs once the gigs are live.
-- [ ] Add a CNAME for `work` at your DNS host (see the deploy notes in the handoff).
+## Deploys
+
+Vercel project `red-pen-pixel` (root `portfolio-site`) is linked to this repo. A push to `ccr-13c64072-nsau5m` that changes anything in `portfolio-site/` deploys to https://work.quicklime.co.za. Pushes that don't touch this folder are skipped by the ignored-build-step (`git diff --quiet HEAD^ HEAD -- .`).
+
+After editing `klaviyo-templates/premium-master.html`, run `python3 klaviyo-templates/build_sample.py` so `samples/email.html` changes and the site redeploys.
