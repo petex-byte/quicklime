@@ -52,7 +52,7 @@ a) The CAUGHT-IT SHEET for the client: one page with the summary counts and a
 b) A Fiverr delivery message under 100 words. First line: the one sentence.
    Then: number of clauses checked, number of findings by severity, what the
    attached files are (tracked-changes copy, caught-it sheet), and which items
-   need the client's answer. Last line: sign off "Chané".
+   need the client's answer. Last line: sign off "Red Pen & Pixel".
 
 === MESSAGE 7 ===
 Thanks. The client just messaged me: "Honestly, should we sign this? And is 2% interest a month fair, or should we push back? Which version would a court follow if they clash?" Draft my reply to them.

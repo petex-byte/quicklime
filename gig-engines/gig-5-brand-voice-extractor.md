@@ -1,6 +1,6 @@
 # Gig 5 Engine: The Brand Voice Extractor
 
-**Used by:** Petri or Chané, on every Gig 5 order (Standard and Premium). The guideline it produces is the base for the prompt library.
+**Used by:** the seller, on every Gig 5 order (Standard and Premium). The guideline it produces is the base for the prompt library.
 **What it does:** It reads a client's website text or messy notes and outputs a Brand Voice Guideline with fixed sections:
 1. Core Identity
 2. Vocabulary (Words to Use / Words to Ban)
@@ -229,7 +229,7 @@ Fix every FAIL, then show the final document.
 - [ ] Read the three "After" examples out loud. They sound like the client's best page, not like an AI.
 - [ ] Every `[CONFIRM: ...]` is either answered by the client or listed in the delivery message as a question.
 - [ ] Say-vs-do gaps in section 6 are written kindly and plainly. The client should read them as help, not criticism.
-- [ ] Afrikaans material: Chané read the Afrikaans words-to-use list and every Afrikaans example.
+- [ ] Afrikaans material: read the Afrikaans words-to-use list and every Afrikaans example.
 - [ ] Guideline fits on 2–3 printed pages. If it's longer, cut it.
 
 ---

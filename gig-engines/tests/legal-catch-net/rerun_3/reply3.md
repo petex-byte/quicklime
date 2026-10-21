@@ -1,4 +1,4 @@
-| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for Chané to confirm) |
+| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for the proofreader to confirm) |
 |---|---|---|---|---|---|---|---|---|
 | F-008 | AMBER | M4 | 7.1 | 7.1 | "The Supplier shall replace defective Goods within 10 Business Days of written notice." | "Die Leweransier mag gebrekkige Goedere binne 10 Werksdae na skriftelike kennisgewing vervang." | Afrikaans uses "Leweransier". Afrikaans defines the Supplier as "die Verskaffer" and uses that everywhere else. | Change "Leweransier" to "Verskaffer" |
 | F-009 | RED | M3 | 7.1 | 7.1 | "The Supplier shall replace defective Goods within 10 Business Days of written notice." | "Die Leweransier mag gebrekkige Goedere binne 10 Werksdae na skriftelike kennisgewing vervang." | English "shall replace" (obligation). Afrikaans "mag ... vervang" ("may replace", an option). | Ask client which is intended |

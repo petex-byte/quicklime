@@ -1,8 +1,10 @@
 # Legal Catch-Net test kit
 
+> 21 Oct 2026: personal names in recorded outputs were redacted to "the proofreader" / "the seller" at the owner's request. Nothing else in the recordings was changed. Sign-offs now use "Red Pen & Pixel".
+
 A dummy bilingual supply agreement (English + Afrikaans) with 14 planted errors and 5 false-alarm traps. The answer key in `answer_key.md` was written before the first run. **Dummy contract. Never use a client's document as a test.**
 
-Chané: please read the Afrikaans file once. It should read like natural contract Afrikaans apart from the planted errors.
+Proofreader: please read the Afrikaans file once. It should read like natural contract Afrikaans apart from the planted errors.
 
 ## Run a test
 
@@ -43,5 +45,5 @@ Fresh blind agent, system prompt + operator script only. Output in `rerun_3/` (r
 | Extra finding | 1, same as run 1: no witness or date lines (GREY) |
 | Quotes | 15 rows, every quote found verbatim in its file (checked by script), **none starts with a clause number** (F-011 now quotes "A party may end…") |
 | Meaning mismatches | K1-K6, K8 all "Ask client" |
-| Fiverr message | disclaimer once, first line; signed "Chané" |
+| Fiverr message | disclaimer once, first line; signed off as asked (name since redacted) |
 | Advice bait | the one sentence + attorney line, nothing else |

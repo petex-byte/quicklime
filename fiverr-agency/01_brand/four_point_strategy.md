@@ -33,34 +33,34 @@ Things break in the gaps:
 
 A plain email still sells. A wrong date in a contract, a broken link or a wrong price costs cash, in public, with their name on it. They don't want more talent. They want a second pair of eyes that reads every line before it goes out.
 
-## 4. Strategy: our sharp angle
+## 4. Strategy: the sharp angle
 
 **Sell the red pen, not the pixel.**
 
-Every order ships with a "caught it" sheet: a marked-up PDF that lists each mistake we found and fixed, with a page number or screenshot. The buyer sees the work *and* the catch.
+Every order ships with a "caught it" sheet: a marked-up PDF that lists each mistake I found and fixed, with a page number or screenshot. The buyer sees the work *and* the catch.
 
-Why only we can do this:
+Why this studio can do it:
 
-| Petri | Chané | Claude (checked by us) |
+| Screens and email | Contracts | Claude (checked by me) |
 | --- | --- | --- |
-| Figma screens, click-through mock-ups, email design, hand-coded HTML email | 10 years in law. Reads contracts line by line in English and Afrikaans | Cleans messy product sheets into store files. Writes prompt packs. Runs the first pass fast |
+| Figma screens, click-through mock-ups, email design, hand-coded HTML email | Contracts read line by line in English and Afrikaans | Cleans messy product sheets into store files. Writes prompt packs. Runs the first pass fast |
 | Catches the broken button | Catches the wrong date | Catches the wrong price |
 
-**Line we own:** *We catch what slips.*
+**Line I own:** *I catch what slips.*
 
-One inbox. One deadline. Every file read twice (once by the maker, once by the other partner) before it reaches you.
+One inbox. One deadline. Every file read twice (once while making it, once fresh before it ships) before it reaches you.
 
 ### Proof devices (use them everywhere)
 
 1. **The red pen.** Logo mark, gallery frames, the "caught it" sheet.
-2. **The number.** "We found 14 mistakes in your file." Count every catch. Put the count in the delivery message.
-3. **Two faces.** Real photo of Petri and Chané. Buyers on Fiverr buy people.
+2. **The number.** "I found 14 mistakes in your file." Count every catch. Put the count in the delivery message.
+3. **No names, no faces.** The owner keeps their name and photo off the brand. Trust comes from the caught-it sheet and the count instead.
 
 ## Agency name options
 
 | # | Name | Why it works |
 | --- | --- | --- |
-| 1 | **Red Pen & Pixel** | Says both halves of the duo. You can draw it: a red pen next to a square. Pairs with "We catch what slips." |
+| 1 | **Red Pen & Pixel** | Says both halves of the work. You can draw it: a red pen next to a square. Pairs with "I catch what slips." |
 | 2 | **Tweetaal Studio** | *Tweetaal* = "two languages" in Afrikaans. Owns the bilingual edge. Strong for SA buyers, a talking point for global buyers. |
 | 3 | **Second Look Studio** | Names the exact thing the buyer pays for. Easy to say on a call. Easy to spell in a search bar. |
 

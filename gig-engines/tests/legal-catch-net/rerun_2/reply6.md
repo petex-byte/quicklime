@@ -40,4 +40,4 @@ I flag translation and text errors; I do not give legal advice.
 
 I flag translation and text errors; I do not give legal advice.
 Checked 36 English and 35 Afrikaans clauses. Findings: 8 red, 2 amber, 5 grey (15 total). Attached: tracked-changes copy and caught-it sheet. We need your answer on which version is intended for: supplier name, 4.1 amount, 4.2 days, 5.1 days, 6.2 who pays, 7.1 shall/may, 8.3 missing cover, 10.1 consent, and 11.3 missing clause.
-Chané
+the proofreader

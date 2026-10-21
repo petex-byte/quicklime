@@ -20,7 +20,7 @@ GIG 3  Legal Proofreading (EN/AF)
 GIG 4  Product Data Cleanup
   Main:    Messy sheet. Clean store.
   Image 2: 500 products, one upload
-  Image 3: We flag, never guess
+  Image 3: I flag, never guess
 
 GIG 5  Brand Voice Prompt Library
   Main:    Prompts in your voice
@@ -29,5 +29,5 @@ GIG 5  Brand Voice Prompt Library
 
 Rules
 - No URLs, emails, phone numbers or QR codes. Fiverr removes them.
-- Real faces (Petri + Chane) on Gig 1 and Gig 3 main images: people buy people.
+- No faces or names on any gig image (owner's rule). Lead with the red pen and the catch count.
 - Red ring or red underline on the one word that matters.

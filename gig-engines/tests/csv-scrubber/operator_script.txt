@@ -60,4 +60,4 @@ no hype. Include: how many products and variants are in the file, how many fixes
 we made (count from the change log), how many problem rows need the buyer's input,
 a 3-step "how to import" (Shopify: Products > Import > upload CSV > tick
 "Overwrite products with matching handles" only if updating existing products)
-and one line offering a launch email (our email design gig). Sign off "Petri & Chané".
+and one line offering a launch email (the email design gig). Sign off "Red Pen & Pixel".

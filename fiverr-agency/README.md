@@ -1,9 +1,8 @@
 # Red Pen & Pixel: Fiverr launch kit
 
-Profile, five gigs, gallery scripts and the Claude hand-off for a two-person studio:
-**Petri** (Figma UI/UX, email design, HTML email) and **Chané** (10 years in law, English/Afrikaans contract proofreading), plus two Claude-run gigs.
+Profile, five gigs, gallery scripts and the Claude hand-off for a one-person studio: Figma UI/UX, email design and HTML email, English/Afrikaans contract proofreading, plus two Claude-run gigs. No personal names or faces anywhere (owner's rule).
 
-**Line we own:** *We catch what slips.*
+**Line I own:** *I catch what slips.*
 
 ## File map
 

@@ -1,7 +1,7 @@
 # Portfolio subdomain wireframe
 
 **Address:** `work.[yourdomain]` (e.g. `work.redpenandpixel.com`)
-**Job of the page:** a buyer who found us on Fiverr, LinkedIn or Instagram sees proof in 20 seconds and clicks through to a Fiverr gig.
+**Job of the page:** a buyer who found the studio on Fiverr, LinkedIn or Instagram sees proof in 20 seconds and clicks through to a Fiverr gig.
 **Rule:** this page links *to* Fiverr. Never paste this page's link into Fiverr messages or gig text (Fiverr bans off-platform links).
 
 Three sections. One scroll. No menu bar beyond the logo.
@@ -14,19 +14,19 @@ Three sections. One scroll. No menu bar beyond the logo.
 ┌──────────────────────────────────────────────────────────────┐
 │ RED PEN & PIXEL  (logo, top left)                            │
 │                                                              │
-│   We catch what slips.                    ┌───────────────┐  │
-│   ─────────── (red pen underline)         │  Photo:       │  │
-│                                           │  Petri +      │  │
-│   Apps, sale emails and contracts.        │  Chané at one │  │
-│   Read twice before they reach you.       │  desk         │  │
+│   I catch what slips.                     ┌───────────────┐  │
+│   ─────────── (red pen underline)         │  Paper and    │  │
+│                                           │  red pen,     │  │
+│   Apps, sale emails and contracts.        │  no faces,    │  │
+│   Read twice before they reach you.       │  no names     │  │
 │                                           └───────────────┘  │
-│   [ See our work ↓ ]   [ Order on Fiverr → ]                 │
+│   [ See the work ↓ ]   [ Order on Fiverr → ]                 │
 │                                                              │
 │   Figma · HTML email · English + Afrikaans · Claude          │
 └──────────────────────────────────────────────────────────────┘
 ```
 
-- H1: **We catch what slips.** (≤ 5 words)
+- H1: **I catch what slips.** (≤ 5 words)
 - Sub line: one line, two short sentences.
 - Primary button scrolls to Section 2. Second button opens the Fiverr profile in a new tab.
 - Skill strip: four plain labels, grey, no icons.
@@ -56,7 +56,7 @@ Three sections. One scroll. No menu bar beyond the logo.
 ```
 
 - Three cards hold the Hyperframes MP4s (autoplay, muted, loop, `playsinline`). Poster image = frame 1.
-- Below: a before/after drag slider on the dummy contract. This sells Chané's half.
+- Below: a before/after drag slider on the dummy contract. This sells the contract work.
 - One line of proof under the slider, with a real count.
 - Mobile: cards stack, one per row; slider stays full width.
 

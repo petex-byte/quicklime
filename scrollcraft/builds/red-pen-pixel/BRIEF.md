@@ -39,13 +39,13 @@ Fiverr username, user's pick: **redpenpixel** (not yet registered).
 | I. The gap | Unease | Dark ground, hard cut. Four plain sentences about mistakes that cost money |
 | Intertitle | Stillness | Two words on a near-empty page |
 | II. Catch it | Delight, then respect | You tap a word, the pen circles it, the margin explains. Then the reveal: the check caught all 14 |
-| III. The email | Confidence | The real Klaviyo master running live in a phone frame, with what we checked in the margin |
-| IV. The screens | Recognition | A checkout at iPhone SE size; flip it from 'as designed' to 'as we'd fix it' |
-| V. Two pairs of eyes | Trust | Two big initials wipe in, each with what that person catches; a real caught-it sheet wipes up |
+| III. The email | Confidence | The real Klaviyo master running live in a phone frame, with what I checked in the margin |
+| IV. The screens | Recognition | A checkout at iPhone SE size; flip it from 'as designed' to 'as I'd fix it' |
+| V. The second read | Trust | How every file gets a second read; a real caught-it sheet drifts on parallax |
 | VI. The jobs | Appetite | Five jobs set as a price index |
 | Colophon | Resolve | Smallest type on the site. One running sentence with the link |
 
-**Peak:** "I found two of the mistakes myself, and then it showed me their check found all 14." Lives in chapter II, which gets the largest span and the silence before it.
+**Peak:** "I found two of the mistakes myself, and then it showed me the check found all 14." Lives in chapter II, which gets the largest span and the silence before it.
 
 **Tell-someone sentence:** "It's the site where you proofread a contract before you hire them."
 
@@ -56,7 +56,7 @@ Fiverr username, user's pick: **redpenpixel** (not yet registered).
 Chaptered editorial. Folio in the margin, title-page hero, hard cuts between grounds,
 colophon close with the CTA as running text. Why the others lost:
 - Filmic one-shot: no footage, and the user chose distinct scenes.
-- Live surface: the product is people, not software.
+- Live surface: the product is a service, not software.
 - Continuous world: the user chose distinct scenes.
 - Typographic poster: needs to show a working exercise and prices, not one claim.
 - Gallery: no real work to show yet.
@@ -77,7 +77,7 @@ gets a small pencil tick. A tally tracks you against the check. "Show me" reveal
 | I. The gap | flow + in, staggered | plain sentences, read in order |
 | Intertitle | none | silence before the peak |
 | II. Catch it | signature (page JS) + count on entry | the visitor does the work |
-| III. Two pairs of eyes | reveal (left/right, then up) | a change of state: from claim to evidence |
+| V. The second read | parallax on the sheet | evidence that settles under the claim |
 | IV. The jobs | flow + in | an index, read row by row |
 | Colophon | none, holds | resolves |
 
@@ -86,4 +86,8 @@ Real numbers only: 14 planted mistakes and 5 traps from the Legal Catch-Net test
 
 ## Added 20 Oct 2026 (user: "not much about email marketing and Figma design")
 
-Two chapters for Petri's half, after the peak. III shows the real Klaviyo master (rendered with a labelled sample shop by `klaviyo-templates/build_sample.py`). IV is a labelled demo checkout at 320x568 with a before/after switch. Both are quieter than the peak on purpose. A real Figma prototype embed would beat the demo: waiting on a link from Petri.
+Two chapters for the design work, after the peak. III shows the real Klaviyo master (rendered with a labelled sample shop by `klaviyo-templates/build_sample.py`). IV is a labelled demo checkout at 320x568 with a before/after switch. Both are quieter than the peak on purpose. A real Figma prototype embed would beat the demo: waiting on a link from the owner.
+
+## Changed 21 Oct 2026 (owner: "remove our names everywhere; make it one person")
+
+One-person voice ("I") across the site. Chapter V 'Two pairs of eyes' became 'The second read' with no portraits or initials. Personal history removed.

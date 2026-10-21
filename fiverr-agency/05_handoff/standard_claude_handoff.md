@@ -1,7 +1,7 @@
 # standard_claude_handoff.md
 ## SOP: running Gig 4 and Gig 5 with a standard Claude model
 
-**Who reads this:** a standard Claude model (claude.ai Project or API), plus the human partner (Petri or Chané) who runs the order.
+**Who reads this:** a standard Claude model (claude.ai Project or API), plus the seller who runs the order.
 **Who does what:**
 
 | Step | Human operator | Claude |
@@ -190,7 +190,7 @@ no hype. Include: how many products and variants are in the file, how many fixes
 we made (count from the change log), how many problem rows need the buyer's input,
 a 3-step "how to import" (Shopify: Products > Import > upload CSV > tick
 "Overwrite products with matching handles" only if updating existing products)
-and one line offering a launch email (our email design gig). Sign off "Petri & Chané".
+and one line offering a launch email (the email design gig). Sign off "Red Pen & Pixel".
 ```
 
 ## Gig 4 human QA checklist (tick every box)
@@ -313,8 +313,8 @@ b) Premium only: [ORDERID]_claude_project_instructions.md — a block under 1,50
    the brand facts they gave us, and the line "Use only the facts I give you."
 c) A README section at the top of the Markdown library: how to use a prompt in 3 steps.
 Then draft the Fiverr delivery message: under 120 words, plain words, the prompt count,
-the categories, one tip ("Start with PROD-01"), and one line offering our email design
-gig. Sign off "Petri & Chané".
+the categories, one tip ("Start with PROD-01"), and one line offering the email design
+gig. Sign off "Red Pen & Pixel".
 ```
 
 ## Gig 5 human QA checklist
@@ -324,7 +324,7 @@ gig. Sign off "Petri & Chané".
 - [ ] Every product prompt holds "Use only the facts I give you."
 - [ ] No prompt asks for reviews, awards, health claims or legal claims.
 - [ ] Voice guide quotes are real lines from the buyer's samples (search their text).
-- [ ] Afrikaans orders: Chané read every Afrikaans prompt and the voice guide.
+- [ ] Afrikaans orders: read every Afrikaans prompt and the voice guide yourself.
 - [ ] CSV opens cleanly in Google Sheets. Markdown renders.
 - [ ] Delivery message numbers are true.
 

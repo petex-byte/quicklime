@@ -10,13 +10,11 @@
 
 ## 1. Who and what
 
-- **The user:** runs a two-person studio, **Red Pen & Pixel**, launching on Fiverr from South Africa.
-  - **Petri:** Figma UI/UX, email design, HTML email.
-  - **Chané:** 10 years in law; English/Afrikaans contract proofreading.
-  - Plus two Claude-run gigs.
+- **The user:** runs **Red Pen & Pixel**, launching on Fiverr from South Africa as **one person** (Fiverr @redpenpixel, display name Le Roux Glanz). Services: Figma UI/UX, email design and HTML email, English/Afrikaans contract proofreading, plus two Claude-run gigs.
+- **Owner's rule (21 Oct 2026): never use personal first names anywhere, and never present the studio as two people.** Write in the first person singular ("I"). No faces or names on the site, gig images or messages. Sign-offs use "Red Pen & Pixel". Don't claim personal history (e.g. years in law) unless the owner confirms it describes the account holder.
 - **Writing rule the user set:** "pineapple words" (Mark Pollard / Sweathead). Concrete, picturable words only; no corporate jargon. Banned: empower, leverage, optimize, synergy, impactful, solutions, seamless, elevate, unlock, robust, innovative, world-class, holistic, streamline, game-changer, curated.
 - **Standing user preference:** never change, delete or add anything in any Klaviyo account without the user's explicit approval. Nothing so far has touched Klaviyo; the email template is a local file only.
-- **Domain:** the user typed `work.quicklim.co.za`. We used `work.quicklime.co.za` (matches this repo). **Still unconfirmed**; ask once.
+- **Domain:** `quicklime.co.za` confirmed; the site lives on `work.quicklime.co.za`.
 
 ## 2. What exists (all in this repo)
 
@@ -65,13 +63,13 @@ Full steps are in each `gig-engines/tests/*/README.md`. In short:
 
 1. **Site is live** at https://work.quicklime.co.za (Vercel project `red-pen-pixel`, team petex-byte's projects, root `portfolio-site`). Rebuilt with scroll-craft on 20 Oct 2026; brief in `scrollcraft/builds/red-pen-pixel/BRIEF.md`. DNS already resolves (A 76.76.21.21); Vercel suggests moving to its newer IPs or a CNAME, optional. **Auto-deploys** (since 21 Oct): Vercel project linked to `petex-byte/quicklime`, production branch `ccr-13c64072-nsau5m`, root `portfolio-site`. Pushes that don't touch `portfolio-site/` are skipped.
    - **Register `redpenpixel` on Fiverr.** Every order link points to `fiverr.com/redpenpixel` and 404s until it exists. Swap in gig URLs once gigs are live.
-   - No photos yet: the P and C plates are slots for a real photo of Petri and Chané.
-   - Chapters III (email) and IV (screens) show Petri's side. The email is the real master with a labelled sample shop (`klaviyo-templates/build_sample.py`). The checkout is a labelled demo. **A real Figma prototype link from Petri would beat the demo**: embed it in chapter IV.
+   - No photos or names on the site, by the owner's rule.
+   - Chapters III (email) and IV (screens) show the design work. The email is the real master with a labelled sample shop (`klaviyo-templates/build_sample.py`). The checkout is a labelled demo. **A real Figma prototype link would beat the demo**: embed it in chapter IV.
 2. **Fill placeholders:**
    - `[PORTFOLIO_URL]` and `[TRUST_SITE_URL]` in `fiverr-agency/03_visual/hyperframes_storyboard.md`.
    - `REPLACE_COUPON_NAME`, the three footer social links (`REPLACE`) and the brand tokens in the Klaviyo template. (The charset bug in the master was fixed 20 Oct.)
 3. **Test the Klaviyo template** in Klaviyo's preview and in Litmus or real inboxes (Outlook desktop especially). **Ask before touching any Klaviyo account.**
-4. **Chané reviews the Afrikaans** in `gig-engines/tests/legal-catch-net/verskaffingsooreenkoms_AF.txt` and the Legal engine's M2/M3 word hints.
+4. **The owner reviews the Afrikaans** in `gig-engines/tests/legal-catch-net/verskaffingsooreenkoms_AF.txt` and the Legal engine's M2/M3 word hints.
 5. **Check Fiverr's current limits** (gig video length/size, gallery image size, tag rules). The numbers in the storyboard came from memory.
 6. **Render the Hyperframes videos** and drop the MP4s into `portfolio-site/media/` (specs in `media/README.md`).
 7. Optional: open a PR from the branch when the user asks. No PR has been opened.

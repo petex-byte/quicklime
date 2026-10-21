@@ -1,6 +1,6 @@
 **Step 2: Chunk 1-6.2** (title and parties block, clauses 1 to 6.2; EN clauses 1 to 6.2 = 19 clauses, AF clauses 1 to 6.2 = 19 clauses)
 
-| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for Chané to confirm) |
+| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for the proofreader to confirm) |
 |---|---|---|---|---|---|---|---|---|
 | F-001 | RED | M2 | Parties block | Parties block | `FYNBOS TEXTILES (PTY) LTD` | `FYNBOS TEXTILE (EDMS) BPK` | Supplier's name differs: English "TEXTILES", Afrikaans "TEXTILE". Registration number 2019/123456/07 is the same in both. | Ask client which is intended |
 | F-002 | GREY | M8 | 2.1 | 2.1 | `This Agreement starts on 1 November 2026 and runs for 24 months.` | `Hierdie Ooreenkms begin op 1 November 2026 en duur vir 24 maande.` | Typo in Afrikaans: "Ooreenkms". The defined term is "Ooreenkoms". | Change "Ooreenkms" to "Ooreenkoms" |

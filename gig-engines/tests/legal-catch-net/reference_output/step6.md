@@ -32,7 +32,7 @@ RED means the two versions say different things about what someone must do, pay 
 | F-009 | 7.1 | Afrikaans calls the Supplier "Leweransier". Everywhere else it says "Verskaffer". | Change "Leweransier" to "Verskaffer" |
 | F-013 | 11.2 | Both versions say "subject to clause 11.3". Neither version has a clause 11.3. | Tell us which is intended |
 
-All suggested fixes are for Chané to confirm.
+All suggested fixes are for the proofreader to confirm.
 
 ## Also noted (not on the list above)
 - 5 GREY items: a typo in each language (2.1 Afrikaans, 5.2 English), a repeated clause number 9.1 in English, blank signature fields, and no date or witness lines in the signature blocks.
@@ -49,6 +49,6 @@ Hi! Your order is checked. I compared 36 English and 35 Afrikaans clauses. Findi
 
 This is proofreading, not legal advice.
 
-Chané
+the proofreader
 
 I flag translation and text errors; I do not give legal advice.

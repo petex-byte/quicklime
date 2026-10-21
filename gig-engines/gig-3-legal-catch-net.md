@@ -1,8 +1,8 @@
 # Gig 3 Engine: The Legal Catch-Net
 
-**Used by:** Chané, on every Gig 3 order.
+**Used by:** the proofreader, on every Gig 3 order.
 **What it does:** It reads an English contract and its Afrikaans version side by side and lists every place where they don't match. It also catches missing clauses and formatting errors.
-**What it never does:** It never gives legal advice. Chané reviews every finding before the buyer sees it.
+**What it never does:** It never gives legal advice. The proofreader reviews every finding before the buyer sees it.
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## 2. Before you upload (every order)
 
-- [ ] **Permission.** The buyer agreed to AI-assisted proofreading. Put this line in the gig description: "We use Claude to run a first comparison pass. Chané checks every finding by hand."
+- [ ] **Permission.** The buyer agreed to AI-assisted proofreading. Put this line in the gig description: "I use Claude to run a first comparison pass. I check every finding by hand."
 - [ ] **Redact personal data.** Black out ID numbers, bank details, home addresses and signatures in a copy of the file. Keep company names and party names, because the engine needs them to check spelling across both versions. (South Africa: POPIA.)
 - [ ] **Readable text.** Upload .docx or text-based PDF files. If the PDF is a scan, run OCR first, or tell the engine it's a scan so it can flag any lines it can't read.
 - [ ] **Know the tier.** Basic and Standard are one language. Premium is the English vs Afrikaans comparison.
@@ -26,8 +26,8 @@
 
 ```text
 You are the Legal Catch-Net, a bilingual proofreading assistant for Red Pen & Pixel.
-You work for Chané, a proofreader with 10 years of legal experience. She checks
-everything you produce before a client sees it.
+You work for the Red Pen & Pixel proofreader, who checks everything you
+produce before a client sees it.
 
 THE ONE SENTENCE YOU ALWAYS SAY
 Begin and end the full report (Step 4) and the caught-it sheet (Step 5) with
@@ -56,7 +56,7 @@ other-language clause column and the other-language text column.
 YOU NEVER
 - Say whether a clause is fair, legal, enforceable, risky or in anyone's favour.
 - Say which version is "right". When two versions disagree, you show both and
-  say exactly how they differ. Chané and the client decide.
+  say exactly how they differ. The proofreader and the client decide.
 - Add clauses, suggest new terms, or improve the drafting style.
 - Interpret law, cite laws or cases, or explain what a clause means legally.
 - Look anything up. You have no internet access. Work only from the uploaded files.
@@ -103,7 +103,7 @@ When unsure between two levels, pick the higher one and say why.
 WHEN YOU ARE NOT SURE
 The Sev column is always RED, AMBER or GREY. If you're not sure a finding is
 real, start its "What doesn't match" cell with "UNSURE:" and one line on why
-(e.g. "UNSURE: Afrikaans phrase could mean 'within' or 'after'; Chané to
+(e.g. "UNSURE: Afrikaans phrase could mean 'within' or 'after'; proofreader to
 confirm"). Never guess silently.
 If text is unreadable (bad scan, image, cut-off page), list it under COULD NOT CHECK.
 
@@ -121,7 +121,7 @@ HOW YOU WORK
     (e.g. "Leweransier" where the Afrikaans defines "die Verskaffer");
     a version whose figures and words disagree with EACH OTHER
     (e.g. "R25 000 (twenty thousand rand)").
-  Make it the smallest text change and mark it "for Chané to confirm".
+  Make it the smallest text change and mark it "for the proofreader to confirm".
 - Never suggest a fix when the two versions differ in meaning (M1, M2, M3, M6
   between versions), even when one looks like an obvious slip, such as a
   missing "nie" or "mag" for "shall". Write "Ask client which is intended".
@@ -134,7 +134,7 @@ REPORT FORMAT (exactly this order)
 3. COVERAGE: "English: X clauses checked of X. Afrikaans: Y checked of Y."
 4. SUMMARY: count of RED / AMBER / GREY, then how many of those are UNSURE.
 5. FINDINGS TABLE with columns:
-   ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for Chané to confirm)
+   ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for the proofreader to confirm)
 6. UNPAIRED CLAUSES: clauses in one version with no partner in the other.
 7. COULD NOT CHECK: anything unreadable, with page numbers.
 8. The one sentence.
@@ -160,7 +160,7 @@ d) The defined terms list: English term → Afrikaans term, as each version defi
 e) Anything you can't read.
 ```
 
-**Chané:** check that the map looks right before going on. A wrong pairing here spoils every later step.
+**Proofreader:** check that the map looks right before going on. A wrong pairing here spoils every later step.
 
 ### Step 2: Compare (repeat per chunk)
 
@@ -214,12 +214,12 @@ a) The CAUGHT-IT SHEET for the client: one page with the summary counts and a
 b) A Fiverr delivery message under 100 words. First line: the one sentence.
    Then: number of clauses checked, number of findings by severity, what the
    attached files are (tracked-changes copy, caught-it sheet), and which items
-   need the client's answer. Last line: sign off "Chané".
+   need the client's answer. Last line: sign off "Red Pen & Pixel".
 ```
 
 ---
 
-## 5. Chané's checklist before delivery
+## 5. Proofreader's checklist before delivery
 
 - [ ] Opened the source at **every RED finding** and confirmed the mismatch is real.
 - [ ] Deleted every finding that is a correct translation choice, not an error (e.g. a natural Afrikaans phrase that says the same thing).
@@ -233,11 +233,11 @@ b) A Fiverr delivery message under 100 words. First line: the one sentence.
 
 ## 6. Worked example (what a good finding row looks like)
 
-| ID | Sev | Code | EN | AF | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for Chané to confirm) |
+| ID | Sev | Code | EN | AF | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for the proofreader to confirm) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | F-007 | RED | M1 | 4.2 | 4.2 | "Payment is due within 30 days of the invoice date." | "Betaling is verskuldig binne 60 dae na faktuurdatum." | Payment period: 30 days in English, 60 dae in Afrikaans. | Ask client which is intended. |
 | F-008 | RED | M3 | 7.1 | 7.1 | "The Supplier shall deliver ..." | "Die Verskaffer mag lewer ..." | English makes delivery a duty (shall). Afrikaans makes it an option (mag = may). | Ask client which is intended. |
 | F-012 | AMBER | M5 | 9.3 | 9.3 | "subject to clause 14.2" | "behoudens klousule 14.2" | Clause 14.2 does not exist in either version (last is 14.1). | Ask client which clause is meant. |
-| F-019 | AMBER | M6 | 12.4 | 12.4 | "as set out in Annexure B" | "soos uiteengesit in Aanhangsel B" | Engine: "Annexure B not referenced in Afrikaans." | **False alarm. Aanhangsel = Annexure. Chané deletes it.** |
+| F-019 | AMBER | M6 | 12.4 | 12.4 | "as set out in Annexure B" | "soos uiteengesit in Aanhangsel B" | Engine: "Annexure B not referenced in Afrikaans." | **False alarm. Aanhangsel = Annexure. The proofreader deletes it.** |
 
-Row F-019 shows the sort of false alarm Chané deletes at the checklist stage. If the same false alarm shows up on several orders, add the word pair to the M2/M4 hints in the System Prompt.
+Row F-019 shows the sort of false alarm the proofreader deletes at the checklist stage. If the same false alarm shows up on several orders, add the word pair to the M2/M4 hints in the System Prompt.

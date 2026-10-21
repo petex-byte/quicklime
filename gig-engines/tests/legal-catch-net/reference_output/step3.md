@@ -1,6 +1,6 @@
 Chunk 2 covers clauses 7 to 12 and Annexure A (EN 17 units, AF 16 units, all checked).
 
-| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for Chané to confirm) |
+| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for the proofreader to confirm) |
 |---|---|---|---|---|---|---|---|---|
 | F-008 | RED | M3 | 7.1 | 7.1 | The Supplier shall replace defective Goods within 10 Business Days of written notice. | Die Leweransier mag gebrekkige Goedere binne 10 Werksdae na skriftelike kennisgewing vervang. | English "shall" (obligation) became Afrikaans "mag" (option). | Change "mag" to "moet" |
 | F-009 | AMBER | M4 | 7.1 | 7.1 | The Supplier shall replace defective Goods within 10 Business Days of written notice. | Die Leweransier mag gebrekkige Goedere binne 10 Werksdae na skriftelike kennisgewing vervang. | Afrikaans uses "Leweransier". Defined term is "die Verskaffer" everywhere else in the Afrikaans. "Leweransier" is never defined. | Change "Leweransier" to "Verskaffer" |

@@ -1,6 +1,6 @@
 # Gig 4 Engine: The E-commerce CSV Scrubber
 
-**Used by:** Petri or Chané, on every Gig 4 order.
+**Used by:** the seller, on every Gig 4 order.
 **What it does:** It takes a messy supplier CSV or spreadsheet and maps it to Shopify's or WooCommerce's standard import headers.
 **The hard rule:** **Never drop a row, never invent a price.**
 

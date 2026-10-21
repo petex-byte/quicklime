@@ -27,7 +27,7 @@ English: 36 clauses checked of 36. Afrikaans: 35 checked of 35.
 
 ## FINDINGS TABLE
 
-| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for Chané to confirm) |
+| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for the proofreader to confirm) |
 |---|---|---|---|---|---|---|---|---|
 | F-001 | RED | M2 | Parties block | Parties block | FYNBOS TEXTILES (PTY) LTD | FYNBOS TEXTILE (EDMS) BPK | Supplier's company name differs: "TEXTILES" in English, "TEXTILE" in Afrikaans. Registration number is the same in both (2019/123456/07). | Ask client which is intended |
 | F-002 | GREY | M8 | 2.1 | 2.1 | This Agreement starts on 1 November 2026 and runs for 24 months. | Hierdie Ooreenkms begin op 1 November 2026 en duur vir 24 maande. | Typo in Afrikaans: "Ooreenkms" for the defined term "Ooreenkoms". Date and term match. | Change "Ooreenkms" to "Ooreenkoms" |

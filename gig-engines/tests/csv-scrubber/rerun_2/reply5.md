@@ -9,4 +9,4 @@ How to import (Shopify):
 
 Want a launch email for the range? Our email design gig covers it.
 
-Petri & Chané
+[signature]

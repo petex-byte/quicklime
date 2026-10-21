@@ -2,7 +2,7 @@
 
 ## Picking the two Claude gigs
 
-Test for each idea: (a) a standard Claude model can do 100% of the making, (b) a human can check the output in under 30 minutes, (c) our Target (small shop owner) already pays for it, (d) it feeds our other gigs.
+Test for each idea: (a) a standard Claude model can do 100% of the making, (b) a human can check the output in under 30 minutes, (c) the Target (small shop owner) already pays for it, (d) it feeds our other gigs.
 
 | Idea | Claude does it all? | Fast to check? | Shop owners buy it? | Feeds other gigs? | Keep |
 | --- | --- | --- | --- | --- | --- |
@@ -14,17 +14,17 @@ Test for each idea: (a) a standard Claude model can do 100% of the making, (b) a
 **Gig 4:** Product Data Cleanup (messy sheet → store-ready CSV + JSON).
 **Gig 5:** Brand Voice Prompt Library (prompt pack + Claude Project set-up).
 
-Both are run end to end by the SOP in `05_handoff/standard_claude_handoff.md`. A partner checks every file before delivery. Say so in the gig: "Built with Claude. Checked by a human." Fiverr asks sellers to be open about AI use; this line does that and sells trust at the same time.
+Both are run end to end by the SOP in `05_handoff/standard_claude_handoff.md`. I check every file before delivery. Say so in the gig: "Built with Claude. Checked by a human." Fiverr asks sellers to be open about AI use; this line does that and sells trust at the same time.
 
 ---
 
 ## The 5 Benefits drill-down (Toyoda's 5 Whys, flipped)
 
-Method: start with what we *do*. Ask "so what?" five times. The fifth answer is the root selling point. Lead the gig with it.
+Method: start with what I *do*. Ask "so what?" five times. The fifth answer is the root selling point. Lead the gig with it.
 
 ### Gig 1: Web & App UI/UX Design (Figma)
 
-1. We design your screens in Figma. **So what?**
+1. I design your screens in Figma. **So what?**
 2. You see and click the whole app before a developer writes one line. **So what?**
 3. You find the confusing parts on a Tuesday afternoon, not after launch. **So what?**
 4. Your developer builds it once, not three times. **So what?**
@@ -34,7 +34,7 @@ Method: start with what we *do*. Ask "so what?" five times. The fifth answer is 
 
 ### Gig 2: E-commerce Email Design (Figma + HTML upsell)
 
-1. We design your sale emails in Figma and code them in HTML. **So what?**
+1. I design your sale emails in Figma and code them in HTML. **So what?**
 2. The email looks the same in Gmail, Outlook and Apple Mail, on a phone and a laptop. **So what?**
 3. The "Shop now" button works and is easy to tap with a thumb. **So what?**
 4. More people tap through to your store on the day of the sale. **So what?**
@@ -44,18 +44,18 @@ Method: start with what we *do*. Ask "so what?" five times. The fifth answer is 
 
 ### Gig 3: Legal Document & Contract Proofreading (English/Afrikaans)
 
-1. Chané reads your contract line by line. **So what?**
-2. She finds the wrong dates, the names spelled two ways, the clause numbers that point nowhere, and the English and Afrikaans copies that don't match. **So what?**
+1. I read your contract line by line. **So what?**
+2. I find the wrong dates, the names spelled two ways, the clause numbers that point nowhere, and the English and Afrikaans copies that don't match. **So what?**
 3. You sign a document that says what you think it says. **So what?**
 4. The other side can't use a typo to wiggle out of paying you. **So what?**
 5. **You sleep at night, and you never pay a lawyer R2,500 an hour to fight over a comma.**
 
 > Root selling point: **Every clause read twice.**
-> Fence line (put in the gig): *This is proofreading and consistency checking, not legal advice. We don't tell you what to sign.*
+> Fence line (put in the gig): *This is proofreading and consistency checking, not legal advice. I don't tell you what to sign.*
 
 ### Gig 4: Product Data Cleanup (CSV + JSON)
 
-1. We turn your messy supplier sheet into a clean Shopify or WooCommerce import file. **So what?**
+1. I turn your messy supplier sheet into a clean Shopify or WooCommerce import file. **So what?**
 2. Every product has a title, a price, a SKU, sizes and colours in the right columns. **So what?**
 3. You upload once and 500 products go live without a single error line. **So what?**
 4. You don't spend three weekends pasting cells by hand. **So what?**
@@ -65,7 +65,7 @@ Method: start with what we *do*. Ask "so what?" five times. The fifth answer is 
 
 ### Gig 5: Brand Voice Prompt Library
 
-1. We write a library of Claude prompts in your brand's voice. **So what?**
+1. I write a library of Claude prompts in your brand's voice. **So what?**
 2. Anyone on your team pastes a prompt and gets a product page, email or reply that sounds like you. **So what?**
 3. You stop rewriting bland AI copy at midnight. **So what?**
 4. Your intern writes 30 product pages in an afternoon and they all sound like one brand. **So what?**
@@ -91,7 +91,7 @@ Fiverr: titles start with "I will", 80 characters max. 5 tags per gig, single wo
 
 ## Pricing matrix (USD)
 
-Logic: Basic is a low-risk first taste. Standard is the one we want them to pick (best value per unit). Premium sets the anchor and holds the full job. Every tier includes the "caught it" sheet.
+Logic: Basic is a low-risk first taste. Standard is the one I want them to pick (best value per unit). Premium sets the anchor and holds the full job. Every tier includes the "caught it" sheet.
 
 | Gig | Basic | Standard | Premium |
 | --- | --- | --- | --- |
@@ -120,6 +120,6 @@ Logic: Basic is a low-risk first taste. Standard is the one we want them to pick
 ### Cross-sell paths (put in every delivery message)
 
 - Gig 4 → Gig 2: "Your products are live. Want the launch email?"
-- Gig 5 → Gig 2: "Your prompts write the words. Want us to design the email?"
-- Gig 1 → Gig 3: "Your app needs Terms and a Privacy page. Chané will proofread them."
+- Gig 5 → Gig 2: "Your prompts write the words. Want me to design the email?"
+- Gig 1 → Gig 3: "Your app needs Terms and a Privacy page. I can proofread them."
 - Gig 3 → Gig 1: "Contract signed. Need the site or app it's for?"

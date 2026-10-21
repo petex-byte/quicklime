@@ -1,10 +1,10 @@
 # Node 3: Visual Proof (Hyperframes storyboard)
 
-## What we're making
+## What I'm making
 
 Scrolling video mock-ups of two live sites, built as HTML compositions in Hyperframes and rendered to MP4:
 
-- **Site A:** Petri's personal portfolio → `[PORTFOLIO_URL]`
+- **Site A:** Personal design portfolio → `[PORTFOLIO_URL]`
 - **Site B:** the family trust website → `[TRUST_SITE_URL]`
 
 Plus short clips for the email, legal and Claude gigs.
@@ -40,10 +40,10 @@ Walk every page and blur or swap out: trustee names, ID numbers, bank details, a
 
 ## Video 1: Gig 1 (UI/UX) master reel, 60 s
 
-| # | Time | Frame (what we see) | Motion | Text overlay | Sound |
+| # | Time | Frame (what you see) | Motion | Text overlay | Sound |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 0:00–0:03 | Off-white screen. A red pen rolls in from the left and stops. | Pen rolls, 0.8 s | **We catch what slips.** | Pen roll on desk |
-| 2 | 0:03–0:06 | Petri and Chané photo, side by side, cut into two circles. | Circles pop in, 0.3 s apart | Petri · Design / Chané · Words & Law | Music in |
+| 1 | 0:00–0:03 | Off-white screen. A red pen rolls in from the left and stops. | Pen rolls, 0.8 s | **I catch what slips.** | Pen roll on desk |
+| 2 | 0:03–0:06 | The red pen draws a ring around the word "slips". | Ring draws, 0.6 s | Design · Words · Law | Music in |
 | 3 | 0:06–0:16 | **Site A desktop.** Laptop frame, portfolio home page. | Slow scroll top → bottom, pause on hero and project grid | Portfolio site · Figma → live | Music |
 | 4 | 0:16–0:22 | Same page, **Site A mobile.** Phone frame slides in to the right of the laptop. | Phone scrolls in sync with laptop | Built for the thumb | Swipe |
 | 5 | 0:22–0:26 | Split screen: left = Figma frame of the hero, right = live site hero. | Wipe from left to right | Figma file → live page | Whoosh |
@@ -65,7 +65,7 @@ Walk every page and blur or swap out: trustee names, ID numbers, bank details, a
 
 ## Video 3: Gig 3 (Legal), 25 s
 
-Use a **dummy contract** we write ourselves. Never film a client's document.
+Use a **dummy contract** written for the purpose. Never film a client's document.
 
 | # | Time | Frame | Motion | Text overlay |
 | --- | --- | --- | --- | --- |
@@ -81,7 +81,7 @@ Use a **dummy contract** we write ourselves. Never film a client's document.
 | --- | --- | --- | --- | --- |
 | 1 | 0:00–0:05 | A messy spreadsheet: merged cells, prices as "R 1 299,00", sizes jammed into one cell. | Slow pan across | **Messy sheet. Clean store.** |
 | 2 | 0:05–0:11 | The cells shuffle and snap into neat columns: Handle, Title, Price, SKU, Size, Colour. | Cells fly to place | Sorted into Shopify columns |
-| 3 | 0:11–0:16 | "Problem rows" list: 3 rows with a red ring each ("no price", "SKU used twice", "image link dead"). | Rings draw one by one | We flag. We never guess. |
+| 3 | 0:11–0:16 | "Problem rows" list: 3 rows with a red ring each ("no price", "SKU used twice", "image link dead"). | Rings draw one by one | I flag. I never guess. |
 | 4 | 0:16–0:20 | Shopify admin product grid, filled. | Scroll | 500 products. One upload. |
 
 ## Video 5: Gig 5 (Prompts), 20 s
@@ -104,5 +104,5 @@ Big, dark text on off-white, one red-pen circle or underline, the work on the ri
 | 1 | **Click it before building** | Figma to live site | Built for the thumb |
 | 2 | **Sale emails, built right** | Same in every inbox | Every button works |
 | 3 | **Every clause read twice** | English and Afrikaans checked | 14 mistakes found |
-| 4 | **Messy sheet. Clean store.** | 500 products, one upload | We flag, never guess |
+| 4 | **Messy sheet. Clean store.** | 500 products, one upload | I flag, never guess |
 | 5 | **Prompts in your voice** | Paste. Fill. Done. | 80 tested prompts |

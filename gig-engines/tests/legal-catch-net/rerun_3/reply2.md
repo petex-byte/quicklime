@@ -1,4 +1,4 @@
-| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for Chané to confirm) |
+| ID | Sev | Code | EN clause | AF clause | English text (exact) | Afrikaans text (exact) | What doesn't match | Suggested fix (for the proofreader to confirm) |
 |---|---|---|---|---|---|---|---|---|
 | F-001 | RED | M2 | Parties block | Parties block | "FYNBOS TEXTILES (PTY) LTD" | "FYNBOS TEXTILE (EDMS) BPK" | Supplier's company name is spelled "TEXTILES" in English and "TEXTILE" in Afrikaans (no final S). Registration number 2019/123456/07 is the same in both. | Ask client which is intended |
 | F-002 | GREY | M8 | 2.1 | 2.1 | "This Agreement starts on 1 November 2026 and runs for 24 months." | "Hierdie Ooreenkms begin op 1 November 2026 en duur vir 24 maande." | Afrikaans "Ooreenkms" is missing an "o". The Afrikaans defined term in 1.1 is "Ooreenkoms". | Change "Ooreenkms" to "Ooreenkoms" |
