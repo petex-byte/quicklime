@@ -5,14 +5,15 @@ Rules checked against Fiverr's help page "Creating & editing your freelancer pro
 
 ## Photo
 
-A real, recent photo of Petri and Chané together, faces clear, plain background.
-Fiverr also accepts a logo, but buyers on Fiverr buy people. Logo only as a stopgap.
+A real, recent photo of the two of you, faces clear, plain background. Fiverr also accepts a logo.
 
 ## Display name
 
-**Red Pen and Pixel**
+**Le Roux Glanz** (accepted by Fiverr 21 Oct 2026).
 
-Fiverr allows only letters, periods and apostrophes. "&" will be rejected, so spell out "and".
+Rejected first: "Red Pen and Pixel" (cut at 15 characters, then flagged). Fiverr allows only letters, periods and apostrophes, so no "&".
+
+**Owner's rule: do not use the partners' first names in the Fiverr profile.**
 
 ## Title (50 characters)
 
@@ -31,13 +32,13 @@ South Africa (set by Fiverr from registration).
 | English | Fluent or Native (pick the true one for the account holder) |
 | Afrikaans | Native |
 
-## About (575 characters)
+## About (577 characters)
 
 Paste as one block. Fiverr needs a space after every full stop, including the last, or it won't save. The text below already has them.
 No URLs, company names or contact details are allowed here, which is why the site link and tool names are left out.
 
 ```text
-Two people. One red pen. One design file. Petri designs app screens, websites and sale emails, then codes the emails by hand so every button works in every big inbox, on a phone and a laptop. Chané spent 10 years in law. She reads contracts in English and Afrikaans and finds the wrong date, the lost clause and the name spelled two ways. We also use AI to turn messy product sheets into clean store files and to write prompt packs in your shop's voice. One of us checks every line. One inbox. One deadline. Every file checked twice. Send us the file. We send it back fixed. 
+Two people. One red pen. One design file. One of us designs app screens, websites and sale emails, then codes the emails by hand so every button works in every big inbox, on a phone and a laptop. The other spent 10 years in law, reading contracts in English and Afrikaans to find the wrong date, the lost clause and the name spelled two ways. We also use AI to turn messy product sheets into clean store files and to write prompt packs in your shop's voice. A human checks every line. One inbox. One deadline. Every file checked twice. Send us the file. We send it back fixed. 
 ```
 
 ## Skills and expertise
@@ -46,17 +47,17 @@ Add these, and set each level honestly. Fiverr warns that overstated levels lead
 
 | Skill | Who |
 |---|---|
-| Figma | Petri |
-| UI design | Petri |
-| UX design | Petri |
-| Mobile app design | Petri |
-| Prototyping | Petri |
-| Email design | Petri |
-| HTML email | Petri |
-| Klaviyo | Petri |
-| Proofreading | Chané |
-| Legal proofreading | Chané |
-| Afrikaans | Chané |
+| Figma | Design partner |
+| UI design | Design partner |
+| UX design | Design partner |
+| Mobile app design | Design partner |
+| Prototyping | Design partner |
+| Email design | Design partner |
+| HTML email | Design partner |
+| Klaviyo | Design partner |
+| Proofreading | Legal partner |
+| Legal proofreading | Legal partner |
+| Afrikaans | Legal partner |
 | Data cleaning | Both (AI first pass) |
 | Shopify | Both |
 | Prompt engineering | Both (AI first pass) |
@@ -67,8 +68,8 @@ Leave out "contract review" and "legal advice". The Legal gig proofreads text; i
 
 Fiverr checks company names and rejects unknown ones. Fill in from your real history:
 
-- Chané: legal role, employer, years (the "10 years in law" claim rests on this).
-- Petri: design role, employer or freelance, years.
+- Legal partner: legal role, employer, years (the "10 years in law" claim rests on this).
+- Design partner: design role, employer or freelance, years.
 
 ## Education and certifications (optional)
 
