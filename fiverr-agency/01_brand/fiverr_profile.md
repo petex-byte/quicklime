@@ -15,9 +15,9 @@ Rejected first: "Red Pen and Pixel" (cut at 15 characters, then flagged). Fiverr
 
 **Owner's rule: no first names anywhere, and the studio is one person. Write as "I".**
 
-## Title (50 characters)
+## Title (54 characters)
 
-**App screens, sale emails and contracts, read twice**
+**Sale emails, app screens, contracts. Every slip listed**
 
 No "expert", "best" or "Fiverr" in the title. Fiverr rejects those.
 
@@ -32,13 +32,13 @@ South Africa (set by Fiverr from registration).
 | English | Fluent or Native (pick the true one for the account holder) |
 | Afrikaans | Native |
 
-## About (527 characters)
+## About (529 characters)
 
 Paste as one block. Fiverr needs a space after every full stop, including the last, or it won't save. The text below already has them.
 No URLs, company names or contact details are allowed here, which is why the site link and tool names are left out.
 
 ```text
-One person. One red pen. One design file. I design app screens, websites and sale emails, then code the emails by hand so every button works in every big inbox, on a phone and a laptop. I proofread contracts in English and Afrikaans and find the wrong date, the lost clause and the name spelled two ways. I also use AI to turn messy product sheets into clean store files and to write prompt packs in your shop's voice. I check every line. One inbox. One deadline. Every file read twice. Send me the file. I send it back fixed. 
+A sale email goes out with a dead button. A contract says 30 days in English and 60 dae in Afrikaans. Nobody notices until it costs money. I notice. I design app screens and sale emails, then code the emails by hand. I proofread contracts in English and Afrikaans. AI does the first pass on product sheets and prompt packs, and I check every line. Every order comes back with a caught-it sheet: each slip, where it was, and what I did about it. I'm one person, so I take fewer orders and read every line twice. Send me the file. 
 ```
 
 ## Skills and expertise

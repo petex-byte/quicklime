@@ -83,7 +83,7 @@ Fiverr: titles start with "I will", 80 characters max. 5 tags per gig, single wo
 | --- | --- | --- |
 | 1 | I will design your web or mobile app UI UX in figma | figma, ui ux design, mobile app design, website design, app prototype |
 | 2 | I will design ecommerce emails in figma and code them in HTML for klaviyo | email design, klaviyo, html email, email template, shopify email |
-| 3 | I will proofread your legal contract in english or afrikaans | legal proofreading, contract review, afrikaans, proofreading, legal document |
+| 3 | I will proofread your legal contract in english or afrikaans | legal proofreading, contract proofread, afrikaans, proofreading, legal document |
 | 4 | I will clean your product data into a shopify ready CSV or JSON file | shopify csv, product data, data cleaning, json, woocommerce import |
 | 5 | I will write a custom claude prompt library in your brand voice | claude ai, prompt engineering, brand voice, ai prompts, ai copywriting |
 

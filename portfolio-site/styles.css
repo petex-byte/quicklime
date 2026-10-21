@@ -368,3 +368,9 @@ main, .colophon { padding-left: var(--folio-w); }
   .made__grid.is-wide .checks { grid-column: 1 / -1; columns: 2; column-gap: var(--sc-7); }
   .made__grid.is-wide .checks li { break-inside: avoid; }
 }
+
+/* The gap: the quiet-mistake definition and the coda line. */
+.gap__lead .gap__h { margin-bottom: var(--sc-5); }
+.gap__def { color: var(--sc-ink-soft); max-width: 46ch; font-size: var(--sc-t-lg); line-height: 1.45; text-wrap: pretty; }
+.gap__list .gap__coda { color: var(--sc-ink); font-family: var(--sc-font-display); font-style: italic; font-size: var(--sc-t-lg); border-bottom: 0; }
+.gap__list .gap__coda::before { content: none; }
