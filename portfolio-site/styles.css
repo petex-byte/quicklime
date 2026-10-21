@@ -225,19 +225,11 @@ main, .colophon { padding-left: var(--folio-w); }
   .catch__big { grid-row: auto; margin-bottom: var(--sc-4); }
 }
 
-/* --------------------------------------------- III. two pairs of eyes -- */
+/* ----------------------------------------------- V. the second read -- */
 .eyes__h { font-family: var(--sc-font-display); font-weight: 400; font-size: var(--sc-t-3xl); line-height: 1; letter-spacing: -0.03em; max-width: 14ch; }
-.eyes__duo { margin-top: var(--sc-8); display: grid; grid-template-columns: 1fr 1fr; gap: var(--sc-8); max-width: 68rem; }
-.person--c { margin-top: var(--sc-10); }
-.person__plate {
-  aspect-ratio: 4 / 5; max-width: 22rem; background: var(--sc-surface); box-shadow: var(--sc-e2), var(--sc-edge);
-  display: grid; place-items: center; border-radius: 3px; margin-bottom: var(--sc-5);
-}
-.person__plate span { font-family: var(--sc-font-display); font-style: italic; font-size: clamp(8rem, 5rem + 10vw, 15rem); line-height: 1; color: var(--sc-accent); padding-bottom: 0.1em; }
-.person__name { font-family: var(--sc-font-display); font-weight: 500; font-size: var(--sc-t-xl); }
-.person__does { margin-top: var(--sc-2); color: var(--sc-ink-soft); max-width: 38ch; }
-.person__catches { margin-top: var(--sc-3); font-family: var(--sc-font-display); font-style: italic; font-size: var(--sc-t-lg); color: var(--sc-accent); }
-.eyes__claude { margin-top: var(--sc-9); max-width: 48ch; font-size: var(--sc-t-lg); line-height: 1.45; text-wrap: pretty; }
+.eyes__how { margin-top: var(--sc-6); max-width: 46ch; }
+.eyes__how p { font-size: var(--sc-t-lg); line-height: 1.45; text-wrap: pretty; }
+.eyes__how p + p { margin-top: var(--sc-4); color: var(--sc-ink-soft); font-size: var(--sc-t-base); }
 
 .sheet-out { margin-top: var(--sc-9); max-width: 60rem; }
 .sheet-out__page { background: var(--sc-surface); box-shadow: var(--sc-e3), var(--sc-edge); border-radius: 3px; padding: clamp(1.25rem, 3vw, 2.5rem); overflow-x: auto; }
@@ -248,11 +240,6 @@ main, .colophon { padding-left: var(--folio-w); }
 .sheet-out td { padding: var(--sc-3) var(--sc-3) var(--sc-3) 0; border-bottom: 1px solid var(--sc-hairline); vertical-align: top; }
 .sheet-out td:last-child { font-family: var(--sc-font-display); font-style: italic; color: var(--sc-accent); font-size: 1rem; }
 .sheet-out figcaption { margin-top: var(--sc-4); color: var(--sc-ink-soft); max-width: 52ch; font-size: var(--sc-t-sm); }
-@media (max-width: 760px) {
-  .eyes__duo { grid-template-columns: 1fr; gap: var(--sc-8); }
-  .person--c { margin-top: 0; }
-  .person__plate { max-width: 15rem; }
-}
 
 /* ---------------------------------------------------------- IV. jobs -- */
 .jobs__h { font-family: var(--sc-font-display); font-weight: 400; font-size: var(--sc-t-3xl); line-height: 1; letter-spacing: -0.03em; max-width: 16ch; text-wrap: balance; }
@@ -290,7 +277,7 @@ main, .colophon { padding-left: var(--folio-w); }
 .contract:not(.is-live) .note { opacity: 1; translate: none; max-height: none; }
 .contract:not(.is-live) .tally { display: none; }
 
-/* --------------------------------------------- III. the email (Petri) -- */
+/* ------------------------------------------------------ III. the email -- */
 .made__grid { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: var(--sc-8); align-items: start; }
 .made__h, .screens__h { font-family: var(--sc-font-display); font-weight: 400; font-size: var(--sc-t-2xl); line-height: 1.04; letter-spacing: -0.02em; text-wrap: balance; }
 .made__p, .screens__copy > p { margin-top: var(--sc-4); color: var(--sc-ink-soft); max-width: 40ch; text-wrap: pretty; }
@@ -338,7 +325,7 @@ main, .colophon { padding-left: var(--folio-w); }
   .checks { columns: 1; }
 }
 
-/* -------------------------------------------- IV. the screens (Petri) -- */
+/* ---------------------------------------------------- IV. the screens -- */
 .screens__grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--sc-9); align-items: center; max-width: 68rem; }
 .screens__get { margin-top: var(--sc-6); border-top: 1px solid var(--sc-hairline-strong); }
 .screens__get li { padding: var(--sc-3) 0 var(--sc-3) 1.75rem; border-bottom: 1px solid var(--sc-hairline); font-size: var(--sc-t-sm); color: var(--sc-ink-soft); position: relative; }

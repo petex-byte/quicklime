@@ -113,7 +113,7 @@
       mark(err, false);
       you++;
       youEl.textContent = you;
-      if (you === TOTAL) { say('All four. You read like Chané.'); showBtn.disabled = true; }
+      if (you === TOTAL) { say('All four. You read like a proofreader.'); showBtn.disabled = true; }
       else say(you === 1 ? 'Caught one. Read the note, then keep going.' : 'Caught ' + you + '. ' + (TOTAL - you) + ' left.');
       return;
     }
@@ -155,7 +155,7 @@
   });
 })();
 
-/* Petri's chapters: email width toggle and the checkout before/after. */
+/* The email and screens chapters: width toggle and the checkout before/after. */
 (function () {
   'use strict';
   function group(sel, attr, apply) {
