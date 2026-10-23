@@ -79,4 +79,4 @@ Only real ones. Skip if none. An empty section costs nothing; an unverifiable on
 1. **Individual or team?** Pick **Individual**.
 2. **Website link** (Fiverr keeps it private): `https://work.quicklime.co.za`
 3. Finish the onboarding tasks on the dashboard, or the profile stays hidden.
-4. Optional, worth doing: a 30 to 60 second intro video of you both.
+4. Optional: a 30 to 60 second intro video of the work (screen recordings, no face or name, per the owner's rule).

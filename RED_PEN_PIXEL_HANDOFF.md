@@ -25,6 +25,8 @@
 | `klaviyo-templates/` | `premium-master.html`: 12-module Klaviyo HTML email (VIP conditional, first name, unique coupon, cart loop, Outlook VML buttons, dark mode) + 3 snippets | Done, but **only checked in a browser**, never in Klaviyo preview or real inboxes |
 | `gig-engines/` | System prompts + step prompts + human checklists for **Gig 3 Legal Catch-Net**, **Gig 4 CSV Scrubber**, **Gig 5 Brand Voice Extractor** | Done and **tested twice** (see §3) |
 | `gig-engines/tests/` | One test kit per engine: planted-trap inputs, answer key, grader, operator script, first-run and re-run outputs | Done |
+| `.claude/skills/outdoor-email-design/` | Updatable skill: research on how The North Face and Salomon run email (no specialist agency on record; both in house), module catalogue, 8-step workflow, QA list, update procedure. Research log in `references/research.md` | v0.1.0, 23 Oct 2026 |
+| Figma: [Outdoor Email System](https://www.figma.com/design/x2tWZmy0qRVdKarpCg1SYt) | 4 token collections (47 variables), 11 text styles, 25 components and sets, 2 templates built only from instances. Starter plan: 1 mode per collection, 3 pages, so themes are variants and dark mode is checked in HTML | Built and audited 23 Oct 2026 (117 of 118 fills bound to tokens; the 1 is a deliberate translucent label chip) |
 
 ### Gig prices (USD, Basic / Standard / Premium)
 
