@@ -67,14 +67,18 @@ Full steps are in each `gig-engines/tests/*/README.md`. In short:
    - **Register `redpenpixel` on Fiverr.** Every order link points to `fiverr.com/redpenpixel` and 404s until it exists. Swap in gig URLs once gigs are live.
    - No photos or names on the site, by the owner's rule.
    - Chapters III (email) and IV (screens) show the design work. The email is the real master with a labelled sample shop (`klaviyo-templates/build_sample.py`). The checkout is a labelled demo. **A real Figma prototype link would beat the demo**: embed it in chapter IV.
-2. **Fill placeholders:**
+2. **Resume "Last Light" (dark sale template) in Figma** when Figma MCP calls work again. Stopped 23 Oct 2026: the Starter plan's MCP call cap was hit. Plan: `/root/.claude/plans/shimmying-doodling-flurry.md` (session-local; the steps are summarised here).
+   - Done: tokens `color/night/*`, `color/beam/*` (VariableID 16:2 to 16:16) and text styles `Display/Countdown`, `Display/Night`. 4 Figma AI images generated (nodes 17:2 hero, 18:2 jacket, 19:2 headlamp, 20:2 boot; on whichever page Figma placed them). Copies are in `klaviyo-templates/last-light/img/`.
+   - To do: read the 4 image hashes, delete the raw frames; add `Style=Amber` to Button (3:60); build components `Header / Dark`, `LL Hero`, `LL Countdown`, `LL Coupon`, `LL Spotlight` (Full/Half), `LL Spotlight pair`, `LL Beam divider`, `LL Data strip` at x≈1500 on Components; compose "Template · Last Light (sale, dark)" at x=1440 on Templates from instances only; QA (screenshot, instance-only audit, contrast table); add to the skill catalogue, v0.2.0.
+   - Starter also caps 3 pages and 1 variable mode. Professional (Full seat: 200 calls/day) removes the call cap.
+3. **Fill placeholders:**
    - `[PORTFOLIO_URL]` and `[TRUST_SITE_URL]` in `fiverr-agency/03_visual/hyperframes_storyboard.md`.
    - `REPLACE_COUPON_NAME`, the three footer social links (`REPLACE`) and the brand tokens in the Klaviyo template. (The charset bug in the master was fixed 20 Oct.)
-3. **Test the Klaviyo template** in Klaviyo's preview and in Litmus or real inboxes (Outlook desktop especially). **Ask before touching any Klaviyo account.**
-4. **The owner reviews the Afrikaans** in `gig-engines/tests/legal-catch-net/verskaffingsooreenkoms_AF.txt` and the Legal engine's M2/M3 word hints.
-5. **Check Fiverr's current limits** (gig video length/size, gallery image size, tag rules). The numbers in the storyboard came from memory.
-6. **Render the Hyperframes videos** and drop the MP4s into `portfolio-site/media/` (specs in `media/README.md`).
-7. Optional: open a PR from the branch when the user asks. No PR has been opened.
+4. **Test the Klaviyo template** in Klaviyo's preview and in Litmus or real inboxes (Outlook desktop especially). **Ask before touching any Klaviyo account.**
+5. **The owner reviews the Afrikaans** in `gig-engines/tests/legal-catch-net/verskaffingsooreenkoms_AF.txt` and the Legal engine's M2/M3 word hints.
+6. **Check Fiverr's current limits** (gig video length/size, gallery image size, tag rules). The numbers in the storyboard came from memory.
+7. **Render the Hyperframes videos** and drop the MP4s into `portfolio-site/media/` (specs in `media/README.md`).
+8. Optional: open a PR from the branch when the user asks. No PR has been opened.
 
 ## 5. Working conventions used so far
 
