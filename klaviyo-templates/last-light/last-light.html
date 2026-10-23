@@ -20,9 +20,12 @@
   REPLACE before send: BRAND_NAME, https://example.com links, product
   copy and prices, SUNSET_TIME, the coupon name, the countdown GIF URL.
 
-  Countdown: the digits below are live text (a static fallback). For a
-  ticking timer, swap the table for snippets/countdown.html with a GIF
-  from a timer service, and keep the live-text version as the alt text.
+  Countdown: a live timer GIF, made fresh on each open by a timer service
+  (Sendtric, MotionMail, NiftyImages). Set it to end at SUNSET_TIME on the
+  send day, 3 units (HH MM SS), background #141922, digits #FFFFFF, last
+  unit #FFD38A, labels #8C96A8. Paste its URL as REPLACE_TIMER_GIF_URL.
+  Outlook desktop shows frame 1 only, so the line under it says the end
+  time in words. Never hard-code digits: they are wrong once sent.
 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -119,21 +122,14 @@
   </tr>
   <!-- ▲ HERO -->
 
-  <!-- ▼ COUNTDOWN -->
+  <!-- ▼ COUNTDOWN (live timer GIF) -->
   <tr>
     <td class="beam px" align="center" style="background-color:#141922; background-image:radial-gradient(ellipse at 50% 0%, rgba(255,179,71,0.22) 0%, rgba(20,25,34,0) 62%); padding:44px 40px 40px; border-top:1px solid #2A3140;">
       <p class="mono" style="margin:0 0 18px; font-family:'IBM Plex Mono','Courier New',monospace; font-size:12px; letter-spacing:3px; color:#8C96A8;">THE LIGHT IS GOING IN</p>
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
-        <tr>
-          <td align="center" style="padding:0 10px;"><div class="display digits" style="font-family:'Archivo','Arial Black',Arial,sans-serif; font-weight:800; font-size:64px; line-height:64px; color:#FFFFFF; font-variant-numeric:tabular-nums;">01</div><div class="mono" style="font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; letter-spacing:2px; color:#8C96A8; padding-top:8px;">DAYS</div></td>
-          <td class="display digits" style="font-family:'Archivo',Arial,sans-serif; font-weight:800; font-size:64px; line-height:64px; color:#2A3140; vertical-align:top;">:</td>
-          <td align="center" style="padding:0 10px;"><div class="display digits" style="font-family:'Archivo','Arial Black',Arial,sans-serif; font-weight:800; font-size:64px; line-height:64px; color:#FFFFFF;">06</div><div class="mono" style="font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; letter-spacing:2px; color:#8C96A8; padding-top:8px;">HOURS</div></td>
-          <td class="display digits" style="font-family:'Archivo',Arial,sans-serif; font-weight:800; font-size:64px; line-height:64px; color:#2A3140; vertical-align:top;">:</td>
-          <td align="center" style="padding:0 10px;"><div class="display digits" style="font-family:'Archivo','Arial Black',Arial,sans-serif; font-weight:800; font-size:64px; line-height:64px; color:#FFFFFF;">42</div><div class="mono" style="font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; letter-spacing:2px; color:#8C96A8; padding-top:8px;">MIN</div></td>
-          <td class="display digits" style="font-family:'Archivo',Arial,sans-serif; font-weight:800; font-size:64px; line-height:64px; color:#2A3140; vertical-align:top;">:</td>
-          <td align="center" style="padding:0 10px;"><div class="display digits" style="font-family:'Archivo','Arial Black',Arial,sans-serif; font-weight:800; font-size:64px; line-height:64px; color:#FFD38A;">18</div><div class="mono" style="font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; letter-spacing:2px; color:#8C96A8; padding-top:8px;">SEC</div></td>
-        </tr>
-      </table>
+      <!--TIMER-->
+      <img src="REPLACE_TIMER_GIF_URL" width="420" alt="Sale ends tonight at sunset, SUNSET_TIME" style="width:100%; max-width:420px; height:auto; margin:0 auto; display:block; color:#FFFFFF; font-family:Arial,sans-serif; font-size:20px;">
+      <!--/TIMER-->
+      <p class="sans" style="margin:16px 0 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; line-height:20px; color:#D6DBE3;">Ends tonight at sunset, SUNSET_TIME (SAST).</p>
     </td>
   </tr>
   <!-- ▲ COUNTDOWN -->

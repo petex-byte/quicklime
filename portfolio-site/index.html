@@ -153,7 +153,11 @@
       <div class="made__intro" data-sc-in data-sc-stagger="60">
         <h2 id="mail-h" class="made__h">Outlook redecorates sale emails.</h2>
         <p class="made__p">Unless someone stops it. This is my Klaviyo master template, running live. Scroll inside it. I design it in Figma, then code it by hand, one block at a time.</p>
-        <div class="made__toggle" role="group" aria-label="Email width">
+        <div class="made__toggle made__toggle--mail" role="group" aria-label="Which email">
+          <button type="button" aria-pressed="true" data-mail="email">Master</button>
+          <button type="button" aria-pressed="false" data-mail="last-light">Last Light</button>
+        </div>
+        <div class="made__toggle made__toggle--width" role="group" aria-label="Email width">
           <button type="button" aria-pressed="true" data-width="375">Phone</button>
           <button type="button" aria-pressed="false" data-width="600">Desktop</button>
         </div>
@@ -163,7 +167,7 @@
         <div class="inbox__frame" data-frame style="--w:375px">
           <iframe src="samples/email.html" title="Sample sale email from my Klaviyo master template" loading="lazy"></iframe>
         </div>
-        <figcaption>Kloof &amp; Co. is a sample shop, not a client. <a href="samples/email.html">Open the email full size</a>.</figcaption>
+        <figcaption data-mail-cap>Kloof &amp; Co. is a sample shop, not a client. <a href="samples/email.html">Open the email full size</a>.</figcaption>
       </figure>
 
       <ol class="checks" data-sc-in data-sc-stagger="70" aria-label="What I checked in this email">

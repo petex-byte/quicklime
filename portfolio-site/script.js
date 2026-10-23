@@ -169,7 +169,17 @@
     });
   }
   var frame = document.querySelector('[data-frame]');
-  group('#email .made__toggle', 'data-width', function (w) { frame.setAttribute('style', '--w:' + w + 'px'); frame.closest('.made__grid').classList.toggle('is-wide', w === '600'); });
+  var mailFrame = frame && frame.querySelector('iframe');
+  var mailCap = document.querySelector('[data-mail-cap]');
+  var mailCaps = {
+    'email': 'My Klaviyo master template.',
+    'last-light': 'Last Light: a dark sale that ends at sunset. In a real send the timer is a live image.'
+  };
+  group('#email .made__toggle--mail', 'data-mail', function (m) {
+    mailFrame.src = 'samples/' + m + '.html';
+    mailCap.innerHTML = mailCaps[m] + ' Kloof &amp; Co. is a sample shop, not a client. <a href="samples/' + m + '.html">Open the email full size</a>.';
+  });
+  group('#email .made__toggle--width', 'data-width', function (w) { frame.setAttribute('style', '--w:' + w + 'px'); frame.closest('.made__grid').classList.toggle('is-wide', w === '600'); });
 
   var co = document.querySelector('.co');
   var cap = document.querySelector('[data-se-cap]');
